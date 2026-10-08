@@ -1,0 +1,4 @@
+$ cat /sys/devices/system/cpu/smt/active /sys/devices/system/cpu/smt/control
+1
+on
+[exit 0]

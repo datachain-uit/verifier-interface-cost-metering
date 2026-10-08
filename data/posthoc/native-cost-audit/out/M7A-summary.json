@@ -1,0 +1,125 @@
+{
+ "label": "V2-M7A POST HOC DESCRIPTIVE DIAGNOSTIC \u2014 not a revised model; F4 / H4 unchanged",
+ "source_commit": "69bc430549e88f9264066d14f2001707572c5d33",
+ "constants": {
+  "calldata_byte": 60,
+  "warm_account_access": 4000,
+  "returndata_copy_64": 208,
+  "returndata_copy_32": 144,
+  "decommit": "500 + 800 + 340 * ceil((n + pad8(n) + 8*ceil(n/64)) / 64)",
+  "heap": "35 per expansion event + 1 per byte"
+ },
+ "frozen_c_identification": {
+  "U_groth16_k1": 1710289,
+  "U_plonk_k1": 1909759.0,
+  "contrast": 199470.0,
+  "calls_contrast": 34,
+  "c": 5866.764705882353,
+  "frozen_c": 5866.764705882353
+ },
+ "k1_contrast_decomposition": {
+  "calldata": 30720,
+  "decommit": 24140,
+  "extra_calls_34": 143072,
+  "heap_bytes": 768,
+  "remainder": 770.0,
+  "remainder_over_35": 22.0,
+  "source_per_call": 4208,
+  "c_minus_source_per_call": 1658.7647058823532,
+  "absorbed_non_call_per_call": 1658.764705882353
+ },
+ "remainder_structure": {
+  "groth16": {
+   "n_proofs": 104,
+   "min_remainder": 1669257,
+   "all_mod35_zero": true,
+   "events_by_k": {
+    "1": [
+     0.0
+    ],
+    "2": [
+     0.0
+    ],
+    "4-a4": [
+     0.0
+    ],
+    "4": [
+     0.0
+    ],
+    "4-disc": [
+     0.0
+    ],
+    "6": [
+     0.0
+    ],
+    "8-a8": [
+     0.0
+    ],
+    "8": [
+     0.0
+    ],
+    "12": [
+     0.0
+    ],
+    "16": [
+     0.0
+    ],
+    "24": [
+     0.0
+    ],
+    "32": [
+     0.0
+    ],
+    "64": [
+     0.0
+    ]
+   }
+  },
+  "plonk": {
+   "n_proofs": 104,
+   "min_remainder": 1670027,
+   "all_mod35_zero": true,
+   "events_by_k": {
+    "1": [
+     22.0
+    ],
+    "2": [
+     22.0
+    ],
+    "4-a4": [
+     24.0
+    ],
+    "4": [
+     24.0
+    ],
+    "4-disc": [
+     24.0
+    ],
+    "6": [
+     24.0
+    ],
+    "8-a8": [
+     24.0
+    ],
+    "8": [
+     24.0
+    ],
+    "12": [
+     28.0
+    ],
+    "16": [
+     32.0
+    ],
+    "24": [
+     40.0
+    ],
+    "32": [
+     48.0
+    ],
+    "64": [
+     80.0
+    ]
+   }
+  }
+ }
+}

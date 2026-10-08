@@ -1,0 +1,1522 @@
+[
+ {
+  "proof_id": "c1_k01/groth16/j1",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j2",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j3",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j4",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j5",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j6",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_k01/groth16/j7",
+  "circuit": "c1_k01",
+  "backend": "groth16",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j1",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j2",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j3",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j4",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j5",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j6",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_k01/plonk/j7",
+  "circuit": "c1_k01",
+  "backend": "plonk",
+  "k": 1,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_k01/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j1",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j2",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j3",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j4",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j5",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j6",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/groth16/j7",
+  "circuit": "c1_ctx_k02",
+  "backend": "groth16",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j1",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j2",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j3",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j4",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j5",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j6",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k02/plonk/j7",
+  "circuit": "c1_ctx_k02",
+  "backend": "plonk",
+  "k": 2,
+  "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k02/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j1",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j2",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j3",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j4",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j5",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j6",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/groth16/j7",
+  "circuit": "c1_ctx_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j1",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j2",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j3",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j4",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j5",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j6",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k04/plonk/j7",
+  "circuit": "c1_ctx_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k04/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j0",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j0.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j1",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j2",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j3",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j4",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j5",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j6",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/groth16/j7",
+  "circuit": "c1_ctx_k06",
+  "backend": "groth16",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j0",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j0.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j1",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j2",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j3",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j4",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j5",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j6",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k06/plonk/j7",
+  "circuit": "c1_ctx_k06",
+  "backend": "plonk",
+  "k": 6,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k06-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k06/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j1",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j2",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j3",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j4",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j5",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j6",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/groth16/j7",
+  "circuit": "c1_ctx_k08",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j1",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j2",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j3",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j4",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j5",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j6",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k08/plonk/j7",
+  "circuit": "c1_ctx_k08",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k08-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k08/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j1",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j2",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j3",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j4",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j5",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j6",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/groth16/j7",
+  "circuit": "c1_ctx_k12",
+  "backend": "groth16",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j1",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j2",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j3",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j4",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j5",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j6",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k12/plonk/j7",
+  "circuit": "c1_ctx_k12",
+  "backend": "plonk",
+  "k": 12,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k12-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k12/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j1",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j2",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j3",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j4",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j5",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j6",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/groth16/j7",
+  "circuit": "c1_ctx_k16",
+  "backend": "groth16",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j1",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j2",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j3",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j4",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j5",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j6",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k16/plonk/j7",
+  "circuit": "c1_ctx_k16",
+  "backend": "plonk",
+  "k": 16,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k16-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k16/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j1",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j2",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j3",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j4",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j5",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j6",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/groth16/j7",
+  "circuit": "c1_ctx_k24",
+  "backend": "groth16",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j1",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j2",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j3",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j4",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j5",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j6",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k24/plonk/j7",
+  "circuit": "c1_ctx_k24",
+  "backend": "plonk",
+  "k": 24,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k24-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k24/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j1",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j2",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j3",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j4",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j5",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j6",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/groth16/j7",
+  "circuit": "c1_ctx_k32",
+  "backend": "groth16",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j1",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j2",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j3",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j4",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j5",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j6",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k32/plonk/j7",
+  "circuit": "c1_ctx_k32",
+  "backend": "plonk",
+  "k": 32,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k32-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k32/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j1",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j2",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j3",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j4",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j5",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j6",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/groth16/j7",
+  "circuit": "c1_ctx_k64",
+  "backend": "groth16",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j1",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j2",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j3",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j4",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j5",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j6",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ctx_k64/plonk/j7",
+  "circuit": "c1_ctx_k64",
+  "backend": "plonk",
+  "k": 64,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_ctx_k64-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_ctx_k64/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j0",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j0.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j1",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j2",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j3",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j4",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j5",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j6",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_a4/groth16/j7",
+  "circuit": "c1_a4",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j0",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j0.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j1",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j2",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j3",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j4",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j5",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j6",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_a4/plonk/j7",
+  "circuit": "c1_a4",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a4-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a4/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j0",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j0.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j1",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j2",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j3",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j4",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j5",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j6",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_a8/groth16/j7",
+  "circuit": "c1_a8",
+  "backend": "groth16",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j0",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j0.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j1",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j2",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j3",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j4",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j5",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j6",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_a8/plonk/j7",
+  "circuit": "c1_a8",
+  "backend": "plonk",
+  "k": 8,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_a8-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_a8/plonk-j7.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j0",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j0.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j1",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j1.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j2",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j2.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j3",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j3.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j4",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j4.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j5",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j5.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j6",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j6.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/groth16/j7",
+  "circuit": "c1_disc_k04",
+  "backend": "groth16",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/groth16-j7.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j0",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j0.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j1",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j1.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j2",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j2.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j3",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j3.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j4",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j4.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j5",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j5.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j6",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j6.json"
+ },
+ {
+  "proof_id": "c1_disc_k04/plonk/j7",
+  "circuit": "c1_disc_k04",
+  "backend": "plonk",
+  "k": 4,
+  "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-plonk.json",
+  "proof_file": "/root/c1/pkg/corpus/proofs/c1_disc_k04/plonk-j7.json"
+ }
+]

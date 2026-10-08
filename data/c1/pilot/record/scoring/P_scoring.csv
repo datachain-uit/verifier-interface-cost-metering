@@ -1,0 +1,187 @@
+cell,role,pred,lo,hi,measured_mean,err_rel,status
+evm-osaka|groth16|c1_k01|Y_dir,CALIBRATION,214590,214167,215012,214589.5,-2e-06,TRANSFER-CHECK PASS
+evm-osaka|groth16|c1_ctx_k02|Y_dir,HELD-OUT-k/seen-in-P0,221762,221326,222197,221774.5,5.6e-05,PASS
+evm-osaka|groth16|c1_ctx_k04|Y_dir,CALIBRATION,236104,235642,236566,236104,0.0,TRANSFER-CHECK PASS
+evm-osaka|groth16|c1_ctx_k06|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k08|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k12|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k16|Y_dir,HELD-OUT-k/seen-in-P0,322195,321572,322818,321790,-0.001257,PASS
+evm-osaka|groth16|c1_ctx_k24|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k32|Y_dir,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k64|Y_dir,LIMIT-CHECK,,,,,,MISSING
+evm-osaka|groth16|c1_a4|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|groth16|c1_a8|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|groth16|c1_disc_k04|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|groth16|c1_k01|Y_app,CALIBRATION,223950,223424,224477,223950.5,2e-06,TRANSFER-CHECK PASS
+evm-osaka|groth16|c1_ctx_k02|Y_app,HELD-OUT-k/seen-in-P0,231133,230590,231676,231114.5,-8e-05,PASS
+evm-osaka|groth16|c1_ctx_k04|Y_app,CALIBRATION,245497,244922,246072,245497,0.0,TRANSFER-CHECK PASS
+evm-osaka|groth16|c1_ctx_k06|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k08|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k12|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k16|Y_app,HELD-OUT-k/seen-in-P0,331716,330949,332483,331121,-0.001794,PASS
+evm-osaka|groth16|c1_ctx_k24|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k32|Y_app,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+evm-osaka|groth16|c1_ctx_k64|Y_app,LIMIT-CHECK,,,,,,MISSING
+evm-osaka|groth16|c1_a4|Y_app,SEMANTIC,,,,,,MISSING
+evm-osaka|groth16|c1_a8|Y_app,SEMANTIC,,,,,,MISSING
+evm-osaka|groth16|c1_disc_k04|Y_app,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_k01|Y_dir,CALIBRATION,291490,287320,295661,291452.25,-0.00013,TRANSFER-CHECK PASS
+evm-osaka|plonk|c1_ctx_k02|Y_dir,HELD-OUT-k/seen-in-P0,292748,288567,296930,292232.75,-0.00176,PASS
+evm-osaka|plonk|c1_ctx_k04|Y_dir,CALIBRATION,295242,291038,299447,295205.75,-0.000123,TRANSFER-CHECK PASS
+evm-osaka|plonk|c1_ctx_k06|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k08|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k12|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k16|Y_dir,HELD-OUT-k/seen-in-P0,310318,305978,314658,311794.75,0.004759,PASS
+evm-osaka|plonk|c1_ctx_k24|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k32|Y_dir,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k64|Y_dir,LIMIT-CHECK,,,,,,MISSING
+evm-osaka|plonk|c1_a4|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_a8|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_disc_k04|Y_dir,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_k01|Y_app,CALIBRATION,300490,296034,304945,300451.25,-0.000129,TRANSFER-CHECK PASS
+evm-osaka|plonk|c1_ctx_k02|Y_app,HELD-OUT-k/seen-in-P0,301744,297276,306211,301162.75,-0.001926,PASS
+evm-osaka|plonk|c1_ctx_k04|Y_app,CALIBRATION,304230,299740,308721,304193.75,-0.000119,TRANSFER-CHECK PASS
+evm-osaka|plonk|c1_ctx_k06|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k08|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k12|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k16|Y_app,HELD-OUT-k/seen-in-P0,319262,314631,323893,320898.75,0.005127,PASS
+evm-osaka|plonk|c1_ctx_k24|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k32|Y_app,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+evm-osaka|plonk|c1_ctx_k64|Y_app,LIMIT-CHECK,,,,,,MISSING
+evm-osaka|plonk|c1_a4|Y_app,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_a8|Y_app,SEMANTIC,,,,,,MISSING
+evm-osaka|plonk|c1_disc_k04|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_k01|Y_dir,CALIBRATION,444263,443986,444540,444311,0.000108,TRANSFER-CHECK PASS
+eravm-29|groth16|c1_ctx_k02|Y_dir,HELD-OUT-k/seen-in-P0,451206,450924,451487,451263,0.000126,PASS
+eravm-29|groth16|c1_ctx_k04|Y_dir,CALIBRATION,465091,464801,465381,465139,0.000103,TRANSFER-CHECK PASS
+eravm-29|groth16|c1_ctx_k06|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k08|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k12|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k16|Y_dir,HELD-OUT-k/seen-in-P0,548403,548061,548745,548632,0.000418,PASS
+eravm-29|groth16|c1_ctx_k24|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k32|Y_dir,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k64|Y_dir,LIMIT-CHECK,,,,,,MISSING
+eravm-29|groth16|c1_a4|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_a8|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_disc_k04|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_k01|Y_app,CALIBRATION,451276,451128,451424,451324,0.000106,TRANSFER-CHECK PASS
+eravm-29|groth16|c1_ctx_k02|Y_app,HELD-OUT-k/seen-in-P0,458257,458106,458407,458326,0.000151,PASS
+eravm-29|groth16|c1_ctx_k04|Y_app,CALIBRATION,472218,472063,472373,472266,0.000102,TRANSFER-CHECK PASS
+eravm-29|groth16|c1_ctx_k06|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k08|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k12|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k16|Y_app,HELD-OUT-k/seen-in-P0,555986,555804,556168,556113,0.000228,PASS
+eravm-29|groth16|c1_ctx_k24|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k32|Y_app,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+eravm-29|groth16|c1_ctx_k64|Y_app,LIMIT-CHECK,,,,,,MISSING
+eravm-29|groth16|c1_a4|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_a8|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|groth16|c1_disc_k04|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_k01|Y_dir,CALIBRATION,446058,437081,455035,445895.25,-0.000365,TRANSFER-CHECK PASS
+eravm-29|plonk|c1_ctx_k02|Y_dir,HELD-OUT-k/seen-in-P0,448483,439457,457508,447635.5,-0.00189,PASS
+eravm-29|plonk|c1_ctx_k04|Y_dir,CALIBRATION,453372,444248,462496,453382.75,2.4e-05,TRANSFER-CHECK PASS
+eravm-29|plonk|c1_ctx_k06|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k08|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k12|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k16|Y_dir,HELD-OUT-k/seen-in-P0,482548,472837,492259,478713.5,-0.007946,PASS
+eravm-29|plonk|c1_ctx_k24|Y_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k32|Y_dir,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k64|Y_dir,LIMIT-CHECK,,,,,,MISSING
+eravm-29|plonk|c1_a4|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_a8|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_disc_k04|Y_dir,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_k01|Y_app,CALIBRATION,453507,444177,462837,453344.25,-0.000359,TRANSFER-CHECK PASS
+eravm-29|plonk|c1_ctx_k02|Y_app,HELD-OUT-k/seen-in-P0,455978,446597,465358,455134.5,-0.00185,PASS
+eravm-29|plonk|c1_ctx_k04|Y_app,CALIBRATION,460959,451476,470442,460969.75,2.3e-05,TRANSFER-CHECK PASS
+eravm-29|plonk|c1_ctx_k06|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k08|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k12|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k16|Y_app,HELD-OUT-k/seen-in-P0,490687,480592,500782,486672.5,-0.008181,PASS
+eravm-29|plonk|c1_ctx_k24|Y_app,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k32|Y_app,HELD-OUT-k/seen-in-P0,,,,,,MISSING
+eravm-29|plonk|c1_ctx_k64|Y_app,LIMIT-CHECK,,,,,,MISSING
+eravm-29|plonk|c1_a4|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_a8|Y_app,SEMANTIC,,,,,,MISSING
+eravm-29|plonk|c1_disc_k04|Y_app,SEMANTIC,,,,,,MISSING
+eravm-27|groth16|c1_k01|Y_dir,CALIBRATION,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k04|Y_dir,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k06|Y_dir,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k08|Y_dir,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k16|Y_dir,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|groth16|c1_k01|Y_app,CALIBRATION,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k04|Y_app,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k06|Y_app,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k08|Y_app,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|groth16|c1_ctx_k16|Y_app,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|plonk|c1_k01|Y_dir,CALIBRATION,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k04|Y_dir,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k06|Y_dir,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k08|Y_dir,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k16|Y_dir,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|plonk|c1_k01|Y_app,CALIBRATION,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k04|Y_app,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k06|Y_app,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k08|Y_app,HELD-OUT-REGIME/k-unseen,,,,,,MISSING
+eravm-27|plonk|c1_ctx_k16|Y_app,HELD-OUT-REGIME/k-seen-in-P0,,,,,,MISSING
+evm-petersburg|groth16|c1_k01|Y_dir,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|groth16|c1_ctx_k04|Y_dir,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|groth16|c1_ctx_k16|Y_dir,SUPPORTING-CONTROL/held-out-k,,,,,,MISSING
+evm-petersburg|groth16|c1_k01|Y_app,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|groth16|c1_ctx_k04|Y_app,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|groth16|c1_ctx_k16|Y_app,SUPPORTING-CONTROL/held-out-k,,,,,,MISSING
+evm-petersburg|plonk|c1_k01|Y_dir,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|plonk|c1_ctx_k04|Y_dir,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|plonk|c1_ctx_k16|Y_dir,SUPPORTING-CONTROL/held-out-k,,,,,,MISSING
+evm-petersburg|plonk|c1_k01|Y_app,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|plonk|c1_ctx_k04|Y_app,SUPPORTING-CONTROL/calibration,,,,,,MISSING
+evm-petersburg|plonk|c1_ctx_k16|Y_app,SUPPORTING-CONTROL/held-out-k,,,,,,MISSING
+zkos-v32|groth16|c1_k01|N_dir,CALIBRATION,36506865,36492392,36521338,36506865,0.0,TRANSFER-CHECK PASS
+zkos-v32|groth16|c1_ctx_k02|N_dir,HELD-OUT-k/seen-in-P0-trace,37400509,37385682,37415335,37399701,-2.2e-05,PASS
+zkos-v32|groth16|c1_ctx_k04|N_dir,HELD-OUT-k/seen-in-P0-trace,39187796,39172260,39203331,39185303,-6.4e-05,PASS
+zkos-v32|groth16|c1_ctx_k06|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|groth16|c1_ctx_k08|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|groth16|c1_ctx_k12|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|groth16|c1_ctx_k16|N_dir,HELD-OUT-k/seen-in-P0-trace,49911518,49891732,49931304,49890945,-0.000412,FAIL
+zkos-v32|groth16|c1_ctx_k24|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|groth16|c1_ctx_k32|N_dir,HELD-OUT-k/seen-in-P0-trace,,,,,,MISSING
+zkos-v32|groth16|c1_ctx_k64|N_dir,LIMIT-CHECK,,,,,,MISSING
+zkos-v32|groth16|c1_a4|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|groth16|c1_a8|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|groth16|c1_disc_k04|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|plonk|c1_k01|N_dir,CALIBRATION,38683079,38365922,39000236,38666956.25,-0.000417,TRANSFER-CHECK PASS
+zkos-v32|plonk|c1_ctx_k02|N_dir,HELD-OUT-k/seen-in-P0-trace,38714617,38397202,39032032,38689487.75,-0.000649,PASS
+zkos-v32|plonk|c1_ctx_k04|N_dir,HELD-OUT-k/seen-in-P0-trace,38781539,38463575,39099503,38779623.75,-4.9e-05,PASS
+zkos-v32|plonk|c1_ctx_k06|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|plonk|c1_ctx_k08|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|plonk|c1_ctx_k12|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|plonk|c1_ctx_k16|N_dir,HELD-OUT-k/seen-in-P0-trace,39167687,38846557,39488817,39260908.25,0.00238,PASS
+zkos-v32|plonk|c1_ctx_k24|N_dir,HELD-OUT-k/strictly-unseen,,,,,,MISSING
+zkos-v32|plonk|c1_ctx_k32|N_dir,HELD-OUT-k/seen-in-P0-trace,,,,,,MISSING
+zkos-v32|plonk|c1_ctx_k64|N_dir,LIMIT-CHECK,,,,,,MISSING
+zkos-v32|plonk|c1_a4|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|plonk|c1_a8|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|plonk|c1_disc_k04|N_dir,SEMANTIC,,,,,,MISSING
+zkos-v32|fflonk|c1_ff_k01|N_dir,HELD-OUT-BACKEND,,,,,,MISSING
+zkos-v32|fflonk|c1_ff_k04|N_dir,HELD-OUT-BACKEND,,,,,,MISSING
+zkos-v32|fflonk|c1_ff_k16|N_dir,HELD-OUT-BACKEND,,,,,,MISSING
+zkos-v32|fflonk|c1_ff_k32|N_dir,HELD-OUT-BACKEND,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_k01|G_dir,CALIBRATION/binding=NATIVE,365069,364923,365214,365068,-3e-06,TRANSFER-CHECK PASS
+zkos-v32@npg100|groth16|c1_ctx_k02|G_dir,HELD-OUT-k/binding=NATIVE,374005,373856,374154,373997,-2.1e-05,PASS
+zkos-v32@npg100|groth16|c1_ctx_k04|G_dir,HELD-OUT-k/binding=NATIVE,391878,391722,392034,391853,-6.4e-05,PASS
+zkos-v32@npg100|groth16|c1_ctx_k06|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_ctx_k08|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_ctx_k12|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_ctx_k16|G_dir,HELD-OUT-k/binding=NATIVE,499115,498917,499314,498909,-0.000413,FAIL
+zkos-v32@npg100|groth16|c1_ctx_k24|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_ctx_k32|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|groth16|c1_ctx_k64|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_k01|G_dir,CALIBRATION/binding=NATIVE,386831,383659,390003,386669.12,-0.000418,TRANSFER-CHECK PASS
+zkos-v32@npg100|plonk|c1_ctx_k02|G_dir,HELD-OUT-k/binding=NATIVE,387146,383972,390321,386894.25,-0.00065,PASS
+zkos-v32@npg100|plonk|c1_ctx_k04|G_dir,HELD-OUT-k/binding=NATIVE,387815,384635,390996,387795.88,-4.9e-05,PASS
+zkos-v32@npg100|plonk|c1_ctx_k06|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_ctx_k08|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_ctx_k12|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_ctx_k16|G_dir,HELD-OUT-k/binding=NATIVE,391677,388465,394889,392608.75,0.002379,PASS
+zkos-v32@npg100|plonk|c1_ctx_k24|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_ctx_k32|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING
+zkos-v32@npg100|plonk|c1_ctx_k64|G_dir,HELD-OUT-k/binding=NATIVE,,,,,,MISSING

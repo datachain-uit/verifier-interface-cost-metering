@@ -1,0 +1,3 @@
+$ lscpu -e=CPU,NODE,SOCKET,CORE,L1d:L1i:L2:L3,ONLINE,MAXMHZ,MINMHZ
+lscpu: unknown column: L1d:L1i:L2:L3,ONLINE,MAXMHZ,MINMHZ
+[exit 1]

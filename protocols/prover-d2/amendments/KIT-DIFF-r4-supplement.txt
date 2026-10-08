@@ -1,0 +1,27 @@
+# KIT-DIFF supplement: kit v3-x86-r4 vs kit v3-x86-r3 — DEV-D2-2 only
+# kit v3-x86-r3 file-list sha256 (LC_ALL=C): e5099e62f0c10c8d55c2d8d2b904ec395dbdb5fbe66cdeaba3d20d2e4e4e751d
+# kit v3-x86-r4 file-list sha256 (LC_ALL=C): 7488b0f67c8797bb7c99d927e35942c6147084f15af810c98441e4f3df3b43c6
+# files differing r4 vs r3: summarize_prover.js only (24 files each). r4 vs v3-x86 = DEV-D2-1 (record_controls.js) + AMD-D2-1 (hostb_quiet.py) + DEV-D2-2 (summarize_prover.js).
+# summarize_prover.js: v3 = v3-x86 = r2 = r3 = 3fde442f455f8fb2cef48c03cca53d1717f8efc71761df46a0f365a08cf42a19 ; r4 = 10d0fd6219dbe52a7edee906d675817f76af39b9c2b17524eab81e69a988fae0 (copied into the image, Dockerfile L10)
+
+--- kit-v3-x86-r3/summarize_prover.js
++++ kit-v3-x86-r4/summarize_prover.js
+@@ -95,15 +95,15 @@
+   for (const s of ended) {
+     const f = path.join(dir, 'environment', `integrity-${s}.json`);
+     const j = fs.existsSync(f) ? readJson(f) : null;
+-    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.git_status_unchanged && j.git_head_unchanged)) integProblems.push(s);
++    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.corpus_after_ok && j.tree_unchanged)) integProblems.push(s);
+   }
+   const current = process.env.ZCORP_SESSION_ID;
+   if (current) {
+     const f = path.join(dir, 'environment', `integrity-${current}.json`);
+     const j = fs.existsSync(f) ? readJson(f) : null;
+-    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.git_status_unchanged && j.git_head_unchanged)) integProblems.push(current);
++    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.corpus_after_ok && j.tree_unchanged)) integProblems.push(current);
+   }
+-  check('repository_unchanged', integProblems.length === 0, integProblems.length ? integProblems : 'manifest, git HEAD and git status unchanged in every finished session');
++  check('repository_unchanged', integProblems.length === 0, integProblems.length ? integProblems : 'manifest, corpus and tree identity unchanged in every finished session');
+   const p7p = path.join(dir, 'provenance', 'p7.json');
+   const p7 = fs.existsSync(p7p) ? readJson(p7p) : null;
+   check('provenance_p7', p7 && p7.passed === true && p7.campaign_id === c.campaign_id, p7 ? { passed: p7.passed, depths: p7.depths.length, circom: p7.tools.circom } : 'missing');

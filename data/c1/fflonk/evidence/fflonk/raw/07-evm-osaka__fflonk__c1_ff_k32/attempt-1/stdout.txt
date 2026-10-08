@@ -1,0 +1,1 @@
+{"cell":"evm-osaka|fflonk|c1_ff_k32","n_records":72,"statuses":"1111111111111111"}

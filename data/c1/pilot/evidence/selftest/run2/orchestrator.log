@@ -1,0 +1,18 @@
+2026-10-04T10:55:48.078760Z start campaign=SELFTEST run_id=SELFTEST-2 cells=8 pins_sha256=e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699
+2026-10-04T10:55:48.078994Z cell 00-evm-osaka__groth16__fx_ctx_k04 attempt 1 begin
+2026-10-04T10:55:49.608505Z cell 00-evm-osaka__groth16__fx_ctx_k04 attempt 1 done in 2s
+2026-10-04T10:55:49.608836Z cell 01-zkos-v32_at_npg300__plonk__fx_k01 attempt 1 begin
+2026-10-04T10:58:01.697761Z cell 01-zkos-v32_at_npg300__plonk__fx_k01 attempt 1 done in 132s
+2026-10-04T10:58:01.698811Z cell 02-zkos-v32_at_npg100__plonk__fx_ctx_k04 attempt 1 begin
+2026-10-04T11:00:13.852432Z cell 02-zkos-v32_at_npg100__plonk__fx_ctx_k04 attempt 1 done in 132s
+2026-10-04T11:00:13.852754Z cell 03-zkos-v32_at_npg100__groth16__fx_ctx_k04 attempt 1 begin
+2026-10-04T11:02:25.677016Z cell 03-zkos-v32_at_npg100__groth16__fx_ctx_k04 attempt 1 done in 132s
+2026-10-04T11:02:25.678009Z cell 04-evm-osaka__plonk__fx_ctx_k04 attempt 1 begin
+2026-10-04T11:02:29.518563Z cell 04-evm-osaka__plonk__fx_ctx_k04 attempt 1 done in 4s
+2026-10-04T11:02:29.518919Z cell 05-eravm-29__groth16__fx_ctx_k04 attempt 1 begin
+2026-10-04T11:02:32.550499Z cell 05-eravm-29__groth16__fx_ctx_k04 attempt 1 done in 3s
+2026-10-04T11:02:32.550915Z cell 06-eravm-29__plonk__fx_ctx_k04 attempt 1 begin
+2026-10-04T11:02:35.832445Z cell 06-eravm-29__plonk__fx_ctx_k04 attempt 1 done in 3s
+2026-10-04T11:02:35.832820Z cell 07-evm-osaka__plonk__fx_k01 attempt 1 begin
+2026-10-04T11:02:39.624555Z cell 07-evm-osaka__plonk__fx_k01 attempt 1 done in 4s
+2026-10-04T11:02:39.624597Z campaign complete

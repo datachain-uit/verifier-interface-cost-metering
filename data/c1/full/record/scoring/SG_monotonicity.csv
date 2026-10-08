@@ -1,0 +1,6 @@
+env,metric,n_k,violations,verdict
+eravm-27,Y_dir,5,,PASS
+eravm-29,Y_dir,9,,PASS
+evm-osaka,Y_dir,9,,PASS
+zkos-v32@npg100,N_dir,9,,PASS
+zkos-v32@npg100,Y_dir,9,,PASS

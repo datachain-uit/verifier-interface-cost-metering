@@ -1,0 +1,6 @@
+campaign_id,session_id,event,utc,mode,git_head,image_id,docker_desktop,engine,kernel,vm_ncpu,vm_mem_bytes,power_source,low_power_mode,caffeinated,detail
+dryrun-resumetest-20261005T141557Z,S20261005T141557Z,start,2026-10-05T14:16:00Z,dryrun,none,,n/a (native Engine),27.5.1,6.14.0-29-generic,112,67118030848,"n/a (desktop)",n/a,1,"window none; new"
+dryrun-resumetest-20261005T141557Z,S20261005T141557Z,end,2026-10-05T14:26:20Z,dryrun,none,sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7,n/a (native Engine),27.5.1,6.14.0-29-generic,112,67118030848,"n/a (desktop)",n/a,1,"window none; STOPPED (1 accepted, 3 remaining)"
+dryrun-resumetest-20261005T141557Z,S20261005T142620Z,start,2026-10-05T14:26:22Z,resume,none,,n/a (native Engine),27.5.1,6.14.0-29-generic,112,67118030848,"n/a (desktop)",n/a,1,"window none; resume"
+dryrun-resumetest-20261005T141557Z,S20261005T143431Z,start,2026-10-05T14:34:33Z,resume,none,,n/a (native Engine),27.5.1,6.14.0-29-generic,112,67118030848,"n/a (desktop)",n/a,1,"window none; resume"
+dryrun-resumetest-20261005T141557Z,S20261005T143431Z,end,2026-10-05T14:50:36Z,resume,none,sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7,n/a (native Engine),27.5.1,6.14.0-29-generic,112,67118030848,"n/a (desktop)",n/a,1,"window none; PASS"

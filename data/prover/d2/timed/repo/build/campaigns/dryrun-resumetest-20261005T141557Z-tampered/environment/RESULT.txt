@@ -1,0 +1,1 @@
+result: FAIL (REFUSE: campaign state check failed)

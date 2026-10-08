@@ -1,0 +1,52 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 837B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 44.43kB done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e
+#5 resolve docker.io/library/node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e done
+#5 CACHED
+
+#6 [2/5] WORKDIR /opt/zcorp-d1
+#6 DONE 0.0s
+
+#7 [3/5] COPY package.json package-lock.json ./
+#7 DONE 0.0s
+
+#8 [4/5] RUN npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
+#8 1.478 
+#8 1.478 added 71 packages in 1s
+#8 1.479 npm notice
+#8 1.479 npm notice New major version of npm available! 10.8.2 -> 12.2.0
+#8 1.479 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#8 1.479 npm notice To update run: npm install -g npm@12.2.0
+#8 1.479 npm notice
+#8 1.535 npm warn using --force Recommended protections disabled.
+#8 DONE 1.7s
+
+#9 [5/5] COPY cpu-visibility.js d1_harness.js d1_regen.js ./
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 0.9s done
+#10 exporting manifest sha256:ed5f267abfc6d6682b1f91a2d9e30df7ff0ac57a951de1ee04f4a7f012daf4cd done
+#10 exporting config sha256:2b9e8da8808ac03950d6ae0ba8336f54cd24097a190e26520ee3494b2226cadd done
+#10 exporting attestation manifest sha256:85a4755b7196e1d137583fc0b95989b56505323ad3dcc3ade70bc8a61f21a4f6 done
+#10 exporting manifest list sha256:dfffb92fda7dcb7e45d3c4e36e8a34bd19d076103806cd3a511e848bfe3dc53f done
+#10 naming to docker.io/library/zcorp-d1:12acbadfe805 done
+#10 unpacking to docker.io/library/zcorp-d1:12acbadfe805
+#10 unpacking to docker.io/library/zcorp-d1:12acbadfe805 0.2s done
+#10 DONE 1.1s

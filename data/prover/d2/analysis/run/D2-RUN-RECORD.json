@@ -1,0 +1,49 @@
+{
+ "campaign_id": "V2-PRV-D2-01",
+ "source_campaign": "V2-PRV-D2-01-run1",
+ "mode": "run",
+ "started_utc": "2026-10-05T23:19:03Z",
+ "script_sha256": "3f80cc8f45ce381c9832be6bc809d05f244c79621e5071c86335de6f907d5fa4",
+ "manifest_sha256": "3e0121b14acb895d075878033cca1068689b77a448e47112ff1ba1dad3eee86f",
+ "base_seed": 20261004,
+ "seed_namespace": "D2",
+ "bootstrap_resamples": 10000,
+ "python": "3.10.12",
+ "accepted_rows": 495,
+ "diag_rows": 240,
+ "accepted_attempts": {
+  "diag:1": 1,
+  "diag:2": 1,
+  "diag:3": 1,
+  "diag:4": 1,
+  "diag:5": 1,
+  "primary:0": 1,
+  "primary:1": 1,
+  "primary:2": 1,
+  "primary:3": 1,
+  "primary:4": 1,
+  "primary:5": 1,
+  "primary:6": 1,
+  "primary:7": 1,
+  "primary:8": 1,
+  "primary:9": 1,
+  "primary:10": 1
+ },
+ "reconciliation": {
+  "prover_summary": {
+   "match": 462
+  },
+  "prover_diag": {
+   "match": 48
+  }
+ },
+ "reconciliation_mismatches": 0,
+ "note": "Host B: cpu2/cpu4/cpu8 are allocations (cpusets 1-2/1-4/1-8, NUMA node 0) on one Xeon host, never devices; PLONK n = 5 intervals are coarse; Host A = V2-PRV-D3-01 outputs, side by side, never pooled",
+ "outputs": {
+  "cells": 693,
+  "ratios": 66,
+  "speedups": 462,
+  "zkey": 72
+ },
+ "ended_utc": "2026-10-05T23:19:18Z"
+}

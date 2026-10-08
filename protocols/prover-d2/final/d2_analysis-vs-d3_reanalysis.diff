@@ -1,0 +1,267 @@
+--- d3_reanalysis.py
++++ d2_analysis.py
+@@ -1,32 +1,28 @@
+ #!/usr/bin/env python3
+-"""V2-PRV-D3-01 (script v1.1) — statistics re-analysis of the frozen V1 prover campaign (no new runs, no new timing).
+-
+-Source campaign: campaign-20260925T060607Z (V1 protocol v3; Apple M5 MacBook Pro, Docker Desktop VM, linux/arm64).
+-cpu2 / cpu4 / cpu8 are three resource ALLOCATIONS (VM-vCPU cpusets 1-2 / 1-4 / 1-8 with matched ffjavascript workers) on
+-ONE host; they are never treated as devices.
+-
+-usage: python3 d3_reanalysis.py --root <V2 workspace root> --out <output dir> --mode check|run
+-
+-  check : verify every input against the frozen sha256 manifest below, then reconcile the V1 derived tables against the
+-          raw accepted rows. Writes D3-input-verification.json and D3-reconciliation.json. No statistics.
+-  run   : check, then the statistics (run once). Hash mismatch aborts; reconciliation mismatches are reported, never
+-          repaired, and all statistics are computed from the RAW accepted rows only.
+-
+-Definitions (fixed before the run; protocol research/csi/protocols/v2/prover-D3/D3-PROTOCOL.md):
+-  accepted measured row  : runs.csv kind=primary, is_warmup=0, status=ok, round_attempt = the accepted attempt of that
+-                           round in prover/round_ledger.csv (complete, accepted=1), proof_valid and root_matches true.
+-  rounds                 : PLONK rounds 1-5 (n = 5, labelled COARSE); Groth16 rounds 1-10 (n = 10) and, separately,
+-                           rounds 1-5 (n = 5). Cross-backend and cross-allocation quantities use rounds 1-5 only (v3 §3.3).
+-  quantiles              : linear interpolation between order statistics (type 7; identical to the V1 harness).
+-  CV                     : sample standard deviation (n - 1) / mean.
+-  bootstrap              : percentile bootstrap of the median, B = 10,000 resamples of the per-round values with
+-                           replacement, 95 % interval = 2.5th and 97.5th percentiles (type 7) of the resampled medians.
+-                           Seed per quantity = int(sha256(f"{BASE_SEED}|{key}")[:16], 16), BASE_SEED = 20261004.
+-  ratio PLONK/Groth16    : per round r in 1-5, same allocation and container: X_plonk,r(d) / X_groth16,r(d).
+-  allocation speedup     : per round r in 1-5: X_r(d; smaller allocation) / X_r(d; larger allocation) for
+-                           cpu2->cpu4, cpu4->cpu8, cpu2->cpu8 (pairs rounds; a value > 1 means faster with more vCPUs).
+-  zkey diagnostic        : per diag round 1-5 and (allocation, backend, depth): prove_ms with the key read from the file
+-                           path ('path') and with the key preloaded in memory ('mem'); difference path - mem.
++"""V2-PRV-D2-01 d2_analysis.py (v1.0) — Host-B statistics of the timed D2 campaign: the D3 computations (V2-PRV-D3-01
++script v1.1, d3_reanalysis.py sha256 94c3ad06fcf027ca3e6c0a1155e40c97286e1de3db40e08a3577b512a64f0f21) with Host-B paths
++and an input manifest of the frozen Host-B evidence; nothing else changed (D2-PREREGISTRATION.md §6). Hash-frozen before
++the first timed round.
++
++Host B = the workstation (2 x Xeon Platinum 8173M, native Docker Engine, linux/amd64); cpu2 / cpu4 / cpu8 are three
++resource ALLOCATIONS (cpusets 1-2 / 1-4 / 1-8, NUMA node 0, SMT siblings excluded) on ONE host; never devices. Host A values
++are the V2-PRV-D3-01 outputs; the hosts are reported side by side and never pooled.
++
++usage: python3 d2_analysis.py --campaign <frozen campaign dir> --manifest <SHA256SUMS of the frozen evidence> --out <dir> --mode check|run
++
++  --manifest: sha256sum-format list whose paths are relative to the manifest's directory; every input file below must be
++              listed there with the same hash (the input manifest of the frozen Host-B evidence).
++  check : verify the inputs against the manifest and the campaign identity (mode campaign, kit v3-x86, Host-A schedule and
++          execution plan), then reconcile the campaign's own derived tables against the raw accepted rows. Writes
++          D2-input-verification.json and D2-reconciliation.json. No statistics.
++  run   : check, then the statistics (run once). Any input or identity mismatch aborts; reconciliation mismatches are
++          reported, never repaired, and all statistics are computed from the RAW accepted rows only.
++
++Definitions: identical to D3 v1.1 (accepted measured rows, rounds, type-7 quantiles, CV, percentile bootstrap of the
++median with B = 10,000, within-round PLONK/Groth16 ratios, within-round allocation speedups, zkey diagnostic), except the
++bootstrap seed per quantity = int(sha256(f"{BASE_SEED}|D2|{key}")[:16], 16), BASE_SEED = 20261004 (D2-PREREGISTRATION §6).
++The V1 manuscript table prover_per_round.csv has no Host-B counterpart, so its reconciliation is omitted; the campaign's
++own derived/prover_summary.csv and derived/prover_diag.csv are reconciled as in D3.
+ Stdlib only.
+ """
+ import argparse, csv, hashlib, json, math, os, random, statistics, sys, datetime, collections
+@@ -36,24 +32,11 @@
+ PROFILES = ['cpu2', 'cpu4', 'cpu8']
+ DEPTHS = list(range(5, 16))
+ STAGES = ['input_ms', 'witness_ms', 'prove_ms', 'verify_first_ms', 'verify_steady_ms', 'wall_ms', 'stage_sum_ms']
+-CAMPAIGN = 'research/results/postcorr-20260925'
+-TRUE = ('1', 'true')   # V1 raw tables encode booleans as 1 (v1.1 fix, deviation DEV-D3-1)
+-MANIFEST = {
+-    f'{CAMPAIGN}/CAMPAIGN.json': '2f7aa7429902fc57565afeac34781df348e2c6729962fae3dd346ae1b5c39f30',
+-    f'{CAMPAIGN}/prover/cpu2/runs.csv': 'e20f4def6d96a23615c85a5daa7145a95d58002a6801891ead2a69b03a937e8a',
+-    f'{CAMPAIGN}/prover/cpu4/runs.csv': 'f0e5f134c08e440bfdd700f0917371c4976690d1200c5024a142919550f28b5c',
+-    f'{CAMPAIGN}/prover/cpu8/runs.csv': '917f10214dac0dbf713d6bef9327c49ae671aae03830b591e96104498ba63f24',
+-    f'{CAMPAIGN}/prover/cpu2/diag.csv': 'd653aaecf6e37d9b8776ac878e37ac96c113db42cf5fa20e1a01d6d90507ac88',
+-    f'{CAMPAIGN}/prover/cpu4/diag.csv': 'fd63b119f59c6414b33c0e9b71265dd93536a7d9bb2d3ab2e77d19b2d4e091a5',
+-    f'{CAMPAIGN}/prover/cpu8/diag.csv': '55e80397e56b7917aac190052dcc398f96bce26ac8437bed59b9320c55631477',
+-    f'{CAMPAIGN}/prover/cpu2/rounds.csv': '70604fc784c6aa1aafdca6ed1703ea2bc00c7e720c53f128101e18e15a4207f1',
+-    f'{CAMPAIGN}/prover/cpu4/rounds.csv': '331b7b5ed27c24a8208a5e11e844002a29d0b1a75f9d22b712c2a691986b3930',
+-    f'{CAMPAIGN}/prover/cpu8/rounds.csv': '690a58e01bf8d6867f68b7a38903d9c5cd8ad9964a69656009187ae4bf0f62f8',
+-    f'{CAMPAIGN}/prover/round_ledger.csv': '91f9d2ccb45bc1c572ead9a431d6da09c1f9cad9a0abdb56fbbd8229460d8162',
+-    f'{CAMPAIGN}/derived/prover_summary.csv': '7d047760b4bc80529e9f920cbaa46c3eb6cb4b343e97d599c32137d6008dd686',
+-    f'{CAMPAIGN}/derived/prover_diag.csv': '87a0cb5a38000a3645d7e17d054c3f06057c5d398f7f533c248243556796def6',
+-    'research/submission/csi/generated/prover_per_round.csv': '2ccd81f097a267f683d6e3f0b1b21c20cea38a28c3bb9a8ab28f6fa193375957',
+-}
++TRUE = ('1', 'true')   # raw tables encode booleans as 1 (as in D3 v1.1)
++HOST_A_SCHEDULE_SHA256 = 'f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95'   # campaign-20260925T060607Z
++HOST_A_PLAN_SHA256 = '99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94'
++INPUTS = (['CAMPAIGN.json'] + [f'prover/{p}/{f}.csv' for f in ('runs', 'diag', 'rounds') for p in PROFILES]
++          + ['prover/round_ledger.csv', 'derived/prover_summary.csv', 'derived/prover_diag.csv'])
+ 
+ 
+ def sha(p):
+@@ -83,7 +66,7 @@
+     return dict(n=n, mean=mean, sd=sd, cv=(sd / mean if mean else None), median=med, q1=q1, q3=q3, iqr=q3 - q1, min=s[0], max=s[-1])
+ 
+ 
+-def seed_for(key): return int(hashlib.sha256(f'{BASE_SEED}|{key}'.encode()).hexdigest()[:16], 16)
++def seed_for(key): return int(hashlib.sha256(f'{BASE_SEED}|D2|{key}'.encode()).hexdigest()[:16], 16)
+ 
+ 
+ def boot_median(vals, key):
+@@ -92,26 +75,44 @@
+     return quantile(meds, 0.025), quantile(meds, 0.975), seed_for(key)
+ 
+ 
+-def verify_inputs(root):
+-    res = []
+-    for rel, exp in MANIFEST.items():
+-        p = os.path.join(root, rel); got = sha(p) if os.path.exists(p) else None
+-        res.append(dict(path=rel, expected=exp, actual=got, ok=(got == exp)))
++def read_manifest(manifest):
++    base = os.path.dirname(os.path.abspath(manifest)); m = {}
++    for line in open(manifest):
++        line = line.rstrip('\n')
++        if not line.strip(): continue
++        h, rel = line.split(None, 1); m[os.path.normpath(os.path.join(base, rel.lstrip('*')))] = h
++    return m
++
++
++def verify_inputs(camp, manifest):
++    m = read_manifest(manifest); res = []
++    for rel in INPUTS:
++        p = os.path.normpath(os.path.abspath(os.path.join(camp, rel))); exp = m.get(p); got = sha(p) if os.path.exists(p) else None
++        res.append(dict(path=rel, expected=exp, actual=got, ok=(exp is not None and got == exp)))
+     return res
+ 
+ 
+-def load_raw(root):
+-    led = rcsv(os.path.join(root, CAMPAIGN, 'prover/round_ledger.csv'))
++def verify_identity(camp):
++    c = json.load(open(os.path.join(camp, 'CAMPAIGN.json')))
++    checks = dict(mode_campaign=c.get('mode') == 'campaign', kit_v3_x86=c.get('kit') == 'v3-x86',
++                  schedule_equals_host_a=c.get('schedule_sha256') == HOST_A_SCHEDULE_SHA256,
++                  execution_plan_equals_host_a=c.get('execution_plan_sha256') == HOST_A_PLAN_SHA256)
++    return dict(campaign_id=c.get('campaign_id'), mode=c.get('mode'), kit=c.get('kit'), schedule_sha256=c.get('schedule_sha256'),
++                execution_plan_sha256=c.get('execution_plan_sha256'), checks=checks, ok=all(checks.values()))
++
++
++def load_raw(camp):
++    led = rcsv(os.path.join(camp, 'prover/round_ledger.csv'))
+     acc = {(l['kind'], int(l['round'])): int(l['round_attempt']) for l in led if l['status'] == 'complete' and l['accepted'] == '1'}
+     rows, diag = [], []
+     for p in PROFILES:
+-        for r in rcsv(os.path.join(root, CAMPAIGN, f'prover/{p}/runs.csv')):
++        for r in rcsv(os.path.join(camp, f'prover/{p}/runs.csv')):
+             if r['kind'] != 'primary' or r['is_warmup'] != '0' or r['status'] != 'ok': continue
+             rnd, att = int(r['round']), int(r['round_attempt'])
+             if acc.get(('primary', rnd)) != att: continue
+             if r['proof_valid'] not in TRUE or r['root_matches'] not in TRUE: raise SystemExit(f'invalid proof row {p} {r["run_id"]}')
+             rows.append(dict(profile=p, backend=r['backend'], depth=int(r['depth']), round=rnd, **{s: float(r[s]) for s in STAGES}))
+-        for r in rcsv(os.path.join(root, CAMPAIGN, f'prover/{p}/diag.csv')):
++        for r in rcsv(os.path.join(camp, f'prover/{p}/diag.csv')):
+             rnd, att = int(r['diag_round']), int(r['round_attempt'])
+             if r['status'] != 'ok' or acc.get(('diag', rnd)) != att: continue
+             if r['proof_valid'] not in TRUE or r['root_matches'] not in TRUE: raise SystemExit(f'invalid diag row {p} round {rnd}')
+@@ -120,21 +121,11 @@
+     return rows, diag, acc
+ 
+ 
+-def reconcile(root, rows, diag):
+-    out = dict(prover_per_round=collections.Counter(), prover_summary=collections.Counter(), prover_diag=collections.Counter(), mismatches=[])
++def reconcile(camp, rows, diag):
++    out = dict(prover_summary=collections.Counter(), prover_diag=collections.Counter(), mismatches=[])   # no Host-B prover_per_round table
+     V = {(r['profile'], r['backend'], r['depth'], r['round']): r for r in rows}
+     close = lambda a, b: abs(a - b) <= 1e-9 * max(1.0, abs(a), abs(b))
+-    for q in rcsv(os.path.join(root, 'research/submission/csi/generated/prover_per_round.csv')):
+-        d, rnd, val = int(q['depth']), int(q['round']), float(q['value'])
+-        if q['quantity'] == 'prove_ms': ref = V[(q['profile'], q['backend'], d, rnd)]['prove_ms']
+-        elif q['quantity'] == 'norm_d5': ref = V[(q['profile'], q['backend'], d, rnd)]['prove_ms'] / V[(q['profile'], q['backend'], 5, rnd)]['prove_ms']
+-        elif q['quantity'] == 'plonk_minus_groth16_s': ref = (V[(q['profile'], 'plonk', d, rnd)]['prove_ms'] - V[(q['profile'], 'groth16', d, rnd)]['prove_ms']) / 1000
+-        elif q['quantity'] == 'gap_reduction_cpu2_to_cpu8_pct':
+-            g = lambda p: V[(p, 'plonk', d, rnd)]['prove_ms'] - V[(p, 'groth16', d, rnd)]['prove_ms']; ref = 100 * (1 - g('cpu8') / g('cpu2'))
+-        else: out['mismatches'].append(dict(table='prover_per_round', row=q, reason='unknown quantity')); continue
+-        ok = close(val, ref); out['prover_per_round']['match' if ok else 'MISMATCH'] += 1
+-        if not ok: out['mismatches'].append(dict(table='prover_per_round', row=q, recomputed=ref))
+-    for s in rcsv(os.path.join(root, CAMPAIGN, 'derived/prover_summary.csv')):
++    for s in rcsv(os.path.join(camp, 'derived/prover_summary.csv')):
+         rnds = [int(x) for x in s['rounds_used'].split()]
+         vals = [V[(s['profile_id'], s['backend'], int(s['depth']), r)][s['metric']] for r in rnds]
+         t = describe(vals); bad = [k for k in ('n', 'median', 'q1', 'q3', 'iqr', 'min', 'max') if not close(float(s[k]), float(t[k]))]
+@@ -142,14 +133,14 @@
+         if bad: out['mismatches'].append(dict(table='prover_summary', row=s, fields=bad))
+     D = collections.defaultdict(list)
+     for r in diag: D[(r['profile'], r['backend'], r['depth'], r['call'])].append(r)
+-    for s in rcsv(os.path.join(root, CAMPAIGN, 'derived/prover_diag.csv')):
++    for s in rcsv(os.path.join(camp, 'derived/prover_diag.csv')):
+         rs = D[(s['profile_id'], s['backend'], int(s['depth']), s['call'])]
+         mp = describe([r['prove_ms'] for r in rs])['median']; rf = [r['zkey_readfile_ms'] for r in rs if r['zkey_readfile_ms'] is not None]
+         mr = describe(rf)['median'] if rf else None
+         ok = int(s['n']) == len(rs) and close(float(s['median_prove_ms']), mp) and ((s['median_zkey_readfile_ms'] in ('', None) and mr is None) or (mr is not None and close(float(s['median_zkey_readfile_ms']), mr)))
+         out['prover_diag']['match' if ok else 'MISMATCH'] += 1
+         if not ok: out['mismatches'].append(dict(table='prover_diag', row=s, recomputed=dict(n=len(rs), median_prove_ms=mp, median_zkey_readfile_ms=mr)))
+-    for k in ('prover_per_round', 'prover_summary', 'prover_diag'): out[k] = dict(out[k])
++    for k in ('prover_summary', 'prover_diag'): out[k] = dict(out[k])
+     return out
+ 
+ 
+@@ -166,7 +157,7 @@
+                         lo, hi, sd_ = boot_median(vals, key)
+                         cells.append(dict(allocation_profile=p, backend=b, depth=d, rounds=label, stage=st, n=t['n'], mean=t['mean'], sd=t['sd'], cv=t['cv'], median=t['median'], q1=t['q1'], q3=t['q3'], iqr=t['iqr'],
+                                           min=t['min'], max=t['max'], boot_median_lo95=lo, boot_median_hi95=hi, bootstrap_seed=sd_, precision=('COARSE (n = 5)' if t['n'] <= 5 else 'n = 10')))
+-    wcsv(os.path.join(out, 'D3-cell-stats.csv'), cells)
++    wcsv(os.path.join(out, 'D2-cell-stats.csv'), cells)
+     ratios = []
+     for p in PROFILES:
+         for d in DEPTHS:
+@@ -175,7 +166,7 @@
+                 lo, hi, sd_ = boot_median(per, f'ratio|{p}|{d}|{st}')
+                 ratios.append(dict(allocation_profile=p, depth=d, stage=st, quantity='PLONK/Groth16 within round', **{f'r{r}': x for r, x in zip(R5, per)}, median=t['median'], min=t['min'], max=t['max'], cv=t['cv'],
+                                    boot_median_lo95=lo, boot_median_hi95=hi, bootstrap_seed=sd_, precision='COARSE (n = 5)'))
+-    wcsv(os.path.join(out, 'D3-backend-ratios.csv'), ratios)
++    wcsv(os.path.join(out, 'D2-backend-ratios.csv'), ratios)
+     speed = []
+     for b in ('groth16', 'plonk'):
+         for st in STAGES:
+@@ -185,7 +176,7 @@
+                     lo, hi, sd_ = boot_median(per, f'speedup|{b}|{st}|{d}|{a}|{c}')
+                     speed.append(dict(backend=b, stage=st, depth=d, allocation_from=a, allocation_to=c, quantity='within-round time ratio (from / to)', **{f'r{r}': x for r, x in zip(R5, per)},
+                                       median=t['median'], min=t['min'], max=t['max'], boot_median_lo95=lo, boot_median_hi95=hi, bootstrap_seed=sd_, precision='COARSE (n = 5)'))
+-    wcsv(os.path.join(out, 'D3-allocation-speedups.csv'), speed)
++    wcsv(os.path.join(out, 'D2-allocation-speedups.csv'), speed)
+     Dg = collections.defaultdict(dict)
+     for r in diag: Dg[(r['profile'], r['backend'], r['depth'], r['round'])][r['call']] = r
+     zk = []
+@@ -199,29 +190,33 @@
+                 t = describe(vals); lo, hi, sd_ = boot_median(vals, f'zkey|{p}|{b}|{d}|{name}')
+                 zk.append(dict(allocation_profile=p, backend=b, depth=d, quantity=name, n=t['n'], median=t['median'], q1=t['q1'], q3=t['q3'], iqr=t['iqr'], min=t['min'], max=t['max'], cv=t['cv'],
+                                boot_median_lo95=lo, boot_median_hi95=hi, bootstrap_seed=sd_, precision='COARSE (n = 5)'))
+-    wcsv(os.path.join(out, 'D3-zkey-diagnostic.csv'), zk)
++    wcsv(os.path.join(out, 'D2-zkey-diagnostic.csv'), zk)
+     return dict(cells=len(cells), ratios=len(ratios), speedups=len(speed), zkey=len(zk))
+ 
+ 
+ def main():
+-    ap = argparse.ArgumentParser(); ap.add_argument('--root', required=True); ap.add_argument('--out', required=True); ap.add_argument('--mode', choices=['check', 'run'], required=True)
++    ap = argparse.ArgumentParser(); ap.add_argument('--campaign', required=True); ap.add_argument('--manifest', required=True); ap.add_argument('--out', required=True)
++    ap.add_argument('--mode', choices=['check', 'run'], required=True)
+     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
+     started = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+-    ver = verify_inputs(a.root); json.dump(ver, open(os.path.join(a.out, 'D3-input-verification.json'), 'w'), indent=1)
+-    if not all(v['ok'] for v in ver): print('INPUT HASH MISMATCH — abort'); [print(v) for v in ver if not v['ok']]; sys.exit(3)
+-    rows, diag, acc = load_raw(a.root)
++    ver = verify_inputs(a.campaign, a.manifest); ident = verify_identity(a.campaign) if os.path.exists(os.path.join(a.campaign, 'CAMPAIGN.json')) else dict(ok=False, checks={})
++    json.dump(dict(manifest=os.path.abspath(a.manifest), manifest_sha256=sha(a.manifest), inputs=ver, identity=ident), open(os.path.join(a.out, 'D2-input-verification.json'), 'w'), indent=1)
++    if not all(v['ok'] for v in ver): print('INPUT MANIFEST MISMATCH — abort'); [print(v) for v in ver if not v['ok']]; sys.exit(3)
++    if not ident['ok']: print('CAMPAIGN IDENTITY MISMATCH — abort', ident); sys.exit(4)
++    rows, diag, acc = load_raw(a.campaign)
+     exp_rows = 3 * (11 * 10 + 11 * 5); exp_diag = 3 * 5 * 8 * 2
+     if len(rows) != exp_rows or len(diag) != exp_diag: raise SystemExit(f'unexpected row counts {len(rows)} / {len(diag)} (expected {exp_rows} / {exp_diag})')
+-    rec = reconcile(a.root, rows, diag); json.dump(rec, open(os.path.join(a.out, 'D3-reconciliation.json'), 'w'), indent=1, default=str)
+-    print('inputs OK; accepted rows', len(rows), 'diag rows', len(diag), '; reconciliation', {k: rec[k] for k in ('prover_per_round', 'prover_summary', 'prover_diag')}, 'mismatches', len(rec['mismatches']))
+-    record = dict(campaign_id='V2-PRV-D3-01', source_campaign='campaign-20260925T060607Z', mode=a.mode, started_utc=started, script_sha256=sha(os.path.abspath(__file__)), base_seed=BASE_SEED, bootstrap_resamples=B,
+-                  python=sys.version.split()[0], accepted_rows=len(rows), diag_rows=len(diag), accepted_attempts={f'{k[0]}:{k[1]}': v for k, v in sorted(acc.items())},
+-                  reconciliation={k: rec[k] for k in ('prover_per_round', 'prover_summary', 'prover_diag')}, reconciliation_mismatches=len(rec['mismatches']),
+-                  note='cpu2/cpu4/cpu8 are allocations on one Apple M5 host (VM-vCPU cpusets), never devices; PLONK n = 5 intervals are coarse')
++    rec = reconcile(a.campaign, rows, diag); json.dump(rec, open(os.path.join(a.out, 'D2-reconciliation.json'), 'w'), indent=1, default=str)
++    print('inputs OK; identity OK; accepted rows', len(rows), 'diag rows', len(diag), '; reconciliation', {k: rec[k] for k in ('prover_summary', 'prover_diag')}, 'mismatches', len(rec['mismatches']))
++    record = dict(campaign_id='V2-PRV-D2-01', source_campaign=ident['campaign_id'], mode=a.mode, started_utc=started, script_sha256=sha(os.path.abspath(__file__)), manifest_sha256=sha(a.manifest),
++                  base_seed=BASE_SEED, seed_namespace='D2', bootstrap_resamples=B, python=sys.version.split()[0], accepted_rows=len(rows), diag_rows=len(diag),
++                  accepted_attempts={f'{k[0]}:{k[1]}': v for k, v in sorted(acc.items())},
++                  reconciliation={k: rec[k] for k in ('prover_summary', 'prover_diag')}, reconciliation_mismatches=len(rec['mismatches']),
++                  note='Host B: cpu2/cpu4/cpu8 are allocations (cpusets 1-2/1-4/1-8, NUMA node 0) on one Xeon host, never devices; PLONK n = 5 intervals are coarse; Host A = V2-PRV-D3-01 outputs, side by side, never pooled')
+     if a.mode == 'run':
+         record['outputs'] = stats(rows, diag, a.out)
+     record['ended_utc'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+-    json.dump(record, open(os.path.join(a.out, f'D3-{a.mode.upper()}-RECORD.json'), 'w'), indent=1)
++    json.dump(record, open(os.path.join(a.out, f'D2-{a.mode.upper()}-RECORD.json'), 'w'), indent=1)
+     print(json.dumps(record.get('outputs', {})))
+ 
+ 

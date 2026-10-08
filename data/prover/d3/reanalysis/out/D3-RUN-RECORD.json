@@ -1,0 +1,50 @@
+{
+ "campaign_id": "V2-PRV-D3-01",
+ "source_campaign": "campaign-20260925T060607Z",
+ "mode": "run",
+ "started_utc": "2026-10-04T15:11:18Z",
+ "script_sha256": "94c3ad06fcf027ca3e6c0a1155e40c97286e1de3db40e08a3577b512a64f0f21",
+ "base_seed": 20261004,
+ "bootstrap_resamples": 10000,
+ "python": "3.10.12",
+ "accepted_rows": 495,
+ "diag_rows": 240,
+ "accepted_attempts": {
+  "diag:1": 1,
+  "diag:2": 1,
+  "diag:3": 1,
+  "diag:4": 1,
+  "diag:5": 1,
+  "primary:0": 1,
+  "primary:1": 1,
+  "primary:2": 1,
+  "primary:3": 1,
+  "primary:4": 1,
+  "primary:5": 1,
+  "primary:6": 1,
+  "primary:7": 1,
+  "primary:8": 1,
+  "primary:9": 1,
+  "primary:10": 1
+ },
+ "reconciliation": {
+  "prover_per_round": {
+   "match": 1210
+  },
+  "prover_summary": {
+   "match": 462
+  },
+  "prover_diag": {
+   "match": 48
+  }
+ },
+ "reconciliation_mismatches": 0,
+ "note": "cpu2/cpu4/cpu8 are allocations on one Apple M5 host (VM-vCPU cpusets), never devices; PLONK n = 5 intervals are coarse",
+ "outputs": {
+  "cells": 693,
+  "ratios": 66,
+  "speedups": 462,
+  "zkey": 72
+ },
+ "ended_utc": "2026-10-04T15:11:33Z"
+}

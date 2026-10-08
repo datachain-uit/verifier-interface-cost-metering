@@ -1,0 +1,160 @@
+{
+ "campaign_id": "V2-MPI-FULL-01",
+ "run_ids": {
+  "full": "V2-MPI-FULL-01-run1",
+  "bridge": "V2-MPI-FULL-01-bridge1"
+ },
+ "status": "validated (evidence); scored once with the frozen scorer; owner adjudication of the full V2 evidence (Gate A / B / C, V2-A21) pending",
+ "protocol": "research/csi/protocols/v2/V2-C1-preregistration/16-full-protocol.md",
+ "owner_authorization": "V2-A20 APPROVED / GO (Gate P adjudicated by the owner)",
+ "c1_sha256sums_sha256": "7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f",
+ "evidence": "research/results/v2/V2-MPI-FULL-01",
+ "evidence_sha256sums_sha256": "c267ebe2386c700a9c4aac59af86d558ee9075b0e1ba961f36a9b046b1909307",
+ "evidence_files": 915,
+ "transfer_archive": {
+  "file": "outputs/full-transfer/V2-MPI-FULL-01.tgz",
+  "sha256": "41d61feadf3c09aa060f0cb7b3481fcd92b4fb1692497e6bb8f991f1eb302f59",
+  "verified_on_mac": "SHA256SUMS 915 / 915 OK"
+ },
+ "run_manifest_full_sha256": "61524d5191cd64feddd67460d194d77bdcf831deea6db7ac8a44549a61403ddb",
+ "run_manifest_bridge_sha256": "0127adfbd9336e1ec510d2d183fe6dbb0a1398e4d3d594c3c7760e176e56f9ae",
+ "harness_sha256": "02cee61b26b1b0fb5a10396eae93ed2cb113128fd1fef87a047f1c5f3e113d36",
+ "harness_note": "v2 = pilot harness + frozen-protocol features only (cell_id in records; priority-fee regime parsing; validator matches by cell_id; manifest options); self-tested on P0 fixtures only",
+ "scorer_sha256": "d9805758578e9c9255c04c84e7ec2e518d3cd8ee1798fc3e89cdd6e30744d1a7",
+ "predictions_listing_sha256": "66c1f91ccbb4b9f87f2051bdf86afb2220b18164b8e1c84daa7c950b1b9a5e35",
+ "collection": {
+  "full_start_utc": "2026-10-04T12:32:07.437Z",
+  "full_end_utc": "2026-10-04T14:13:27.877Z",
+  "bridge_start_utc": "2026-10-04T14:13:27.917Z",
+  "bridge_end_utc": "2026-10-04T14:22:39.871Z"
+ },
+ "cells": {
+  "full_scheduled": 90,
+  "full_completed": 90,
+  "by_class": {
+   "CORE": 36,
+   "CORE-INTERVENTION": 24,
+   "CORE-ROBUSTNESS": 2,
+   "VALIDATION": 28
+  },
+  "bridge_scheduled": 12,
+  "bridge_completed": 12,
+  "not_run": {
+   "VALIDATION-CONDITIONAL (FFLONK, 12 cells)": "FFLONK gate G1 not passed (V2-A18): published power-19 ptau HTTP 403",
+   "SUPPORTING (6 cells)": "NOT-SCHEDULED in C1"
+  }
+ },
+ "proofs_per_cell": 8,
+ "attempts_per_cell": 1,
+ "records": {
+  "full": 4924,
+  "bridge": 516
+ },
+ "measurement_records": {
+  "full": 1440,
+  "bridge": 192
+ },
+ "deviations": 0,
+ "validation": {
+  "full": {
+   "file": "validation/FULL-VALIDATION.json",
+   "valid": true,
+   "issues": 0,
+   "cells_complete": "90 / 90"
+  },
+  "bridge": {
+   "file": "validation/BRIDGE-VALIDATION.json",
+   "valid": true,
+   "issues": 0,
+   "cells_complete": "12 / 12"
+  }
+ },
+ "bridge_reproduction": {
+  "file": "bridge-check/BRIDGE-CHECK.json",
+  "compared": 192,
+  "identical": 192,
+  "verdict": "REPRODUCED",
+  "rule": "17-negative-control-protocol.md: bridge cells reproduce the pilot exactly per proof ID",
+  "role": "control; bridge records are not scored"
+ },
+ "l1_state_inputs_removed": {
+  "full": 44,
+  "bridge": 4,
+  "not_equal_to_pin": 0
+ },
+ "scoring": {
+  "utc": "2026-10-04T14:26:17Z",
+  "invocation": "scoring/SCORING-INVOCATION.txt",
+  "inputs": "pilot + FULL records (bridge excluded as control)",
+  "outputs": "scoring/ (SHA256SUMS)",
+  "summary": {
+   "AC": {
+    "total": 5342,
+    "failed": 0
+   },
+   "ZC_constants": {
+    "base": 1692688.705882353,
+    "per_call": 5866.764705882353
+   },
+   "P": {
+    "TRANSFER-CHECK PASS": 24,
+    "PASS": 125,
+    "DESCRIPTIVE FAIL": 10,
+    "FAIL": 11,
+    "MISSING": 16
+   },
+   "R": {
+    "PASS": 70,
+    "DESCRIPTIVE FAIL": 8,
+    "FAIL": 2
+   },
+   "ZC": {
+    "PASS": 128,
+    "FAIL": 48,
+    "DESCRIPTIVE FAIL": 16
+   },
+   "SG": {
+    "MATCH": 43,
+    "NOT-SCORED": 2
+   },
+   "XO": {
+    "PASS": 5
+   },
+   "NPG": {
+    "PASS": 46
+   },
+   "NPG_rank": {
+    "MATCH": 21
+   },
+   "MONO": {
+    "PASS": 5
+   },
+   "SEM": {
+    "PASS": 24
+   },
+   "n_records": 6520,
+   "n_measurement_records": 2016
+  },
+  "key": {
+   "accounting": "5,342 / 5,342",
+   "signs": "43 MATCH, 0 FALSIFIED, 2 NOT-SCORED",
+   "crossovers": "5 / 5 PASS",
+   "monotonicity": "5 / 5 PASS",
+   "strictly_unseen": {
+    "R": "32 / 32 PASS (EVM Osaka, EraVM v29)",
+    "P": "38 / 40 PASS (FAIL: eravm-29|groth16|c1_ctx_k24|Y_app; zkos-v32|groth16|c1_ctx_k24|N_dir); ZKsync OS gas binding rows 7 / 8 (FAIL groth16 k = 24)",
+    "ZC": "groth16 8 / 32 proofs (k = 6 pass; k = 8, 12, 24 fail); plonk 32 / 32"
+   },
+   "F4": "fires (H4 falsified): 48 Groth16 held-out proofs outside tau_cond (k = 8, 12, 16, 24, 32, anchor c1_a8); PLONK all held-out k <= 32 pass",
+   "NPG": "meter 46 / 46; ranking 21 / 21 MATCH; F5c not fired; gas in interval 41 / 46 (Groth16 k = 16 native-bound levels)",
+   "v27": "R 16 / 16, P 16 / 16, crossover PASS",
+   "SEM": "24 / 24 PASS",
+   "FFLONK": "not run (gate G1 not passed)"
+  }
+ },
+ "post_registered": {
+  "label": "POST HOC, descriptive; no model, no refit",
+  "dir": "post-registered/"
+ },
+ "report": "notes/V2-M5-full-campaign-report.md"
+}

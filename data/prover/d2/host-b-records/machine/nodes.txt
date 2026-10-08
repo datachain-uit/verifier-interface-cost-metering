@@ -1,0 +1,12 @@
+$ ls /sys/devices/system/node/
+has_cpu
+has_generic_initiator
+has_memory
+has_normal_memory
+node0
+node1
+online
+possible
+power
+uevent
+[exit 0]

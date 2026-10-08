@@ -1,0 +1,16 @@
+{
+ "label": "V2-C2 scores (separate from C1 / H8)",
+ "tau": 0.000138,
+ "C2_PRIMARY": "PASS",
+ "C2_EXACT": "PASS",
+ "proofs": 32,
+ "comparable": 32,
+ "max_abs_rel": 0.0,
+ "residual_values": [
+  0
+ ],
+ "C2_XOVER": {
+  "groth16": "MATCH",
+  "plonk": "MATCH"
+ }
+}

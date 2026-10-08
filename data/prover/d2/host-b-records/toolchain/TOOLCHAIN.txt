@@ -1,0 +1,5 @@
+node=v22.22.0 at /home/ad/Workspace/Z-CORP-V2-workstation/toolchain/node-v22.22.0-linux-x64/bin/node
+npm=10.9.4
+snarkjs=
+ffjavascript=
+pin_check=MATCH

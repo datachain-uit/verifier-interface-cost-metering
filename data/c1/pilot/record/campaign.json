@@ -1,0 +1,34 @@
+{
+ "campaign_id": "V2-MPI-PILOT-01",
+ "run_id": "V2-MPI-PILOT-01-run1",
+ "status": "validated (evidence); Gate P scientific adjudication pending (owner)",
+ "protocol": "research/csi/protocols/v2/V2-C1-preregistration/15-pilot-protocol.md",
+ "c1_sha256sums_sha256": "7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f",
+ "evidence": "research/results/v2/V2-MPI-PILOT-01",
+ "evidence_sha256sums_sha256": "08cc9f3afb6cd3b1bfaa0cff802001acb3ce3ee7d89f1d8311ba140893948e98",
+ "run_manifest_sha256": "a417e5f11e60d3355c7e0c8591f8e9f8d432a62e3d25710fe7450788fe95f2cf",
+ "harness_sha256": "3b36c985c2243897d690c24a4ef8cafecd45b44c7fe705154309f8bad9478ac8",
+ "scorer_sha256": "d9805758578e9c9255c04c84e7ec2e518d3cd8ee1798fc3e89cdd6e30744d1a7",
+ "predictions_listing_sha256": "66c1f91ccbb4b9f87f2051bdf86afb2220b18164b8e1c84daa7c950b1b9a5e35",
+ "collection_start_utc": "2026-10-04T11:03:51.063658Z",
+ "collection_end_utc": "2026-10-04T11:48:38.348063Z",
+ "cells": 36,
+ "core_cells": 24,
+ "intervention_cells": 12,
+ "proofs_per_cell": 8,
+ "records": 1596,
+ "measurement_records": 576,
+ "attempts_per_cell": 1,
+ "deviations": 0,
+ "validation": {
+  "file": "validation/VALIDATION.json",
+  "valid": true,
+  "issues": 0
+ },
+ "accounting_checks": {
+  "total": 1264,
+  "failed": 0
+ },
+ "scoring": "scoring/ (frozen scorer outputs; scoring/SHA256SUMS)",
+ "report": "notes/V2-M4-gate-P-report.md"
+}

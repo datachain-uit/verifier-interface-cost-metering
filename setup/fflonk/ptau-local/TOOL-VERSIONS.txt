@@ -1,0 +1,10 @@
+host=ad-Precision-7920-Tower kernel=6.14.0-29-generic
+node=v22.22.0
+snarkjs=0.7.5
+ffjavascript=0.3.1
+r1csfile=0.0.48
+circom_runtime=0.1.28
+fastfile=0.0.20
+@iden3/binfileutils=0.0.12
+wasmcurves=0.2.2
+(versions read from node_modules/<pkg>/package.json; TOOLCHAIN.txt lines 'snarkjs=' / 'ffjavascript=' are empty because of the exports map; pin hashes MATCH)

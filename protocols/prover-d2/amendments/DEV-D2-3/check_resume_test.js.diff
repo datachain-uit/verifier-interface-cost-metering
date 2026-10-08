@@ -1,0 +1,19 @@
+--- a/check_resume_test.js
++++ b/check_resume_test.js
+@@ -18,13 +18,14 @@
+ const sessions = parseCsv(path.join(RESULTS, 'environment', 'sessions.csv')).rows;
+ const starts = sessions.filter((s) => s.event === 'start');
+ const [s1, s2, s3] = starts.map((s) => s.session_id);
++const det = (s) => String((s && s.detail) || '').replace(/^window [^;]*; /, ''); // v3-x86: runner prefixes "window <id>; " (DEV-D2-3)
+ check('three_sessions_with_new_ids', starts.length === 3 && new Set([s1, s2, s3]).size === 3
+-  && starts[1].detail === 'resume' && starts[2].detail === 'resume', starts.map((s) => `${s.session_id} ${s.detail} ${s.utc}`));
++  && det(starts[1]) === 'resume' && det(starts[2]) === 'resume', starts.map((s) => `${s.session_id} ${s.detail} ${s.utc}`));
+ const L = (k, r, a) => st.ledger.find((l) => l.kind === k && Number(l.round) === r && Number(l.round_attempt) === a);
+ const p0 = L('primary', 0, 1);
+ check('round_completed_in_session1', p0 && p0.status === 'complete' && p0.accepted === '1' && p0.session_id === s1, p0);
+ const endS1 = sessions.find((s) => s.session_id === s1 && s.event === 'end');
+-check('session1_clean_planned_stop', endS1 && /^STOPPED/.test(endS1.detail), endS1 && endS1.detail);
++check('session1_clean_planned_stop', endS1 && /^STOPPED/.test(det(endS1)), endS1 && endS1.detail);
+ const rowsP0 = [...st.runs, ...st.rounds].filter((r) => r.kind === 'primary' && r.round === '0');
+ check('completed_round_not_rerun', rowsP0.every((r) => r.session_id === s1 && r.round_attempt === '1') && !L('primary', 0, 2),
+   { rows: rowsP0.length, sessions: [...new Set(rowsP0.map((r) => r.session_id))] });

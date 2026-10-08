@@ -1,0 +1,10 @@
+k,groth16_proof,plonk_proof,groth16_events,plonk_events,predicted_difference,observed_difference,result,evm_expansions_groth16,evm_expansions_plonk
+1,c1_k01/groth16/j0,c1_k01/plonk/j0,7,29,22,22,MATCH,7,29
+2,c1_ctx_k02/groth16/j0,c1_ctx_k02/plonk/j0,7,29,22,22,MATCH,7,29
+4,c1_ctx_k04/groth16/j0,c1_ctx_k04/plonk/j0,7,31,24,24,MATCH,7,31
+8,c1_ctx_k08/groth16/j0,c1_ctx_k08/plonk/j0,7,31,24,24,MATCH,7,31
+12,c1_ctx_k12/groth16/j0,c1_ctx_k12/plonk/j0,7,35,28,28,MATCH,7,35
+16,c1_ctx_k16/groth16/j0,c1_ctx_k16/plonk/j0,7,39,32,32,MATCH,7,39
+24,c1_ctx_k24/groth16/j0,c1_ctx_k24/plonk/j0,7,47,40,40,MATCH,7,47
+32,c1_ctx_k32/groth16/j0,c1_ctx_k32/plonk/j0,7,55,48,48,MATCH,7,55
+64,c1_ctx_k64/groth16/j0,c1_ctx_k64/plonk/j0,7,87,80,80,MATCH,7,87

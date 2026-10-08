@@ -1,0 +1,258 @@
+[
+ {
+  "proof_id": "c1_ff_k01/fflonk/j0",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j0.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j1",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j2",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j3",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j4",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j5",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j6",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ff_k01/fflonk/j7",
+  "circuit": "c1_ff_k01",
+  "backend": "fflonk",
+  "k": 1,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k01-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k01/fflonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j0",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j0.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j1",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j2",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j3",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j4",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j5",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j6",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ff_k04/fflonk/j7",
+  "circuit": "c1_ff_k04",
+  "backend": "fflonk",
+  "k": 4,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k04-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k04/fflonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j0",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j0.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j1",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j2",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j3",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j4",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j5",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j6",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ff_k16/fflonk/j7",
+  "circuit": "c1_ff_k16",
+  "backend": "fflonk",
+  "k": 16,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k16-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k16/fflonk-j7.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j0",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j0.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j1",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j1.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j2",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j2.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j3",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j3.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j4",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j4.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j5",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j5.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j6",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j6.json"
+ },
+ {
+  "proof_id": "c1_ff_k32/fflonk/j7",
+  "circuit": "c1_ff_k32",
+  "backend": "fflonk",
+  "k": 32,
+  "compiled": "/root/ff/compiled-fflonk/c1_ff_k32-fflonk.json",
+  "proof_file": "/root/ff/transfer/proofs/c1_ff_k32/fflonk-j7.json"
+ }
+]

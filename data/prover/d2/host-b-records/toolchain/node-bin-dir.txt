@@ -1,0 +1,1 @@
+/home/ad/Workspace/Z-CORP-V2-workstation/toolchain/node-v22.22.0-linux-x64/bin

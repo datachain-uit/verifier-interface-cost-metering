@@ -1,0 +1,25 @@
+# KIT-DIFF supplement: kit v3-x86-r5 vs kit v3-x86-r4 — DEV-D2-3 only
+# kit v3-x86-r4 file-list sha256 (LC_ALL=C): 7488b0f67c8797bb7c99d927e35942c6147084f15af810c98441e4f3df3b43c6
+# kit v3-x86-r5 file-list sha256 (LC_ALL=C): 5352f80142e364baec65082c39aa59e94f4625dff448989e2cbb8f729f8c1197
+# files differing r5 vs r4: check_resume_test.js only (24 files each). r5 vs v3-x86 = DEV-D2-1 (record_controls.js) + AMD-D2-1 (hostb_quiet.py) + DEV-D2-2 (summarize_prover.js) + DEV-D2-3 (check_resume_test.js).
+# check_resume_test.js: v3-x86 = r2 = r3 = r4 = 3a80711d9b6b6e2d7d961747312d4d26ec6e4c3aa6f547509417c7dbeca1c88d ; r5 = b0f83a6431fbaa28b80dd293b42d403923ee08c8d5763da4fe3b59bcbc9ea849 (copied into the image, Dockerfile step 7); run only by test-resume.sh (never by dryrun / campaign)
+
+--- kit-v3-x86-r4/check_resume_test.js
++++ kit-v3-x86-r5/check_resume_test.js
+@@ -18,13 +18,14 @@
+ const sessions = parseCsv(path.join(RESULTS, 'environment', 'sessions.csv')).rows;
+ const starts = sessions.filter((s) => s.event === 'start');
+ const [s1, s2, s3] = starts.map((s) => s.session_id);
++const det = (s) => String((s && s.detail) || '').replace(/^window [^;]*; /, ''); // v3-x86: runner prefixes "window <id>; " (DEV-D2-3)
+ check('three_sessions_with_new_ids', starts.length === 3 && new Set([s1, s2, s3]).size === 3
+-  && starts[1].detail === 'resume' && starts[2].detail === 'resume', starts.map((s) => `${s.session_id} ${s.detail} ${s.utc}`));
++  && det(starts[1]) === 'resume' && det(starts[2]) === 'resume', starts.map((s) => `${s.session_id} ${s.detail} ${s.utc}`));
+ const L = (k, r, a) => st.ledger.find((l) => l.kind === k && Number(l.round) === r && Number(l.round_attempt) === a);
+ const p0 = L('primary', 0, 1);
+ check('round_completed_in_session1', p0 && p0.status === 'complete' && p0.accepted === '1' && p0.session_id === s1, p0);
+ const endS1 = sessions.find((s) => s.session_id === s1 && s.event === 'end');
+-check('session1_clean_planned_stop', endS1 && /^STOPPED/.test(endS1.detail), endS1 && endS1.detail);
++check('session1_clean_planned_stop', endS1 && /^STOPPED/.test(det(endS1)), endS1 && endS1.detail);
+ const rowsP0 = [...st.runs, ...st.rounds].filter((r) => r.kind === 'primary' && r.round === '0');
+ check('completed_round_not_rerun', rowsP0.every((r) => r.session_id === s1 && r.round_attempt === '1') && !L('primary', 0, 2),
+   { rows: rowsP0.length, sessions: [...new Set(rowsP0.map((r) => r.session_id))] });

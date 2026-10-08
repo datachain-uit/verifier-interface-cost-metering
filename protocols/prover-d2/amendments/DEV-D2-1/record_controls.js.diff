@@ -1,0 +1,11 @@
+--- a/record_controls.js
++++ b/record_controls.js
+@@ -24,7 +24,7 @@
+ };
+ out.control_cpuset_size = Number(exits.size);
+ const ok = out.mismatch_exit === 97 && out.quota_only_exit === 97 && out.no_adapter_exit === 0
+-  && out.no_adapter_ffjs_concurrency === out.no_adapter_os_cpus && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
++  && out.no_adapter_ffjs_concurrency === Math.min(out.no_adapter_os_cpus, 64) && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
+ out.passed = ok;
+ out.session_id = process.env.ZCORP_SESSION_ID || null;
+ writeJson(path.join(d, 'controls.json'), out);

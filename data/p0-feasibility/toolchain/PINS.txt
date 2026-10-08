@@ -1,0 +1,24 @@
+# P0 toolchain (cloud container x86_64 Linux, 2 vCPU, 7 GB RAM); all binaries from official GitHub releases
+# sha256  file  version/source
+f3958483caaaa0cdd3912df5049e2e635eab4d09b9a66807be9633d547859f12  circom-2.1.6
+0479d44fdf9c501c25337fdc540419f1593b884a87b47f023da4f1c700fda782  solc-0.8.20
+b52df6ae7e64903deb4972f8a41c9c666a7ce1dfdce38680f387df01afe51b4b  zksolc-1.5.15
+9516f4eea50d90d83972bea5a63f3dd8ffdc50543917a56176fe8329addc8756  era-solc-0.8.20-1.0.2
+4a801b25f543099838fa88df50f0e59f5e5c93b7a22330948ca7ed029f48228b  anvil-zksync-0.6.11
+b47362d2159aa0f2f575320e5e529bb5a91093cb62dc6bd30c0022018aa9f738  anvil
+5a319871ac220704a23828792f0d394ab690e98c5ecde3e24e195778c7eb678d  zksync-os-server
+74e051ce27300c77e82e323f5c47acf2c452819b6a8d0eb21bf5b9111e7a686d  resolc-1.4.0
+d40adc6f9fdbb22a97d32a02fa05688bf2ee7886affc48c9851b0afd4a726b39  solc-0.8.34
+127f1a75b6c4ccc5eaef00ca62753f243a76ba927cbd64a7b1bd99a5b5fb8728  anvil-zksync-v0.6.11.tgz
+07bd7e50d12364040df0e3e719bf637c3551f27e594296606179ae3a4df63004  zksync-os-server-v0.23.0.tgz
+73640b01bd9ed29fdb4965085099371f8cf0dbbec3e2086cf54564efc4dcfe88  foundry-v1.5.1.tgz
+
+circom 2.1.6 (iden3/circom v2.1.6 circom-linux-amd64); circomlib 2.0.5; circomlibjs 0.1.7; snarkjs 0.7.5 (ffjavascript 0.3.1); node 22.22.0
+solc 0.8.20 static (ethereum/solidity v0.8.20), settings paris / optimizer 200 = V1 primary profile (bytecode byte-identical to V1)
+hardhat 2.29.1 / @nomicfoundation/edr 0.12.0-next.23 (= V1), hardfork osaka (V1) and petersburg (P0e)
+zksolc 1.5.15 + era-solc 0.8.20-1.0.2, settings -O3 fallback-size, codegen yul, evmVersion paris (= V1 pins.env; sha256 match)
+anvil-zksync 0.6.11 (sha256 match with V1 pins), protocol 29 (V1) and 27 (P0b); V1 command-line flags
+zksync-os-server v0.23.0 (prebuilt x86_64 release, commit 610bfa2b), local-chains/v31.0/default (execution zksync-os v0.3.2-interface-v0.1.3), L1 = foundry anvil 1.5.1 --load-state l1-state v31.0
+  fees: fee_native_price_override=0xf4240 (1e6 wei), fee_pubdata_price_override=0x0, fee_native_per_gas 100 (default) / 300 (intervention); general_ephemeral=true
+resolc 1.4.0 (paritytech/revive) with solc 0.8.34 (P0h compile probe only)
+zksync-os source tag v0.3.2-interface-v0.1.3 commit b76084f3 (constants copied in this folder)

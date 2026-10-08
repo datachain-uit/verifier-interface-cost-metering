@@ -1,0 +1,93 @@
+{
+ "layers_r4": 10,
+ "layers_r5": 10,
+ "common_prefix_layers": 9,
+ "differing_layers_r4": [
+  "sha256:fff19012c77684d2e2ee1628a8db0b58e5910a8e455561478a8e0446e05a6f98"
+ ],
+ "differing_layers_r5": [
+  "sha256:9e6c7c1447c99052655804cf1f2f7c53979acd922c2f66a646f7d1022cc60788"
+ ],
+ "config_identical_except_rootfs_history_created": true,
+ "config_r4": {
+  "Env": [
+   "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+   "NODE_VERSION=18.20.8",
+   "YARN_VERSION=1.22.22",
+   "ZCORP_HARNESS_DIR=/opt/zcorp",
+   "ZCORP_REPO=/work",
+   "ZCORP_RESULTS=/results",
+   "NODE_OPTIONS=--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+  ],
+  "Labels": {
+   "org.opencontainers.image.description": "Z-CORP rerun protocol v3 prover harness",
+   "org.opencontainers.image.title": "zcorp-bench",
+   "org.opencontainers.image.version": "3.0.0-x86"
+  },
+  "WorkingDir": "/opt/zcorp",
+  "Entrypoint": [
+   "docker-entrypoint.sh"
+  ],
+  "Cmd": [
+   "node"
+  ],
+  "User": "",
+  "Os": "linux",
+  "Architecture": "amd64"
+ },
+ "config_r5": {
+  "Env": [
+   "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+   "NODE_VERSION=18.20.8",
+   "YARN_VERSION=1.22.22",
+   "ZCORP_HARNESS_DIR=/opt/zcorp",
+   "ZCORP_REPO=/work",
+   "ZCORP_RESULTS=/results",
+   "NODE_OPTIONS=--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+  ],
+  "Labels": {
+   "org.opencontainers.image.description": "Z-CORP rerun protocol v3 prover harness",
+   "org.opencontainers.image.title": "zcorp-bench",
+   "org.opencontainers.image.version": "3.0.0-x86"
+  },
+  "WorkingDir": "/opt/zcorp",
+  "Entrypoint": [
+   "docker-entrypoint.sh"
+  ],
+  "Cmd": [
+   "node"
+  ],
+  "User": "",
+  "Os": "linux",
+  "Architecture": "amd64"
+ },
+ "files_in_differing_layers_r4": 12,
+ "files_in_differing_layers_r5": 12,
+ "content_differences": [
+  {
+   "path": "opt/zcorp/check_resume_test.js",
+   "r4": {
+    "type": "0",
+    "mode": "0o600",
+    "size": 5054,
+    "sha256": "3a80711d9b6b6e2d7d961747312d4d26ec6e4c3aa6f547509417c7dbeca1c88d",
+    "mtime": 1791129431
+   },
+   "r5": {
+    "type": "0",
+    "mode": "0o600",
+    "size": 5183,
+    "sha256": "b0f83a6431fbaa28b80dd293b42d403923ee08c8d5763da4fe3b59bcbc9ea849",
+    "mtime": 1791208930
+   }
+  }
+ ],
+ "metadata_only_differences": [
+  {
+   "path": "opt/zcorp",
+   "fields": [
+    "mtime"
+   ]
+  }
+ ]
+}

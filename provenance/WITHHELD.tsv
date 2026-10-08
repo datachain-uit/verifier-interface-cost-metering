@@ -1,0 +1,9 @@
+frozen_package	original_relative_path	sha256	bytes	status	reason
+protocols/prover-d2/preregistration	engineering-tests/ENGINEERING-TESTS.md	aa1d6b839e62457457198555b7d1c375d9e1552006ca550986737a7a44305f1c	1810	WITHHELD	non-scientific execution-environment record withheld
+protocols/prover-d2/preregistration	synthetic-corpus/corpus_check.js	f9653ec7bc064e3fe6aa21b254b5ce92015fc8f19aa97d0415a518e890f05002	1916	WITHHELD	non-scientific execution-environment record withheld
+protocols/prover-d2/amendments	DEV-D2-2-engineering-test/validator-test-results.json	4ba234a0ea6d7e6134f365bf971e8cbe61987dd2acd8e3fb634c509c33c5546d	11486	WITHHELD	non-scientific execution-environment record withheld
+data/prover/d2/analysis	run/D2-input-verification.json	bb6ccd2852fce3d026bffd2de27df6174b05c1aedc98e8241d5843004e8deaad	3589	WITHHELD	non-scientific execution-environment record withheld
+data/prover/d2/analysis	check/D2-input-verification.json	bb6ccd2852fce3d026bffd2de27df6174b05c1aedc98e8241d5843004e8deaad	3589	WITHHELD	non-scientific execution-environment record withheld
+protocols/prover-d1	build-records/D1-ENGINEERING-TEST.md	a4f8814c27cf6b43a2a8321afe27d40987173aa2eb0ff2ee84ddc302d4961766	713	WITHHELD	non-scientific execution-environment record withheld
+data/prover/d1/analysis	RUN-RECORD.txt	73296b2c045a0c6f1fd52fd3352c9bff0e925580891cf5ea749646d7ea2fbe7d	1306	WITHHELD	non-scientific execution-environment record withheld
+protocols/prover-d1	build-records/build_d1.sh	de8dd9c43403f59e92db59565453bc88b97d1e6f2f50ba66b9ea8ce020a59848	2284	WITHHELD	non-scientific execution-environment record withheld

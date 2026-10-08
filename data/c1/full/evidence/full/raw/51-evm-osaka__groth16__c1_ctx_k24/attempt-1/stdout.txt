@@ -1,0 +1,1 @@
+{"cell":"evm-osaka|groth16|c1_ctx_k24","n_records":64,"statuses":"1111111111111111"}

@@ -1,0 +1,146 @@
+{
+ "label": "V2-C2 STAGE-2 NUMERIC PREDICTIONS (to be frozen before any FFLONK measurement)",
+ "model": "source-augmented ZKsync OS native-cost model (extended transaction-level accounting), C2-SA",
+ "C_env": 1669012,
+ "tau": 0.000138,
+ "residual_definition": "r = N_measured - N_hat (native); e = r / N_hat",
+ "gates_passed": true,
+ "gate_failures": [],
+ "cells": [
+  {
+   "k": 1,
+   "n": 8,
+   "N_hat_mean": 28083855.0,
+   "N_hat_min": 28083855,
+   "N_hat_max": 28083855
+  },
+  {
+   "k": 4,
+   "n": 8,
+   "N_hat_mean": 28201399.0,
+   "N_hat_min": 28201399,
+   "N_hat_max": 28201399
+  },
+  {
+   "k": 16,
+   "n": 8,
+   "N_hat_mean": 28660990.0,
+   "N_hat_min": 28660990,
+   "N_hat_max": 28660990
+  },
+  {
+   "k": 32,
+   "n": 8,
+   "N_hat_mean": 29273898.0,
+   "N_hat_min": 29273898,
+   "N_hat_max": 29273898
+  }
+ ],
+ "ranking": [
+  {
+   "k": 1,
+   "versus": "groth16",
+   "N_hat_fflonk_mean": 28083855.0,
+   "N_registered_mean": 36506865.0,
+   "predicted_difference": -8423010.0,
+   "band": 3875.57199,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 1,
+   "versus": "plonk",
+   "N_hat_fflonk_mean": 28083855.0,
+   "N_registered_mean": 38666956.25,
+   "predicted_difference": -10583101.25,
+   "band": 46348.57199,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 4,
+   "versus": "groth16",
+   "N_hat_fflonk_mean": 28201399.0,
+   "N_registered_mean": 39185303.0,
+   "predicted_difference": -10983904.0,
+   "band": 3891.7930619999997,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 4,
+   "versus": "plonk",
+   "N_hat_fflonk_mean": 28201399.0,
+   "N_registered_mean": 38779623.75,
+   "predicted_difference": -10578224.75,
+   "band": 35420.793062,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 16,
+   "versus": "groth16",
+   "N_hat_fflonk_mean": 28660990.0,
+   "N_registered_mean": 49890945.0,
+   "predicted_difference": -21229955.0,
+   "band": 3955.2166199999997,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 16,
+   "versus": "plonk",
+   "N_hat_fflonk_mean": 28660990.0,
+   "N_registered_mean": 39260908.25,
+   "predicted_difference": -10599918.25,
+   "band": 34051.21662,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 32,
+   "versus": "groth16",
+   "N_hat_fflonk_mean": 29273898.0,
+   "N_registered_mean": 64167241.0,
+   "predicted_difference": -34893343.0,
+   "band": 4039.797924,
+   "predicted_sign": "FFLONK lower"
+  },
+  {
+   "k": 32,
+   "versus": "plonk",
+   "N_hat_fflonk_mean": 29273898.0,
+   "N_registered_mean": 39885069.0,
+   "predicted_difference": -10611171.0,
+   "band": 47815.797924,
+   "predicted_sign": "FFLONK lower"
+  }
+ ],
+ "crossover": {
+  "groth16": {
+   "sign_sequence": [
+    [
+     1,
+     "FFLONK lower"
+    ],
+    [
+     4,
+     "FFLONK lower"
+    ],
+    [
+     16,
+     "FFLONK lower"
+    ],
+    [
+     32,
+     "FFLONK lower"
+    ]
+   ],
+   "predicted_crossover": "none within the determinate k grid"
+  },
+  "plonk": {
+   "sign_sequence": [
+    [
+     1,
+     "FFLONK lower"
+    ],
+    [
+     4,
+     "FFLONK lower"
+    ],
+    [
+     16,

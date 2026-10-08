@@ -1,0 +1,6 @@
+campaign_id,kind,round,round_attempt,session_id,status,accepted,recorded_utc,recorded_by_session,profiles,rows_runs,rows_diag,detail
+dryrun-resumetest-20261005T141557Z,primary,0,1,S20261005T141557Z,complete,1,2026-10-05T14:26:17.322Z,S20261005T141557Z,cpu8;cpu2;cpu4,12,0,
+dryrun-resumetest-20261005T141557Z,primary,1,1,S20261005T142620Z,incomplete,0,2026-10-05T14:41:40.242Z,S20261005T143431Z,cpu4,4,0,interrupted before round validation; rows preserved; the whole round is rerun as a new attempt
+dryrun-resumetest-20261005T141557Z,primary,1,2,S20261005T143431Z,complete,1,2026-10-05T14:44:14.112Z,S20261005T143431Z,cpu4;cpu8;cpu2,12,0,
+dryrun-resumetest-20261005T141557Z,primary,2,1,S20261005T143431Z,complete,1,2026-10-05T14:46:47.255Z,S20261005T143431Z,cpu2;cpu4;cpu8,12,0,
+dryrun-resumetest-20261005T141557Z,diag,1,1,S20261005T143431Z,complete,1,2026-10-05T14:50:33.535Z,S20261005T143431Z,cpu2;cpu4;cpu8,6,12,

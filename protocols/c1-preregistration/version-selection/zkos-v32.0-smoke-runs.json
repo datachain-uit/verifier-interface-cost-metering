@@ -1,0 +1,1375 @@
+{
+ "status": "DIAGNOSTIC version-selection smoke check (not evidence; no sweep)",
+ "chain": "local-chains/v32.0 (zksync_os_version 0.32.0, execution_version 7, VM zksync-os v0.4.0 @ 69bc4305)",
+ "server": "zksync-os-server v0.23.0 prebuilt (commit 610bfa2b)",
+ "runs": [
+  {
+   "file": "zkos-v32b-v1_d11-groth16-p0.json",
+   "tag": "v32b",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 369549,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 369549,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 365068,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 365068,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32b-v1_d11-plonk-p0.json",
+   "tag": "v32b",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 391212,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 390909,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 386830,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 386528,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-groth16-p0.json",
+   "tag": "v32c",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 369549,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 369549,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 365068,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 365068,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-groth16-p100000000.json",
+   "tag": "v32c",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "100000000",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-groth16-p300000000.json",
+   "tag": "v32c",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "300000000",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-plonk-p0.json",
+   "tag": "v32c",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 391212,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 390909,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 386830,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 386528,
+     "effectiveGasPrice": "100000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-plonk-p100000000.json",
+   "tag": "v32c",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "100000000",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 300982,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 299868,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 291983,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 290869,
+     "effectiveGasPrice": "200000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32c-v1_d11-plonk-p300000000.json",
+   "tag": "v32c",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "100000000",
+   "priority_fee": "300000000",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 300982,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 299868,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 291983,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 290869,
+     "effectiveGasPrice": "400000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32n150-v1_d11-groth16-p0.json",
+   "tag": "v32n150",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "150000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 246366,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 246366,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 243379,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 243379,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32n150-v1_d11-plonk-p0.json",
+   "tag": "v32n150",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "150000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 300982,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 299868,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 291983,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 290869,
+     "effectiveGasPrice": "150000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32n300-v1_d11-groth16-p0.json",
+   "tag": "v32n300",
+   "backend": "groth16",
+   "k": 1,
+   "base_fee": "300000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 349604,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1594084,
+     "native_used": 1594084,
+     "pubdata_used": 1591,
+     "calldata_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 565248,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 2943521,
+     "native_used": 2943521,
+     "pubdata_used": 2465,
+     "calldata_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1719272,
+     "native_used": 1719272,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1716758,
+     "native_used": 1716758,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 223946,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 36954938,
+     "native_used": 36954938,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 214585,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 36506865,
+     "native_used": 36506865,
+     "pubdata_used": 167,
+     "calldata_bytes": 292
+    }
+   ]
+  },
+  {
+   "file": "zkos-v32n300-v1_d11-plonk-p0.json",
+   "tag": "v32n300",
+   "backend": "plonk",
+   "k": 1,
+   "base_fee": "300000000",
+   "priority_fee": "0",
+   "controls": {
+    "valid": "true",
+    "tampered_proof": "false",
+    "perturb_pub_0": "false"
+   },
+   "rows": [
+    {
+     "op": "deploy_verifier",
+     "j": null,
+     "status": 1,
+     "gasUsed": 1226937,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 2058624,
+     "native_used": 2058624,
+     "pubdata_used": 5654,
+     "calldata_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "j": null,
+     "status": 1,
+     "gasUsed": 541930,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 2930227,
+     "native_used": 2930227,
+     "pubdata_used": 2357,
+     "calldata_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47900,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1718592,
+     "native_used": 1718592,
+     "pubdata_used": 201,
+     "calldata_bytes": 68
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "add_root",
+     "j": null,
+     "status": 1,
+     "gasUsed": 47346,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 1716078,
+     "native_used": 1716078,
+     "pubdata_used": 201,
+     "calldata_bytes": 36
+    },
+    {
+     "op": "verify_credential",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 300982,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 39121223,
+     "native_used": 39121223,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_credential",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 299868,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 39090997,
+     "native_used": 39090997,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 0,
+     "status": 1,
+     "gasUsed": 291983,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 38683079,
+     "native_used": 38683079,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    },
+    {
+     "op": "verify_proof_direct",
+     "j": 1,
+     "status": 1,
+     "gasUsed": 290869,
+     "effectiveGasPrice": "300000000",
+     "computational_native": 38652853,
+     "native_used": 38652853,
+     "pubdata_used": 167,
+     "calldata_bytes": 804
+    }
+   ]
+  }
+ ]
+}

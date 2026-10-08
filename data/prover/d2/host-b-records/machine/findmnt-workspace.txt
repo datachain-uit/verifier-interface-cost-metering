@@ -1,0 +1,4 @@
+$ findmnt -T /home/ad/Workspace/Z-CORP-V2-workstation
+TARGET SOURCE         FSTYPE OPTIONS
+/      /dev/nvme0n1p5 ext4   rw,relatime
+[exit 0]

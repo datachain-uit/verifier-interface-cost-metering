@@ -1,0 +1,12 @@
+5cafe093b8f18521cd3a41b0ccd74f1acd944ac80e9ad3ab089a02b09e5791fa  ./check/D2-CHECK-RECORD.json
+bb6ccd2852fce3d026bffd2de27df6174b05c1aedc98e8241d5843004e8deaad  ./check/D2-input-verification.json
+401af07224145c84767d09223b7a5ea889789c85ff46702a4933b2c7759be8ed  ./check/D2-reconciliation.json
+3184e863ab09b190100df7b09a7dd2254e6767d8afc3530db4effb3c67ad50e4  ./check/console.txt
+7ead94ffa4b3bc2aae2fab8fd53b48a7e6fff2550f64d9dccdde30c483c44b89  ./run/D2-RUN-RECORD.json
+f27aaf01e062db7e2b18ee2d148f2d9cca38a656d1d0f2e276afca7293dd7f0a  ./run/D2-allocation-speedups.csv
+c085c4a4f7554d9f2558a7f3c049b74d2a36f0e8f961bb1d7a12d9f869cce8c6  ./run/D2-backend-ratios.csv
+f9c197383ce4c4d8d5ca4f46b9b8b46f59daf7b8cc200615c1262887eceedb26  ./run/D2-cell-stats.csv
+bb6ccd2852fce3d026bffd2de27df6174b05c1aedc98e8241d5843004e8deaad  ./run/D2-input-verification.json
+401af07224145c84767d09223b7a5ea889789c85ff46702a4933b2c7759be8ed  ./run/D2-reconciliation.json
+0ff0e1d624236b9c12ceb9264ea46da0f86923bdce32c3c2db17f450145a0bd9  ./run/D2-zkey-diagnostic.csv
+78fb956c381b5f5fa898ee59d9c85b3dc343bf1c9bff2d081f9120f5614342e6  ./run/console.txt

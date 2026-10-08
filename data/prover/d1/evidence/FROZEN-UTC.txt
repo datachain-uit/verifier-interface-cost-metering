@@ -1,0 +1,1 @@
+V2-PRV-D1-01 raw evidence frozen 2026-10-06T00:25:19Z before any analysis (V2-D-73). Scope: every file under research/results/v2/V2-PRV-D1-01/ as written by kit/run-d1.sh (sessions S20261005T235515Z preflight, S20261005T235719Z campaign); nothing normalized, rewritten or deleted. Manifest: SHA256SUMS (all files except itself).

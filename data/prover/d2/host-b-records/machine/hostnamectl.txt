@@ -1,0 +1,13 @@
+ Static hostname: ad-Precision-7920-Tower
+       Icon name: computer-desktop
+         Chassis: desktop 🖥️
+      Machine ID: db998fb6a54d4b3e81d510f19ca23e58
+         Boot ID: c79bc3d8154f4ea4b21c5046318f9b73
+Operating System: Ubuntu 24.04.3 LTS
+          Kernel: Linux 6.14.0-29-generic
+    Architecture: x86-64
+ Hardware Vendor: Dell Inc.
+  Hardware Model: Precision 7920 Tower
+Firmware Version: 2.45.0
+   Firmware Date: Fri 2025-02-07
+    Firmware Age: 1y 7month 3w 5d

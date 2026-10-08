@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-05T14:50:36.621Z",
+  "campaign_id": "dryrun-resumetest-20261005T141557Z",
+  "mode": "dryrun",
+  "plan": "resumetest",
+  "passed": true,
+  "complete": true,
+  "accepted_rounds": 4,
+  "scheduled_rounds": 4,
+  "ledger": [
+    "primary0 a1 complete (S20261005T141557Z)",
+    "primary1 a1 incomplete (S20261005T142620Z)",
+    "primary1 a2 complete (S20261005T143431Z)",
+    "primary2 a1 complete (S20261005T143431Z)",
+    "diag1 a1 complete (S20261005T143431Z)"
+  ],
+  "sessions": [
+    "S20261005T141557Z",
+    "S20261005T142620Z",
+    "S20261005T143431Z"
+  ],
+  "checks": [
+    {
+      "name": "schema_headers",
+      "passed": true,
+      "detail": "raw and ledger headers match lib/schema.js"
+    },
+    {
+      "name": "schema_required_fields",
+      "passed": true,
+      "detail": "identity fields campaign/session/round/attempt/profile/container present"
+    },
+    {
+      "name": "ids_campaign",
+      "passed": true,
+      "detail": [
+        "dryrun-resumetest-20261005T141557Z"
+      ]
+    },
+    {
+      "name": "ids_image",
+      "passed": true,
+      "detail": [
+        "sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7"
+      ]
+    },
+    {
+      "name": "ids_manifest",
+      "passed": true,
+      "detail": [
+        "9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be"
+      ]
+    },
+    {
+      "name": "ids_session_and_attempt",
+      "passed": true,
+      "detail": "every row carries session_id, round_attempt and container_id"
+    },
+    {
+      "name": "ledger_consistency",
+      "passed": true,
+      "detail": "one accepted attempt at most per round; accepted rounds form a prefix; every attempt has an outcome; nothing ran after acceptance"
+    },
+    {
+      "name": "rounds_complete",
+      "passed": true,
+      "detail": {
+        "accepted": 4,
+        "scheduled": 4,
+        "partial_allowed": false
+      }
+    },
+    {
+      "name": "accepted_rounds_revalidated",
+      "passed": true,
+      "detail": "4 accepted round attempts pass the round-level checks again"
+    },
+    {
+      "name": "seeded_schedule_reproducible",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "session_preflight_and_controls",
+      "passed": true,
+      "detail": "3 session(s) with rows; each passed its container pre-flight and adapter controls"
+    },
+    {
+      "name": "repository_unchanged",
+      "passed": true,
+      "detail": "manifest, corpus and tree identity unchanged in every finished session"
+    },
+    {
+      "name": "provenance_p7",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "depths": 2,
+        "circom": "2.1.6"
+      }
+    },
+    {
+      "name": "summaries_use_accepted_attempts_only",
+      "passed": true,
+      "detail": {
+        "rows_summarised": 12,
+        "measured_rows_in_rejected_or_interrupted_attempts": 2,
+        "warmup_rows_excluded": 32
+      }
+    }
+  ],
+  "note": "Engineering dry run: timing values exist only to exercise the pipeline and are not interpreted."
+}

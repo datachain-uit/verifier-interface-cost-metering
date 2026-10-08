@@ -1,0 +1,17 @@
+env,backend,metric,k,pred,measured,err_rel,tau,status,heldout
+evm-osaka,groth16,Ync_dir,2,216612,216625,6e-05,0.002008,PASS,seen-in-P0
+evm-osaka,groth16,Ync_dir,16,310062,309657,-0.001306,0.002008,PASS,seen-in-P0
+evm-osaka,groth16,Ync_app,2,225984,225965,-8.3e-05,0.0024,PASS,seen-in-P0
+evm-osaka,groth16,Ync_app,16,319583,318988,-0.001862,0.0024,PASS,seen-in-P0
+evm-osaka,plonk,Ync_dir,2,279384,278906.25,-0.00171,0.014963,PASS,seen-in-P0
+evm-osaka,plonk,Ync_dir,16,289998,291505.75,0.005198,0.014963,PASS,seen-in-P0
+evm-osaka,plonk,Ync_app,2,288379,287836.25,-0.001883,0.015487,PASS,seen-in-P0
+evm-osaka,plonk,Ync_app,16,298942,300609.75,0.005578,0.015487,PASS,seen-in-P0
+eravm-29,groth16,Y_dir,2,451254,451263,2.1e-05,0.000622,PASS,seen-in-P0
+eravm-29,groth16,Y_dir,16,548451,548632,0.00033,0.000622,PASS,seen-in-P0
+eravm-29,groth16,Y_app,2,458305,458326,4.7e-05,0.000327,PASS,seen-in-P0
+eravm-29,groth16,Y_app,16,556034,556113,0.000142,0.000327,PASS,seen-in-P0
+eravm-29,plonk,Y_dir,2,448378,447635.5,-0.001655,0.020123,PASS,seen-in-P0
+eravm-29,plonk,Y_dir,16,483253,478713.5,-0.009393,0.020123,PASS,seen-in-P0
+eravm-29,plonk,Y_app,2,455873,455134.5,-0.001619,0.020572,PASS,seen-in-P0
+eravm-29,plonk,Y_app,16,491392,486672.5,-0.009604,0.020572,PASS,seen-in-P0

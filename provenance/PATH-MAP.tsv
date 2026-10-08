@@ -1,0 +1,50 @@
+original_location	published_location	kind	identity	files
+research/csi/protocols/v2/V2-C1-preregistration/	protocols/c1-preregistration/	directory (copied verbatim)	SHA256SUMS 7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f	483
+research/csi/protocols/v2/V2-C2-fflonk-forward-test/	protocols/c2-forward-test/stage1/	directory (copied verbatim)	SHA256SUMS dfea3a87a775c067ffaa250d05771fb065d32e6a779063eb43eb1561cc626652	34
+research/csi/protocols/v2/V2-C2-stage2/	protocols/c2-forward-test/stage2/	directory (copied verbatim)	SHA256SUMS 9b4a38856f8e871e8e8b0707da6b6cfa673c1948a160524a79a56f76b752c010	14
+research/csi/protocols/v2/V2-M7B-heap-retrace/	protocols/posthoc-heap-retrace/	directory (copied verbatim)	SHA256SUMS 1d474ebc5efc2b81c9d070780a412d1059f6f9df54ed72c6f63ac0715673963d	3
+research/csi/protocols/v2/prover-D1/	protocols/prover-d1/	directory (copied verbatim)	SHA256SUMS 12acbadfe805b6fd714f3f6536ca14d95738444f17a7bb08e1d67a1d5f824083	49
+research/csi/protocols/v2/prover-D2/	protocols/prover-d2/preregistration/	directory (copied verbatim)	SHA256SUMS 97a05eca76af2083b304eb443f2067ffbaaac2398a2c94a1f25a7fd5765c72b4	36
+research/csi/protocols/v2/prover-D2-amendments/	protocols/prover-d2/amendments/	directory (copied verbatim)	SHA256SUMS e5158ee65b29dddda9d7fe030c70ca6b3fbb74b443d47cd85230fc208ae18ac3	142
+research/csi/protocols/v2/prover-D2-final/	protocols/prover-d2/final/	directory (copied verbatim)	SHA256SUMS 7fcccbecc76079713fe0f5c4ea21667026c93ce28949421ba4795ba316fb864f	14
+research/csi/protocols/v2/prover-D3/	protocols/prover-d3/	directory (copied verbatim)	SHA256SUMS cdbb72567997f285ee0b2cc4524cb7f894e14b37b92e55b797b9b898a149e62d	5
+research/bench/	protocols/prover-procedure/kit/	directory (copied verbatim)	23 files	23
+p0-feasibility/	data/p0-feasibility/	directory (copied verbatim)	SHA256SUMS 8ee8c3f2209d246db6b085b479275b0cb243962c4fa86dcff5e1055742ac5835	315
+research/csi/campaigns/v2/V2-MPI-PILOT-01/	data/c1/pilot/record/	directory (copied verbatim)	SHA256SUMS 0d0d05ba19c21db8ac5c9d77d34c1ff1051f23adc671336887bfeaa3c0b271b0	17
+research/results/v2/V2-MPI-PILOT-01/	data/c1/pilot/evidence/	directory (copied verbatim)	SHA256SUMS 08cc9f3afb6cd3b1bfaa0cff802001acb3ce3ee7d89f1d8311ba140893948e98	341
+research/csi/campaigns/v2/V2-MPI-FULL-01/	data/c1/full/record/	directory (copied verbatim)	SHA256SUMS 600815c03df9dd00da2d9e5e0bfbd842c6113e233efc69c774ea13245ca1a613	34
+research/results/v2/V2-MPI-FULL-01/	data/c1/full/evidence/	directory (copied verbatim)	SHA256SUMS c267ebe2386c700a9c4aac59af86d558ee9075b0e1ba961f36a9b046b1909307	916
+research/csi/campaigns/v2/V2-MPI-FULL-01-FFLONK/	data/c1/fflonk/record/	directory (copied verbatim)	SHA256SUMS 20eb4f47757f539a9a985cdb6971dc5c05343f35773c74836aa8cd152819066d	26
+research/results/v2/V2-MPI-FULL-01-FFLONK/	data/c1/fflonk/evidence/	directory (copied verbatim)	SHA256SUMS d0474fa14e72a7a56da1dc17a0dd6997eaa6608f4ec6fdb3b77817cb107aeddf	167
+research/results/v2/V2-M7A-F4-audit/	data/posthoc/native-cost-audit/	directory (copied verbatim)	SHA256SUMS 185bb4207a7593df944207dff5f7439d6b9c8f9783d74e6b119395cc9e9f5d1b	8
+research/results/v2/V2-M7B-A-heap-retrace/	data/posthoc/heap-retrace/	directory (copied verbatim)	SHA256SUMS 2144b9050caf38081cbde864e88396219c2cd99dfcc58839b39e174d151e3e94	50
+research/results/v2/V2-PRV-D1-01/	data/prover/d1/evidence/	directory (copied verbatim)	SHA256SUMS 1984894de8652131e3f70de45a0230eaefe81f4e9dee3b0b5fcf6d79ea407045	61
+research/results/v2/V2-PRV-D1-01-analysis/	data/prover/d1/analysis/	directory (copied verbatim)	SHA256SUMS 4aa98d292e4fb66af22ba97d174631b6742f22cf4c7e6df5239bdfbc6b4a581e	5
+research/results/v2/V2-PRV-D2-01/timed-D2-20261005-night1/	data/prover/d2/timed/	directory (copied verbatim)	SHA256SUMS 3e0121b14acb895d075878033cca1068689b77a448e47112ff1ba1dad3eee86f	951
+research/results/v2/V2-PRV-D2-01/analysis-D2-20261005-night1/	data/prover/d2/analysis/	directory (copied verbatim)	SHA256SUMS c863a1143f15d0b548379b2cd98fa9ae1d23427972fdbdcc02932871c3e883fa	17
+research/results/v2/workstation-20261004/records/	data/prover/d2/host-b-records/	directory (copied verbatim)	RECORDS-SHA256SUMS 1c1c68a0a8d05533e6bde4c7084f5e317ede58800ac64341268d73ec9a87b404	62
+research/results/v2/V2-PRV-D3-01/	data/prover/d3/reanalysis/	directory (copied verbatim)	SHA256SUMS 026e249b2446b7290cdb0d3e98e6187f41fef35bae1a5c1185f0de3f83701a3b	13
+research/results/v2/AMD-FF-1-fflonk-artifacts/	setup/fflonk/	directory (copied verbatim)	TRANSFER-SHA256SUMS 67e46cc366f1609cd707ba0619037af0ba5d5db810d83fad672edba3ffca3953	71
+research/results/v2/AMD-FF-1-fflonk-artifacts-cloud/	setup/fflonk/compiled-verifiers/	directory (copied verbatim)	SHA256SUMS cbd3312180ee3ade1786813469c687c56e7aa2729d47c19dde3a25f4499ac5e2	7
+research/scripts/setup/	setup/prover-objects/scripts/setup/	directory (copied verbatim)	8 files	8
+research/csi/protocols/v2/V2-C1-amendments/AMD-FF-1.md	protocols/c1-amendment-fflonk-setup/AMD-FF-1.md	file (copied verbatim)	6c4c83d431a5b552ed030a30807c902b880c394d4f228db542c305101f4bf908	1
+research/pot16_final.ptau	setup/ptau/pot16_final.ptau	file (copied verbatim)	4a64b121623021d5bcb19eee0a716d50ecb936e04b2cd021e71e74a86441439e	1
+research/ARTIFACTS.sha256	setup/prover-objects/ARTIFACTS.sha256	file (copied verbatim)	9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be	1
+research/results/postcorr-20260925/CAMPAIGN.json	data/prover/d3/source/CAMPAIGN.json	file (copied verbatim)	2f7aa7429902fc57565afeac34781df348e2c6729962fae3dd346ae1b5c39f30	1
+research/results/postcorr-20260925/prover/cpu2/runs.csv	data/prover/d3/source/prover/cpu2/runs.csv	file (copied verbatim)	e20f4def6d96a23615c85a5daa7145a95d58002a6801891ead2a69b03a937e8a	1
+research/results/postcorr-20260925/prover/cpu4/runs.csv	data/prover/d3/source/prover/cpu4/runs.csv	file (copied verbatim)	f0e5f134c08e440bfdd700f0917371c4976690d1200c5024a142919550f28b5c	1
+research/results/postcorr-20260925/prover/cpu8/runs.csv	data/prover/d3/source/prover/cpu8/runs.csv	file (copied verbatim)	917f10214dac0dbf713d6bef9327c49ae671aae03830b591e96104498ba63f24	1
+research/results/postcorr-20260925/prover/cpu2/diag.csv	data/prover/d3/source/prover/cpu2/diag.csv	file (copied verbatim)	d653aaecf6e37d9b8776ac878e37ac96c113db42cf5fa20e1a01d6d90507ac88	1
+research/results/postcorr-20260925/prover/cpu4/diag.csv	data/prover/d3/source/prover/cpu4/diag.csv	file (copied verbatim)	fd63b119f59c6414b33c0e9b71265dd93536a7d9bb2d3ab2e77d19b2d4e091a5	1
+research/results/postcorr-20260925/prover/cpu8/diag.csv	data/prover/d3/source/prover/cpu8/diag.csv	file (copied verbatim)	55e80397e56b7917aac190052dcc398f96bce26ac8437bed59b9320c55631477	1
+research/results/postcorr-20260925/prover/cpu2/rounds.csv	data/prover/d3/source/prover/cpu2/rounds.csv	file (copied verbatim)	70604fc784c6aa1aafdca6ed1703ea2bc00c7e720c53f128101e18e15a4207f1	1
+research/results/postcorr-20260925/prover/cpu4/rounds.csv	data/prover/d3/source/prover/cpu4/rounds.csv	file (copied verbatim)	331b7b5ed27c24a8208a5e11e844002a29d0b1a75f9d22b712c2a691986b3930	1
+research/results/postcorr-20260925/prover/cpu8/rounds.csv	data/prover/d3/source/prover/cpu8/rounds.csv	file (copied verbatim)	690a58e01bf8d6867f68b7a38903d9c5cd8ad9964a69656009187ae4bf0f62f8	1
+research/results/postcorr-20260925/prover/round_ledger.csv	data/prover/d3/source/prover/round_ledger.csv	file (copied verbatim)	91f9d2ccb45bc1c572ead9a431d6da09c1f9cad9a0abdb56fbbd8229460d8162	1
+research/results/postcorr-20260925/derived/prover_summary.csv	data/prover/d3/source/derived/prover_summary.csv	file (copied verbatim)	7d047760b4bc80529e9f920cbaa46c3eb6cb4b343e97d599c32137d6008dd686	1
+research/results/postcorr-20260925/derived/prover_diag.csv	data/prover/d3/source/derived/prover_diag.csv	file (copied verbatim)	87a0cb5a38000a3645d7e17d054c3f06057c5d398f7f533c248243556796def6	1
+research/submission/csi/generated/prover_per_round.csv	data/prover/d3/source/reconciliation/prover_per_round.csv	file (copied verbatim)	2ccd81f097a267f683d6e3f0b1b21c20cea38a28c3bb9a8ab28f6fa193375957	1
+research/results/postcorr-20260925/prover/schedule.csv	data/prover/d3/source/prover/schedule.csv	file (copied verbatim)	f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95	1
+research/results/postcorr-20260925/prover/execution_plan.csv	data/prover/d3/source/prover/execution_plan.csv	file (copied verbatim)	99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94	1
+research/<path listed in ARTIFACTS.sha256>	setup/prover-objects/<same path>	file set (copied verbatim)	entries of setup/prover-objects/ARTIFACTS.sha256	149
+research/csi/protocols/prover/RERUN-PROTOCOL-v3.md	protocols/prover-procedure/PROVER-PROCEDURE-v3-EXTRACT.md	public extract (see EXTRACTS.tsv)	a6bec4abe7a6e38fa7a72a26d840e88a8674c8d39e265b0c1fedc421a2134ca0	1

@@ -1,0 +1,82 @@
+{
+ "campaign_id": "V2-MPI-FULL-01-FFLONK",
+ "run_id": "V2-MPI-FULL-01-FFLONK-run1",
+ "status": "validated (evidence); C1 / H8 scored once with the frozen C1 scorer; C2 scored once with the stage-1 C2 scorer; owner adjudication pending",
+ "design": "C1 configs/design-cells.csv campaign FULL-IF-FFLONK-GATE-PASSES: 12 cells, class VALIDATION-CONDITIONAL, role HELD-OUT-BACKEND (k = 1, 4, 16, 32 x EVM Osaka, EraVM v29, ZKsync OS v32.0 @ npg 100; 8 proofs each); none added, none removed",
+ "class": "VALIDATION (FFLONK stays VALIDATION, not CORE; snarkjs FFLONK Beta status disclosed)",
+ "protocol": "research/csi/protocols/v2/V2-C1-preregistration/16-full-protocol.md + 21-fflonk-decision-and-ptau-plan.md; gate record AMD-FF-1",
+ "owner_authorization": "execution-and-evidence task 2026-10-05 ('THE WORKSTATION IS FREE FOR V2 WORK'); V2-D-46",
+ "c1_sha256sums_sha256": "7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f",
+ "c2_stage1_sha256sums_sha256": "dfea3a87a775c067ffaa250d05771fb065d32e6a779063eb43eb1561cc626652",
+ "c2_stage2_sha256sums_sha256": "9b4a38856f8e871e8e8b0707da6b6cfa673c1948a160524a79a56f76b752c010",
+ "chronology_utc": {
+  "c2_stage2_frozen": "2026-10-05T05:21:34Z",
+  "run_manifest": "2026-10-05T05:23Z",
+  "collection_start": "2026-10-05T05:24:02.905Z",
+  "collection_end": "2026-10-05T05:33:19.215Z",
+  "evidence_frozen": "2026-10-05T05:36:29Z",
+  "c1_scoring_start": "2026-10-05T05:36:37Z",
+  "c2_scoring_start": "2026-10-05T05:37:15Z"
+ },
+ "evidence": "research/results/v2/V2-MPI-FULL-01-FFLONK",
+ "evidence_sha256sums_sha256": "d0474fa14e72a7a56da1dc17a0dd6997eaa6608f4ec6fdb3b77817cb107aeddf",
+ "evidence_files": 166,
+ "run_manifest_sha256": "87b42f16b3dfe5be4292da316d367c84a4392e02bc923b263309ceea79e646db",
+ "harness_sha256": "02cee61b26b1b0fb5a10396eae93ed2cb113128fd1fef87a047f1c5f3e113d36",
+ "scorer_c1_sha256": "d9805758578e9c9255c04c84e7ec2e518d3cd8ee1798fc3e89cdd6e30744d1a7",
+ "scorer_c2_sha256": "da7624852844377478aee170397d2bc45604da0b710784402420b2735fd432d1",
+ "cells": {
+  "scheduled": 12,
+  "completed": 12,
+  "attempts_per_cell": 1,
+  "retries": 0
+ },
+ "records": 639,
+ "measurement_records": 192,
+ "measurement_status_ok": "192 / 192",
+ "controls": "negative controls as required (valid true; tampered_proof, perturb_pub_*, out_of_field_pub false; cross_regime_identity true 96 / 96); replays same cost (validator)",
+ "deviations": [
+  "none in measurement",
+  "DEV-FF-2 (procedural, AMD-FF-1): FFLONK compiled artifacts passed via --compiled compiled-fflonk/ (outside make_manifest's compiled/ glob); expected hashes checked before the run"
+ ],
+ "validation": {
+  "file": "validation/FFLONK-VALIDATION.json",
+  "valid": true,
+  "issues": 0,
+  "cells_complete": "12 / 12"
+ },
+ "l1_state_inputs_removed": 4,
+ "results": {
+  "C1_H8": {
+   "procedure": "ZC (procedure R constants base 1,692,688.706, c 5,866.765 from registered k = 1 Groth16 + PLONK; unchanged)",
+   "tau_cond_F": 0.005690131097304986,
+   "per_k_err_rel": {
+    "1": 0.003339,
+    "4": 0.003752,
+    "16": 0.005307,
+    "32": 0.007312
+   },
+   "pass": 24,
+   "fail": 8,
+   "verdict": "H8 FALSIFIED (F8: the 8 k = 32 proofs are outside tau_cond(F))",
+   "P_set_FFLONK_N_dir": "4 / 4 PASS (a-priori set-P intervals; err +0.36 % ... +0.59 %)",
+   "groth16_plonk_outputs_unchanged": true
+  },
+  "C2": {
+   "C2_PRIMARY": "PASS",
+   "C2_EXACT": "PASS",
+   "C2_RANK": "8 / 8 MATCH",
+   "C2_XOVER": {
+    "groth16": "MATCH",
+    "plonk": "MATCH"
+   },
+   "comparable": "32 / 32",
+   "max_abs_rel": 0.0,
+   "residuals": [
+    0
+   ]
+  }
+ },
+ "residual_table": "FFLONK-RESIDUALS-C1-H8-and-C2.csv",
+ "separation": "C1 / H8 and C2 are separate evaluations; never merged, averaged or used to reinterpret each other (C2 stage-1 07)"
+}

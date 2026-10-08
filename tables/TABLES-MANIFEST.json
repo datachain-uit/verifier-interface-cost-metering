@@ -1,0 +1,14 @@
+{
+ "generator": "tables/src/make_tables.py",
+ "generator_sha256": "b0de6909290574b75431b0d1fb243165475d8213f52d248c8b12486970d50386",
+ "inputs": {
+  "generated/data/t1_toolchain_rows.csv": "b9882c3e379e20ecb4f49cef1da504e187fddbeced335b3ca85e25c9e58c47b0",
+  "generated/data/t2_operation_structure.csv": "16a0814ae003dfead7039d06657c98f079fe206782e0e220b797b810e7d666b8",
+  "generated/data/t3_registered_tests.csv": "185c202faf2e776d8def786f29969d59434262fe237d7dadab11d29f28d8aa87"
+ },
+ "outputs": {
+  "tables/T1-regimes.tex": "2faa47f90c8874b714924fc68e32d4c9fa6cba38b6a048ff763acb5fda1f1296",
+  "tables/T2-structure.tex": "0175d75aa6cc30aca9700304b67ed04868695b80326e9ea7abf09197b04d5aa6",
+  "tables/T3-tests.tex": "247fb8818e863175a38f92b10cd3b564d3e5e1c2f75ac82debb22d32def49f5f"
+ }
+}

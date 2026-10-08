@@ -1,0 +1,7 @@
+pot16 4a64b121623021d5bcb19eee0a716d50ecb936e04b2cd021e71e74a86441439e (expected 4a64b121623021d5bcb19eee0a716d50ecb936e04b2cd021e71e74a86441439e)
+circom f3958483caaaa0cdd3912df5049e2e635eab4d09b9a66807be9633d547859f12 (pin f3958483…)
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 31602
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 34077
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 32752
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 32782
+BUILD-DONE

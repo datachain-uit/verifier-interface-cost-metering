@@ -1,0 +1,13 @@
+f9bc29ee41ecb7cbcda5534d73497edba5b2b22819c0db02eeeb8b8488e1dbb7  ./FINAL-FREEZE.md
+37809e51e96b11ddbcf910293538e3460325b2b46b02a6352d6bc56e97a31779  ./FROZEN-UTC.txt
+f56944c7d75199d119b14b2dfa95e98f409380531cc4d75ffaee53689f73b937  ./IMAGE-r5.json
+5352f80142e364baec65082c39aa59e94f4625dff448989e2cbb8f729f8c1197  ./KIT-v3-x86-r5.filelist.sha256
+2f21c95c0a6647148aa8ed345557de06235dec3307b489bacf870581b1a66a31  ./PAYLOAD-AND-TREE-r5.json
+59cd171bfba8dfdcbe3343f94efd5294eb6c2298fe7afad8da1d54834089d7dc  ./d2-analysis-engineering-test/PYTHON-VERSION.txt
+d8156e5607f662e648785233d7aa4a5875b199c8cab4463c3db3a92d52902f2a  ./d2-analysis-engineering-test/RUN-UTC.txt
+cf10a30a0600a97f693faeb8fd52e8d8cc7b4c4a351ca563b5b044ce5b7bfd77  ./d2-analysis-engineering-test/SHA256SUMS
+2179fe9d9ad7e392befe16406cbffb2874046919d5102dd585b631409084951b  ./d2-analysis-engineering-test/console.txt
+e3f34aec28c173c10ecdb291af6a67dc8b358bfd04639533286e12cfc3d1f7a4  ./d2-analysis-engineering-test/d2-analysis-engineering-test-results.json
+35da81149e1c67feefef2611ca153788efd764683a2fd5beefce375187c3f8d1  ./d2-analysis-engineering-test/d2_analysis_engineering_test.py
+16d9e475d85f3aebf0ea9d36746e99d8baec3f7197c15c8e06b0ffd9a0db7faf  ./d2_analysis-vs-d3_reanalysis.diff
+3f80cc8f45ce381c9832be6bc809d05f244c79621e5071c86335de6f907d5fa4  ./d2_analysis.py

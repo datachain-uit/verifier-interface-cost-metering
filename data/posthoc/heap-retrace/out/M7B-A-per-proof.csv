@@ -1,0 +1,19 @@
+proof_id,backend,k,steps,gas,determinism_gate_pass,gate_detail,memtrace_same_execution,observed_heap_events_zkos_rule,observed_evm_expansions_edr_memsize,opcodes_with_two_expanding_resizes,heap_size_replay_equals_edr_memsize,final_heap_bytes,m7a_heap_words,final_heap_words_equal_m7a,m7a_remainder
+c1_k01/groth16/j0,groth16,1,441,214549,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_k01/plonk/j0,plonk,1,9399,293315,True,all equal,True,29,29,0,True,1920,60,True,1670027
+c1_ctx_k02/groth16/j0,groth16,2,549,221749,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k02/plonk/j0,plonk,2,8641,291143,True,all equal,True,29,29,0,True,1952,61,True,1670027
+c1_ctx_k04/groth16/j0,groth16,4,753,236122,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k04/plonk/j0,plonk,4,9692,295755,True,all equal,True,31,31,0,True,2016,63,True,1670097
+c1_ctx_k08/groth16/j0,groth16,8,1113,264621,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k08/plonk/j0,plonk,8,10469,300392,True,all equal,True,31,31,0,True,2144,67,True,1670097
+c1_ctx_k12/groth16/j0,groth16,12,1497,293201,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k12/plonk/j0,plonk,12,11245,305070,True,all equal,True,35,35,0,True,2400,75,True,1670237
+c1_ctx_k16/groth16/j0,groth16,16,1881,321805,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k16/plonk/j0,plonk,16,12681,311989,True,all equal,True,39,39,0,True,2656,83,True,1670377
+c1_ctx_k24/groth16/j0,groth16,24,2649,378953,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k24/plonk/j0,plonk,24,14947,323749,True,all equal,True,47,47,0,True,3168,99,True,1670657
+c1_ctx_k32/groth16/j0,groth16,32,3417,436149,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k32/plonk/j0,plonk,32,16145,331821,True,all equal,True,55,55,0,True,3680,115,True,1670937
+c1_ctx_k64/groth16/j0,groth16,64,6489,664801,True,all equal,True,7,7,0,True,1152,36,True,1669257
+c1_ctx_k64/plonk/j0,plonk,64,24785,377480,True,all equal,True,87,87,0,True,5728,179,True,1672057

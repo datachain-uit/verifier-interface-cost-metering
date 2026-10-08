@@ -1,0 +1,21 @@
+{
+ "campaign": "FULL",
+ "run_id": "V2-MPI-FULL-01-run1",
+ "order_index": 10,
+ "cell_id": "evm-osaka|groth16|c1_disc_k04",
+ "env": "evm-osaka",
+ "regime": {
+  "hardfork": "osaka"
+ },
+ "backend": "groth16",
+ "circuit": "c1_disc_k04",
+ "k": 4,
+ "relation": "disc",
+ "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_disc_k04-groth16.json",
+ "proofs_dir": "/root/c1/pkg/corpus/proofs",
+ "outdir": "/root/full/V2-MPI-FULL-01/full/raw/10-evm-osaka__groth16__c1_disc_k04/attempt-1",
+ "pins_sha256": "e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699",
+ "port": 18011,
+ "server_log": "/root/full/V2-MPI-FULL-01/full/raw/10-evm-osaka__groth16__c1_disc_k04/attempt-1/node/server.log",
+ "attempt": 1
+}

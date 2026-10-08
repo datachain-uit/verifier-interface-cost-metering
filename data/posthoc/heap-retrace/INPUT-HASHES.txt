@@ -1,0 +1,35 @@
+# inputs verified before / used by the re-trace (sha256)
+protocol research/csi/protocols/v2/V2-M7B-heap-retrace/M7B-A-PROTOCOL.md 16012294695ef276d48c69805b5e354da8e521c834477183188b170e6896c7b8 (frozen 2026-10-05T01:32:38Z, before the re-trace)
+C1 package SHA256SUMS 7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f (sha256sum -c: 0 failures); 18 proof files listed in corpus/CORPUS-SHA256SUMS:
+  b31c044d10659f47880fa1e3cecb0c4325a90c2423a92b064d004075a0a03ed2  corpus/proofs/c1_k01/groth16-j0.json
+  84e9654be7dcf8aae720cd7cacc1dfaf48fb0603cb8d8874586ca2f815b64fa2  corpus/proofs/c1_k01/plonk-j0.json
+  435d7f4b2f0130edab3820961c7979028f4b6ec276db9413ee0883f26742d27f  corpus/proofs/c1_ctx_k02/groth16-j0.json
+  86b886b4ddb08e82c4d0c6b9ca30a9d598688de25c7e7d521817e6567a0b18c1  corpus/proofs/c1_ctx_k02/plonk-j0.json
+  4e8803fafa665eb23061e33214066889f3b062b6e95bf60a5e7fe1b98433f5e9  corpus/proofs/c1_ctx_k04/groth16-j0.json
+  19f7e41a604b75598aee7bc4a0c8fc81b2d5f79f01e23861d1979dfc4636b048  corpus/proofs/c1_ctx_k04/plonk-j0.json
+  e69f80118180bea9f84611a61eedf112e86a16bc3c14f9ccaad9cf2f1aa0bb97  corpus/proofs/c1_ctx_k08/groth16-j0.json
+  9a24e03267a8597a7433bfcdf41f352719c7465bc1f2a08ab2aeac0c078b228c  corpus/proofs/c1_ctx_k08/plonk-j0.json
+  a216dd6b3bf189f390b99d32448a45188314c3127693314acb6a9ad4c8d90799  corpus/proofs/c1_ctx_k12/groth16-j0.json
+  70d882c90587780ab576a6817e8181a2107b5f7516a33488be6a0299de257ca5  corpus/proofs/c1_ctx_k12/plonk-j0.json
+  9ea6d47f43b4d887f2b83386098d729ba773051a41ca3e2fb6c5469340d67d15  corpus/proofs/c1_ctx_k16/groth16-j0.json
+  26b257ee33e9b8dd1b092ed31615be335bba3957694435995d33786c3cb92ac2  corpus/proofs/c1_ctx_k16/plonk-j0.json
+  c116a19f3f4e7c74290c564dc6ddc6ccf8caf058a4968bf284c8ea492caa66b1  corpus/proofs/c1_ctx_k24/groth16-j0.json
+  049e07005c1115373995b42455d75b7f7ab4ea8e05608cbc3946b42e47ff411b  corpus/proofs/c1_ctx_k24/plonk-j0.json
+  be4b055623a752ab1ea524a757e012020d68c2996202ee8abe9b1ba18f3df4d6  corpus/proofs/c1_ctx_k32/groth16-j0.json
+  01212ad5aecf2f27d6ef78c1b5a6648e3bfb920120770e81dcd3a651aba4d8cd  corpus/proofs/c1_ctx_k32/plonk-j0.json
+  242abce9ae4b794cf694859068648027c67a3c3caacd24bfd29b96dd6eefa7e2  corpus/proofs/c1_ctx_k64/groth16-j0.json
+  bd6777be58d2e6416365c24242e94d963b2b0baa7abdf9ab4155fa4f0332fec4  corpus/proofs/c1_ctx_k64/plonk-j0.json
+pilot evidence SHA256SUMS 08cc9f3afb6cd3b1bfaa0cff802001acb3ce3ee7d89f1d8311ba140893948e98 (0 failures); records 1bb698a2cb236dcbf2ea96efed1cfee4085d462679ca34430086e8a624498792
+FULL evidence SHA256SUMS c267ebe2386c700a9c4aac59af86d558ee9075b0e1ba961f36a9b046b1909307 (0 failures); records a8eb9ce686677fd9209a3a0e21809bf09e0c13891e324799488312ad1105cc1e
+compiled verifiers (campaign evidence): c1_ctx_k02 from the pilot tree, the others from the FULL tree; runtime sha256 checked against each artifact at deployment
+M7A per-proof table out/M7A-per-proof.csv (V2-M7A-F4-audit) fb447ecab5ccbb73473282ff0c35658c5d25c652f63f6ba4a0c026f6238b293a
+tools: Hardhat 2.29.1, @nomicfoundation/edr 0.12.0-next.23, Node v22.22.0, hardfork osaka, network config = registered harness hh/hardhat.config.js c4e410159398d15f45c067a637827db33997b62c2a044ad2873e61d389712d84
+ZKsync OS v0.4.0 (commit 69bc430549e88f9264066d14f2001707572c5d33, clean) files defining the counting rule:
+  ebe38a3eb78b04f4c779d0eccd8d2cad082ea71568be8232333278b5903f01a4  evm_interpreter/src/utils.rs
+  cad3bd7d1b6e55727618836ce677c7f938db4203d97ec74959ef0793ed829f90  evm_interpreter/src/gas.rs
+  c3e722f436d70668e94ae8a021413bc09cc33007f6be1aee8b005d0e460f14b4  evm_interpreter/src/native_resource_constants.rs
+  59d7de035f60aafca0b4d661ae2caa7ff13aa1c4fea741ed97865c711460796e  evm_interpreter/src/instructions/heap.rs
+  188bc8ec648f221c46cbfc1bc333414c318a3e66f5a250d2680f04acc5a8651e  evm_interpreter/src/instructions/system.rs
+  fc1bd158d47e6083db6cac0efb16d476feb93b9def64169ebb82032b1cbe451d  evm_interpreter/src/instructions/host.rs
+  73553f26e4ba31b929bc3c02346f3153df4bb6c40f622c0e97c8352649d9e349  evm_interpreter/src/instructions/control_flow.rs
+  de4ece5329e770e3b86677d62122dd90e943d3f96a85e00173ddd09ac86fc01b  evm_interpreter/src/interpreter.rs

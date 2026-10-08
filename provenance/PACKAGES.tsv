@@ -1,0 +1,29 @@
+package	path	manifest	manifest_sha256	entries	entry_prefix	remap	description
+c1	protocols/c1-preregistration	SHA256SUMS	7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f	482			Internal pre-registration (C1)
+pilot_record	data/c1/pilot/record	SHA256SUMS	0d0d05ba19c21db8ac5c9d77d34c1ff1051f23adc671336887bfeaa3c0b271b0	15			Pilot campaign: record and scoring
+pilot_evidence	data/c1/pilot/evidence	SHA256SUMS	08cc9f3afb6cd3b1bfaa0cff802001acb3ce3ee7d89f1d8311ba140893948e98	340			Pilot campaign: evidence
+full_record	data/c1/full/record	SHA256SUMS	600815c03df9dd00da2d9e5e0bfbd842c6113e233efc69c774ea13245ca1a613	33			Full campaign: record and scoring
+full_evidence	data/c1/full/evidence	SHA256SUMS	c267ebe2386c700a9c4aac59af86d558ee9075b0e1ba961f36a9b046b1909307	915			Full campaign: evidence
+ff_record	data/c1/fflonk/record	SHA256SUMS	20eb4f47757f539a9a985cdb6971dc5c05343f35773c74836aa8cd152819066d	25			FFLONK campaign: record, C1 and C2 scoring
+ff_evidence	data/c1/fflonk/evidence	SHA256SUMS	d0474fa14e72a7a56da1dc17a0dd6997eaa6608f4ec6fdb3b77817cb107aeddf	166			FFLONK campaign: evidence
+ff_artifacts	setup/fflonk	TRANSFER-SHA256SUMS	67e46cc366f1609cd707ba0619037af0ba5d5db810d83fad672edba3ffca3953	70			FFLONK setup artifacts and research powers-of-tau records (generated on the workstation)
+ff_artifacts_cloud	setup/fflonk/compiled-verifiers	SHA256SUMS	cbd3312180ee3ade1786813469c687c56e7aa2729d47c19dde3a25f4499ac5e2	6			FFLONK compiled verifiers and repeated off-chain proof check (separate build environment)
+c2_stage1	protocols/c2-forward-test/stage1	SHA256SUMS	dfea3a87a775c067ffaa250d05771fb065d32e6a779063eb43eb1561cc626652	31			Separate prospective test C2: model, calibration, scoring rule
+c2_stage2	protocols/c2-forward-test/stage2	SHA256SUMS	9b4a38856f8e871e8e8b0707da6b6cfa673c1948a160524a79a56f76b752c010	12			Separate prospective test C2: structural derivation and predictions
+audit	data/posthoc/native-cost-audit	SHA256SUMS	185bb4207a7593df944207dff5f7439d6b9c8f9783d74e6b119395cc9e9f5d1b	7			Post hoc source-level audit of the F4 residual
+retrace_protocol	protocols/posthoc-heap-retrace	SHA256SUMS	1d474ebc5efc2b81c9d070780a412d1059f6f9df54ed72c6f63ac0715673963d	1			Post hoc deterministic re-trace: protocol
+retrace	data/posthoc/heap-retrace	SHA256SUMS	2144b9050caf38081cbde864e88396219c2cd99dfcc58839b39e174d151e3e94	49			Post hoc deterministic re-trace: data
+d1_protocol	protocols/prover-d1	SHA256SUMS	12acbadfe805b6fd714f3f6536ca14d95738444f17a7bb08e1d67a1d5f824083	50			D1: protocol and frozen artifacts
+d1_evidence	data/prover/d1/evidence	SHA256SUMS	1984894de8652131e3f70de45a0230eaefe81f4e9dee3b0b5fcf6d79ea407045	64			D1: evidence
+d1_analysis	data/prover/d1/analysis	SHA256SUMS	4aa98d292e4fb66af22ba97d174631b6742f22cf4c7e6df5239bdfbc6b4a581e	5			D1: frozen analysis
+d2_prereg	protocols/prover-d2/preregistration	SHA256SUMS	97a05eca76af2083b304eb443f2067ffbaaac2398a2c94a1f25a7fd5765c72b4	37			D2: internal pre-registration
+d2_amendments	protocols/prover-d2/amendments	SHA256SUMS	e5158ee65b29dddda9d7fe030c70ca6b3fbb74b443d47cd85230fc208ae18ac3	134			D2: recorded amendments
+d2_final	protocols/prover-d2/final	SHA256SUMS	7fcccbecc76079713fe0f5c4ea21667026c93ce28949421ba4795ba316fb864f	13			D2: final protocol record
+d2_timed	data/prover/d2/timed	SHA256SUMS	3e0121b14acb895d075878033cca1068689b77a448e47112ff1ba1dad3eee86f	950			D2: timed evidence
+d2_analysis	data/prover/d2/analysis	SHA256SUMS	c863a1143f15d0b548379b2cd98fa9ae1d23427972fdbdcc02932871c3e883fa	17			D2: analysis
+d3_protocol	protocols/prover-d3	SHA256SUMS	cdbb72567997f285ee0b2cc4524cb7f894e14b37b92e55b797b9b898a149e62d	4			D3: protocol
+d3	data/prover/d3/reanalysis	SHA256SUMS	026e249b2446b7290cdb0d3e98e6187f41fef35bae1a5c1185f0de3f83701a3b	12			D3: descriptive re-analysis
+p0_feasibility	data/p0-feasibility	SHA256SUMS	8ee8c3f2209d246db6b085b479275b0cb243962c4fa86dcff5e1055742ac5835	314			P0 feasibility study (calibration source of the C1 predictions)
+prover_objects	setup/prover-objects	ARTIFACTS.sha256	9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be	161	setup/prover-objects/	pot16_final.ptau=>setup/ptau/pot16_final.ptau	Prover objects: circuits, keys, verifiers, witness generators and the powers-of-tau file used by the prover analyses
+d2_host_b_records	data/prover/d2/host-b-records	RECORDS-SHA256SUMS	1c1c68a0a8d05533e6bde4c7084f5e317ede58800ac64341268d73ec9a87b404	61			D2: Host B machine, toolchain and setup records
+ff_host_b_artifacts	setup/fflonk/records	FFLONK-ARTIFACTS-SHA256SUMS	ee4a2ee7b70ca05a58e3163c491cf9d4f1a277fc55966aee187709a66024ad27	52	setup/fflonk/		FFLONK setup outputs as hashed on the workstation (lists the four FFLONK proving keys)

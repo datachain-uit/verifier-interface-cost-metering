@@ -1,0 +1,28 @@
+{
+ "image_id": "sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7",
+ "platform": "linux/amd64",
+ "created": "2026-10-05T14:05:02.566763926Z",
+ "tags_on_host_b": [
+  "zcorp-bench:v3-x86",
+  "zcorp-bench:setup-20261005T140456Z",
+  "zcorp-bench:dryrun-resumetest-20261005T141557Z"
+ ],
+ "rootfs_layers": [
+  "sha256:ace34d1d784c01e3f9d156687089e8f58f786e23ccd097bdbbf337d6d28b3783",
+  "sha256:206f13f5e3179e2addf8227aeed4c85cb94d95776d4cc2540f9e19c41914c43c",
+  "sha256:cd1cd7c2e57b8121f760e24ee1943adf4b9dea43ce5940b71f80ffdeace35f0e",
+  "sha256:9b95ddc8a1403d1f6fc68bd1ea2daa65a247c2a922a985dfce6aec5574be803a",
+  "sha256:e1e93a4fa4fdd7848ab14c10ec7ccf2f6e14d5fedb6b80edce58dad4de95a900",
+  "sha256:1cb1442f9a0290e48e37c74826b7579c0f2d9a12b7e63e8af159315c1ee61f1f",
+  "sha256:67021e85806910217923c14b4d5c9220ce838c246a31c36cf668cb8f2ad2a497",
+  "sha256:7ea24c946ab975a938b8b4d96a85306c0469cac9c795a888c70d63b8712e3c2d",
+  "sha256:f41b4541426e5e058032da451e9daf34f25787ac7bf33cb5627a0150bde9580e",
+  "sha256:9e6c7c1447c99052655804cf1f2f7c53979acd922c2f66a646f7d1022cc60788"
+ ],
+ "base_ref": "node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e",
+ "base_local_image_id": "sha256:101e0128c8ea90af6e5eba2abbae8486503c6383c35cb30e2c60842a5a288479",
+ "base_amd64_manifest_digest": "not recorded (V2-X-26; non-blocking record gap)",
+ "build_steps": "1-6 from cache (f621cc97536c, 9da54617092c, 8fece7a345a6, 2cb45f82d308); step 7 COPY harness files -> 578b4a6ae90f; 8 ENV -> d3ee59d7ab08; 9 LABEL -> 9024dbc83b81",
+ "r4_to_r5_comparison": "10 layers each; first 9 identical; differing layer r4 fff19012\u2026 -> r5 9e6c7c14\u2026; only content difference opt/zcorp/check_resume_test.js 3a80711d\u2026 -> b0f83a64\u2026 (opt/zcorp dir mtime metadata only); config identical (research/results/v2/V2-PRV-D2-01/r5-setup-20261005T140456Z/records/imagediff-20261005T140748Z.json)",
+ "observed": "relay status job 1620, 2026-10-05T15:02:13Z (read-only docker image inspect)"
+}

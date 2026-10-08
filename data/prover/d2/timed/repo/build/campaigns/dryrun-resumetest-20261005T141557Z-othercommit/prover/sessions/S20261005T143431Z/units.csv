@@ -1,0 +1,4 @@
+kind,round,attempt,profiles
+primary,1,2,cpu4;cpu8;cpu2
+primary,2,1,cpu2;cpu4;cpu8
+diag,1,1,cpu2;cpu4;cpu8

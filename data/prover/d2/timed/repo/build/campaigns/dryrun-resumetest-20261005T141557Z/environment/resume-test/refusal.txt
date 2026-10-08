@@ -1,0 +1,8 @@
+harness_exit=7
+rows_before=65
+rows_after=65
+tamper_exit=1
+tamper_refused=yes
+tamper_reason=REFUSE schedule.csv differs from the campaign record
+commit_tamper_exit=1
+commit_tamper_reason=REFUSE resume: campaign identity differs; tree (kit  generator  manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000'  now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f')

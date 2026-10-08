@@ -1,0 +1,130 @@
+{
+  "protocol_version": "v3",
+  "kit": "v3-x86",
+  "campaign_id": "dryrun-resumetest-20261005T141557Z",
+  "mode": "dryrun",
+  "plan_name": "resumetest",
+  "created_utc": "2026-10-05T14:16:06.011Z",
+  "schedule_seed": "zcorp-rerun-v3",
+  "profiles": [
+    {
+      "id": "cpu2",
+      "cpuset": "1-2",
+      "cpus": 2
+    },
+    {
+      "id": "cpu4",
+      "cpuset": "1-4",
+      "cpus": 4
+    },
+    {
+      "id": "cpu8",
+      "cpuset": "1-8",
+      "cpus": 8
+    }
+  ],
+  "plan": {
+    "primary_configs": [
+      "groth16:5",
+      "plonk:10"
+    ],
+    "primary_rounds": [
+      0,
+      1,
+      2
+    ],
+    "groth16_only_rounds": [],
+    "diag_configs": [
+      "groth16:5",
+      "plonk:10"
+    ],
+    "diag_rounds": [
+      1
+    ],
+    "warmup_in_process": [
+      "groth16:5",
+      "plonk:5"
+    ],
+    "p7_depths": [
+      5,
+      10
+    ]
+  },
+  "expect": {
+    "arch": "x64",
+    "machine": "x86_64",
+    "cpu_implementer": null,
+    "cgroup_version": 2,
+    "cpu_model_name": "Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz",
+    "cpuset_mems": "0",
+    "memory_bytes": 8589934592,
+    "node": "v18.20.8",
+    "snarkjs": "0.7.5",
+    "ffjavascript": "0.3.1",
+    "fastfile": "0.0.20",
+    "node_options": "--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+  },
+  "repo": {
+    "commit": "none",
+    "dirty": false,
+    "status_sha256": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+    "campaign_paths": "bench scripts/setup ARTIFACTS.sha256 SYNTHETIC-CORPUS.sha256",
+    "campaign_paths_status_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "image": {
+    "built_image_id": "sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7",
+    "tag": "zcorp-bench:dryrun-resumetest-20261005T141557Z",
+    "base_image_ref": "node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e",
+    "base_arm64_manifest_digest": null,
+    "base_platform_architecture": "amd64",
+    "base_platform_manifest_digest": null,
+    "platform": "linux/amd64"
+  },
+  "environment": {
+    "docker_desktop": "n/a (native Engine)",
+    "engine": "27.5.1",
+    "kernel": "6.14.0-29-generic",
+    "vm_ncpu": "112",
+    "vm_mem_bytes": "67118030848",
+    "configured_memory_mib": null,
+    "host_frozen_state": "intel_pstate=active governor=powersave no_turbo=0 numa_balancing=1 thp=madvise"
+  },
+  "host_files_sha256": {
+    "bench/run-campaign.sh": "047ea4c904434c6dabe9b4668d6697dd5654dc732bef7cadaa372c892647d1a1",
+    "bench/compose.yaml": "a2c2cdda159fb0fe72885ad85e84c39f5c26e403c9b4d631c561aec8ee9e88a7",
+    "bench/Dockerfile": "2b3460d3ba950f771656f58cee6a62fd8f17834edbd21b1b124db130e9bfbde3"
+  },
+  "manifest_sha256": "9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be",
+  "adapter_sha256": "749eea66bb9bf3256f1afbabd0119dd67c1fca95c3174c8373b49f9470942867",
+  "harness_sha256": {
+    "lib/cpu-visibility.js": "749eea66bb9bf3256f1afbabd0119dd67c1fca95c3174c8373b49f9470942867",
+    "lib/common.js": "9777629f7f65fb4c3d21725a98b535113d2500381efc1ade4c75b7135a63ee7b",
+    "lib/checks.js": "33b07173a95df764fcb00bca93f295a77af500ede30eb4abbcb501f10e75afdd",
+    "lib/pipeline.js": "7b1799bf71c1d90dab966705ae9843920a44b9ba85fa258658ec7677f30504d9",
+    "lib/schema.js": "bf73cea92de0de1ecaf0540f81ee6cd05bbf2773392d9c553957e813fe0fe2b2",
+    "lib/validate.js": "40370dd7f8f8bf82239fb3cfb7fc0accbd6bff99f75e9e1f3f468288148316f8",
+    "harness.js": "9b66a7a5d860145d452afc073db43731601f4a5b8c77d0b9157cf2bf860dd3e7",
+    "preflight.js": "1005faf03e6d52b72258be25d83be60eabf8cd607d0de30a74fc26d4400d3fdd",
+    "provenance.js": "9081ab55c54337a5f51dbc72e1a6ad9e7ff059aab0e2a13ab3e087866d4f9a06",
+    "make_schedule.js": "2199c2ade870b63b04f6bb099aa5e12a18e708fa942c1f342c7a7582175dcbbd",
+    "summarize_prover.js": "10d0fd6219dbe52a7edee906d675817f76af39b9c2b17524eab81e69a988fae0",
+    "record_controls.js": "bd82f6e36fb4101639ce3261f999cba84b414190dd12474ac50bd77b5ddda684",
+    "campaign_state.js": "1387f2d7b5ba5bb96adbb1d6e266c3f71f8b5b84e5f7012e133b20757dde05ea",
+    "validate_round.js": "b1314f009a46a8288ad94c38118398f7c8a868ae07514aa9f215b687eef6bff0",
+    "check_resume_test.js": "b0f83a6431fbaa28b80dd293b42d403923ee08c8d5763da4fe3b59bcbc9ea849",
+    "package-lock.json": "5774be4171d9433dbb49700fcb44053739f086ade74cd8cbec85889a01a104e2"
+  },
+  "input_generator_sha256": {
+    "scripts/setup/generate_input_depth.js": "4d3f34f781b087f432ccf74a0f0d3ec68018f396ab9efb77f5aa7efa028f7f44",
+    "scripts/setup/paths.js": "004b6e77f5b2298c08506930a4281134649e96575f42038718e34aad6493be3b"
+  },
+  "synthetic_corpus_sha256": "c7203a12c0e9619576a223356af42082f7db4304f05bb678f158860e1ccadc23",
+  "synthetic_corpus_entries": 33,
+  "schedule_sha256": "cb806e1b3564696c468c3222b427a08385ed27cec3bf960acb3ce76bb0b247eb",
+  "execution_plan_sha256": "1c8f022050a56dfa40783f9d4b2feb2dbd8c3110c22dc0c3e0b56517c30f63ed",
+  "host_a_reference": {
+    "campaign_id": "campaign-20260925T060607Z",
+    "schedule_sha256": null,
+    "execution_plan_sha256": null
+  }
+}

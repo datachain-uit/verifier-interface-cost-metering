@@ -1,0 +1,22 @@
+kind,round,config_order,note
+primary,0,plonk:p1150;plonk:d11;plonk:d10;groth16:p1180;groth16:p1150;plonk:p1180;groth16:d11;groth16:d10,warm-up round (discarded, kept)
+primary,1,groth16:d11;groth16:p1180;groth16:p1150;plonk:p1150;plonk:p1180;plonk:d10;groth16:d10;plonk:d11,timed round
+primary,2,plonk:d10;plonk:p1180;groth16:d10;plonk:p1150;groth16:p1180;groth16:d11;plonk:d11;groth16:p1150,timed round
+primary,3,plonk:d10;groth16:p1150;groth16:d10;plonk:p1150;plonk:d11;plonk:p1180;groth16:p1180;groth16:d11,timed round
+primary,4,plonk:d11;groth16:d10;plonk:p1180;plonk:p1150;groth16:p1180;groth16:d11;plonk:d10;groth16:p1150,timed round
+primary,5,groth16:d10;groth16:p1150;plonk:p1150;plonk:d10;plonk:d11;groth16:d11;groth16:p1180;plonk:p1180,timed round
+primary,6,plonk:d11;groth16:p1150;plonk:p1180;plonk:p1150;groth16:d11;groth16:p1180;plonk:d10;groth16:d10,timed round
+primary,7,groth16:d11;plonk:d11;plonk:d10;plonk:p1180;groth16:p1150;groth16:p1180;plonk:p1150;groth16:d10,timed round
+primary,8,plonk:p1150;plonk:d10;groth16:d11;groth16:p1150;groth16:p1180;plonk:p1180;groth16:d10;plonk:d11,timed round
+primary,9,plonk:p1150;groth16:p1180;plonk:d11;plonk:d10;plonk:p1180;groth16:d11;groth16:d10;groth16:p1150,timed round
+primary,10,groth16:d11;groth16:p1150;plonk:p1150;plonk:d10;plonk:p1180;groth16:p1180;plonk:d11;groth16:d10,timed round
+primary,11,groth16:d11;plonk:d11;plonk:p1180;plonk:p1150;plonk:d10;groth16:p1180;groth16:p1150;groth16:d10,timed round
+primary,12,groth16:p1180;plonk:p1150;plonk:p1180;groth16:p1150;groth16:d10;groth16:d11;plonk:d10;plonk:d11,timed round
+primary,13,plonk:p1150;plonk:p1180;groth16:d10;plonk:d11;groth16:p1150;groth16:p1180;plonk:d10;groth16:d11,timed round
+primary,14,groth16:d10;plonk:p1150;plonk:p1180;groth16:p1180;plonk:d10;groth16:p1150;plonk:d11;groth16:d11,timed round
+primary,15,plonk:d11;groth16:p1180;groth16:d11;groth16:p1150;groth16:d10;plonk:p1150;plonk:p1180;plonk:d10,timed round
+primary,16,groth16:p1180;plonk:d10;groth16:d11;plonk:p1150;groth16:d10;plonk:d11;plonk:p1180;groth16:p1150,timed round
+primary,17,groth16:d10;plonk:p1150;groth16:p1180;plonk:d10;plonk:p1180;groth16:d11;plonk:d11;groth16:p1150,timed round
+primary,18,groth16:d11;plonk:p1150;plonk:d11;groth16:d10;plonk:d10;groth16:p1150;plonk:p1180;groth16:p1180,timed round
+primary,19,groth16:d10;groth16:d11;groth16:p1150;plonk:d11;groth16:p1180;plonk:p1150;plonk:p1180;plonk:d10,timed round
+primary,20,plonk:p1180;groth16:p1150;plonk:p1150;groth16:p1180;plonk:d11;groth16:d11;groth16:d10;plonk:d10,timed round

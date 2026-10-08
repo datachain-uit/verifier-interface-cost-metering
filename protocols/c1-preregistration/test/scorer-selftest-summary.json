@@ -1,0 +1,51 @@
+{
+ "AC": {
+  "total": 1122,
+  "failed": 2
+ },
+ "ZC_constants": {
+  "base": 1868918.5882352942,
+  "per_call": 8655.470588235294
+ },
+ "P": {
+  "TRANSFER-CHECK PASS": 20,
+  "PASS": 66,
+  "MISSING": 64,
+  "DESCRIPTIVE FAIL": 8,
+  "FAIL": 24,
+  "TRANSFER-CHECK FAIL": 4
+ },
+ "R": {
+  "PASS": 36,
+  "DESCRIPTIVE FAIL": 8
+ },
+ "ZC": {
+  "PASS": 13,
+  "FAIL": 1
+ },
+ "SG": {
+  "MATCH": 22,
+  "NOT-SCORED": 2,
+  "FALSIFIED": 4
+ },
+ "XO": {
+  "PASS": 4,
+  "FAIL": 2
+ },
+ "NPG": {
+  "PASS": 10
+ },
+ "NPG_rank": {
+  "FALSIFIED": 1,
+  "MATCH": 2
+ },
+ "MONO": {
+  "PASS": 6
+ },
+ "SEM": {
+  "PASS": 16
+ },
+ "n_records": 1210,
+ "n_measurement_records": 308,
+ "_note": "CODE TEST ONLY on P0 feasibility data converted to the evidence schema; ZC run with C1_TEST_VM=0.3.2 (v31 data). Not evidence."
+}

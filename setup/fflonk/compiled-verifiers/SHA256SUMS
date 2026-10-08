@@ -1,0 +1,6 @@
+685fd14d487b8fe7f48668c16ebbfd934de5ab8c29b3c5c8f370d290eb668ea9  ./AMD-FF-1-G3-cloud-verify.json
+3e72ef94b92e4850b5ba572b8156b1b202e090ca263fc95020ead4a1a3d1ec2a  ./compiled-fflonk/c1_ff_k01-fflonk.json
+df60f95e54d8767d7bc9aeaba8104b9123025be1820563922f0fb747427ee109  ./compiled-fflonk/c1_ff_k04-fflonk.json
+10f39c68413bc5418f1b83d2a41803bfe2fd619b4b2caaa0a078dccfe77b85b0  ./compiled-fflonk/c1_ff_k16-fflonk.json
+c6d8f4a2890485f3a4d86b51f3fbe8d794c6b8dad9a1c657a1e36636963044f6  ./compiled-fflonk/c1_ff_k32-fflonk.json
+19d09febb3e83f06de9bd507561674784d393a73c67bbc8a0571c054e638b051  ./ff_cloud_verify.js

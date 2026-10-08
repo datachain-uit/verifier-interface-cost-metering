@@ -1,0 +1,5 @@
+T1_equivalence_with_D3_seed OK
+T2_D2_seed_namespace OK
+T3_cli_positive OK
+T4_cli_negatives OK
+ALL OK

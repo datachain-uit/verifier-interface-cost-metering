@@ -1,0 +1,8285 @@
+{
+ "hardfork": "osaka",
+ "steps": [
+  {
+   "op": "deploy_verifier",
+   "kind": "deploy",
+   "contract": "V",
+   "status": 1,
+   "gasUsed": 1471235,
+   "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+   "runtime_bytes": 6568,
+   "initcode_bytes": 6600,
+   "runtime_sha256": "7e166c2bd457e9aa204853194c01d2ad2d0bcf28a029c3570e82b6fef6d6f048",
+   "hash": "0xdaa7fd672dee0a2b51d48e4f4ec9ee178fa1adb3a99472ab7e40804626a13f69"
+  },
+  {
+   "op": "deploy_manager",
+   "kind": "deploy",
+   "contract": "M",
+   "status": 1,
+   "gasUsed": 541282,
+   "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+   "runtime_bytes": 2029,
+   "initcode_bytes": 2299,
+   "runtime_sha256": "4c21b6a594a82d10544e9f784a1a31dde992b2cb5f2dc8083c0060f6edb2d1b7",
+   "hash": "0x90e904ff62780617d79b5549c09294eec274af4bdaa5e132c7112787b69b6aa2"
+  },
+  {
+   "op": "set_issuer",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47900,
+   "hash": "0x1c199a60ca415703de0c55e2e42537976a54470e0ba340949e9879e179670959",
+   "calldata_bytes": 68,
+   "calldata_zero": 43
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0xcf05404b04a9600ee6e4990f0e3c29b9274142d693c4bf6eb3c149d1647617e4",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0x33e357b81cf4460cc3a43470951777e62c7c7fd0f05fc19bf02f3e47a869fe49",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0xa85579e4b8eb4d7a2126105e848a21605d5a0c92ffe520c0fcf8c9932e0a202e",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47334,
+   "hash": "0x1e5e152017e13556d5972d00d281ed5dc162870b40fb1f7083addfe0832fb967",
+   "calldata_bytes": 36,
+   "calldata_zero": 1
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0x4f6258bfe73a3d54a05f95cb6af39d6e3b5fb61c63a436992c3be10693f3770c",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0xba49b9bfb8b104fd48812555deec8e54a1a6b92408cb9c206da5b6b4629aff8e",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47334,
+   "hash": "0x52f8441b323c6cc4d8064ef80307d750326af18ec8c74460ab46b6a940cec4f9",
+   "calldata_bytes": 36,
+   "calldata_zero": 1
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "hash": "0x99e45ca036be8863a874c3981d428e6c98af98f5e9ef74a0d7c1c55bbc1d0917",
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 306722,
+   "hash": "0xac65ee48f745ea988e58acc9afcebdf5a8cd553fd141185d710c9efe8d26ae32",
+   "calldata_bytes": 964,
+   "calldata_zero": 11
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 306526,
+   "hash": "0x523fdd4d129c1aad939eede02d23f70abe8f39782266a983de76f4664e2582a6",
+   "calldata_bytes": 964,
+   "calldata_zero": 10
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 305694,
+   "hash": "0x13303b7066ce7c6bc1ef71ddb7c8af8f782fa9aeb1079901e2c98a23b8fd74c5",
+   "calldata_bytes": 964,
+   "calldata_zero": 10
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 306734,
+   "hash": "0x9b142b55491b7c9dc4055108c37f4701f4fac243183d70f83a6ba34f0acec0c2",
+   "calldata_bytes": 964,
+   "calldata_zero": 10
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 304274,
+   "hash": "0x73e1cecb29b884f164dbebec5eaed355db98ca71fe82fb8ac135e85adcf79ec6",
+   "calldata_bytes": 964,
+   "calldata_zero": 7
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 306318,
+   "hash": "0x504f9b22c8865a586ed7f5c20953d48162b0fbe3ff24fda56fc930763bada04f",
+   "calldata_bytes": 964,
+   "calldata_zero": 10
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 306024,
+   "hash": "0xd26ebdbf9b0789e695206ace3963b75bfd07b70645cd7cd87590cbf2e1cca93b",
+   "calldata_bytes": 964,
+   "calldata_zero": 9
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 308128,
+   "hash": "0xcb4124543c6980c6cc0a9113f9f7e621ced9fd9904ae0e4695d9ff534bb50a43",
+   "calldata_bytes": 964,
+   "calldata_zero": 7
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 297656,
+   "hash": "0x8d06cfb1303604eb58e8a801cf040d250663eb7c69679245586c581dc06dc73d",
+   "calldata_bytes": 964,
+   "calldata_zero": 11,
+   "trace": {
+    "gas": 297656,
+    "failed": false,
+    "steps": 9961,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 168,
+      "gas": 504
+     },
+     "PUSH2": {
+      "n": 817,
+      "gas": 2451
+     },
+     "JUMPI": {
+      "n": 212,
+      "gas": 2120
+     },
+     "JUMPDEST": {
+      "n": 312,
+      "gas": 312
+     },
+     "POP": {
+      "n": 626,
+      "gas": 1252
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 257,
+      "gas": 2056
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 355,
+      "gas": 1065
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 227,
+      "gas": 681
+     },
+     "DUP2": {
+      "n": 860,
+      "gas": 2580
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 310,
+      "gas": 930
+     },
+     "DUP3": {
+      "n": 378,
+      "gas": 1134
+     },
+     "SWAP3": {
+      "n": 184,
+      "gas": 552
+     },
+     "SWAP1": {
+      "n": 644,
+      "gas": 1932
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 638,
+      "gas": 1914
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 508,
+      "gas": 1524
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 295,
+      "gas": 1475
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 147,
+      "gas": 735
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104660135
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51036584
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50852039
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2771512
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104694099
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 297460,
+   "hash": "0x6cf68618438ee357f83f1679a57ae7b37643a28b92de144881a2116cf3ccee63",
+   "calldata_bytes": 964,
+   "calldata_zero": 10,
+   "trace": {
+    "gas": 297460,
+    "failed": false,
+    "steps": 9901,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 166,
+      "gas": 498
+     },
+     "PUSH2": {
+      "n": 813,
+      "gas": 2439
+     },
+     "JUMPI": {
+      "n": 210,
+      "gas": 2100
+     },
+     "JUMPDEST": {
+      "n": 310,
+      "gas": 310
+     },
+     "POP": {
+      "n": 622,
+      "gas": 1244
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 255,
+      "gas": 2040
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 351,
+      "gas": 1053
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 225,
+      "gas": 675
+     },
+     "DUP2": {
+      "n": 852,
+      "gas": 2556
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 306,
+      "gas": 918
+     },
+     "DUP3": {
+      "n": 376,
+      "gas": 1128
+     },
+     "SWAP3": {
+      "n": 182,
+      "gas": 546
+     },
+     "SWAP1": {
+      "n": 636,
+      "gas": 1908
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 634,
+      "gas": 1902
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 504,
+      "gas": 1512
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 291,
+      "gas": 1455
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 145,
+      "gas": 725
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104667273
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51040056
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50855512
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2771705
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104701029
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 296628,
+   "hash": "0xc7fedd2d2ccd3c812e917efddd458e8e47b99ff36651563deb334060dbd3ef10",
+   "calldata_bytes": 964,
+   "calldata_zero": 10,
+   "trace": {
+    "gas": 296628,
+    "failed": false,
+    "steps": 9661,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 158,
+      "gas": 474
+     },
+     "PUSH2": {
+      "n": 797,
+      "gas": 2391
+     },
+     "JUMPI": {
+      "n": 202,
+      "gas": 2020
+     },
+     "JUMPDEST": {
+      "n": 302,
+      "gas": 302
+     },
+     "POP": {
+      "n": 606,
+      "gas": 1212
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 247,
+      "gas": 1976
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 335,
+      "gas": 1005
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 217,
+      "gas": 651
+     },
+     "DUP2": {
+      "n": 820,
+      "gas": 2460
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 290,
+      "gas": 870
+     },
+     "DUP3": {
+      "n": 368,
+      "gas": 1104
+     },
+     "SWAP3": {
+      "n": 174,
+      "gas": 522
+     },
+     "SWAP1": {
+      "n": 604,
+      "gas": 1812
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 618,
+      "gas": 1854
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 488,
+      "gas": 1464
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 275,
+      "gas": 1375
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 137,
+      "gas": 685
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104697576
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51054798
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50870254
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2772524
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104730500
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 297668,
+   "hash": "0xd1b42b3f08bae8f2c0f4ee8161bbe98df24eac6d261ecf64c99f00abe0c53799",
+   "calldata_bytes": 964,
+   "calldata_zero": 10,
+   "trace": {
+    "gas": 297668,
+    "failed": false,
+    "steps": 9961,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 168,
+      "gas": 504
+     },
+     "PUSH2": {
+      "n": 817,
+      "gas": 2451
+     },
+     "JUMPI": {
+      "n": 212,
+      "gas": 2120
+     },
+     "JUMPDEST": {
+      "n": 312,
+      "gas": 312
+     },
+     "POP": {
+      "n": 626,
+      "gas": 1252
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 257,
+      "gas": 2056
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 355,
+      "gas": 1065
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 227,
+      "gas": 681
+     },
+     "DUP2": {
+      "n": 860,
+      "gas": 2580
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 310,
+      "gas": 930
+     },
+     "DUP3": {
+      "n": 378,
+      "gas": 1134
+     },
+     "SWAP3": {
+      "n": 184,
+      "gas": 552
+     },
+     "SWAP1": {
+      "n": 644,
+      "gas": 1932
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 638,
+      "gas": 1914
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 508,
+      "gas": 1524
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 295,
+      "gas": 1475
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 147,
+      "gas": 735
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104659698
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51036373
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50851825
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2771500
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104693662
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 295208,
+   "hash": "0x6b14bc54e164bf6a9cc91cb1b174a683a1f9322feadb3f80c15478ac13e858c7",
+   "calldata_bytes": 964,
+   "calldata_zero": 7,
+   "trace": {
+    "gas": 295208,
+    "failed": false,
+    "steps": 9241,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 144,
+      "gas": 432
+     },
+     "PUSH2": {
+      "n": 769,
+      "gas": 2307
+     },
+     "JUMPI": {
+      "n": 188,
+      "gas": 1880
+     },
+     "JUMPDEST": {
+      "n": 288,
+      "gas": 288
+     },
+     "POP": {
+      "n": 578,
+      "gas": 1156
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 233,
+      "gas": 1864
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 307,
+      "gas": 921
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 203,
+      "gas": 609
+     },
+     "DUP2": {
+      "n": 764,
+      "gas": 2292
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 262,
+      "gas": 786
+     },
+     "DUP3": {
+      "n": 354,
+      "gas": 1062
+     },
+     "SWAP3": {
+      "n": 160,
+      "gas": 480
+     },
+     "SWAP1": {
+      "n": 548,
+      "gas": 1644
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 590,
+      "gas": 1770
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 460,
+      "gas": 1380
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 247,
+      "gas": 1235
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 123,
+      "gas": 615
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104749295
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51079959
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50895414
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2773922
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104780763
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 297252,
+   "hash": "0xe6b28282550cfeae4370464f583d8bba3458622772db049feaf127dd4971887d",
+   "calldata_bytes": 964,
+   "calldata_zero": 10,
+   "trace": {
+    "gas": 297252,
+    "failed": false,
+    "steps": 9841,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 164,
+      "gas": 492
+     },
+     "PUSH2": {
+      "n": 809,
+      "gas": 2427
+     },
+     "JUMPI": {
+      "n": 208,
+      "gas": 2080
+     },
+     "JUMPDEST": {
+      "n": 308,
+      "gas": 308
+     },
+     "POP": {
+      "n": 618,
+      "gas": 1236
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 253,
+      "gas": 2024
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 347,
+      "gas": 1041
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 223,
+      "gas": 669
+     },
+     "DUP2": {
+      "n": 844,
+      "gas": 2532
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 302,
+      "gas": 906
+     },
+     "DUP3": {
+      "n": 374,
+      "gas": 1122
+     },
+     "SWAP3": {
+      "n": 180,
+      "gas": 540
+     },
+     "SWAP1": {
+      "n": 628,
+      "gas": 1884
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 630,
+      "gas": 1890
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 500,
+      "gas": 1500
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 287,
+      "gas": 1435
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 143,
+      "gas": 715
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104674850
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51043743
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50859197
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2771910
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104708398
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 296958,
+   "hash": "0x100e43792cc7fa533f5c8be839a393a52f85757c7bf16aef3222ee298856f403",
+   "calldata_bytes": 964,
+   "calldata_zero": 9,
+   "trace": {
+    "gas": 296958,
+    "failed": false,
+    "steps": 9753,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 161,
+      "gas": 483
+     },
+     "PUSH2": {
+      "n": 803,
+      "gas": 2409
+     },
+     "JUMPI": {
+      "n": 205,
+      "gas": 2050
+     },
+     "JUMPDEST": {
+      "n": 305,
+      "gas": 305
+     },
+     "POP": {
+      "n": 612,
+      "gas": 1224
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 250,
+      "gas": 2000
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 341,
+      "gas": 1023
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 357,
+      "gas": 1071
+     },
+     "DUP6": {
+      "n": 220,
+      "gas": 660
+     },
+     "DUP2": {
+      "n": 832,
+      "gas": 2496
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 296,
+      "gas": 888
+     },
+     "DUP3": {
+      "n": 371,
+      "gas": 1113
+     },
+     "SWAP3": {
+      "n": 177,
+      "gas": 531
+     },
+     "SWAP1": {
+      "n": 616,
+      "gas": 1848
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 625,
+      "gas": 1875
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 494,
+      "gas": 1482
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 281,
+      "gas": 1405
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 140,
+      "gas": 700
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104685558
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51048953
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50864406
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2772199
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104718800
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 299062,
+   "hash": "0x39913cdf2c0e9f6369ff0e92c02537ac9774747f73ed59b338032ab199f2a620",
+   "calldata_bytes": 964,
+   "calldata_zero": 7,
+   "trace": {
+    "gas": 299062,
+    "failed": false,
+    "steps": 10353,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 181,
+      "gas": 543
+     },
+     "PUSH2": {
+      "n": 843,
+      "gas": 2529
+     },
+     "JUMPI": {
+      "n": 225,
+      "gas": 2250
+     },
+     "JUMPDEST": {
+      "n": 325,
+      "gas": 325
+     },
+     "POP": {
+      "n": 652,
+      "gas": 1304
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 270,
+      "gas": 2160
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 381,
+      "gas": 1143
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 357,
+      "gas": 1071
+     },
+     "DUP6": {
+      "n": 240,
+      "gas": 720
+     },
+     "DUP2": {
+      "n": 912,
+      "gas": 2736
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 336,
+      "gas": 1008
+     },
+     "DUP3": {
+      "n": 391,
+      "gas": 1173
+     },
+     "SWAP3": {
+      "n": 197,
+      "gas": 591
+     },
+     "SWAP1": {
+      "n": 696,
+      "gas": 2088
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 665,
+      "gas": 1995
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 534,
+      "gas": 1602
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 321,
+      "gas": 1605
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 160,
+      "gas": 800
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104608926
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51011672
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50827126
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2770128
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104644248
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 297656,
+   "hash": "0x72955a56b601299d35266290bdb8258fce1824030065a8288ccf8b1e97afc8db",
+   "calldata_bytes": 964,
+   "calldata_zero": 11,
+   "trace": {
+    "gas": 297656,
+    "failed": false,
+    "steps": 9961,
+    "ops": {
+     "PUSH1": {
+      "n": 771,
+      "gas": 2313
+     },
+     "MSTORE": {
+      "n": 384,
+      "gas": 1355
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 230,
+      "gas": 690
+     },
+     "ISZERO": {
+      "n": 168,
+      "gas": 504
+     },
+     "PUSH2": {
+      "n": 817,
+      "gas": 2451
+     },
+     "JUMPI": {
+      "n": 212,
+      "gas": 2120
+     },
+     "JUMPDEST": {
+      "n": 312,
+      "gas": 312
+     },
+     "POP": {
+      "n": 626,
+      "gas": 1252
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 14,
+      "gas": 42
+     },
+     "CALLDATALOAD": {
+      "n": 86,
+      "gas": 258
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 257,
+      "gas": 2056
+     },
+     "DUP5": {
+      "n": 127,
+      "gas": 381
+     },
+     "DUP7": {
+      "n": 55,
+      "gas": 165
+     },
+     "SUB": {
+      "n": 355,
+      "gas": 1065
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 356,
+      "gas": 1068
+     },
+     "DUP6": {
+      "n": 227,
+      "gas": 681
+     },
+     "DUP2": {
+      "n": 860,
+      "gas": 2580
+     },
+     "GT": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP4": {
+      "n": 310,
+      "gas": 930
+     },
+     "DUP3": {
+      "n": 378,
+      "gas": 1134
+     },
+     "SWAP3": {
+      "n": 184,
+      "gas": 552
+     },
+     "SWAP1": {
+      "n": 644,
+      "gas": 1932
+     },
+     "MLOAD": {
+      "n": 491,
+      "gas": 1473
+     },
+     "DUP4": {
+      "n": 638,
+      "gas": 1914
+     },
+     "CODECOPY": {
+      "n": 158,
+      "gas": 948
+     },
+     "SWAP2": {
+      "n": 508,
+      "gas": 1524
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 486
+     },
+     "MOD": {
+      "n": 26,
+      "gas": 130
+     },
+     "MULMOD": {
+      "n": 102,
+      "gas": 816
+     },
+     "PUSH3": {
+      "n": 6,
+      "gas": 18
+     },
+     "MUL": {
+      "n": 295,
+      "gas": 1475
+     },
+     "SWAP5": {
+      "n": 13,
+      "gas": 39
+     },
+     "SDIV": {
+      "n": 147,
+      "gas": 735
+     },
+     "NOT": {
+      "n": 6,
+      "gas": 18
+     },
+     "SWAP6": {
+      "n": 12,
+      "gas": 36
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "DUP8": {
+      "n": 9,
+      "gas": 27
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104660135
+     },
+     "DUP9": {
+      "n": 5,
+      "gas": 15
+     },
+     "DUP10": {
+      "n": 1,
+      "gas": 3
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51036584
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50852039
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2771512
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104694099
+    },
+    "keccak_sizes": [
+     896,
+     32,
+     128,
+     224,
+     224,
+     128
+    ],
+    "copies": [
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ],
+     [
+      "CODECOPY",
+      32
+     ]
+    ]
+   }
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 0,
+   "gasUsed": 59230,
+   "hash": "0x3a79b6275f2a507ca65cf63839c5dc0d82e38e46e54306d8aed70af4e141b8bd",
+   "calldata_bytes": 964,
+   "calldata_zero": 11
+  },
+  {
+   "op": "call_valid",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_tampered_proof",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_0",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_1",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_2",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_3",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_4",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_perturb_pub_5",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_out_of_field_pub",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  },
+  {
+   "op": "call_cross_regime_identity",
+   "kind": "call",
+   "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "ok": true
+  }
+ ]
+}

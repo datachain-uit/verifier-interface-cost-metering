@@ -1,0 +1,145 @@
+cell_id,design_class,campaign,env,regime,backend,circuit,k,relation,proofs,role
+evm-osaka|groth16|c1_k01,CORE,PILOT,evm-osaka,hardfork=osaka,groth16,c1_k01,1,ctx,j0..j7,CALIBRATION
+evm-osaka|groth16|c1_ctx_k02,CORE,PILOT,evm-osaka,hardfork=osaka,groth16,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k04,CORE,PILOT,evm-osaka,hardfork=osaka,groth16,c1_ctx_k04,4,ctx,j0..j7,CALIBRATION
+evm-osaka|groth16|c1_ctx_k06,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k08,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k12,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k16,CORE,PILOT,evm-osaka,hardfork=osaka,groth16,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k24,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k32,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+evm-osaka|groth16|c1_ctx_k64,CORE,FULL,evm-osaka,hardfork=osaka,groth16,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+evm-osaka|plonk|c1_k01,CORE,PILOT,evm-osaka,hardfork=osaka,plonk,c1_k01,1,ctx,j0..j7,CALIBRATION
+evm-osaka|plonk|c1_ctx_k02,CORE,PILOT,evm-osaka,hardfork=osaka,plonk,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k04,CORE,PILOT,evm-osaka,hardfork=osaka,plonk,c1_ctx_k04,4,ctx,j0..j7,CALIBRATION
+evm-osaka|plonk|c1_ctx_k06,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k08,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k12,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k16,CORE,PILOT,evm-osaka,hardfork=osaka,plonk,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k24,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k32,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+evm-osaka|plonk|c1_ctx_k64,CORE,FULL,evm-osaka,hardfork=osaka,plonk,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+eravm-29|groth16|c1_k01,CORE,PILOT,eravm-29,protocol=29,groth16,c1_k01,1,ctx,j0..j7,CALIBRATION
+eravm-29|groth16|c1_ctx_k02,CORE,PILOT,eravm-29,protocol=29,groth16,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k04,CORE,PILOT,eravm-29,protocol=29,groth16,c1_ctx_k04,4,ctx,j0..j7,CALIBRATION
+eravm-29|groth16|c1_ctx_k06,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k08,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k12,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k16,CORE,PILOT,eravm-29,protocol=29,groth16,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k24,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k32,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+eravm-29|groth16|c1_ctx_k64,CORE,FULL,eravm-29,protocol=29,groth16,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+eravm-29|plonk|c1_k01,CORE,PILOT,eravm-29,protocol=29,plonk,c1_k01,1,ctx,j0..j7,CALIBRATION
+eravm-29|plonk|c1_ctx_k02,CORE,PILOT,eravm-29,protocol=29,plonk,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k04,CORE,PILOT,eravm-29,protocol=29,plonk,c1_ctx_k04,4,ctx,j0..j7,CALIBRATION
+eravm-29|plonk|c1_ctx_k06,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k08,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k12,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k16,CORE,PILOT,eravm-29,protocol=29,plonk,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k24,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k32,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+eravm-29|plonk|c1_ctx_k64,CORE,FULL,eravm-29,protocol=29,plonk,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+zkos-v32@npg100|groth16|c1_k01,CORE,PILOT,zkos-v32,npg100,groth16,c1_k01,1,ctx,j0..j7,CALIBRATION
+zkos-v32@npg100|groth16|c1_ctx_k02,CORE,PILOT,zkos-v32,npg100,groth16,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k04,CORE,PILOT,zkos-v32,npg100,groth16,c1_ctx_k04,4,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k06,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k08,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k12,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k16,CORE,PILOT,zkos-v32,npg100,groth16,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k24,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k32,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|groth16|c1_ctx_k64,CORE,FULL,zkos-v32,npg100,groth16,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+zkos-v32@npg100|plonk|c1_k01,CORE,PILOT,zkos-v32,npg100,plonk,c1_k01,1,ctx,j0..j7,CALIBRATION
+zkos-v32@npg100|plonk|c1_ctx_k02,CORE,PILOT,zkos-v32,npg100,plonk,c1_ctx_k02,2,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k04,CORE,PILOT,zkos-v32,npg100,plonk,c1_ctx_k04,4,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k06,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k08,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k12,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k12,12,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k16,CORE,PILOT,zkos-v32,npg100,plonk,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k24,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k24,24,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k32,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k32,32,ctx,j0..j7,HELD-OUT-k
+zkos-v32@npg100|plonk|c1_ctx_k64,CORE,FULL,zkos-v32,npg100,plonk,c1_ctx_k64,64,ctx,j0..j7,LIMIT-CHECK
+zkos-v32@npg126|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg126,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg126|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg126,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg139|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg139,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg139|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg139,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg151|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg151,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg151|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg151,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg169|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg169,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg169|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg169,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg171|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg171,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg171|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg171,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg300|groth16|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg300,groth16,c1_k01,1,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg300|plonk|c1_k01,CORE-INTERVENTION,PILOT,zkos-v32,npg300,plonk,c1_k01,1,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg125|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg125,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg125|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg125,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg138|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg138,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg138|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg138,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg149|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg149,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg149|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg149,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg165|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg165,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg165|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg165,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg167|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg167,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg167|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg167,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg300|groth16|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg300,groth16,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg300|plonk|c1_ctx_k04,CORE-INTERVENTION,FULL,zkos-v32,npg300,plonk,c1_ctx_k04,4,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg120|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg120,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg120|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg120,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg132|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg132,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg132|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg132,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg141|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg141,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg141|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg141,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (between the two switches)
+zkos-v32@npg154|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg154,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg154|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg154,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg156|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg156,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg156|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg156,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (around a predicted switch)
+zkos-v32@npg300|groth16|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg300,groth16,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg300|plonk|c1_ctx_k16,CORE-INTERVENTION,FULL,zkos-v32,npg300,plonk,c1_ctx_k16,16,ctx,j0..j7,INTERVENTION (away (above both switches))
+zkos-v32@npg100+priority_fee=1e8wei|groth16|c1_k01,CORE-ROBUSTNESS,FULL,zkos-v32,npg100+priority_fee=1e8wei,groth16,c1_k01,1,ctx,j0..j7,ROBUSTNESS (tx-gas-price route)
+zkos-v32@npg100+priority_fee=1e8wei|plonk|c1_k01,CORE-ROBUSTNESS,FULL,zkos-v32,npg100+priority_fee=1e8wei,plonk,c1_k01,1,ctx,j0..j7,ROBUSTNESS (tx-gas-price route)
+eravm-27|groth16|c1_k01,VALIDATION,FULL,eravm-27,protocol=27,groth16,c1_k01,1,ctx,j0..j7,CALIBRATION
+eravm-27|groth16|c1_ctx_k04,VALIDATION,FULL,eravm-27,protocol=27,groth16,c1_ctx_k04,4,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|groth16|c1_ctx_k06,VALIDATION,FULL,eravm-27,protocol=27,groth16,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|groth16|c1_ctx_k08,VALIDATION,FULL,eravm-27,protocol=27,groth16,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|groth16|c1_ctx_k16,VALIDATION,FULL,eravm-27,protocol=27,groth16,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-REGIME
+evm-osaka|groth16|c1_a4,VALIDATION,FULL,evm-osaka,hardfork=osaka,groth16,c1_a4,4,a4,j0..j7,SEMANTIC
+evm-osaka|groth16|c1_a8,VALIDATION,FULL,evm-osaka,hardfork=osaka,groth16,c1_a8,8,a8,j0..j7,SEMANTIC
+evm-osaka|groth16|c1_disc_k04,VALIDATION,FULL,evm-osaka,hardfork=osaka,groth16,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+eravm-29|groth16|c1_a4,VALIDATION,FULL,eravm-29,protocol=29,groth16,c1_a4,4,a4,j0..j7,SEMANTIC
+eravm-29|groth16|c1_a8,VALIDATION,FULL,eravm-29,protocol=29,groth16,c1_a8,8,a8,j0..j7,SEMANTIC
+eravm-29|groth16|c1_disc_k04,VALIDATION,FULL,eravm-29,protocol=29,groth16,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+zkos-v32@npg100|groth16|c1_a4,VALIDATION,FULL,zkos-v32,npg100,groth16,c1_a4,4,a4,j0..j7,SEMANTIC
+zkos-v32@npg100|groth16|c1_a8,VALIDATION,FULL,zkos-v32,npg100,groth16,c1_a8,8,a8,j0..j7,SEMANTIC
+zkos-v32@npg100|groth16|c1_disc_k04,VALIDATION,FULL,zkos-v32,npg100,groth16,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+eravm-27|plonk|c1_k01,VALIDATION,FULL,eravm-27,protocol=27,plonk,c1_k01,1,ctx,j0..j7,CALIBRATION
+eravm-27|plonk|c1_ctx_k04,VALIDATION,FULL,eravm-27,protocol=27,plonk,c1_ctx_k04,4,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|plonk|c1_ctx_k06,VALIDATION,FULL,eravm-27,protocol=27,plonk,c1_ctx_k06,6,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|plonk|c1_ctx_k08,VALIDATION,FULL,eravm-27,protocol=27,plonk,c1_ctx_k08,8,ctx,j0..j7,HELD-OUT-REGIME
+eravm-27|plonk|c1_ctx_k16,VALIDATION,FULL,eravm-27,protocol=27,plonk,c1_ctx_k16,16,ctx,j0..j7,HELD-OUT-REGIME
+evm-osaka|plonk|c1_a4,VALIDATION,FULL,evm-osaka,hardfork=osaka,plonk,c1_a4,4,a4,j0..j7,SEMANTIC
+evm-osaka|plonk|c1_a8,VALIDATION,FULL,evm-osaka,hardfork=osaka,plonk,c1_a8,8,a8,j0..j7,SEMANTIC
+evm-osaka|plonk|c1_disc_k04,VALIDATION,FULL,evm-osaka,hardfork=osaka,plonk,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+eravm-29|plonk|c1_a4,VALIDATION,FULL,eravm-29,protocol=29,plonk,c1_a4,4,a4,j0..j7,SEMANTIC
+eravm-29|plonk|c1_a8,VALIDATION,FULL,eravm-29,protocol=29,plonk,c1_a8,8,a8,j0..j7,SEMANTIC
+eravm-29|plonk|c1_disc_k04,VALIDATION,FULL,eravm-29,protocol=29,plonk,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+zkos-v32@npg100|plonk|c1_a4,VALIDATION,FULL,zkos-v32,npg100,plonk,c1_a4,4,a4,j0..j7,SEMANTIC
+zkos-v32@npg100|plonk|c1_a8,VALIDATION,FULL,zkos-v32,npg100,plonk,c1_a8,8,a8,j0..j7,SEMANTIC
+zkos-v32@npg100|plonk|c1_disc_k04,VALIDATION,FULL,zkos-v32,npg100,plonk,c1_disc_k04,4,disc,j0..j7,SEMANTIC
+evm-osaka|fflonk|c1_ff_k01,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,evm-osaka,hardfork=osaka,fflonk,c1_ff_k01,1,ctx,j0..j7,HELD-OUT-BACKEND
+evm-osaka|fflonk|c1_ff_k04,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,evm-osaka,hardfork=osaka,fflonk,c1_ff_k04,4,ctx,j0..j7,HELD-OUT-BACKEND
+evm-osaka|fflonk|c1_ff_k16,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,evm-osaka,hardfork=osaka,fflonk,c1_ff_k16,16,ctx,j0..j7,HELD-OUT-BACKEND
+evm-osaka|fflonk|c1_ff_k32,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,evm-osaka,hardfork=osaka,fflonk,c1_ff_k32,32,ctx,j0..j7,HELD-OUT-BACKEND
+eravm-29|fflonk|c1_ff_k01,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,eravm-29,protocol=29,fflonk,c1_ff_k01,1,ctx,j0..j7,HELD-OUT-BACKEND
+eravm-29|fflonk|c1_ff_k04,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,eravm-29,protocol=29,fflonk,c1_ff_k04,4,ctx,j0..j7,HELD-OUT-BACKEND
+eravm-29|fflonk|c1_ff_k16,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,eravm-29,protocol=29,fflonk,c1_ff_k16,16,ctx,j0..j7,HELD-OUT-BACKEND
+eravm-29|fflonk|c1_ff_k32,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,eravm-29,protocol=29,fflonk,c1_ff_k32,32,ctx,j0..j7,HELD-OUT-BACKEND
+zkos-v32@npg100|fflonk|c1_ff_k01,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,zkos-v32,npg100,fflonk,c1_ff_k01,1,ctx,j0..j7,HELD-OUT-BACKEND
+zkos-v32@npg100|fflonk|c1_ff_k04,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,zkos-v32,npg100,fflonk,c1_ff_k04,4,ctx,j0..j7,HELD-OUT-BACKEND
+zkos-v32@npg100|fflonk|c1_ff_k16,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,zkos-v32,npg100,fflonk,c1_ff_k16,16,ctx,j0..j7,HELD-OUT-BACKEND
+zkos-v32@npg100|fflonk|c1_ff_k32,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,zkos-v32,npg100,fflonk,c1_ff_k32,32,ctx,j0..j7,HELD-OUT-BACKEND
+evm-petersburg|groth16|c1_k01,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,groth16,c1_k01,1,ctx,j0..j7,CONTROL (specified; not scheduled)
+evm-petersburg|groth16|c1_ctx_k04,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,groth16,c1_ctx_k04,4,ctx,j0..j7,CONTROL (specified; not scheduled)
+evm-petersburg|groth16|c1_ctx_k16,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,groth16,c1_ctx_k16,16,ctx,j0..j7,CONTROL (specified; not scheduled)
+evm-petersburg|plonk|c1_k01,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,plonk,c1_k01,1,ctx,j0..j7,CONTROL (specified; not scheduled)
+evm-petersburg|plonk|c1_ctx_k04,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,plonk,c1_ctx_k04,4,ctx,j0..j7,CONTROL (specified; not scheduled)
+evm-petersburg|plonk|c1_ctx_k16,SUPPORTING,NOT-SCHEDULED,evm-petersburg,hardfork=petersburg,plonk,c1_ctx_k16,16,ctx,j0..j7,CONTROL (specified; not scheduled)

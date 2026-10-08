@@ -1,0 +1,473 @@
+ INFO initializing system contracts protocol_version=29 use_evm_emulator=false zksync_os.zksync_os=false
+
+
+                      _  _         _____ _  __
+  __ _  _ __  __   __(_)| |       |__  /| |/ / ___  _   _  _ __    ___
+ / _` || '_ \ \ \ / /| || | _____   / / | ' / / __|| | | || '_ \  / __|
+| (_| || | | | \ V / | || ||_____| / /_ | . \ \__ \| |_| || | | || (__
+ \__,_||_| |_|  \_/  |_||_|       /____||_|\_\|___/ \__, ||_| |_| \___|
+                                                    |___/
+
+Version:        0.6.11
+Repository:     https://github.com/matter-labs/anvil-zksync
+
+
+
+Rich Accounts
+========================
+(0) 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000.000000000000000000 ETH)
+(1) 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 (10000.000000000000000000 ETH)
+
+
+
+Private Keys
+========================
+(0) 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+(1) 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+
+
+
+Wallet
+========================
+Mnemonic:            test test test test test test test test test test test junk
+Derivation path:     m/44'/60'/0'/0/0
+
+
+Network Configuration
+========================
+Chain ID: 260
+
+
+Gas Configuration
+========================
+L1 Gas Price (gwei):               2.365348 gwei
+L2 Gas Price (gwei):               0.045250 gwei
+L1 Pubdata Price (gwei):           0.000000 gwei
+Estimated Gas Price Scale Factor:  2
+Estimated Gas Limit Scale Factor:  1.3
+
+
+Genesis Timestamp
+========================
+1000
+
+
+Node Configuration
+========================
+Port:                  18011
+EVM Interpreter:       Disabled
+Health Check Endpoint: Disabled
+ZKsync OS:             Disabled
+L1:                    Disabled
+
+
+========================================
+  Listening on 127.0.0.1:18011
+========================================
+
+ INFO Starting executing L1 batch #1
+TRACE Fee benchmark for transaction with hash e7a7f7374720b22f6c6cae99f803c3d126e8a55e562515699136ff1a9028bb75
+TRACE Gas Limit: 400000000
+TRACE Gas spent on computation: 1202485
+TRACE Gas spent on pubdata: 774396
+TRACE Pubdata published: 9219
+
+✅ [SUCCESS] Hash: 0xe7a7f7374720b22f6c6cae99f803c3d126e8a55e562515699136ff1a9028bb75
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 400_000_000 | Used: 1_973_531 | Refunded: 398_026_469
+Paid: 0.000089302277750000 ETH (1973531 gas * 0.045250 gwei)
+Refunded: 0.018010697722250000 ETH
+
+ INFO Starting executing L1 batch #2
+TRACE Fee benchmark for transaction with hash 5a7eb7bbead2b8762b929410a30e88295e5272f389ced811b372cb36789719d9
+TRACE Gas Limit: 200000000
+TRACE Gas spent on computation: 727389
+TRACE Gas spent on pubdata: 449316
+TRACE Pubdata published: 5349
+
+✅ [SUCCESS] Hash: 0x5a7eb7bbead2b8762b929410a30e88295e5272f389ced811b372cb36789719d9
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 200_000_000 | Used: 1_174_761 | Refunded: 198_825_239
+Paid: 0.000053157935250000 ETH (1174761 gas * 0.045250 gwei)
+Refunded: 0.008996842064750000 ETH
+
+ INFO Starting executing L1 batch #3
+TRACE Fee benchmark for transaction with hash 161536358035cb033f5a07669678470d417f952749c9e6bebf1f3bfd7b947e10
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124489
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x161536358035cb033f5a07669678470d417f952749c9e6bebf1f3bfd7b947e10
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 128_838 | Refunded: 29_871_162
+Paid: 0.000005829919500000 ETH (128838 gas * 0.045250 gwei)
+Refunded: 0.001351670080500000 ETH
+
+ INFO Starting executing L1 batch #4
+TRACE Fee benchmark for transaction with hash 4b262f4a23ee588c944c83a9e8b5e9615af5808ed2820a097651b2a9d618c783
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x4b262f4a23ee588c944c83a9e8b5e9615af5808ed2820a097651b2a9d618c783
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #5
+TRACE Fee benchmark for transaction with hash 64b737f728f81da9255443edb3bfe8ed365954f3dd4b3d74dc9188af7b08a2b9
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x64b737f728f81da9255443edb3bfe8ed365954f3dd4b3d74dc9188af7b08a2b9
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #6
+TRACE Fee benchmark for transaction with hash 9579239f5d2370e2e29074b8ddd10bd801d95c95ac52b1291f001544e6455129
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x9579239f5d2370e2e29074b8ddd10bd801d95c95ac52b1291f001544e6455129
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #7
+TRACE Fee benchmark for transaction with hash 57b7bb40ede9c655795bee9d3da2656fe4fbac18b65b799bfa139bc980881eda
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x57b7bb40ede9c655795bee9d3da2656fe4fbac18b65b799bfa139bc980881eda
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #8
+TRACE Fee benchmark for transaction with hash a8244a8da284c786069056bc2727c753ade54ff21dfc7e554d08c4573774696e
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0xa8244a8da284c786069056bc2727c753ade54ff21dfc7e554d08c4573774696e
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #9
+TRACE Fee benchmark for transaction with hash 07a6a92247db8d4d7bd52a90c3149bdd74770235d2c83d951fdef209cedca40f
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x07a6a92247db8d4d7bd52a90c3149bdd74770235d2c83d951fdef209cedca40f
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #10
+TRACE Fee benchmark for transaction with hash 7d8c9aa558fa49fac28f265988e4576f7d4a2d08da603b7b58847b4ef8aa4676
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0x7d8c9aa558fa49fac28f265988e4576f7d4a2d08da603b7b58847b4ef8aa4676
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #11
+TRACE Fee benchmark for transaction with hash d0ade75bb8a2dfc9e1a516fe155886c804efe0b0bfcf123490a37e7c30ead4b7
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 124797
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+
+✅ [SUCCESS] Hash: 0xd0ade75bb8a2dfc9e1a516fe155886c804efe0b0bfcf123490a37e7c30ead4b7
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 129_146 | Refunded: 29_870_854
+Paid: 0.000005843856500000 ETH (129146 gas * 0.045250 gwei)
+Refunded: 0.001351656143500000 ETH
+
+ INFO Starting executing L1 batch #12
+TRACE Fee benchmark for transaction with hash 60d4372b8875d68b334bfc01781023a742a80d01a7e5322a75f9eeab1450d5dc
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x60d4372b8875d68b334bfc01781023a742a80d01a7e5322a75f9eeab1450d5dc
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #13
+TRACE Fee benchmark for transaction with hash 1e315c3ecea592566a2335218db7c3563e9a00d6abf564fe4a9a613dd85bd02a
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x1e315c3ecea592566a2335218db7c3563e9a00d6abf564fe4a9a613dd85bd02a
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #14
+TRACE Fee benchmark for transaction with hash 6a48b64edda444031772548e709146e07e728cf82149fedbd5f364c6d3f7d26c
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x6a48b64edda444031772548e709146e07e728cf82149fedbd5f364c6d3f7d26c
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #15
+TRACE Fee benchmark for transaction with hash df05e5e3e857bb2928d06c8b662610ae4ddf07d784ad178d3d123673fabaf734
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xdf05e5e3e857bb2928d06c8b662610ae4ddf07d784ad178d3d123673fabaf734
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #16
+TRACE Fee benchmark for transaction with hash f73dfcd99df822c759b3d408ba1ca3cad657108d44682b66cacf93848415b38f
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xf73dfcd99df822c759b3d408ba1ca3cad657108d44682b66cacf93848415b38f
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #17
+TRACE Fee benchmark for transaction with hash 895ed311ab5b744878c3d4d64c7afbaf03344fa711c7323ac82670ae7142cb23
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x895ed311ab5b744878c3d4d64c7afbaf03344fa711c7323ac82670ae7142cb23
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #18
+TRACE Fee benchmark for transaction with hash bb33f7e57010858becb0f389afc86fcd350d9885136f5194b01bb8348c144c84
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xbb33f7e57010858becb0f389afc86fcd350d9885136f5194b01bb8348c144c84
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #19
+TRACE Fee benchmark for transaction with hash f70c0037382c3e057148524eeacea064284e02a949651b46da8ebe28873f2dfc
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 556113
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xf70c0037382c3e057148524eeacea064284e02a949651b46da8ebe28873f2dfc
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 557_618 | Refunded: 29_442_382
+Paid: 0.000025232214500000 ETH (557618 gas * 0.045250 gwei)
+Refunded: 0.001332267785500000 ETH
+
+ INFO Starting executing L1 batch #20
+TRACE Fee benchmark for transaction with hash 879ae4a59c7acad6181f608b47c66d374bd686edd145ea2d2bffe293e7c60cd2
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x879ae4a59c7acad6181f608b47c66d374bd686edd145ea2d2bffe293e7c60cd2
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #21
+TRACE Fee benchmark for transaction with hash c24d23eabc17a05e17644f49795f1b1258ba92e6b281dd80b542cab03a58925b
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xc24d23eabc17a05e17644f49795f1b1258ba92e6b281dd80b542cab03a58925b
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #22
+TRACE Fee benchmark for transaction with hash efbfb9bf13012d1755251c6991196415658144a33290b0f0c78ac04de4f10200
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xefbfb9bf13012d1755251c6991196415658144a33290b0f0c78ac04de4f10200
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #23
+TRACE Fee benchmark for transaction with hash b005b140a324e45324357a8ae7dbdea518383aafb0546d2eb4718168c75cc302
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xb005b140a324e45324357a8ae7dbdea518383aafb0546d2eb4718168c75cc302
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #24
+TRACE Fee benchmark for transaction with hash 8ab370f3a912e58c8da526289368eba5c762bd102004ae8770d24e0faf4a511b
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x8ab370f3a912e58c8da526289368eba5c762bd102004ae8770d24e0faf4a511b
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #25
+TRACE Fee benchmark for transaction with hash 7c93630255abf17cb333d5bdcbec4d7f3d68fbf1e6e526e5e9c308373a6d5c09
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x7c93630255abf17cb333d5bdcbec4d7f3d68fbf1e6e526e5e9c308373a6d5c09
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #26
+TRACE Fee benchmark for transaction with hash 7c2951f6927921ee7cf432836998c42ad5f6d5b89f74f640ad7da2b6a73d74ad
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x7c2951f6927921ee7cf432836998c42ad5f6d5b89f74f640ad7da2b6a73d74ad
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #27
+TRACE Fee benchmark for transaction with hash dee32f009dd9c5e5f49e204795a6863f4d9b632c493dcba85100a25580f121ef
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0xdee32f009dd9c5e5f49e204795a6863f4d9b632c493dcba85100a25580f121ef
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #28
+TRACE Fee benchmark for transaction with hash 751f1e9b9e151de124adb61fc41936873aab227311ddc778958ab70ee07ab734
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 548632
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+✅ [SUCCESS] Hash: 0x751f1e9b9e151de124adb61fc41936873aab227311ddc778958ab70ee07ab734
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 550_137 | Refunded: 29_449_863
+Paid: 0.000024893699250000 ETH (550137 gas * 0.045250 gwei)
+Refunded: 0.001332606300750000 ETH
+
+ INFO Starting executing L1 batch #29
+TRACE Fee benchmark for transaction with hash 711acfdfe5fddd733505e0d87148314cd93f37cb0c291615f00bbe94a12c7af0
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 118733
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+
+❌ [FAILED] Hash: 0x711acfdfe5fddd733505e0d87148314cd93f37cb0c291615f00bbe94a12c7af0
+Initiator: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Payer: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Gas Limit: 30_000_000 | Used: 120_238 | Refunded: 29_879_762
+Paid: 0.000005440769500000 ETH (120238 gas * 0.045250 gwei)
+Refunded: 0.001352059230500000 ETH
+

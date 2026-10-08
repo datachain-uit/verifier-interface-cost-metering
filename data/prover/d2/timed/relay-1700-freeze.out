@@ -1,0 +1,13 @@
+ed9e37395a73ee2ce5bcdcf95d209a126f101a0b83479b1442a00c9fba41fcc7  outgoing/d2-timed-D2-20261005-night1-20261005T231715Z.tgz
+members=1038 results_members=353
+total 1112
+-rw-rw-r-- 1 ad ad  17890 Oct  5 21:08 d2-records-20261005T140804Z.tgz
+-rw-rw-r-- 1 ad ad    107 Oct  5 21:08 d2-records-20261005T140804Z.tgz.sha256
+-rw-rw-r-- 1 ad ad 376539 Oct  5 22:02 d2-records-20261005T150212Z.tgz
+-rw-rw-r-- 1 ad ad    107 Oct  5 22:02 d2-records-20261005T150212Z.tgz.sha256
+lrwxrwxrwx 1 ad ad     31 Oct  5 22:02 d2-records-latest.tgz -> d2-records-20261005T150212Z.tgz
+-rw-rw-r-- 1 ad ad    107 Oct  5 22:02 d2-records-latest.tgz.sha256
+-rw-rw-r-- 1 ad ad 719915 Oct  6 06:17 d2-timed-D2-20261005-night1-20261005T231715Z.tgz
+-rw-rw-r-- 1 ad ad    124 Oct  6 06:17 d2-timed-D2-20261005-night1-20261005T231715Z.tgz.sha256
+lrwxrwxrwx 1 ad ad     48 Oct  6 06:17 d2-timed-latest.tgz -> d2-timed-D2-20261005-night1-20261005T231715Z.tgz
+-rw-rw-r-- 1 ad ad    124 Oct  6 06:17 d2-timed-latest.tgz.sha256

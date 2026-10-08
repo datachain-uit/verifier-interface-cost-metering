@@ -1,0 +1,130 @@
+{
+ "label": "V2-M7B-A POST HOC MECHANISM CONFIRMATION \u2014 not C1 confirmatory evidence; F4 / H4 unchanged",
+ "protocol_sha256": "16012294695ef276d48c69805b5e354da8e521c834477183188b170e6896c7b8",
+ "hardfork": "osaka",
+ "proofs": 18,
+ "determinism_gate_all_pass": true,
+ "memtrace_same_execution_all": true,
+ "heap_replay_consistent_with_edr_memsize_all": true,
+ "final_heap_equals_m7a_all": true,
+ "per_k": [
+  {
+   "k": 1,
+   "groth16_proof": "c1_k01/groth16/j0",
+   "plonk_proof": "c1_k01/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 29,
+   "predicted_difference": 22,
+   "observed_difference": 22,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 29
+  },
+  {
+   "k": 2,
+   "groth16_proof": "c1_ctx_k02/groth16/j0",
+   "plonk_proof": "c1_ctx_k02/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 29,
+   "predicted_difference": 22,
+   "observed_difference": 22,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 29
+  },
+  {
+   "k": 4,
+   "groth16_proof": "c1_ctx_k04/groth16/j0",
+   "plonk_proof": "c1_ctx_k04/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 31,
+   "predicted_difference": 24,
+   "observed_difference": 24,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 31
+  },
+  {
+   "k": 8,
+   "groth16_proof": "c1_ctx_k08/groth16/j0",
+   "plonk_proof": "c1_ctx_k08/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 31,
+   "predicted_difference": 24,
+   "observed_difference": 24,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 31
+  },
+  {
+   "k": 12,
+   "groth16_proof": "c1_ctx_k12/groth16/j0",
+   "plonk_proof": "c1_ctx_k12/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 35,
+   "predicted_difference": 28,
+   "observed_difference": 28,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 35
+  },
+  {
+   "k": 16,
+   "groth16_proof": "c1_ctx_k16/groth16/j0",
+   "plonk_proof": "c1_ctx_k16/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 39,
+   "predicted_difference": 32,
+   "observed_difference": 32,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 39
+  },
+  {
+   "k": 24,
+   "groth16_proof": "c1_ctx_k24/groth16/j0",
+   "plonk_proof": "c1_ctx_k24/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 47,
+   "predicted_difference": 40,
+   "observed_difference": 40,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 47
+  },
+  {
+   "k": 32,
+   "groth16_proof": "c1_ctx_k32/groth16/j0",
+   "plonk_proof": "c1_ctx_k32/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 55,
+   "predicted_difference": 48,
+   "observed_difference": 48,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 55
+  },
+  {
+   "k": 64,
+   "groth16_proof": "c1_ctx_k64/groth16/j0",
+   "plonk_proof": "c1_ctx_k64/plonk/j0",
+   "groth16_events": 7,
+   "plonk_events": 87,
+   "predicted_difference": 80,
+   "observed_difference": 80,
+   "result": "MATCH",
+   "evm_expansions_groth16": 7,
+   "evm_expansions_plonk": 87
+  }
+ ],
+ "matches": 9,
+ "verdict": "CONFIRMED",
+ "P2_groth16_event_counts": [
+  7
+ ],
+ "P2_groth16_constant": true,
+ "P3_remainder_minus_35E_values": [
+  1669012
+ ],
+ "P3_single_constant": true
+}

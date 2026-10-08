@@ -1,0 +1,150 @@
+arm   regime                 circuit              b         k           vpd(min-max)   vc(min)   deployV   size ctrl unk
+eravm 27                     v1_d11               groth16   1    8676277-8681899      8683290    464701   2848 3/3 True
+eravm 27                     ctx_d11_k4           groth16   4    9570231-9587325      9577358    642612   5600 6/6 True
+eravm 27                     ctx_d11_k16          groth16  16   13165364-13234976    13172845   1182063  16416 18/18 True
+eravm 27                     v1_d11               plonk     1   10476750-10499274    10484199   2921940  42208 3/3 True
+eravm 27                     ctx_d11_k4           plonk     4   10434010-10484596    10441597   3339937  48544 6/6 True
+eravm 27                     ctx_d11_k16          plonk    16   10490408-10534400    10498367   4466883  67616 18/18 True
+eravm 29                     mini_d0_k1           fflonk    1     440064-441288        447499   9525438 161376 3/3 True
+eravm 29                     mini_d0_k2           fflonk    2     442735-443137        450246   9690389 164000 4/4 True
+eravm 29                     mini_d0_k4           fflonk    4     446947-447607        454496  10010579 169248 6/6 True
+eravm 29                     mini_d0_k16          fflonk   16     473243-473423        481214  11691441 200864 18/18 True
+eravm 29                     mini_d0_k1           groth16   1     444263-444263        451276    467561   2848 3/3 True
+eravm 29                     v1_d11               groth16   1     444263-444263        451276    467561   2848 3/3 True
+eravm 29                     ctx_d11_k2           groth16   2     451223-451223        458286    541003   3872 4/4 True
+eravm 29                     mini_d0_k2           groth16   2     451223-451223        458286    541003   3872 4/4 True
+eravm 29                     a4_d11               groth16   4     465091-465091        472218    645472   5600 7/7 True
+eravm 29                     ctx_d11_k4           groth16   4     465091-465091        472218    645472   5600 6/6 True
+eravm 29                     disc_p16x2_d11_k4    groth16   4     465091-465091        472218    645472   5600 7/7 True
+eravm 29                     mini_d0_k4           groth16   4     465091-465091        472218    645472   5600 6/6 True
+eravm 29                     a8_d11               groth16   8     492883-492883        500114    838620   9184 10/10 True
+eravm 29                     ctx_d11_k16          groth16  16     548592-548592        556073   1184923  16416 18/18 True
+eravm 29                     mini_d0_k16          groth16  16     548592-548592        556073   1184923  16416 18/18 True
+eravm 29                     ctx_d11_k32          groth16  32     659896-659896        667895   1923071  30752 34/34 True
+eravm 29                     ctx_d11_k64          groth16  64     882416-882416        891451   3382571  59424 66/66 True
+eravm 29                     mini_d0_k1           plonk     1     443956-445090        451405   2875560  41184 3/3 True
+eravm 29                     v1_d11               plonk     1     445254-446862        452703   2924800  42208 3/3 True
+eravm 29                     ctx_d11_k2           plonk     2     446002-449308        453501   3033259  43808 4/4 True
+eravm 29                     mini_d0_k2           plonk     2     446186-448172        453685   2984019  42784 4/4 True
+eravm 29                     a4_d11               plonk     4     453376-453514        460963   3342797  48544 7/7 True
+eravm 29                     ctx_d11_k4           plonk     4     452320-453994        459907   3342797  48544 6/6 True
+eravm 29                     disc_p16x2_d11_k4    plonk     4     451810-452182        459397   3342797  48544 7/7 True
+eravm 29                     mini_d0_k4           plonk     4     453460-454210        461047   3286739  47392 6/6 True
+eravm 29                     a8_d11               plonk     8     459684-459900        467375   3719902  54880 10/10 True
+eravm 29                     ctx_d11_k16          plonk    16     476276-478490        484235   4469743  67616 18/18 True
+eravm 29                     mini_d0_k16          plonk    16     474778-478096        482737   4416028  66528 18/18 True
+eravm 29                     ctx_d11_k32          plonk    32     511550-514412        520009   5970165  93088 34/34 True
+eravm 29                     ctx_d11_k64          plonk    64     581572-586654        591079   9001335 144416 66/66 True
+evm   osaka                  mini_d0_k1           fflonk    1     216739-216763        225653   3136995  14288 3/3 True
+evm   osaka                  mini_d0_k2           fflonk    2     218174-218186        227193   3214706  14648 4/4 True
+evm   osaka                  mini_d0_k4           fflonk    4     220739-220739        229672   3343917  15247 6/6 True
+evm   osaka                  mini_d0_k16          fflonk   16     235989-236037        245116   4121480  18851 18/18 True
+evm   osaka                  mini_d0_k1           groth16   1     214585-214609        223946    350048   1374 3/3 True
+evm   osaka                  v1_d11               groth16   1     214585-214585        223946    349604   1372 3/3 True
+evm   osaka                  ctx_d11_k2           groth16   2     221761-221797        231101    368865   1461 4/4 True
+evm   osaka                  mini_d0_k2           groth16   2     221773-221785        231113    368865   1461 4/4 True
+evm   osaka                  a4_d11               groth16   4     236098-236134        245491    411418   1658 7/7 True
+evm   osaka                  ctx_d11_k4           groth16   4     236110-236134        245503    410962   1656 6/6 True
+evm   osaka                  disc_p16x2_d11_k4    groth16   4     236086-236098        245479    411394   1658 7/7 True
+evm   osaka                  mini_d0_k4           groth16   4     236122-236134        245515    411406   1658 6/6 True
+evm   osaka                  a8_d11               groth16   8     263301-263301        272598    490633   2025 10/10 True
+evm   osaka                  ctx_d11_k16          groth16  16     321781-321817        331112    654716   2785 18/18 True
+evm   osaka                  mini_d0_k16          groth16  16     321793-321805        331124    654764   2785 18/18 True
+evm   osaka                  ctx_d11_k32          groth16  32     436125-436149        445630    982976   4305 34/34 True
+evm   osaka                  ctx_d11_k64          groth16  64     664861-664873        674588   1638632   7341 66/66 True
+evm   osaka                  mini_d0_k1           plonk     1     290312-291266        299311   1213780   5374 3/3 True
+evm   osaka                  v1_d11               plonk     1     290869-291983        299868   1226937   5435 3/3 True
+evm   osaka                  ctx_d11_k2           plonk     2     291301-293455        300231   1279566   5679 4/4 True
+evm   osaka                  mini_d0_k2           plonk     2     291920-293352        300850   1266205   5617 4/4 True
+evm   osaka                  a4_d11               plonk     4     295277-295387        304265   1366200   6081 7/7 True
+evm   osaka                  ctx_d11_k4           plonk     4     294617-295705        303605   1366224   6081 6/6 True
+evm   osaka                  disc_p16x2_d11_k4    plonk     4     294237-294335        303225   1366152   6081 7/7 True
+evm   osaka                  mini_d0_k4           plonk     4     296054-296752        305042   1352430   6017 6/6 True
+evm   osaka                  a8_d11               plonk     8     297738-298264        306771   1562202   6990 10/10 True
+evm   osaka                  ctx_d11_k16          plonk    16     310129-311683        319233   1929025   8692 18/18 True
+evm   osaka                  mini_d0_k16          plonk    16     309462-311212        318566   1913335   8618 18/18 True
+evm   osaka                  ctx_d11_k32          plonk    32     332225-334989        341407   2664345  12102 34/34 True
+evm   osaka                  ctx_d11_k64          plonk    64     377394-379632        386822   4134197  18918 66/66 True
+evm   petersburg             ctx_d11_k4           groth16   4     637826-637954        641519    495512   1656 6/6 True
+evm   petersburg             ctx_d11_k16          groth16  16    1169337-1169529      1172968    796134   2785 18/18 True
+evm   petersburg             ctx_d11_k4           plonk     4    1128501-1129797      1131789   1673160   6081 6/6 True
+evm   petersburg             ctx_d11_k16          plonk    16    1163357-1164859      1166761   2363355   8692 18/18 True
+evm   petersburg/paris-bytecode v1_d11               groth16   1     504815-504815        508476    419664   1372 3/3 True
+evm   petersburg/paris-bytecode v1_d11               plonk     1    1119813-1120771      1123112   1502195   5435 3/3 True
+evm   petersburg/petersburg-bytecode v1_d11               groth16   1     504815-504815        508476    419600   1372 3/3 True
+evm   petersburg/petersburg-bytecode v1_d11               plonk     1    1119813-1120771      1123112   1502195   5435 3/3 True
+zkos  v31/npg100             mini_d0_k1           fflonk    1     550082-550082        554711   3136995  14288 3/3 None
+zkos  v31/npg100             mini_d0_k2           fflonk    2     550948-550948        555628   3214706  14648 4/4 None
+zkos  v31/npg100             mini_d0_k4           fflonk    4     552559-552559        557189   3343917  15247 6/6 None
+zkos  v31/npg100             mini_d0_k16          fflonk   16     562746-562746        567448   4121480  18851 18/18 None
+zkos  v31/npg100             mini_d0_k1           groth16   1     777801-777801        782647    350048   1374 3/3 None
+zkos  v31/npg100             v1_d11               groth16   1     777801-777801        782647    349604   1372 3/3 None
+zkos  v31/npg100             ctx_d11_k2           groth16   2     786295-786295        791115    368865   1461 4/4 None
+zkos  v31/npg100             mini_d0_k2           groth16   2     786295-786295        791115    368865   1461 4/4 None
+zkos  v31/npg100             a4_d11               groth16   4     803281-803281        808114    411418   1658 6/6 None
+zkos  v31/npg100             ctx_d11_k4           groth16   4     803281-803281        808114    410962   1656 6/6 None
+zkos  v31/npg100             disc_p16x2_d11_k4    groth16   4     803281-803281        808114    411394   1658 6/6 None
+zkos  v31/npg100             mini_d0_k4           groth16   4     803281-803281        808114    411406   1658 6/6 None
+zkos  v31/npg100             a8_d11               groth16   8     837200-837200        841990    490633   2025 10/10 None
+zkos  v31/npg100             ctx_d11_k16          groth16  16     905098-905098        909891    654716   2785 18/18 None
+zkos  v31/npg100             mini_d0_k16          groth16  16     905098-905098        909891    654764   2785 18/18 None
+zkos  v31/npg100             ctx_d11_k32          groth16  32    1040889-1040889      1045730    982976   4305 34/34 None
+zkos  v31/npg100             mini_d0_k1           plonk     1     637520-637973        642190   1213780   5374 3/3 None
+zkos  v31/npg100             v1_d11               plonk     1     637905-638457        642575   1226937   5435 3/3 None
+zkos  v31/npg100             ctx_d11_k2           plonk     2     638265-639313        642896   1279566   5679 4/4 None
+zkos  v31/npg100             mini_d0_k2           plonk     2     638480-639180        643111   1266205   5617 4/4 None
+zkos  v31/npg100             a4_d11               plonk     4     640702-640754        645359   1366200   6081 6/6 None
+zkos  v31/npg100             ctx_d11_k4           plonk     4     640402-640902        645059   1366224   6081 6/6 None
+zkos  v31/npg100             disc_p16x2_d11_k4    plonk     4     640202-640254        644859   1366152   6081 6/6 None
+zkos  v31/npg100             mini_d0_k4           plonk     4     640965-641313        645623   1352430   6017 6/6 None
+zkos  v31/npg100             a8_d11               plonk     8     643422-643669        648094   1562202   6990 10/10 None
+zkos  v31/npg100             ctx_d11_k16          plonk    16     650336-651088        655025   1929025   8692 18/18 None
+zkos  v31/npg100             mini_d0_k16          plonk    16     649900-650748        654590   1913335   8618 18/18 None
+zkos  v31/npg100             ctx_d11_k32          plonk    32     664519-665819        669207   2664345  12102 34/34 None
+
+PLONK/G16 ratio of direct verify (plonk min..max over proofs / groth16 mean)
+eravm 27                     ctx_d11_k16          k=16  G16=  13208982  PLONK=10490408..10534400 ratio=0.7942..0.7975
+eravm 27                     ctx_d11_k4           k= 4  G16=   9578687  PLONK=10434010..10484596 ratio=1.0893..1.0946
+eravm 27                     v1_d11               k= 1  G16=   8679088  PLONK=10476750..10499274 ratio=1.2071..1.2097
+eravm 29                     a4_d11               k= 4  G16=    465091  PLONK=453376..453514 ratio=0.9748..0.9751
+eravm 29                     a8_d11               k= 8  G16=    492883  PLONK=459684..459900 ratio=0.9326..0.9331
+eravm 29                     ctx_d11_k16          k=16  G16=    548592  PLONK=476276..478490 ratio=0.8682..0.8722
+eravm 29                     ctx_d11_k2           k= 2  G16=    451223  PLONK=446002..449308 ratio=0.9884..0.9958
+eravm 29                     ctx_d11_k32          k=32  G16=    659896  PLONK=511550..514412 ratio=0.7752..0.7795
+eravm 29                     ctx_d11_k4           k= 4  G16=    465091  PLONK=452320..453994 ratio=0.9725..0.9761
+eravm 29                     ctx_d11_k64          k=64  G16=    882416  PLONK=581572..586654 ratio=0.6591..0.6648
+eravm 29                     disc_p16x2_d11_k4    k= 4  G16=    465091  PLONK=451810..452182 ratio=0.9714..0.9722
+eravm 29                     mini_d0_k1           k= 1  G16=    444263  PLONK=443956..445090 ratio=0.9993..1.0019  FFLONK=440064..441288 ratio=0.9905..0.9933
+eravm 29                     mini_d0_k16          k=16  G16=    548592  PLONK=474778..478096 ratio=0.8654..0.8715  FFLONK=473243..473423 ratio=0.8627..0.8630
+eravm 29                     mini_d0_k2           k= 2  G16=    451223  PLONK=446186..448172 ratio=0.9888..0.9932  FFLONK=442735..443137 ratio=0.9812..0.9821
+eravm 29                     mini_d0_k4           k= 4  G16=    465091  PLONK=453460..454210 ratio=0.9750..0.9766  FFLONK=446947..447607 ratio=0.9610..0.9624
+eravm 29                     v1_d11               k= 1  G16=    444263  PLONK=445254..446862 ratio=1.0022..1.0059
+evm   osaka                  a4_d11               k= 4  G16=    236116  PLONK=295277..295387 ratio=1.2506..1.2510
+evm   osaka                  a8_d11               k= 8  G16=    263301  PLONK=297738..298264 ratio=1.1308..1.1328
+evm   osaka                  ctx_d11_k16          k=16  G16=    321801  PLONK=310129..311683 ratio=0.9637..0.9686
+evm   osaka                  ctx_d11_k2           k= 2  G16=    221779  PLONK=291301..293455 ratio=1.3135..1.3232
+evm   osaka                  ctx_d11_k32          k=32  G16=    436141  PLONK=332225..334989 ratio=0.7617..0.7681
+evm   osaka                  ctx_d11_k4           k= 4  G16=    236122  PLONK=294617..295705 ratio=1.2477..1.2523
+evm   osaka                  ctx_d11_k64          k=64  G16=    664867  PLONK=377394..379632 ratio=0.5676..0.5710
+evm   osaka                  disc_p16x2_d11_k4    k= 4  G16=    236092  PLONK=294237..294335 ratio=1.2463..1.2467
+evm   osaka                  mini_d0_k1           k= 1  G16=    214597  PLONK=290312..291266 ratio=1.3528..1.3573  FFLONK=216739..216763 ratio=1.0100..1.0101
+evm   osaka                  mini_d0_k16          k=16  G16=    321799  PLONK=309462..311212 ratio=0.9617..0.9671  FFLONK=235989..236037 ratio=0.7333..0.7335
+evm   osaka                  mini_d0_k2           k= 2  G16=    221779  PLONK=291920..293352 ratio=1.3163..1.3227  FFLONK=218174..218186 ratio=0.9837..0.9838
+evm   osaka                  mini_d0_k4           k= 4  G16=    236128  PLONK=296054..296752 ratio=1.2538..1.2567  FFLONK=220739..220739 ratio=0.9348..0.9348
+evm   osaka                  v1_d11               k= 1  G16=    214585  PLONK=290869..291983 ratio=1.3555..1.3607
+evm   petersburg             ctx_d11_k16          k=16  G16=   1169444  PLONK=1163357..1164859 ratio=0.9948..0.9961
+evm   petersburg             ctx_d11_k4           k= 4  G16=    637890  PLONK=1128501..1129797 ratio=1.7691..1.7711
+evm   petersburg/paris-bytecode v1_d11               k= 1  G16=    504815  PLONK=1119813..1120771 ratio=2.2183..2.2202
+evm   petersburg/petersburg-bytecode v1_d11               k= 1  G16=    504815  PLONK=1119813..1120771 ratio=2.2183..2.2202
+zkos  v31/npg100             a4_d11               k= 4  G16=    803281  PLONK=640702..640754 ratio=0.7976..0.7977
+zkos  v31/npg100             a8_d11               k= 8  G16=    837200  PLONK=643422..643669 ratio=0.7685..0.7688
+zkos  v31/npg100             ctx_d11_k16          k=16  G16=    905098  PLONK=650336..651088 ratio=0.7185..0.7194
+zkos  v31/npg100             ctx_d11_k2           k= 2  G16=    786295  PLONK=638265..639313 ratio=0.8117..0.8131
+zkos  v31/npg100             ctx_d11_k32          k=32  G16=   1040889  PLONK=664519..665819 ratio=0.6384..0.6397
+zkos  v31/npg100             ctx_d11_k4           k= 4  G16=    803281  PLONK=640402..640902 ratio=0.7972..0.7979
+zkos  v31/npg100             disc_p16x2_d11_k4    k= 4  G16=    803281  PLONK=640202..640254 ratio=0.7970..0.7970
+zkos  v31/npg100             mini_d0_k1           k= 1  G16=    777801  PLONK=637520..637973 ratio=0.8196..0.8202  FFLONK=550082..550082 ratio=0.7072..0.7072
+zkos  v31/npg100             mini_d0_k16          k=16  G16=    905098  PLONK=649900..650748 ratio=0.7180..0.7190  FFLONK=562746..562746 ratio=0.6218..0.6218
+zkos  v31/npg100             mini_d0_k2           k= 2  G16=    786295  PLONK=638480..639180 ratio=0.8120..0.8129  FFLONK=550948..550948 ratio=0.7007..0.7007
+zkos  v31/npg100             mini_d0_k4           k= 4  G16=    803281  PLONK=640965..641313 ratio=0.7979..0.7984  FFLONK=552559..552559 ratio=0.6879..0.6879
+zkos  v31/npg100             v1_d11               k= 1  G16=    777801  PLONK=637905..638457 ratio=0.8201..0.8208

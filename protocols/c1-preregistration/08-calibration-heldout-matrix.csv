@@ -1,0 +1,271 @@
+cell_id,metric,design_class,campaign,k,role,scored_by,calibration_inputs_allowed
+evm-osaka|groth16|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_k01,Y_app,CORE,PILOT,1,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k02,Y_app,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k04,Y_dir,CORE,PILOT,4,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k04,Y_app,CORE,PILOT,4,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k06,Y_app,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k08,Y_app,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k12,Y_app,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k16,Y_app,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k24,Y_app,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k32,Y_app,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|groth16|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+evm-osaka|groth16|c1_ctx_k64,Y_app,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+evm-osaka|plonk|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_k01,Y_app,CORE,PILOT,1,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k02,Y_app,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k04,Y_dir,CORE,PILOT,4,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k04,Y_app,CORE,PILOT,4,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k06,Y_app,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k08,Y_app,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k12,Y_app,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k16,Y_app,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k24,Y_app,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k32,Y_app,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+evm-osaka|plonk|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+evm-osaka|plonk|c1_ctx_k64,Y_app,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+eravm-29|groth16|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_k01,Y_app,CORE,PILOT,1,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k02,Y_app,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k04,Y_dir,CORE,PILOT,4,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k04,Y_app,CORE,PILOT,4,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k06,Y_app,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k08,Y_app,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k12,Y_app,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k16,Y_app,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k24,Y_app,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k32,Y_app,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|groth16|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+eravm-29|groth16|c1_ctx_k64,Y_app,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+eravm-29|plonk|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_k01,Y_app,CORE,PILOT,1,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k02,Y_app,CORE,PILOT,2,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k04,Y_dir,CORE,PILOT,4,CALIBRATION,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k04,Y_app,CORE,PILOT,4,CALIBRATION,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k06,Y_app,CORE,FULL,6,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k08,Y_app,CORE,FULL,8,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k12,Y_app,CORE,FULL,12,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k16,Y_app,CORE,PILOT,16,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k24,Y_app,CORE,FULL,24,HELD-OUT-k/strictly-unseen,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"H1-H3 (R, SG, XO), P","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k32,Y_app,CORE,FULL,32,HELD-OUT-k/seen-in-P0,"secondary (R, P)","own k=1,4 cells"
+eravm-29|plonk|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+eravm-29|plonk|c1_ctx_k64,Y_app,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+zkos-v32@npg100|groth16|c1_k01,N_dir,CORE,PILOT,1,"CALIBRATION (base, c)",H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k02,N_dir,CORE,PILOT,2,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k04,N_dir,CORE,PILOT,4,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k04,Y_dir,CORE,PILOT,4,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k06,N_dir,CORE,FULL,6,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k08,N_dir,CORE,FULL,8,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k12,N_dir,CORE,FULL,12,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k16,N_dir,CORE,PILOT,16,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k24,N_dir,CORE,FULL,24,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k32,N_dir,CORE,FULL,32,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|groth16|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|groth16|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+zkos-v32@npg100|groth16|c1_ctx_k64,N_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+zkos-v32@npg100|plonk|c1_k01,N_dir,CORE,PILOT,1,"CALIBRATION (base, c)",H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_k01,Y_dir,CORE,PILOT,1,CALIBRATION,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k02,N_dir,CORE,PILOT,2,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k02,Y_dir,CORE,PILOT,2,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k04,N_dir,CORE,PILOT,4,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k04,Y_dir,CORE,PILOT,4,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k06,N_dir,CORE,FULL,6,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k06,Y_dir,CORE,FULL,6,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k08,N_dir,CORE,FULL,8,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k08,Y_dir,CORE,FULL,8,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k12,N_dir,CORE,FULL,12,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k12,Y_dir,CORE,FULL,12,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k16,N_dir,CORE,PILOT,16,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k16,Y_dir,CORE,PILOT,16,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k24,N_dir,CORE,FULL,24,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k24,Y_dir,CORE,FULL,24,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k32,N_dir,CORE,FULL,32,HELD-OUT-k,H4 (ZC conditional) + P,k=1 G16+PLONK only
+zkos-v32@npg100|plonk|c1_ctx_k32,Y_dir,CORE,FULL,32,HELD-OUT-k,"H2 (SG, XO at npg100), P",via N and EVM gas
+zkos-v32@npg100|plonk|c1_ctx_k64,Y_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+zkos-v32@npg100|plonk|c1_ctx_k64,N_dir,CORE,FULL,64,LIMIT-CHECK,descriptive only,-
+zkos-v32@npg126|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg126|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg126|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg126|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg139|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg139|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg139|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg139|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg151|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg151|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg151|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg151|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg169|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg169|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg169|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg169|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg171|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg171|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg171|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg171|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|groth16|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|groth16|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|plonk|c1_k01,Y_dir,CORE-INTERVENTION,PILOT,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|plonk|c1_k01,N_dir,CORE-INTERVENTION,PILOT,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg125|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg125|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg125|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg125|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg138|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg138|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg138|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg138|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg149|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg149|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg149|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg149|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg165|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg165|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg165|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg165|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg167|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg167|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg167|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg167|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|groth16|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|groth16|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|plonk|c1_ctx_k04,Y_dir,CORE-INTERVENTION,FULL,4,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|plonk|c1_ctx_k04,N_dir,CORE-INTERVENTION,FULL,4,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg120|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg120|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg120|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg120|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg132|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg132|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg132|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg132|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg141|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg141|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg141|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg141|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg154|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg154|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg154|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg154|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg156|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg156|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg156|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg156|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|groth16|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|groth16|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg300|plonk|c1_ctx_k16,Y_dir,CORE-INTERVENTION,FULL,16,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg300|plonk|c1_ctx_k16,N_dir,CORE-INTERVENTION,FULL,16,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg100+priority_fee=1e8wei|groth16|c1_k01,Y_dir,CORE-ROBUSTNESS,FULL,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg100+priority_fee=1e8wei|groth16|c1_k01,N_dir,CORE-ROBUSTNESS,FULL,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+zkos-v32@npg100+priority_fee=1e8wei|plonk|c1_k01,Y_dir,CORE-ROBUSTNESS,FULL,1,HELD-OUT-REGIME/INTERVENTION,"H5 (NPG): binding meter, gas interval, ranking",native from npg100 cells is NOT used; prediction from frozen files
+zkos-v32@npg100+priority_fee=1e8wei|plonk|c1_k01,N_dir,CORE-ROBUSTNESS,FULL,1,INVARIANCE-CHECK,native independent of npg (equal to npg100 cell per proof),-
+eravm-27|groth16|c1_k01,Y_dir,VALIDATION,FULL,1,CALIBRATION,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|groth16|c1_k01,Y_app,VALIDATION,FULL,1,CALIBRATION,secondary,same
+eravm-27|groth16|c1_ctx_k04,Y_dir,VALIDATION,FULL,4,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|groth16|c1_ctx_k04,Y_app,VALIDATION,FULL,4,HELD-OUT-REGIME,secondary,same
+eravm-27|groth16|c1_ctx_k06,Y_dir,VALIDATION,FULL,6,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|groth16|c1_ctx_k06,Y_app,VALIDATION,FULL,6,HELD-OUT-REGIME,secondary,same
+eravm-27|groth16|c1_ctx_k08,Y_dir,VALIDATION,FULL,8,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|groth16|c1_ctx_k08,Y_app,VALIDATION,FULL,8,HELD-OUT-REGIME,secondary,same
+eravm-27|groth16|c1_ctx_k16,Y_dir,VALIDATION,FULL,16,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|groth16|c1_ctx_k16,Y_app,VALIDATION,FULL,16,HELD-OUT-REGIME,secondary,same
+evm-osaka|groth16|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|groth16|c1_a4,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|groth16|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|groth16|c1_a8,Y_app,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|groth16|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|groth16|c1_disc_k04,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_a4,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_a8,Y_app,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|groth16|c1_disc_k04,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_a4,N_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_a8,N_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|groth16|c1_disc_k04,N_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-27|plonk|c1_k01,Y_dir,VALIDATION,FULL,1,CALIBRATION,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|plonk|c1_k01,Y_app,VALIDATION,FULL,1,CALIBRATION,secondary,same
+eravm-27|plonk|c1_ctx_k04,Y_dir,VALIDATION,FULL,4,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|plonk|c1_ctx_k04,Y_app,VALIDATION,FULL,4,HELD-OUT-REGIME,secondary,same
+eravm-27|plonk|c1_ctx_k06,Y_dir,VALIDATION,FULL,6,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|plonk|c1_ctx_k06,Y_app,VALIDATION,FULL,6,HELD-OUT-REGIME,secondary,same
+eravm-27|plonk|c1_ctx_k08,Y_dir,VALIDATION,FULL,8,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|plonk|c1_ctx_k08,Y_app,VALIDATION,FULL,8,HELD-OUT-REGIME,secondary,same
+eravm-27|plonk|c1_ctx_k16,Y_dir,VALIDATION,FULL,16,HELD-OUT-REGIME,"H7 (R v27 transfer, XO, SG)",v27 k=1 cell + v29 B + frame difference
+eravm-27|plonk|c1_ctx_k16,Y_app,VALIDATION,FULL,16,HELD-OUT-REGIME,secondary,same
+evm-osaka|plonk|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|plonk|c1_a4,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|plonk|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|plonk|c1_a8,Y_app,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|plonk|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|plonk|c1_disc_k04,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_a4,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_a8,Y_app,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+eravm-29|plonk|c1_disc_k04,Y_app,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_a4,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_a4,N_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_a8,Y_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_a8,N_dir,VALIDATION,FULL,8,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_disc_k04,Y_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+zkos-v32@npg100|plonk|c1_disc_k04,N_dir,VALIDATION,FULL,4,SEMANTIC,H6 (SEM) + P/R/ZC as held-out,none (compared with ctx at same k)
+evm-osaka|fflonk|c1_ff_k01,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,1,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+evm-osaka|fflonk|c1_ff_k04,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,4,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+evm-osaka|fflonk|c1_ff_k16,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,16,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+evm-osaka|fflonk|c1_ff_k32,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,32,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+eravm-29|fflonk|c1_ff_k01,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,1,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+eravm-29|fflonk|c1_ff_k04,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,4,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+eravm-29|fflonk|c1_ff_k16,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,16,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+eravm-29|fflonk|c1_ff_k32,Y_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,32,DESCRIPTIVE (FFLONK rank),descriptive,"none from FFLONK; base,c from G16+PLONK k=1"
+zkos-v32@npg100|fflonk|c1_ff_k01,N_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,1,HELD-OUT-BACKEND,H8 / ZC,"none from FFLONK; base,c from G16+PLONK k=1"
+zkos-v32@npg100|fflonk|c1_ff_k04,N_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,4,HELD-OUT-BACKEND,H8 / ZC,"none from FFLONK; base,c from G16+PLONK k=1"
+zkos-v32@npg100|fflonk|c1_ff_k16,N_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,16,HELD-OUT-BACKEND,H8 / ZC,"none from FFLONK; base,c from G16+PLONK k=1"
+zkos-v32@npg100|fflonk|c1_ff_k32,N_dir,VALIDATION-CONDITIONAL,FULL-IF-FFLONK-GATE-PASSES,32,HELD-OUT-BACKEND,H8 / ZC,"none from FFLONK; base,c from G16+PLONK k=1"
+evm-petersburg|groth16|c1_k01,Y_dir,SUPPORTING,NOT-SCHEDULED,1,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"
+evm-petersburg|groth16|c1_ctx_k04,Y_dir,SUPPORTING,NOT-SCHEDULED,4,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"
+evm-petersburg|groth16|c1_ctx_k16,Y_dir,SUPPORTING,NOT-SCHEDULED,16,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"
+evm-petersburg|plonk|c1_k01,Y_dir,SUPPORTING,NOT-SCHEDULED,1,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"
+evm-petersburg|plonk|c1_ctx_k04,Y_dir,SUPPORTING,NOT-SCHEDULED,4,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"
+evm-petersburg|plonk|c1_ctx_k16,Y_dir,SUPPORTING,NOT-SCHEDULED,16,SUPPORTING-CONTROL,L1-PETERSBURG (accounting); descriptive crossover,"own k=1,4 cells"

@@ -1,0 +1,12 @@
+{
+ "env": "evm-osaka",
+ "regime": {
+  "hardfork": "osaka"
+ },
+ "versions": {
+  "hardfork": "osaka"
+ },
+ "n_records": 42,
+ "verifier_runtime_sha256": "05dee3709f4f75e9a5c912ba4425890fa8b0714dafe872b4356b1447ba20b484",
+ "manager_runtime_sha256": "0dad4f00d65e7fe4b7ffe83c1d0f8a231b9db7b181fee0070b5b2802dae25a52"
+}

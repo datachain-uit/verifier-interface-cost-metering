@@ -1,0 +1,5 @@
+Stage-1 C2 scorer (code/c2_score.py, da7624852844377478aee170397d2bc45604da0b710784402420b2735fd432d1) run once, after the C1 scoring.
+UTC start: 2026-10-05T05:37:15Z
+Stage-1 package SHA256SUMS dfea3a87a775c067ffaa250d05771fb065d32e6a779063eb43eb1561cc626652 re-verified; stage-2 SHA256SUMS 9b4a38856f8e871e8e8b0707da6b6cfa673c1948a160524a79a56f76b752c010 re-verified by the scorer (frozen 2026-10-05T05:21:34Z).
+Command: python3 -B code/c2_score.py <V2-C2-stage2> <V2-C2-stage2>/fflonk-structural.jsonl V2-MPI-PILOT-01-records.jsonl V2-MPI-FULL-01-records.jsonl V2-MPI-FULL-01-FFLONK-records.jsonl --out <out>
+Exit code 0; stderr empty. No refit; no prediction recomputed; no term, constant, tau or rule changed.

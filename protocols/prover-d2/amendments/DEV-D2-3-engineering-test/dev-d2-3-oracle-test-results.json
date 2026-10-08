@@ -1,0 +1,294 @@
+{
+ "source_campaign": "research/results/v2/V2-PRV-D2-01/owner-local-dryrun-20261005T123643Z-resumetest-20261005T130639Z/repo/build/campaigns/dryrun-resumetest-20261005T130639Z (copied per case; never modified)",
+ "frozen_oracle_sha256": "3a80711d9b6b6e2d7d961747312d4d26ec6e4c3aa6f547509417c7dbeca1c88d",
+ "r5_oracle_sha256": "b0f83a6431fbaa28b80dd293b42d403923ee08c8d5763da4fe3b59bcbc9ea849",
+ "cases": [
+  {
+   "case": "frozen oracle, as recorded",
+   "exit": 9,
+   "summary": "resume test: FAIL (10/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": false,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "as_expected": true
+  },
+  {
+   "case": "frozen oracle, v3 detail format (prefix removed)",
+   "exit": 0,
+   "summary": "resume test: PASS (12/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "as_expected": true
+  },
+  {
+   "case": "r5 oracle, as recorded",
+   "exit": 0,
+   "summary": "resume test: PASS (12/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "r5 oracle, v3 detail format (prefix removed)",
+   "exit": 0,
+   "summary": "resume test: PASS (12/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "r5 oracle, declared window id \"W-TEST-1\"",
+   "exit": 0,
+   "summary": "resume test: PASS (12/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session-1 end not a planned stop (\"window none; PASS\")",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": false,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session-1 end \"window none; FAIL: ...\"",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": false,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session-1 end row missing",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": true,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": false,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session-2 start marked \"new\"",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session-3 start marked \"new\"",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: only two session starts",
+   "exit": 9,
+   "summary": "resume test: FAIL (8/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": false,
+    "interrupted_round_rerun_whole": false,
+    "remaining_rounds_accepted_in_session3": false,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: session 3 reuses session-2 id",
+   "exit": 9,
+   "summary": "resume test: FAIL (8/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": false,
+    "interrupted_round_rerun_whole": false,
+    "remaining_rounds_accepted_in_session3": false,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  },
+  {
+   "case": "NEG r5: \"resume\" only inside a longer detail (\"window none; not resume\")",
+   "exit": 9,
+   "summary": "resume test: FAIL (11/12)",
+   "checks": {
+    "three_sessions_with_new_ids": false,
+    "round_completed_in_session1": true,
+    "session1_clean_planned_stop": true,
+    "completed_round_not_rerun": true,
+    "interrupted_round_preserved_as_incomplete": true,
+    "interrupted_round_rerun_whole": true,
+    "remaining_rounds_accepted_in_session3": true,
+    "final_validation_pass": true,
+    "summary_uses_accepted_attempt_only": true,
+    "accepted_round_rerun_refused": true,
+    "altered_schedule_resume_refused": true,
+    "other_commit_resume_refused": true
+   },
+   "other_checks_identical_to_frozen": true,
+   "as_expected": true
+  }
+ ],
+ "recorded": {
+  "three_sessions_with_new_ids": false,
+  "round_completed_in_session1": true,
+  "session1_clean_planned_stop": false,
+  "completed_round_not_rerun": true,
+  "interrupted_round_preserved_as_incomplete": true,
+  "interrupted_round_rerun_whole": true,
+  "remaining_rounds_accepted_in_session3": true,
+  "final_validation_pass": true,
+  "summary_uses_accepted_attempt_only": true,
+  "accepted_round_rerun_refused": true,
+  "altered_schedule_resume_refused": true,
+  "other_commit_resume_refused": true
+ },
+ "frozen_replay_equals_recorded": true,
+ "all_as_expected": true
+}

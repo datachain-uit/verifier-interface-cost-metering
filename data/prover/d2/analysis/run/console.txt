@@ -1,0 +1,2 @@
+inputs OK; identity OK; accepted rows 495 diag rows 240 ; reconciliation {'prover_summary': {'match': 462}, 'prover_diag': {'match': 48}} mismatches 0
+{"cells": 693, "ratios": 66, "speedups": 462, "zkey": 72}

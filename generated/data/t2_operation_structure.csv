@@ -1,0 +1,7 @@
+symbol,meaning,environment,depends_on_backend,depends_on_k,source_type,source,value_P,uncertainty
+"n_ecMul(b,k)",ecMul precompile calls per verification,all,yes,G16 only,analytic (template),snarkjs 0.7.5 verifier templates (hashes in PINS-C1),G16: k; PLONK: 18; FFLONK: 5,exact; checked by L1-STRUCT
+"n_ecAdd(b,k)",ecAdd precompile calls,all,yes,G16 only,analytic (template),same,G16: k; PLONK: 18; FFLONK: 7,exact; checked
+n_pair(b),pairing pairs (one call),all,yes,no,analytic (template),same,G16: 4; PLONK: 2; FFLONK: 2,exact; checked
+rho_b(k),keccak-f rounds of the verifier transcript,all,yes,"yes (PLONK, FFLONK)",analytic (template),PLONK ceil((32(22+k)+1)/136)+7; FFLONK ceil((32(4+k)+1)/136)+7; G16 0,see formula,exact; checked against every P0 trace and by AC-STRUCT-EVM-transcript-rounds
+ncalls_b(k),precompile calls per verification,zkos,yes,G16 only,analytic (template),G16 2k+1; PLONK 37; FFLONK 13,see formula,exact
+"cd(b,k,j)",calldata bytes / zero bytes of each registered transaction,EVM-type,yes,yes,analytic (frozen corpus),corpus/corpus-calldata.json,per proof,exact

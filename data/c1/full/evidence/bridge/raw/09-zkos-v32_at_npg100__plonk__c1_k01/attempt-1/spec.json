@@ -1,0 +1,24 @@
+{
+ "campaign": "BRIDGE",
+ "run_id": "V2-MPI-FULL-01-bridge1",
+ "order_index": 9,
+ "cell_id": "zkos-v32@npg100|plonk|c1_k01",
+ "env": "zkos-v32",
+ "regime": {
+  "npg": 100,
+  "native_price": "0xf4240",
+  "pubdata_price": "0x0",
+  "priority_fee": 0
+ },
+ "backend": "plonk",
+ "circuit": "c1_k01",
+ "k": 1,
+ "relation": "ctx",
+ "compiled": "/root/full/V2-MPI-FULL-01/compiled/c1_k01-plonk.json",
+ "proofs_dir": "/root/c1/pkg/corpus/proofs",
+ "outdir": "/root/full/V2-MPI-FULL-01/bridge/raw/09-zkos-v32_at_npg100__plonk__c1_k01/attempt-1",
+ "pins_sha256": "e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699",
+ "port": 18011,
+ "server_log": "/root/full/V2-MPI-FULL-01/bridge/raw/09-zkos-v32_at_npg100__plonk__c1_k01/attempt-1/node/server.log",
+ "attempt": 1
+}

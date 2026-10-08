@@ -1,0 +1,63 @@
+{
+ "label": "POST-REGISTERED DESCRIPTIVE (not a model, not a refit)",
+ "ZC_constants": {
+  "base": 1692688.705882353,
+  "per_call": 5866.764705882353
+ },
+ "k1_reference": {
+  "groth16": {
+   "ops": 51576,
+   "pre": 34745000,
+   "kec": 0,
+   "cop": 0,
+   "sum": 34796576,
+   "measured": 36506865
+  },
+  "plonk": {
+   "ops": 984763.25,
+   "pre": 35702000,
+   "kec": 56898,
+   "cop": 13536,
+   "sum": 36757197.25,
+   "measured": 38666956.25
+  }
+ },
+ "line": {
+  "groth16": {
+   "n_k": 8,
+   "ks": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24,
+    32
+   ],
+   "slope_native_per_k": -832.16,
+   "intercept": 720.1,
+   "r2": 0.9999,
+   "max_abs_dev_from_line": 131.5,
+   "first_k_failing": 8
+  },
+  "plonk": {
+   "n_k": 8,
+   "ks": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24,
+    32
+   ],
+   "slope_native_per_k": 3285.77,
+   "intercept": -3239.2,
+   "r2": 1.0,
+   "max_abs_dev_from_line": 154.6,
+   "first_k_failing": 64
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "env": "eravm-27",
+ "regime": {
+  "protocol": 27
+ },
+ "versions": {
+  "protocol_flag": 27,
+  "anvil_zksync_log_head": [
+   " INFO initializing system contracts protocol_version=27 use_evm_emulator=false zksync_os.zksync_os=false",
+   " INFO Starting executing L1 batch #1",
+   "TRACE Fee benchmark for transaction with hash e7a7f7374720b22f6c6cae99f803c3d126e8a55e562515699136ff1a9028bb75",
+   "TRACE Gas Limit: 400000000",
+   "TRACE Gas spent on computation: 1199625"
+  ]
+ },
+ "n_records": 56,
+ "verifier_runtime_sha256": "7039d55a6272eaf66dc5789dc6ffa154e36d3ac116d45944c9314710d4700deb",
+ "manager_runtime_sha256": "10166befa0c0af204373e23baddc54772102b4f3ca945dfa83a1949557eb91d6"
+}

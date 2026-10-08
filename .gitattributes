@@ -1,0 +1,5 @@
+setup/fflonk/ptau-local/powersOfTau19_v2_local_research.ptau filter=lfs diff=lfs merge=lfs -text
+setup/fflonk/keys/c1_ff_k01/fflonk.zkey filter=lfs diff=lfs merge=lfs -text
+setup/fflonk/keys/c1_ff_k04/fflonk.zkey filter=lfs diff=lfs merge=lfs -text
+setup/fflonk/keys/c1_ff_k16/fflonk.zkey filter=lfs diff=lfs merge=lfs -text
+setup/fflonk/keys/c1_ff_k32/fflonk.zkey filter=lfs diff=lfs merge=lfs -text

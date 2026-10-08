@@ -1,0 +1,50 @@
+[
+ {
+  "backend": "groth16",
+  "depth": 5,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "groth16",
+  "depth": 8,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "groth16",
+  "depth": 13,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "groth16",
+  "depth": 15,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "groth16",
+  "depth": 10,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "plonk",
+  "depth": 10,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "groth16",
+  "depth": 11,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ },
+ {
+  "backend": "plonk",
+  "depth": 11,
+  "proof_valid": true,
+  "public_root_equals_corpus_root": true
+ }
+]

@@ -1,0 +1,59 @@
+calibrated tx overhead (G16 k=1): 1894885
+mini_d0_k1     fflonk  k= 1 meas=  55008259 pred=  54756661 err=-0.457%  [ops 3447800 pre 49188200 kec 170000 copy 55776] unknown=[]
+mini_d0_k2     fflonk  k= 2 meas=  55094801 pred=  54832741 err=-0.476%  [ops 3522200 pre 49188200 kec 170000 copy 57456] unknown=[]
+mini_d0_k4     fflonk  k= 4 meas=  55255933 pred=  54973289 err=-0.512%  [ops 3660060 pre 49188200 kec 170000 copy 60144] unknown=[]
+mini_d0_k16    fflonk  k=16 meas=  56274630 pred=  55869677 err=-0.720%  [ops 4487820 pre 49188200 kec 222500 copy 76272] unknown=[]
+mini_d0_k1     groth16 k= 1 meas=  77780155 pred=  77780155 err=+0.000%  [ops 68670 pre 75816600 kec 0 copy 0] unknown=[]
+v1_d11         groth16 k= 1 meas=  77780155 pred=  77780155 err=+0.000%  [ops 68670 pre 75816600 kec 0 copy 0] unknown=[]
+ctx_d11_k2     groth16 k= 2 meas=  78629593 pred=  78612965 err=-0.021%  [ops 84880 pre 76633200 kec 0 copy 0] unknown=[]
+mini_d0_k2     groth16 k= 2 meas=  78629593 pred=  78612965 err=-0.021%  [ops 84880 pre 76633200 kec 0 copy 0] unknown=[]
+a4_d11         groth16 k= 4 meas=  80328169 pred=  80277605 err=-0.063%  [ops 116320 pre 78266400 kec 0 copy 0] unknown=[]
+ctx_d11_k4     groth16 k= 4 meas=  80328169 pred=  80277605 err=-0.063%  [ops 116320 pre 78266400 kec 0 copy 0] unknown=[]
+disc_p16x2_d11_k4 groth16 k= 4 meas=  80328169 pred=  80277605 err=-0.063%  [ops 116320 pre 78266400 kec 0 copy 0] unknown=[]
+mini_d0_k4     groth16 k= 4 meas=  80328169 pred=  80277605 err=-0.063%  [ops 116320 pre 78266400 kec 0 copy 0] unknown=[]
+a8_d11         groth16 k= 8 meas=  83720021 pred=  83602265 err=-0.141%  [ops 174580 pre 81532800 kec 0 copy 0] unknown=[]
+ctx_d11_k16    groth16 k=16 meas=  90509885 pred=  90257065 err=-0.279%  [ops 296580 pre 88065600 kec 0 copy 0] unknown=[]
+mini_d0_k16    groth16 k=16 meas=  90509885 pred=  90257065 err=-0.279%  [ops 296580 pre 88065600 kec 0 copy 0] unknown=[]
+ctx_d11_k32    groth16 k=32 meas= 104088933 pred= 103566665 err=-0.502%  [ops 540580 pre 101131200 kec 0 copy 0] unknown=[]
+mini_d0_k1     plonk   k= 1 meas=  63752063 pred=  63458117 err=-0.461%  [ops 1611740 pre 59698800 kec 242500 copy 10192] unknown=[]
+v1_d11         plonk   k= 1 meas=  63845789 pred=  63551503 err=-0.461%  [ops 1704790 pre 59698800 kec 242500 copy 10528] unknown=[]
+ctx_d11_k2     plonk   k= 2 meas=  63826589 pred=  63522623 err=-0.476%  [ops 1674790 pre 59698800 kec 242500 copy 11648] unknown=[]
+mini_d0_k2     plonk   k= 2 meas=  63918083 pred=  63614457 err=-0.475%  [ops 1766960 pre 59698800 kec 242500 copy 11312] unknown=[]
+a4_d11         plonk   k= 4 meas=  64070233 pred=  63746837 err=-0.505%  [ops 1878480 pre 59698800 kec 260000 copy 14672] unknown=[]
+ctx_d11_k4     plonk   k= 4 meas=  64090233 pred=  63766837 err=-0.505%  [ops 1898480 pre 59698800 kec 260000 copy 14672] unknown=[]
+disc_p16x2_d11_k4 plonk   k= 4 meas=  64020233 pred=  63422165 err=-0.934%  [ops 1828480 pre 59698800 kec 0 copy 0] unknown=[]
+mini_d0_k4     plonk   k= 4 meas=  64096587 pred=  63773871 err=-0.503%  [ops 1905850 pre 59698800 kec 260000 copy 14336] unknown=[]
+a8_d11         plonk   k= 8 meas=  64366975 pred=  64005199 err=-0.562%  [ops 2113630 pre 59698800 kec 277500 copy 20384] unknown=[]
+ctx_d11_k16    plonk   k=16 meas=  65063643 pred=  64624571 err=-0.675%  [ops 2704750 pre 59698800 kec 295000 copy 31136] unknown=[]
+mini_d0_k16    plonk   k=16 meas=  64990097 pred=  64551365 err=-0.675%  [ops 2631880 pre 59698800 kec 295000 copy 30800] unknown=[]
+ctx_d11_k32    plonk   k=32 meas=  66517219 pred=  65923555 err=-0.892%  [ops 3912230 pre 59698800 kec 365000 copy 52640] unknown=[]
+
+refined: per-call overhead c=8655 native, base=1868919 (calibrated on k=1 G16+PLONK); held-out predictions:
+mini_d0_k1     fflonk  k= 1 meas=  55008259 pred=    54843216 err=-0.300%
+mini_d0_k2     fflonk  k= 2 meas=  55094801 pred=    54919296 err=-0.319%
+mini_d0_k4     fflonk  k= 4 meas=  55255933 pred=    55059844 err=-0.355%
+mini_d0_k16    fflonk  k=16 meas=  56274630 pred=    55956232 err=-0.566%
+mini_d0_k1     groth16 k= 1 meas=  77780155 pred=    77780155 err=+0.000%
+v1_d11         groth16 k= 1 meas=  77780155 pred=    77780155 err=+0.000%
+ctx_d11_k2     groth16 k= 2 meas=  78629593 pred=    78630276 err=+0.001%
+mini_d0_k2     groth16 k= 2 meas=  78629593 pred=    78630276 err=+0.001%
+a4_d11         groth16 k= 4 meas=  80328169 pred=    80329538 err=+0.002%
+ctx_d11_k4     groth16 k= 4 meas=  80328169 pred=    80329538 err=+0.002%
+disc_p16x2_d11_k4 groth16 k= 4 meas=  80328169 pred=    80329538 err=+0.002%
+mini_d0_k4     groth16 k= 4 meas=  80328169 pred=    80329538 err=+0.002%
+a8_d11         groth16 k= 8 meas=  83720021 pred=    83723442 err=+0.004%
+ctx_d11_k16    groth16 k=16 meas=  90509885 pred=    90516729 err=+0.008%
+mini_d0_k16    groth16 k=16 meas=  90509885 pred=    90516729 err=+0.008%
+ctx_d11_k32    groth16 k=32 meas= 104088933 pred=   104103304 err=+0.014%
+mini_d0_k1     plonk   k= 1 meas=  63752063 pred=    63752403 err=+0.001%
+v1_d11         plonk   k= 1 meas=  63845789 pred=    63845789 err=+0.000%
+ctx_d11_k2     plonk   k= 2 meas=  63826589 pred=    63816909 err=-0.015%
+mini_d0_k2     plonk   k= 2 meas=  63918083 pred=    63908743 err=-0.015%
+a4_d11         plonk   k= 4 meas=  64070233 pred=    64041123 err=-0.045%
+ctx_d11_k4     plonk   k= 4 meas=  64090233 pred=    64061123 err=-0.045%
+disc_p16x2_d11_k4 plonk   k= 4 meas=  64020233 pred=    63716451 err=-0.475%
+mini_d0_k4     plonk   k= 4 meas=  64096587 pred=    64068157 err=-0.044%
+a8_d11         plonk   k= 8 meas=  64366975 pred=    64299485 err=-0.105%
+ctx_d11_k16    plonk   k=16 meas=  65063643 pred=    64918857 err=-0.223%
+mini_d0_k16    plonk   k=16 meas=  64990097 pred=    64845651 err=-0.222%
+ctx_d11_k32    plonk   k=32 meas=  66517219 pred=    66217841 err=-0.450%

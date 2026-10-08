@@ -1,0 +1,46 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 16
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   65536
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          34098
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   4
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   34083
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     31106
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK EXPORT SOLIDITY VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK EXPORT SOLIDITY VERIFIER FINISHED

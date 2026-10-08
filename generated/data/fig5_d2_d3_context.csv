@@ -1,0 +1,12 @@
+host,quantity,min,max,n,source
+A,groth16 prove speedup cpu2->cpu8 (median per depth),2.34665035478346,2.6186946972641243,11,d3:out/D3-allocation-speedups.csv
+A,plonk prove speedup cpu2->cpu8 (median per depth),1.2376265026618438,1.277811966060611,11,d3:out/D3-allocation-speedups.csv
+A,PLONK/Groth16 within-round prove ratio cpu2 (median per depth),32.72946660372906,61.46652244456463,11,d3:out/D3-backend-ratios.csv
+A,PLONK/Groth16 within-round prove ratio cpu4 (median per depth),47.049942409583046,85.49774932308048,11,d3:out/D3-backend-ratios.csv
+A,PLONK/Groth16 within-round prove ratio cpu8 (median per depth),62.23491596263873,116.23138263744187,11,d3:out/D3-backend-ratios.csv
+B,groth16 prove speedup cpu2->cpu8 (median per depth),2.5719110836019037,2.705894032503053,11,d2_analysis:run/D2-allocation-speedups.csv
+B,plonk prove speedup cpu2->cpu8 (median per depth),1.1493658802433313,1.1683112364452852,11,d2_analysis:run/D2-allocation-speedups.csv
+B,PLONK/Groth16 within-round prove ratio cpu2 (median per depth),44.86493063918997,84.1145728470564,11,d2_analysis:run/D2-backend-ratios.csv
+B,PLONK/Groth16 within-round prove ratio cpu4 (median per depth),68.69778210991066,128.97580095235892,11,d2_analysis:run/D2-backend-ratios.csv
+B,PLONK/Groth16 within-round prove ratio cpu8 (median per depth),102.91471424702058,194.5802947456601,11,d2_analysis:run/D2-backend-ratios.csv
+B/A,ratio of PLONK/Groth16 prove-ratio medians (33 cells),1.3241872503178131,1.7115685572711001,33,d2_analysis:side-by-side/side-by-side-backend-ratios.csv

@@ -1,0 +1,21 @@
+--- a/summarize_prover.js
++++ b/summarize_prover.js
+@@ -95,15 +95,15 @@
+   for (const s of ended) {
+     const f = path.join(dir, 'environment', `integrity-${s}.json`);
+     const j = fs.existsSync(f) ? readJson(f) : null;
+-    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.git_status_unchanged && j.git_head_unchanged)) integProblems.push(s);
++    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.corpus_after_ok && j.tree_unchanged)) integProblems.push(s);
+   }
+   const current = process.env.ZCORP_SESSION_ID;
+   if (current) {
+     const f = path.join(dir, 'environment', `integrity-${current}.json`);
+     const j = fs.existsSync(f) ? readJson(f) : null;
+-    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.git_status_unchanged && j.git_head_unchanged)) integProblems.push(current);
++    if (!j || !(j.manifest_before_ok && j.manifest_after_ok && j.corpus_after_ok && j.tree_unchanged)) integProblems.push(current);
+   }
+-  check('repository_unchanged', integProblems.length === 0, integProblems.length ? integProblems : 'manifest, git HEAD and git status unchanged in every finished session');
++  check('repository_unchanged', integProblems.length === 0, integProblems.length ? integProblems : 'manifest, corpus and tree identity unchanged in every finished session');
+   const p7p = path.join(dir, 'provenance', 'p7.json');
+   const p7 = fs.existsSync(p7p) ? readJson(p7p) : null;
+   check('provenance_p7', p7 && p7.passed === true && p7.campaign_id === c.campaign_id, p7 ? { passed: p7.passed, depths: p7.depths.length, circom: p7.tools.circom } : 'missing');

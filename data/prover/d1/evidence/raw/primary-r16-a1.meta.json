@@ -1,0 +1,56 @@
+{
+ "engineering_test": false,
+ "campaign_id": "V2-PRV-D1-01",
+ "session_id": "S20261005T235719Z",
+ "kind": "primary",
+ "round": 16,
+ "attempt": 1,
+ "image_id": "sha256:d9babb176d39a04172db98646bc4cd55ec85295424b68380028835700e3b342b",
+ "versions": {
+  "snarkjs": "0.7.5",
+  "ffjavascript": "0.3.1"
+ },
+ "started_at_utc": "2026-10-06T00:17:06.195Z",
+ "adapter": {
+  "zcorp_cpus": 8,
+  "cpuset": "1-8",
+  "cpuset_source": "/sys/fs/cgroup/cpuset.cpus.effective",
+  "cpuset_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "available_parallelism": 8,
+  "os_cpus_before_adapter": 10,
+  "os_cpus_after_adapter": 8
+ },
+ "cgroup_before": {
+  "cpuset": "1-8",
+  "cpu_max": "max 100000",
+  "memory_max": "8589934592",
+  "swap_max": "0",
+  "memory_peak": 12947456,
+  "oom_kill": 0,
+  "nr_throttled": 0
+ },
+ "ffjavascript_concurrency": 8,
+ "rows": 8,
+ "invalid_rows": 0,
+ "ended_at_utc": "2026-10-06T00:18:14.477Z",
+ "status": "ok",
+ "failures": [],
+ "cgroup_after": {
+  "cpuset": "1-8",
+  "cpu_max": "max 100000",
+  "memory_max": "8589934592",
+  "swap_max": "0",
+  "memory_peak": 1241227264,
+  "oom_kill": 0,
+  "nr_throttled": 0
+ }
+}

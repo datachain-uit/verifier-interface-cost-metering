@@ -1,0 +1,10 @@
+{
+  "session_id": "S20261005T152152Z",
+  "manifest_before_ok": true,
+  "manifest_after_ok": true,
+  "corpus_after_ok": true,
+  "manifest_entries_ok_after": 161,
+  "tree_sha256_before": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+  "tree_sha256_after": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+  "tree_unchanged": true
+}

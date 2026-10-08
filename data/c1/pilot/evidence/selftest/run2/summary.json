@@ -1,0 +1,21 @@
+{
+ "AC": {
+  "total": 288,
+  "failed": 0
+ },
+ "P": {
+  "MISSING": 186
+ },
+ "R": {},
+ "ZC": {},
+ "SG": {},
+ "XO": {},
+ "NPG": {
+  "PASS": 3
+ },
+ "NPG_rank": {},
+ "MONO": {},
+ "SEM": {},
+ "n_records": 352,
+ "n_measurement_records": 128
+}

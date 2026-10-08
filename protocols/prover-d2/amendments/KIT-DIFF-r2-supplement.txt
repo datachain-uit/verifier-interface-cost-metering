@@ -1,0 +1,31 @@
+# KIT-DIFF supplement: kit v3-x86-r2 vs kit v3-x86 (and vs v3 research/bench) — DEV-D2-1 only
+# kit v3-x86 file-list sha256 (LC_ALL=C, find . -type f | sort | xargs sha256sum | sha256sum): f1dfc537ae2d037bace012b2254736f66b9097b16aaee273a2f20796e0c745af
+# kit v3-x86-r2 file-list sha256 (same method): 14140ee79aed83bcdf67ac29dca7d460ee6fd17ddb566abb7bea643ded563323
+# files differing r2 vs v3-x86: record_controls.js only (24 files each); all other 23 files byte-identical
+# record_controls.js: v3 = v3-x86 = acf81fe1cc308352e0c43ded8285ea15ee2101b4fbf2a52a9d9788f02797172e ; r2 = bd82f6e36fb4101639ce3261f999cba84b414190dd12474ac50bd77b5ddda684
+# This supplements prover-D2/KIT-DIFF-vs-v3.txt (unchanged); r2 vs v3 = KIT-DIFF-vs-v3.txt + the hunk below.
+
+--- kit-v3-x86/record_controls.js
++++ kit-v3-x86-r2/record_controls.js
+@@ -24,7 +24,7 @@
+ };
+ out.control_cpuset_size = Number(exits.size);
+ const ok = out.mismatch_exit === 97 && out.quota_only_exit === 97 && out.no_adapter_exit === 0
+-  && out.no_adapter_ffjs_concurrency === out.no_adapter_os_cpus && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
++  && out.no_adapter_ffjs_concurrency === Math.min(out.no_adapter_os_cpus, 64) && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
+ out.passed = ok;
+ out.session_id = process.env.ZCORP_SESSION_ID || null;
+ writeJson(path.join(d, 'controls.json'), out);
+
+# r2 vs v3 (research/bench/record_controls.js):
+--- research/bench/record_controls.js
++++ kit-v3-x86-r2/record_controls.js
+@@ -24,7 +24,7 @@
+ };
+ out.control_cpuset_size = Number(exits.size);
+ const ok = out.mismatch_exit === 97 && out.quota_only_exit === 97 && out.no_adapter_exit === 0
+-  && out.no_adapter_ffjs_concurrency === out.no_adapter_os_cpus && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
++  && out.no_adapter_ffjs_concurrency === Math.min(out.no_adapter_os_cpus, 64) && out.no_adapter_ffjs_concurrency > out.control_cpuset_size;
+ out.passed = ok;
+ out.session_id = process.env.ZCORP_SESSION_ID || null;
+ writeJson(path.join(d, 'controls.json'), out);

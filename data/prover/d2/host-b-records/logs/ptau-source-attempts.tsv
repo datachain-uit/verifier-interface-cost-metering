@@ -1,0 +1,3 @@
+utc	url	http_or_rc	bytes	blake2b512	outcome
+2026-10-04T12:48:05Z	https://storage.googleapis.com/zkevm/ptau/powersOfTau28_hez_final_19.ptau	http=403 rc=0	395	-	UNAVAILABLE
+2026-10-04T12:48:08Z	https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_19.ptau	http=403 rc=0	263	-	UNAVAILABLE

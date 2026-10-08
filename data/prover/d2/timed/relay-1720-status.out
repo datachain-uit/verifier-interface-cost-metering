@@ -1,0 +1,51 @@
+utc=2026-10-05T23:17:16Z d2_runners=0 containers=0
+repo/results/V2-PRV-D2-01/environment/RESULT-S20261005T152152Z.txt: result: PASS (campaign V2-PRV-D2-01-run1; session S20261005T152152Z; see derived/validation.json)
+repo/results/V2-PRV-D2-01/environment/RESULT.txt: result: PASS (campaign V2-PRV-D2-01-run1; session S20261005T152152Z; see derived/validation.json)
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z/environment/RESULT.txt: result: PASS (dryrun dryrun-resumetest-20261005T141557Z; session S20261005T143431Z; see derived/validation.json)
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z-othercommit/environment/RESULT.txt: result: FAIL (REFUSE resume: campaign identity differs; tree (kit, generator, manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000', now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f'))
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z-tampered/environment/RESULT.txt: result: FAIL (REFUSE: campaign state check failed)
+repo/build/campaigns/setup-20261005T140456Z/environment/RESULT.txt: result: SETUP PASS (image sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7; ARTIFACTS.sha256 161 OK)
+--- campaigns / results
+repo/build/campaigns:
+total 24
+drwxrwxr-x 6 ad ad 4096 Oct  5 21:57 .
+drwxrwxr-x 3 ad ad 4096 Oct  5 21:04 ..
+drwxrwxr-x 6 ad ad 4096 Oct  5 21:26 dryrun-resumetest-20261005T141557Z
+drwxrwxr-x 6 ad ad 4096 Oct  5 21:57 dryrun-resumetest-20261005T141557Z-othercommit
+drwxrwxr-x 6 ad ad 4096 Oct  5 21:50 dryrun-resumetest-20261005T141557Z-tampered
+drwxrwxr-x 4 ad ad 4096 Oct  5 21:04 setup-20261005T140456Z
+
+repo/results:
+total 16
+drwxr-xr-x  4 ad ad 4096 Oct  5 22:21 .
+drwxr-xr-x 10 ad ad 4096 Oct  5 21:04 ..
+drwxrwxr-x  6 ad ad 4096 Oct  6 01:58 V2-PRV-D2-01
+drwxr-xr-x  3 ad ad 4096 Oct  4 22:57 constraints
+total 32
+drwxrwxr-x 6 ad   ad   4096 Oct  6 01:58 .
+drwxr-xr-x 4 ad   ad   4096 Oct  5 22:21 ..
+-rw-r--r-- 1 root root 5912 Oct  5 22:22 CAMPAIGN.json
+drwxr-xr-x 2 root root 4096 Oct  6 01:58 derived
+drwxrwxr-x 4 ad   ad   4096 Oct  6 01:58 environment
+drwxr-xr-x 2 root root 4096 Oct  5 22:25 provenance
+drwxrwxr-x 6 ad   ad   4096 Oct  5 22:46 prover
+--- logs
+logs/campaign-20261005T152152Z.log 10661 2026-10-06 01:58:43 +0700
+logs/local-session-summary-20261005T145940Z.txt 927 2026-10-05 21:59:40 +0700
+logs/resumetest-20261005T141557Z.log 12782 2026-10-05 21:57:54 +0700
+logs/setup-20261005T140456Z.log 2533 2026-10-05 21:05:50 +0700
+logs/timed-window-summary-20261005T231131Z.txt 402 2026-10-06 06:11:31 +0700
+=== repo unchanged check (read-only)
+payload_manifest_not_ok=0
+artifacts_not_ok=0
+corpus_not_ok=0
+8605d96c7d96b7cc5fab6f6bb7bf22c8fa780d0c6fba15bae40e191c3ca68b2b  PAYLOAD-MANIFEST.sha256
+9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be  ARTIFACTS.sha256
+c7203a12c0e9619576a223356af42082f7db4304f05bb678f158860e1ccadc23  SYNTHETIC-CORPUS.sha256
+5352f80142e364baec65082c39aa59e94f4625dff448989e2cbb8f729f8c1197  bench file list (relative, LC_ALL=C)
+=== tree (C collation)
+5bbe78a6f2ab6ba0a202aa3a39662bb482afa3c8075eb2feb121951387d7d4b2  -
+=== image
+sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7 linux/amd64 created=2026-10-05T14:05:02.566763926Z
+V2-PRV-D2-01-run1 sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7
+["sha256:ace34d1d784c01e3f9d156687089e8f58f786e23ccd097bdbbf337d6d28b3783","sha256:206f13f5e3179e2addf8227aeed4c85cb94d95776d4cc2540f9e19c41914c43c","sha256:cd1cd7c2e57b8121f760e24ee1943adf4b9dea43ce5940b71f80ffdeace35f0e","sha256:9b95ddc8a1403d1f6fc68bd1ea2daa65a247c2a922a985dfce6aec5574be803a","sha256:e1e93a4fa4fdd7848ab14c10ec7ccf2f6e14d5fedb6b80edce58dad4de95a900","sha256:1cb1442f9a0290e48e37c74826b7579c0f2d9a12b7e63e8af159315c1ee61f1f","sha256:67021e85806910217923c14b4d5c9220ce838c246a31c36cf668cb8f2ad2a497","sha256:7ea24c946ab975a938b8b4d96a85306c0469cac9c795a888c70d63b8712e3c2d","sha256:f41b4541426e5e058032da451e9daf34f25787ac7bf33cb5627a0150bde9580e","sha256:9e6c7c1447c99052655804cf1f2f7c53979acd922c2f66a646f7d1022cc60788"]

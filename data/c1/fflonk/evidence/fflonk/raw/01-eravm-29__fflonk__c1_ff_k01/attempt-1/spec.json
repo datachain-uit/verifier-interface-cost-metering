@@ -1,0 +1,21 @@
+{
+ "campaign": "FULL-IF-FFLONK-GATE-PASSES",
+ "run_id": "V2-MPI-FULL-01-FFLONK-run1",
+ "order_index": 1,
+ "cell_id": "eravm-29|fflonk|c1_ff_k01",
+ "env": "eravm-29",
+ "regime": {
+  "protocol": 29
+ },
+ "backend": "fflonk",
+ "circuit": "c1_ff_k01",
+ "k": 1,
+ "relation": "ctx",
+ "compiled": "/root/ffc/V2-MPI-FULL-01-FFLONK/compiled-fflonk/c1_ff_k01-fflonk.json",
+ "proofs_dir": "/root/ffc/V2-MPI-FULL-01-FFLONK/proofs-fflonk",
+ "outdir": "/root/ffc/V2-MPI-FULL-01-FFLONK/fflonk/raw/01-eravm-29__fflonk__c1_ff_k01/attempt-1",
+ "pins_sha256": "e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699",
+ "port": 18011,
+ "server_log": "/root/ffc/V2-MPI-FULL-01-FFLONK/fflonk/raw/01-eravm-29__fflonk__c1_ff_k01/attempt-1/node/server.log",
+ "attempt": 1
+}

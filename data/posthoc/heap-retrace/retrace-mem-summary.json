@@ -1,0 +1,149 @@
+{
+ "utc": "2026-10-05T01:34:12.779Z",
+ "items": [
+  {
+   "proof_id": "c1_k01/groth16/j0",
+   "gas_used": 214549,
+   "steps": 441,
+   "memory_words_stream_sha256": "34c85ad551018f3db330b6553b2aa0e6b958a40cd48883c1ab9a29922104534b",
+   "raw_file": "c1_k01-groth16-j0.memsize.json.gz",
+   "raw_sha256": "0d8c84e02f7e0c4d68deecaa49ac548bee3ecb2d4ad9c8aa2ffd35e1a5afbc32"
+  },
+  {
+   "proof_id": "c1_k01/plonk/j0",
+   "gas_used": 293315,
+   "steps": 9399,
+   "memory_words_stream_sha256": "241c74019538d26f86903d4fe6d29de7f3d6e1396dab71614ba2181dc3745c85",
+   "raw_file": "c1_k01-plonk-j0.memsize.json.gz",
+   "raw_sha256": "886f24c471def10401423ccd28da3903687e53843f64706be3a0ac1012e6f617"
+  },
+  {
+   "proof_id": "c1_ctx_k02/groth16/j0",
+   "gas_used": 221749,
+   "steps": 549,
+   "memory_words_stream_sha256": "26775bee1a0a5a658cef500ad48c19733256878bfb5a9a0a9c1aac429dda69f8",
+   "raw_file": "c1_ctx_k02-groth16-j0.memsize.json.gz",
+   "raw_sha256": "5a80be9bd6dd75a00d78b7780587315bcd43a07c3b9eca34d8685492c7a4decc"
+  },
+  {
+   "proof_id": "c1_ctx_k02/plonk/j0",
+   "gas_used": 291143,
+   "steps": 8641,
+   "memory_words_stream_sha256": "3ba0b17f659fae4cbf61dae33fabfc9b5428f14110fafc98b1fa574e95d4043a",
+   "raw_file": "c1_ctx_k02-plonk-j0.memsize.json.gz",
+   "raw_sha256": "5f88e938dbee3f398dd57c005c3272f24c41eb6c64e8bbba284f17922c8ccb97"
+  },
+  {
+   "proof_id": "c1_ctx_k04/groth16/j0",
+   "gas_used": 236122,
+   "steps": 753,
+   "memory_words_stream_sha256": "642ea842e0c12fa6958fa05d3924ebd3314bd8a97af720e761dea17d7dac65ff",
+   "raw_file": "c1_ctx_k04-groth16-j0.memsize.json.gz",
+   "raw_sha256": "88823d5912663e368e06dc19d5d326e0603639f7de17b446c9f06262b7b2dc1b"
+  },
+  {
+   "proof_id": "c1_ctx_k04/plonk/j0",
+   "gas_used": 295755,
+   "steps": 9692,
+   "memory_words_stream_sha256": "3423b2e4e0cbd09c79ad2579ce0edd8d113681b798548ad31d618a3350bc3fe2",
+   "raw_file": "c1_ctx_k04-plonk-j0.memsize.json.gz",
+   "raw_sha256": "5746921af384051d38b360bfab2f94bf39f5c1f79fdcb3026d3509ac9ee2c90b"
+  },
+  {
+   "proof_id": "c1_ctx_k08/groth16/j0",
+   "gas_used": 264621,
+   "steps": 1113,
+   "memory_words_stream_sha256": "bd60471665df2eed0ecc35a4a8f7ffc2cf2a5ef354d70f8fc5510565c0f1920c",
+   "raw_file": "c1_ctx_k08-groth16-j0.memsize.json.gz",
+   "raw_sha256": "4e704bfcf909afa3da643dc36768e208257c5f77a85ce4e60f5487372d3ea39b"
+  },
+  {
+   "proof_id": "c1_ctx_k08/plonk/j0",
+   "gas_used": 300392,
+   "steps": 10469,
+   "memory_words_stream_sha256": "60648cf1ddd51397b2f008298c8028340ef50e9b2fff94d83cd1080669eec616",
+   "raw_file": "c1_ctx_k08-plonk-j0.memsize.json.gz",
+   "raw_sha256": "9b0c3a4a2f8461eba6988ec25f5a9f7e19acf735b461df20adf056f2465738b9"
+  },
+  {
+   "proof_id": "c1_ctx_k12/groth16/j0",
+   "gas_used": 293201,
+   "steps": 1497,
+   "memory_words_stream_sha256": "e50477e0c1518f5a44a6301acde5930caba7c369422713d4928f84786a1e457a",
+   "raw_file": "c1_ctx_k12-groth16-j0.memsize.json.gz",
+   "raw_sha256": "8bb38d82aad001640f35088747300c9cffd80da9e48bd3c416b74666e4df77fe"
+  },
+  {
+   "proof_id": "c1_ctx_k12/plonk/j0",
+   "gas_used": 305070,
+   "steps": 11245,
+   "memory_words_stream_sha256": "8e502258d2dac239efbb695f35e5e3a1976b4d99754aebc38b2bfa7dbdfff598",
+   "raw_file": "c1_ctx_k12-plonk-j0.memsize.json.gz",
+   "raw_sha256": "b567e54eddee600e19ffb05d178bdb8a3deb55e8ca0003a91596eb8343f2eb9c"
+  },
+  {
+   "proof_id": "c1_ctx_k16/groth16/j0",
+   "gas_used": 321805,
+   "steps": 1881,
+   "memory_words_stream_sha256": "092a302362c1c80f4a0105948853d4ea23c9c54abb17103353f9133ae21271ba",
+   "raw_file": "c1_ctx_k16-groth16-j0.memsize.json.gz",
+   "raw_sha256": "0ad7dfadd07d4805d0cb84a2aad5f055f75d3330b3204028b283075dfe36be74"
+  },
+  {
+   "proof_id": "c1_ctx_k16/plonk/j0",
+   "gas_used": 311989,
+   "steps": 12681,
+   "memory_words_stream_sha256": "488a39513316c3067d1b1fa09100ef1b70b25a0139a08788b3a24cc73d88a3ed",
+   "raw_file": "c1_ctx_k16-plonk-j0.memsize.json.gz",
+   "raw_sha256": "5336de7b7d3e996312e09716ed07c9153014fda95ef1b77308a3b6cb75735321"
+  },
+  {
+   "proof_id": "c1_ctx_k24/groth16/j0",
+   "gas_used": 378953,
+   "steps": 2649,
+   "memory_words_stream_sha256": "a647c845d4753f88e3b5cd8a7db209a1740c103f5137297354267afb43a1066b",
+   "raw_file": "c1_ctx_k24-groth16-j0.memsize.json.gz",
+   "raw_sha256": "dd5ee2894dc805ea1d6864ac17dbbaa2682e6089d1780fadeec76810376ead0e"
+  },
+  {
+   "proof_id": "c1_ctx_k24/plonk/j0",
+   "gas_used": 323749,
+   "steps": 14947,
+   "memory_words_stream_sha256": "139fa4bf4bc8be6527cd892a45ca78033b3dc7dcee08508b2b787bc3b08d263b",
+   "raw_file": "c1_ctx_k24-plonk-j0.memsize.json.gz",
+   "raw_sha256": "833c07494fc17296209cf7cf7908649dbfffb11c1f46dc00a77d3ab6fa785d47"
+  },
+  {
+   "proof_id": "c1_ctx_k32/groth16/j0",
+   "gas_used": 436149,
+   "steps": 3417,
+   "memory_words_stream_sha256": "6fe6ee9aa94d8ab49b3e1c0b1730b1d6f5afbbab13fda633a520385e97b945af",
+   "raw_file": "c1_ctx_k32-groth16-j0.memsize.json.gz",
+   "raw_sha256": "95c22e2de4d561bb5a47f8646903d9fef36f3a266e84835a49038b04bee1ccaa"
+  },
+  {
+   "proof_id": "c1_ctx_k32/plonk/j0",
+   "gas_used": 331821,
+   "steps": 16145,
+   "memory_words_stream_sha256": "0422f98721eb95a4f5ad6a9646c79ad9d3b8bb9d3824986e15122c30fdb44fe9",
+   "raw_file": "c1_ctx_k32-plonk-j0.memsize.json.gz",
+   "raw_sha256": "2cd98dcf1a07743beec93356ca28c154f3934c935568aee6595e8bf6cb2be15c"
+  },
+  {
+   "proof_id": "c1_ctx_k64/groth16/j0",
+   "gas_used": 664801,
+   "steps": 6489,
+   "memory_words_stream_sha256": "94a1fe3157cf3533f6d33171cf7f3daa99f57e2339faf718b5914c104cd036ca",
+   "raw_file": "c1_ctx_k64-groth16-j0.memsize.json.gz",
+   "raw_sha256": "c9307ce9727fb043e3a194ed82bdc418942e60323770a38f82a1a2f62a4e1533"
+  },
+  {
+   "proof_id": "c1_ctx_k64/plonk/j0",
+   "gas_used": 377480,
+   "steps": 24785,
+   "memory_words_stream_sha256": "5228b3ffdbba2d35eb230a503a47cc95098fa6e1554374dc78ad7daef65cb8eb",
+   "raw_file": "c1_ctx_k64-plonk-j0.memsize.json.gz",
+   "raw_sha256": "cdf155fc022d36f056e8db2f4ea4435ab0dcf07d3574db424dcab6ed4abaf199"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+frozen oracle, as recorded: exit 9; resume test: FAIL (10/12); failed=['three_sessions_with_new_ids', 'session1_clean_planned_stop']; as_expected=True
+frozen oracle, v3 detail format (prefix removed): exit 0; resume test: PASS (12/12); failed=[]; as_expected=True
+r5 oracle, as recorded: exit 0; resume test: PASS (12/12); failed=[]; as_expected=True; other checks identical to frozen=True
+r5 oracle, v3 detail format (prefix removed): exit 0; resume test: PASS (12/12); failed=[]; as_expected=True; other checks identical to frozen=True
+r5 oracle, declared window id "W-TEST-1": exit 0; resume test: PASS (12/12); failed=[]; as_expected=True; other checks identical to frozen=True
+NEG r5: session-1 end not a planned stop ("window none; PASS"): exit 9; resume test: FAIL (11/12); failed=['session1_clean_planned_stop']; as_expected=True; other checks identical to frozen=True
+NEG r5: session-1 end "window none; FAIL: ...": exit 9; resume test: FAIL (11/12); failed=['session1_clean_planned_stop']; as_expected=True; other checks identical to frozen=True
+NEG r5: session-1 end row missing: exit 9; resume test: FAIL (11/12); failed=['session1_clean_planned_stop']; as_expected=True; other checks identical to frozen=True
+NEG r5: session-2 start marked "new": exit 9; resume test: FAIL (11/12); failed=['three_sessions_with_new_ids']; as_expected=True; other checks identical to frozen=True
+NEG r5: session-3 start marked "new": exit 9; resume test: FAIL (11/12); failed=['three_sessions_with_new_ids']; as_expected=True; other checks identical to frozen=True
+NEG r5: only two session starts: exit 9; resume test: FAIL (8/12); failed=['three_sessions_with_new_ids', 'interrupted_round_preserved_as_incomplete', 'interrupted_round_rerun_whole', 'remaining_rounds_accepted_in_session3']; as_expected=True; other checks identical to frozen=True
+NEG r5: session 3 reuses session-2 id: exit 9; resume test: FAIL (8/12); failed=['three_sessions_with_new_ids', 'interrupted_round_preserved_as_incomplete', 'interrupted_round_rerun_whole', 'remaining_rounds_accepted_in_session3']; as_expected=True; other checks identical to frozen=True
+NEG r5: "resume" only inside a longer detail ("window none; not resume"): exit 9; resume test: FAIL (11/12); failed=['three_sessions_with_new_ids']; as_expected=True; other checks identical to frozen=True
+frozen replay identical to the recorded resume-test.json checks: True
+ALL AS EXPECTED

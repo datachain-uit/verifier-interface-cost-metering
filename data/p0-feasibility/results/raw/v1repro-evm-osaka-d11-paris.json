@@ -1,0 +1,859 @@
+{
+ "summary": {
+  "hardfork": "osaka",
+  "depth": 11,
+  "evmVersion": "paris",
+  "groth16": {
+   "deploy_verifier": 349628,
+   "deploy_manager": 565248,
+   "verify_credential": [
+    223946,
+    223958,
+    223958,
+    223946,
+    223934,
+    223934,
+    223934,
+    223958
+   ],
+   "verify_proof_direct": [
+    214585,
+    214597,
+    214597,
+    214585,
+    214573,
+    214573,
+    214573,
+    214597
+   ],
+   "calls": [
+    "neg_tampered_call:0",
+    "neg_pub_call:0",
+    "valid_call:1"
+   ],
+   "status": "11111111111111111111",
+   "trace_steps": 441
+  },
+  "plonk": {
+   "deploy_verifier": 1226937,
+   "deploy_manager": 541930,
+   "verify_credential": [
+    300026,
+    299880,
+    300650,
+    298644,
+    299476,
+    300516,
+    298766,
+    299598
+   ],
+   "verify_proof_direct": [
+    291027,
+    290881,
+    291651,
+    289645,
+    290477,
+    291517,
+    289767,
+    290599
+   ],
+   "calls": [
+    "neg_tampered_call:0",
+    "neg_pub_call:0",
+    "valid_call:1"
+   ],
+   "status": "11111111111111111111",
+   "trace_steps": 8739
+  }
+ },
+ "raw": {
+  "groth16": {
+   "hardfork": "osaka",
+   "steps": [
+    {
+     "op": "deploy_verifier",
+     "kind": "deploy",
+     "contract": "Groth16LegacyVerifierDepth11",
+     "status": 1,
+     "gasUsed": 349628,
+     "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+     "runtime_bytes": 1372,
+     "initcode_bytes": 1404
+    },
+    {
+     "op": "deploy_manager",
+     "kind": "deploy",
+     "contract": "CredentialManagerGroth16",
+     "status": 1,
+     "gasUsed": 565248,
+     "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+     "runtime_bytes": 2140,
+     "initcode_bytes": 2410
+    },
+    {
+     "op": "set_issuer",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 47900,
+     "calldata_bytes": 68,
+     "calldata_zero": 43
+    },
+    {
+     "op": "add_root",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 47334,
+     "calldata_bytes": 36,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223946,
+     "calldata_bytes": 292,
+     "calldata_zero": 2
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223958,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223958,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223946,
+     "calldata_bytes": 292,
+     "calldata_zero": 2
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223934,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223934,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223934,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 223958,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214585,
+     "calldata_bytes": 292,
+     "calldata_zero": 2,
+     "trace": {
+      "gas": 214585,
+      "failed": false,
+      "steps": 441,
+      "ops": {
+       "PUSH1": {
+        "n": 52,
+        "gas": 156
+       },
+       "MSTORE": {
+        "n": 34,
+        "gas": 212
+       },
+       "CALLVALUE": {
+        "n": 1,
+        "gas": 2
+       },
+       "DUP1": {
+        "n": 9,
+        "gas": 27
+       },
+       "ISZERO": {
+        "n": 6,
+        "gas": 18
+       },
+       "PUSH2": {
+        "n": 49,
+        "gas": 147
+       },
+       "JUMPI": {
+        "n": 11,
+        "gas": 110
+       },
+       "JUMPDEST": {
+        "n": 24,
+        "gas": 24
+       },
+       "POP": {
+        "n": 29,
+        "gas": 58
+       },
+       "CALLDATASIZE": {
+        "n": 2,
+        "gas": 4
+       },
+       "LT": {
+        "n": 4,
+        "gas": 12
+       },
+       "CALLDATALOAD": {
+        "n": 11,
+        "gas": 33
+       },
+       "SHR": {
+        "n": 1,
+        "gas": 3
+       },
+       "PUSH4": {
+        "n": 1,
+        "gas": 3
+       },
+       "EQ": {
+        "n": 1,
+        "gas": 3
+       },
+       "JUMP": {
+        "n": 14,
+        "gas": 112
+       },
+       "DUP7": {
+        "n": 7,
+        "gas": 21
+       },
+       "DUP9": {
+        "n": 3,
+        "gas": 9
+       },
+       "SUB": {
+        "n": 5,
+        "gas": 15
+       },
+       "SLT": {
+        "n": 1,
+        "gas": 3
+       },
+       "DUP8": {
+        "n": 8,
+        "gas": 24
+       },
+       "DUP2": {
+        "n": 12,
+        "gas": 36
+       },
+       "ADD": {
+        "n": 46,
+        "gas": 138
+       },
+       "DUP4": {
+        "n": 9,
+        "gas": 27
+       },
+       "SWAP3": {
+        "n": 4,
+        "gas": 12
+       },
+       "SWAP2": {
+        "n": 6,
+        "gas": 18
+       },
+       "SWAP5": {
+        "n": 3,
+        "gas": 9
+       },
+       "GT": {
+        "n": 2,
+        "gas": 6
+       },
+       "DUP3": {
+        "n": 30,
+        "gas": 90
+       },
+       "SWAP4": {
+        "n": 1,
+        "gas": 3
+       },
+       "SWAP6": {
+        "n": 2,
+        "gas": 6
+       },
+       "MLOAD": {
+        "n": 7,
+        "gas": 21
+       },
+       "DUP5": {
+        "n": 9,
+        "gas": 27
+       },
+       "PUSH32": {
+        "n": 19,
+        "gas": 57
+       },
+       "DUP11": {
+        "n": 1,
+        "gas": 3
+       },
+       "PUSH31": {
+        "n": 2,
+        "gas": 6
+       },
+       "DUP6": {
+        "n": 3,
+        "gas": 9
+       },
+       "GAS": {
+        "n": 3,
+        "gas": 6
+       },
+       "STATICCALL": {
+        "n": 3,
+        "gas": 8768258
+       },
+       "MOD": {
+        "n": 1,
+        "gas": 5
+       },
+       "SWAP1": {
+        "n": 2,
+        "gas": 6
+       },
+       "AND": {
+        "n": 1,
+        "gas": 3
+       },
+       "SWAP7": {
+        "n": 1,
+        "gas": 3
+       },
+       "RETURN": {
+        "n": 1,
+        "gas": 0
+       }
+      }
+     }
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214597,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214597,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214585,
+     "calldata_bytes": 292,
+     "calldata_zero": 2
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214573,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214573,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214573,
+     "calldata_bytes": 292,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 214597,
+     "calldata_bytes": 292,
+     "calldata_zero": 1
+    },
+    {
+     "op": "neg_tampered_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "ok": true
+    },
+    {
+     "op": "neg_pub_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "ok": true
+    },
+    {
+     "op": "valid_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "ok": true
+    }
+   ]
+  },
+  "plonk": {
+   "hardfork": "osaka",
+   "steps": [
+    {
+     "op": "deploy_verifier",
+     "kind": "deploy",
+     "contract": "PlonkVerifierDepth11",
+     "status": 1,
+     "gasUsed": 1226937,
+     "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+     "runtime_bytes": 5435,
+     "initcode_bytes": 5467
+    },
+    {
+     "op": "deploy_manager",
+     "kind": "deploy",
+     "contract": "CredentialManagerPlonk",
+     "status": 1,
+     "gasUsed": 541930,
+     "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+     "runtime_bytes": 2032,
+     "initcode_bytes": 2302
+    },
+    {
+     "op": "set_issuer",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 47900,
+     "calldata_bytes": 68,
+     "calldata_zero": 43
+    },
+    {
+     "op": "add_root",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 47334,
+     "calldata_bytes": 36,
+     "calldata_zero": 1
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 300026,
+     "calldata_bytes": 804,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 299880,
+     "calldata_bytes": 804,
+     "calldata_zero": 6
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 300650,
+     "calldata_bytes": 804,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 298644,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 299476,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 300516,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 298766,
+     "calldata_bytes": 804,
+     "calldata_zero": 4
+    },
+    {
+     "op": "verify_credential",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 299598,
+     "calldata_bytes": 804,
+     "calldata_zero": 4
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 291027,
+     "calldata_bytes": 804,
+     "calldata_zero": 3,
+     "trace": {
+      "gas": 291027,
+      "failed": false,
+      "steps": 8739,
+      "ops": {
+       "PUSH1": {
+        "n": 596,
+        "gas": 1788
+       },
+       "MSTORE": {
+        "n": 295,
+        "gas": 1072
+       },
+       "CALLVALUE": {
+        "n": 1,
+        "gas": 2
+       },
+       "DUP1": {
+        "n": 154,
+        "gas": 462
+       },
+       "ISZERO": {
+        "n": 161,
+        "gas": 483
+       },
+       "PUSH2": {
+        "n": 714,
+        "gas": 2142
+       },
+       "JUMPI": {
+        "n": 205,
+        "gas": 2050
+       },
+       "JUMPDEST": {
+        "n": 305,
+        "gas": 305
+       },
+       "POP": {
+        "n": 590,
+        "gas": 1180
+       },
+       "CALLDATASIZE": {
+        "n": 2,
+        "gas": 4
+       },
+       "LT": {
+        "n": 9,
+        "gas": 27
+       },
+       "CALLDATALOAD": {
+        "n": 76,
+        "gas": 228
+       },
+       "SHR": {
+        "n": 1,
+        "gas": 3
+       },
+       "PUSH4": {
+        "n": 1,
+        "gas": 3
+       },
+       "EQ": {
+        "n": 1,
+        "gas": 3
+       },
+       "JUMP": {
+        "n": 250,
+        "gas": 2000
+       },
+       "DUP5": {
+        "n": 96,
+        "gas": 288
+       },
+       "DUP7": {
+        "n": 31,
+        "gas": 93
+       },
+       "SUB": {
+        "n": 351,
+        "gas": 1053
+       },
+       "SLT": {
+        "n": 2,
+        "gas": 6
+       },
+       "ADD": {
+        "n": 275,
+        "gas": 825
+       },
+       "DUP6": {
+        "n": 204,
+        "gas": 612
+       },
+       "DUP2": {
+        "n": 802,
+        "gas": 2406
+       },
+       "GT": {
+        "n": 5,
+        "gas": 15
+       },
+       "SWAP4": {
+        "n": 306,
+        "gas": 918
+       },
+       "DUP3": {
+        "n": 330,
+        "gas": 990
+       },
+       "SWAP3": {
+        "n": 187,
+        "gas": 561
+       },
+       "SWAP1": {
+        "n": 651,
+        "gas": 1953
+       },
+       "MLOAD": {
+        "n": 332,
+        "gas": 996
+       },
+       "DUP4": {
+        "n": 543,
+        "gas": 1629
+       },
+       "CODECOPY": {
+        "n": 94,
+        "gas": 564
+       },
+       "SWAP2": {
+        "n": 439,
+        "gas": 1317
+       },
+       "PUSH32": {
+        "n": 40,
+        "gas": 120
+       },
+       "DUP8": {
+        "n": 29,
+        "gas": 87
+       },
+       "DUP9": {
+        "n": 7,
+        "gas": 21
+       },
+       "KECCAK256": {
+        "n": 6,
+        "gas": 456
+       },
+       "MOD": {
+        "n": 16,
+        "gas": 80
+       },
+       "DUP10": {
+        "n": 3,
+        "gas": 9
+       },
+       "SWAP6": {
+        "n": 4,
+        "gas": 12
+       },
+       "SWAP8": {
+        "n": 2,
+        "gas": 6
+       },
+       "SWAP7": {
+        "n": 1,
+        "gas": 3
+       },
+       "SWAP5": {
+        "n": 4,
+        "gas": 12
+       },
+       "MULMOD": {
+        "n": 57,
+        "gas": 456
+       },
+       "PUSH3": {
+        "n": 1,
+        "gas": 3
+       },
+       "MUL": {
+        "n": 301,
+        "gas": 1505
+       },
+       "SDIV": {
+        "n": 150,
+        "gas": 750
+       },
+       "NOT": {
+        "n": 1,
+        "gas": 3
+       },
+       "ADDMOD": {
+        "n": 25,
+        "gas": 200
+       },
+       "GAS": {
+        "n": 37,
+        "gas": 74
+       },
+       "STATICCALL": {
+        "n": 37,
+        "gas": 104900994
+       },
+       "DUP11": {
+        "n": 2,
+        "gas": 6
+       },
+       "DUP12": {
+        "n": 2,
+        "gas": 6
+       },
+       "DUP13": {
+        "n": 2,
+        "gas": 6
+       },
+       "PUSH31": {
+        "n": 1,
+        "gas": 3
+       },
+       "AND": {
+        "n": 1,
+        "gas": 3
+       },
+       "RETURN": {
+        "n": 1,
+        "gas": 0
+       }
+      }
+     }
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 290881,
+     "calldata_bytes": 804,
+     "calldata_zero": 6
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 291651,
+     "calldata_bytes": 804,
+     "calldata_zero": 3
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 289645,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 290477,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 291517,
+     "calldata_bytes": 804,
+     "calldata_zero": 5
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 289767,
+     "calldata_bytes": 804,
+     "calldata_zero": 4
+    },
+    {
+     "op": "verify_proof_direct",
+     "kind": "tx",
+     "status": 1,
+     "gasUsed": 290599,
+     "calldata_bytes": 804,
+     "calldata_zero": 4
+    },
+    {
+     "op": "neg_tampered_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "ok": true
+    },
+    {
+     "op": "neg_pub_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "ok": true
+    },
+    {
+     "op": "valid_call",
+     "kind": "call",
+     "ret": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "ok": true
+    }
+   ]
+  }
+ }
+}

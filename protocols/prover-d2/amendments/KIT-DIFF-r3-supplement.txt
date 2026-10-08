@@ -1,0 +1,35 @@
+# KIT-DIFF supplement: kit v3-x86-r3 vs kit v3-x86-r2 — AMD-D2-1 only
+# kit v3-x86-r2 file-list sha256 (LC_ALL=C): 14140ee79aed83bcdf67ac29dca7d460ee6fd17ddb566abb7bea643ded563323
+# kit v3-x86-r3 file-list sha256 (LC_ALL=C): e5099e62f0c10c8d55c2d8d2b904ec395dbdb5fbe66cdeaba3d20d2e4e4e751d
+# files differing r3 vs r2: hostb_quiet.py only (24 files each). r3 vs v3-x86 = DEV-D2-1 (record_controls.js) + AMD-D2-1 (hostb_quiet.py).
+# hostb_quiet.py: v3-x86 = r2 = 932a8986bf1aa6a376426ef6bfc69ec90f2a1815918e566fc4b1b0c2b5efcbe3 ; r3 = 3e74157e789ba2933c308a08d0b16fdc6c16382876e27fd5b02fa10f921e924d (host-side; not copied into the image)
+
+--- kit-v3-x86-r2/hostb_quiet.py
++++ kit-v3-x86-r3/hostb_quiet.py
+@@ -8,7 +8,7 @@
+   hostb_quiet.py selftest                              negative/positive self-tests of the check logic (no host access)
+ 
+ Acceptance (frozen in D2-PREREGISTRATION.md §5; changeable only by a recorded amendment before the first timed round):
+-  pre    (2 s window right before a container): 0 running containers; load1 <= LOAD1_MAX; every allocated CPU and every SMT
++  pre    (2 s window right before a container): 0 running containers; load1 recorded (AMD-D2-1; not an acceptance condition); every allocated CPU and every SMT
+          sibling of an allocated CPU busy <= PRE_CPU_MAX; all other logical CPUs together <= PRE_OTHER_MAX CPU-equivalents;
+          frozen frequency / NUMA / THP state unchanged; sleep inhibitor held.
+   during (container start -> end): 0 running containers before and after; every SMT sibling busy <= DURING_SIB_MAX;
+@@ -16,7 +16,7 @@
+ """
+ import glob, json, os, subprocess, sys, time
+ 
+-LOAD1_MAX = 2.0
++LOAD1_MAX = float('inf') # AMD-D2-1: load1 recorded, not an acceptance condition
+ PRE_CPU_MAX = 0.10
+ PRE_OTHER_MAX = 1.0
+ DURING_SIB_MAX = 0.05
+@@ -166,7 +166,7 @@
+              ('running container rejected', mk({}, nc=1), 'pre', False),
+              ('changed governor rejected', mk({}, gov='performance'), 'pre', False),
+              ('missing inhibitor rejected', mk({}, inhibit=0), 'pre', False),
+-             ('high load rejected', mk({}, load='5.0 4.0 3.0 1/900 1'), 'pre', False),
++             ('high load1 alone recorded, not rejected (AMD-D2-1)', mk({}, load='5.0 4.0 3.0 1/900 1'), 'pre', True),
+              ('allocated CPUs busy during own container accepted', mk({c: 1.0 for c in alloc}), 'during', True)]
+     for name, (a, b), mode, want in cases:
+         got = check(a, b, mode, alloc, FROZEN_DEFAULT)['accepted']

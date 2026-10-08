@@ -1,0 +1,81 @@
+env,backend,metric,k,pred,measured,err_rel,tau,status,heldout
+evm-osaka,groth16,Ync_dir,2,216612,216625,6e-05,0.002008,PASS,seen-in-P0
+evm-osaka,groth16,Ync_dir,6,243312,243177,-0.000555,0.002008,PASS,strictly-unseen
+evm-osaka,groth16,Ync_dir,8,256662,256473,-0.000736,0.002008,PASS,strictly-unseen
+evm-osaka,groth16,Ync_dir,12,283362,283065,-0.001048,0.002008,PASS,strictly-unseen
+evm-osaka,groth16,Ync_dir,16,310062,309657,-0.001306,0.002008,PASS,seen-in-P0
+evm-osaka,groth16,Ync_dir,24,363462,362841,-0.001709,0.002008,PASS,strictly-unseen
+evm-osaka,groth16,Ync_dir,32,416862,416025,-0.002008,0.002008,PASS,seen-in-P0
+evm-osaka,groth16,Ync_dir,64,630462,628761,-0.002698,0.002008,DESCRIPTIVE FAIL,limit
+evm-osaka,groth16,Ync_app,2,225984,225965,-8.3e-05,0.0024,PASS,seen-in-P0
+evm-osaka,groth16,Ync_app,6,252726,252523,-0.000805,0.0024,PASS,strictly-unseen
+evm-osaka,groth16,Ync_app,8,266098,265770,-0.001231,0.0024,PASS,strictly-unseen
+evm-osaka,groth16,Ync_app,12,292840,292382,-0.001565,0.0024,PASS,strictly-unseen
+evm-osaka,groth16,Ync_app,16,319583,318988,-0.001862,0.0024,PASS,seen-in-P0
+evm-osaka,groth16,Ync_app,24,373068,372342,-0.001947,0.0024,PASS,strictly-unseen
+evm-osaka,groth16,Ync_app,32,426554,425530,-0.0024,0.0024,PASS,seen-in-P0
+evm-osaka,groth16,Ync_app,64,640495,638488,-0.003134,0.0024,DESCRIPTIVE FAIL,limit
+evm-osaka,plonk,Ync_dir,2,279384,278906.25,-0.00171,0.014963,PASS,seen-in-P0
+evm-osaka,plonk,Ync_dir,6,282417,281923.5,-0.001746,0.014963,PASS,strictly-unseen
+evm-osaka,plonk,Ync_dir,8,283933,284285,0.00124,0.014963,PASS,strictly-unseen
+evm-osaka,plonk,Ync_dir,12,286966,288133.5,0.00407,0.014963,PASS,strictly-unseen
+evm-osaka,plonk,Ync_dir,16,289998,291505.75,0.005198,0.014963,PASS,seen-in-P0
+evm-osaka,plonk,Ync_dir,24,296064,298126,0.006966,0.014963,PASS,strictly-unseen
+evm-osaka,plonk,Ync_dir,32,302129,304891,0.009142,0.014963,PASS,seen-in-P0
+evm-osaka,plonk,Ync_dir,64,326390,332712.75,0.019371,0.014963,DESCRIPTIVE FAIL,limit
+evm-osaka,plonk,Ync_app,2,288379,287836.25,-0.001883,0.015487,PASS,seen-in-P0
+evm-osaka,plonk,Ync_app,6,291397,290989.5,-0.001399,0.015487,PASS,strictly-unseen
+evm-osaka,plonk,Ync_app,8,292906,293318,0.001406,0.015487,PASS,strictly-unseen
+evm-osaka,plonk,Ync_app,12,295924,297191.5,0.004282,0.015487,PASS,strictly-unseen
+evm-osaka,plonk,Ync_app,16,298942,300609.75,0.005578,0.015487,PASS,seen-in-P0
+evm-osaka,plonk,Ync_app,24,304978,307272,0.007521,0.015487,PASS,strictly-unseen
+evm-osaka,plonk,Ync_app,32,311014,314073,0.009835,0.015487,PASS,seen-in-P0
+evm-osaka,plonk,Ync_app,64,335158,342140.75,0.020833,0.015487,DESCRIPTIVE FAIL,limit
+eravm-29,groth16,Y_dir,2,451254,451263,2.1e-05,0.000622,PASS,seen-in-P0
+eravm-29,groth16,Y_dir,6,479024,479055,6.4e-05,0.000622,PASS,strictly-unseen
+eravm-29,groth16,Y_dir,8,492910,492923,2.7e-05,0.000622,PASS,strictly-unseen
+eravm-29,groth16,Y_dir,12,520680,520812,0.000253,0.000622,PASS,strictly-unseen
+eravm-29,groth16,Y_dir,16,548451,548632,0.00033,0.000622,PASS,seen-in-P0
+eravm-29,groth16,Y_dir,24,603992,604272,0.000463,0.000622,PASS,strictly-unseen
+eravm-29,groth16,Y_dir,32,659534,659944,0.000622,0.000622,PASS,seen-in-P0
+eravm-29,groth16,Y_dir,64,881699,882464,0.000868,0.000622,DESCRIPTIVE FAIL,limit
+eravm-29,groth16,Y_app,2,458305,458326,4.7e-05,0.000327,PASS,seen-in-P0
+eravm-29,groth16,Y_app,6,486227,486222,-1.1e-05,0.000327,PASS,strictly-unseen
+eravm-29,groth16,Y_app,8,500189,500154,-6.9e-05,0.000327,PASS,strictly-unseen
+eravm-29,groth16,Y_app,12,528111,528171,0.000113,0.000327,PASS,strictly-unseen
+eravm-29,groth16,Y_app,16,556034,556113,0.000142,0.000327,PASS,seen-in-P0
+eravm-29,groth16,Y_app,24,611879,612039,0.000261,0.000327,PASS,strictly-unseen
+eravm-29,groth16,Y_app,32,667725,667943,0.000327,0.000327,PASS,seen-in-P0
+eravm-29,groth16,Y_app,64,891106,891499,0.000441,0.000327,DESCRIPTIVE FAIL,limit
+eravm-29,plonk,Y_dir,2,448378,447635.5,-0.001655,0.020123,PASS,seen-in-P0
+eravm-29,plonk,Y_dir,6,458348,456305.25,-0.004456,0.020123,PASS,strictly-unseen
+eravm-29,plonk,Y_dir,8,463353,461302.5,-0.004425,0.020123,PASS,strictly-unseen
+eravm-29,plonk,Y_dir,12,473323,470509,-0.005945,0.020123,PASS,strictly-unseen
+eravm-29,plonk,Y_dir,16,483253,478713.5,-0.009393,0.020123,PASS,seen-in-P0
+eravm-29,plonk,Y_dir,24,503193,495510,-0.015268,0.020123,PASS,strictly-unseen
+eravm-29,plonk,Y_dir,32,523133,512225.75,-0.020849,0.020123,FAIL,seen-in-P0
+eravm-29,plonk,Y_dir,64,602893,582098.5,-0.034491,0.020123,DESCRIPTIVE FAIL,limit
+eravm-29,plonk,Y_app,2,455873,455134.5,-0.001619,0.020572,PASS,seen-in-P0
+eravm-29,plonk,Y_app,6,466027,463956.25,-0.004443,0.020572,PASS,strictly-unseen
+eravm-29,plonk,Y_app,8,471124,468993.5,-0.004522,0.020572,PASS,strictly-unseen
+eravm-29,plonk,Y_app,12,481278,478328,-0.006129,0.020572,PASS,strictly-unseen
+eravm-29,plonk,Y_app,16,491392,486672.5,-0.009604,0.020572,PASS,seen-in-P0
+eravm-29,plonk,Y_app,24,511700,503713,-0.015608,0.020572,PASS,strictly-unseen
+eravm-29,plonk,Y_app,32,532008,520684.75,-0.021284,0.020572,FAIL,seen-in-P0
+eravm-29,plonk,Y_app,64,613240,591605.5,-0.035279,0.020572,DESCRIPTIVE FAIL,limit
+eravm-27,groth16,Y_dir,4,9601964,9581493.75,-0.002132,0.008213,PASS,held-out-regime
+eravm-27,groth16,Y_dir,6,10215506,10187355,-0.002756,0.008213,PASS,held-out-regime
+eravm-27,groth16,Y_dir,8,10829049,10785183.75,-0.004051,0.008213,PASS,held-out-regime
+eravm-27,groth16,Y_dir,16,13283220,13202782.5,-0.006056,0.008213,PASS,held-out-regime
+eravm-27,groth16,Y_app,4,9609090,9588620.75,-0.00213,0.008216,PASS,held-out-regime
+eravm-27,groth16,Y_app,6,10222709,10194522,-0.002757,0.008216,PASS,held-out-regime
+eravm-27,groth16,Y_app,8,10836328,10792414.75,-0.004052,0.008216,PASS,held-out-regime
+eravm-27,groth16,Y_app,16,13290804,13210263.5,-0.00606,0.008216,PASS,held-out-regime
+eravm-27,plonk,Y_dir,4,10497234,10488568.75,-0.000826,0.005134,PASS,held-out-regime
+eravm-27,plonk,Y_dir,6,10502199,10499328,-0.000273,0.005134,PASS,held-out-regime
+eravm-27,plonk,Y_dir,8,10507204,10479390.75,-0.002647,0.005134,PASS,held-out-regime
+eravm-27,plonk,Y_dir,16,10527104,10525487.75,-0.000154,0.005134,PASS,held-out-regime
+eravm-27,plonk,Y_app,4,10504821,10496155.75,-0.000825,0.00513,PASS,held-out-regime
+eravm-27,plonk,Y_app,6,10509878,10506979,-0.000276,0.00513,PASS,held-out-regime
+eravm-27,plonk,Y_app,8,10514975,10487081.75,-0.002653,0.00513,PASS,held-out-regime
+eravm-27,plonk,Y_app,16,10535243,10533446.75,-0.000171,0.00513,PASS,held-out-regime

@@ -1,0 +1,74 @@
+[
+ {
+  "cell": "d10",
+  "backend": "groth16",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "d10",
+  "backend": "plonk",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "p1150",
+  "backend": "groth16",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "p1150",
+  "backend": "plonk",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "p1180",
+  "backend": "groth16",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "p1180",
+  "backend": "plonk",
+  "verified": true,
+  "public_signals": [
+   "697462677042411962856360877147858430506080325871458788506369456473147446859"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "d11",
+  "backend": "groth16",
+  "verified": true,
+  "public_signals": [
+   "3982615518610403781946120789315861060788078296319088766466329918816285295960"
+  ],
+  "root_matches_input": true
+ },
+ {
+  "cell": "d11",
+  "backend": "plonk",
+  "verified": true,
+  "public_signals": [
+   "3982615518610403781946120789315861060788078296319088766466329918816285295960"
+  ],
+  "root_matches_input": true
+ }
+]

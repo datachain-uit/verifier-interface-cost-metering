@@ -1,0 +1,11 @@
+id,term,formula,source,kind,calibration_data,varies_by_backend,varies_with_k,value_or_constants
+1,OPS,sum_op n_op*(native(op)+STEP); EXP: 700+5000*exponent_bytes per occurrence,evm_interpreter/src/native_resource_constants.rs (sha256 c3e722f4...); instructions/arithmetic.rs:210-224,source-defined x structural counts,none,yes,yes,STEP=20; table from source
+2,PRE,ecAdd 58000; ecMul 811000; pairing 6244000+6908000*pairs,basic_system/src/cost_constants.rs (C1 pin; delegation coefficient 4),source-defined x structural counts,none,yes,G16 only,58000/811000/6244000/6908000
+3,KEC,sum (1150+3846*ceil((s+1)/136)),basic_system/src/cost_constants.rs:26-32 (C1 pin),source-defined x structure,none,yes,yes,1150/3846
+4,COP,sum (80+2*len) over CALLDATACOPY CODECOPY RETURNDATACOPY EXTCODECOPY MCOPY,native_resource_constants.rs:74 80; instructions/system.rs heap.rs,source-defined x structure,none,yes,weak,80/2
+5,CDT,60*calldata_bytes,basic_bootloader/src/bootloader/constants.rs:145 154; transaction_flow/gas_helpers.rs:84,source-defined x structure,none,yes,yes,60
+6,DEC,500+800+340*ceil((n+pad8(n)+8*ceil(n/64))/64),flat_storage_model/preimage_cache.rs:363-371; account_cache_entry.rs:138-163; evm_interpreter/src/lib.rs:192 321-328,source-defined x artifact size,none,yes,yes,500/800/340
+7,HEAPB,1*final_heap_bytes,evm_interpreter/src/gas.rs:93-111; native_resource_constants.rs:69,source-defined x structure,none,yes,yes,1
+8,HEAPE,35*heap_expansion_events (ZKsync OS resize rule),evm_interpreter/src/utils.rs resize_heap_implementation; gas.rs:93-111; native_resource_constants.rs:68,source-defined x structure (directly confirmed V2-M7B-A),none,yes,yes,35
+9,CALL,per precompile call 4000+(80+2*min(out_size;ret_len) if >0),flat_storage_model/account_cache.rs:242; cost_constants.rs:41; evm_interpreter/src/interpreter.rs:446-456,source-defined x structure,none,yes,G16 only,4000/80/2
+10,C_env,constant,not source-decomposed,calibrated,registered ZKsync OS v32 npg100 natives of 18 G16/PLONK proofs (c1_k01 and c1_ctx_k02..k64 j0); internal check on 190 further proofs,assumed no,assumed no,1669012

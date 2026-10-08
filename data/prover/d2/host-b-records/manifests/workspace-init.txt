@@ -1,0 +1,33 @@
+utc=2026-10-04T12:45:31Z
+hostname=ad-Precision-7920-Tower
+user=ad uid=1000
+home=/home/ad
+workspace_abs=/home/ad/Workspace/Z-CORP-V2-workstation
+parent_Workspace_existed_before=no
+workspace_existed_before=no
+workspace_entries_before:
+(none: new/empty)
+write_access=ok
+--- df -B1 (workspace filesystem)
+Filesystem        1B-blocks         Used   Available Use% Mounted on
+/dev/nvme0n1p5 501945942016 402049449984 74323771392  85% /
+--- df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p5  468G  375G   70G  85% /
+--- inventory after creation
+.
+./fflonk
+./inputs
+./logs
+./machine
+./machine/fingerprint
+./manifests
+./manifests/workspace-init.txt
+./outputs
+./prover
+./prover/d1
+./prover/d2
+./prover/d3
+./ptau
+./tmp
+./toolchain

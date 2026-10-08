@@ -1,0 +1,48 @@
+{
+ "AC": {
+  "total": 5881,
+  "failed": 0
+ },
+ "ZC_constants": {
+  "base": 1692688.705882353,
+  "per_call": 5866.764705882353
+ },
+ "P": {
+  "TRANSFER-CHECK PASS": 24,
+  "PASS": 129,
+  "DESCRIPTIVE FAIL": 10,
+  "FAIL": 11,
+  "MISSING": 12
+ },
+ "R": {
+  "PASS": 70,
+  "DESCRIPTIVE FAIL": 8,
+  "FAIL": 2
+ },
+ "ZC": {
+  "PASS": 152,
+  "FAIL": 56,
+  "DESCRIPTIVE FAIL": 16
+ },
+ "SG": {
+  "MATCH": 43,
+  "NOT-SCORED": 2
+ },
+ "XO": {
+  "PASS": 5
+ },
+ "NPG": {
+  "PASS": 46
+ },
+ "NPG_rank": {
+  "MATCH": 21
+ },
+ "MONO": {
+  "PASS": 5
+ },
+ "SEM": {
+  "PASS": 24
+ },
+ "n_records": 7159,
+ "n_measurement_records": 2208
+}

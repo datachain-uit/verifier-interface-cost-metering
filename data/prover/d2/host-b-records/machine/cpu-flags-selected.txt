@@ -1,0 +1,8 @@
+avx2
+bmi2
+avx512f
+avx512dq
+adx
+avx512cd
+avx512bw
+avx512vl

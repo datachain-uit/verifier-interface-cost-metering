@@ -1,0 +1,28 @@
+== Z-CORP v3 (v3-x86) resume: campaign dryrun-resumetest-20261005T141557Z, session S20261005T145746Z -> /home/ad/Workspace/Z-CORP-V2-workstation/prover/d2-r5/repo/build/campaigns/dryrun-resumetest-20261005T141557Z-othercommit
+session_id=S20261005T145746Z
+kit=v3-x86
+window=
+hostname=ad-Precision-7920-Tower
+kernel=6.14.0-29-generic
+os=Ubuntu 24.04.3 LTS
+cpu_model=Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz
+nproc=112
+mem_total_kb=65544952
+intel_pstate=active
+no_turbo=0
+hwp_dynamic_boost=0
+governors= 112 powersave;
+epp_cpu1_8=performance performance performance performance performance performance performance performance 
+numa_balancing=1
+thp=always [madvise] never
+smt=on
+siblings_cpu1_8=1,57 2,58 3,59 4,60 5,61 6,62 7,63 8,64 
+node0_cpus=0-27,56-83
+cmdline=BOOT_IMAGE=/boot/vmlinuz-6.14.0-29-generic root=UUID=a0a80852-0629-4440-9bfd-2ec18c82d4ed ro quiet splash vt.handoff=7
+loadavg=1.41 1.48 1.41 1/1631 108419
+sleep_inhibitor_pid=108366
+sleep_inhibitor_ok=1
+docker: engine=27.5.1 ncpu=112 mem_bytes=67118030848 arch=x86_64 cgroup=v2 kernel=6.14.0-29-generic
+host conditions at session start: {"mode": "pre", "accepted": true, "violations": [], "utc_a": "2026-10-05T14:57:49Z", "utc_b": "2026-10-05T14:57:51Z", "seconds": 2.101, "loadavg": "1.41 1.48 1.41 1/1633 108630", "running_containers": 0, "busy_alloc_max": 0.0048, "busy_siblings_max": 0.0048, "busy_other_cpu_equiv": 0.086, "siblings": "57,58,59,60,61,62,63,64", "mhz_alloc": "999 1000 1000 1000 1000 1000 1000 999", "pkg_temp_c": 48.0, "core_throttle_alloc": "0 0 0 0 0 0 0 0", "pkg_throttle": "0", "governor": "powersave", "no_turbo": "0", "numa_balancing": "1", "thp": "madvise", "intel_pstate": "active", "inhibit": 1}
+manifest before: 161 OK, exit 0; corpus: 33 OK, exit 0; tree de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f
+ABORT: REFUSE resume: campaign identity differs; tree (kit, generator, manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000', now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f')

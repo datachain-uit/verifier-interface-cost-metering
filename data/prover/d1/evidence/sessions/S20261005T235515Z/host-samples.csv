@@ -1,0 +1,2 @@
+utc,phase,power,low_power_mode,caffeinate_assertions,running_containers,loadavg,therm
+2026-10-05T23:55:17Z,start,"Now drawing from 'AC Power'",0,5,0,"{ 2.00 1.80 1.71 }","Note: No thermal warning level has been recorded Note: No performance warning level has been recorded Note: No CPU power status has been recorded "

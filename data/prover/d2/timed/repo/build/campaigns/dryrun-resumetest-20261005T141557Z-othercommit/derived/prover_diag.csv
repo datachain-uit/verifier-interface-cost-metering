@@ -1,0 +1,13 @@
+campaign_id,profile_id,backend,depth,call,round_attempts_used,n,median_prove_ms,median_zkey_readfile_ms
+dryrun-resumetest-20261005T141557Z,cpu2,groth16,5,mem,1a1,1,371.541,0.453
+dryrun-resumetest-20261005T141557Z,cpu2,groth16,5,path,1a1,1,408.579,
+dryrun-resumetest-20261005T141557Z,cpu2,plonk,10,mem,1a1,1,24856.008,29.322
+dryrun-resumetest-20261005T141557Z,cpu2,plonk,10,path,1a1,1,25175.078,
+dryrun-resumetest-20261005T141557Z,cpu4,groth16,5,mem,1a1,1,217.294,0.587
+dryrun-resumetest-20261005T141557Z,cpu4,groth16,5,path,1a1,1,233.19,
+dryrun-resumetest-20261005T141557Z,cpu4,plonk,10,mem,1a1,1,23557.416,28.814
+dryrun-resumetest-20261005T141557Z,cpu4,plonk,10,path,1a1,1,23888.532,
+dryrun-resumetest-20261005T141557Z,cpu8,groth16,5,mem,1a1,1,139.933,0.518
+dryrun-resumetest-20261005T141557Z,cpu8,groth16,5,path,1a1,1,153.298,
+dryrun-resumetest-20261005T141557Z,cpu8,plonk,10,mem,1a1,1,21220.721,29.534
+dryrun-resumetest-20261005T141557Z,cpu8,plonk,10,path,1a1,1,21675.88,

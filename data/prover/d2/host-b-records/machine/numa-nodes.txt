@@ -1,0 +1,2 @@
+node0: cpulist=0-27,56-83 Node 0 MemTotal:       32541060 kB
+node1: cpulist=28-55,84-111 Node 1 MemTotal:       33003912 kB

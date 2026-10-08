@@ -1,0 +1,19 @@
+2026-10-05T04:49:43Z ptau b2sum re-checked before use: PASS
+2026-10-05T04:49:43Z setup c1_ff_k01 (r1cs c1_k01) begin
+2026-10-05T04:49:50Z setup c1_ff_k01 rc=0
+2026-10-05T04:49:50Z prove c1_ff_k01 begin
+2026-10-05T04:55:12Z prove c1_ff_k01 rc=0
+2026-10-05T04:55:12Z setup c1_ff_k04 (r1cs c1_ctx_k04) begin
+2026-10-05T04:55:20Z setup c1_ff_k04 rc=0
+2026-10-05T04:55:20Z prove c1_ff_k04 begin
+2026-10-05T05:00:47Z prove c1_ff_k04 rc=0
+2026-10-05T05:00:47Z setup c1_ff_k16 (r1cs c1_ctx_k16) begin
+2026-10-05T05:00:56Z setup c1_ff_k16 rc=0
+2026-10-05T05:00:56Z prove c1_ff_k16 begin
+2026-10-05T05:06:50Z prove c1_ff_k16 rc=0
+2026-10-05T05:06:50Z setup c1_ff_k32 (r1cs c1_ctx_k32) begin
+2026-10-05T05:07:02Z setup c1_ff_k32 rc=0
+2026-10-05T05:07:02Z prove c1_ff_k32 begin
+2026-10-05T05:13:20Z prove c1_ff_k32 rc=0
+2026-10-05T05:13:23Z artifacts hashed: 52 files
+2026-10-05T05:13:23Z done fail=0

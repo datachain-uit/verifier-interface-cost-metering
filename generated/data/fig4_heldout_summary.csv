@@ -1,0 +1,61 @@
+procedure,regime,metric,role,status,n
+P,eravm-27,Y_app,CALIBRATION,TRANSFER-CHECK PASS,2
+P,eravm-27,Y_app,HELD-OUT-REGIME/k-seen-in-P0,PASS,4
+P,eravm-27,Y_app,HELD-OUT-REGIME/k-unseen,PASS,4
+P,eravm-27,Y_dir,CALIBRATION,TRANSFER-CHECK PASS,2
+P,eravm-27,Y_dir,HELD-OUT-REGIME/k-seen-in-P0,PASS,4
+P,eravm-27,Y_dir,HELD-OUT-REGIME/k-unseen,PASS,4
+P,eravm-29,Y_app,CALIBRATION,TRANSFER-CHECK PASS,4
+P,eravm-29,Y_app,HELD-OUT-k/seen-in-P0,FAIL,1
+P,eravm-29,Y_app,HELD-OUT-k/seen-in-P0,PASS,5
+P,eravm-29,Y_app,HELD-OUT-k/strictly-unseen,FAIL,1
+P,eravm-29,Y_app,HELD-OUT-k/strictly-unseen,PASS,7
+P,eravm-29,Y_app,LIMIT-CHECK,DESCRIPTIVE FAIL,2
+P,eravm-29,Y_app,SEMANTIC,PASS,6
+P,eravm-29,Y_dir,CALIBRATION,TRANSFER-CHECK PASS,4
+P,eravm-29,Y_dir,HELD-OUT-k/seen-in-P0,FAIL,1
+P,eravm-29,Y_dir,HELD-OUT-k/seen-in-P0,PASS,5
+P,eravm-29,Y_dir,HELD-OUT-k/strictly-unseen,PASS,8
+P,eravm-29,Y_dir,LIMIT-CHECK,DESCRIPTIVE FAIL,2
+P,eravm-29,Y_dir,SEMANTIC,PASS,6
+P,evm-osaka,Y_app,CALIBRATION,TRANSFER-CHECK PASS,4
+P,evm-osaka,Y_app,HELD-OUT-k/seen-in-P0,PASS,6
+P,evm-osaka,Y_app,HELD-OUT-k/strictly-unseen,PASS,8
+P,evm-osaka,Y_app,LIMIT-CHECK,DESCRIPTIVE FAIL,2
+P,evm-osaka,Y_app,SEMANTIC,PASS,6
+P,evm-osaka,Y_dir,CALIBRATION,TRANSFER-CHECK PASS,4
+P,evm-osaka,Y_dir,HELD-OUT-k/seen-in-P0,PASS,6
+P,evm-osaka,Y_dir,HELD-OUT-k/strictly-unseen,PASS,8
+P,evm-osaka,Y_dir,LIMIT-CHECK,DESCRIPTIVE FAIL,2
+P,evm-osaka,Y_dir,SEMANTIC,PASS,6
+P,evm-petersburg,Y_app,SUPPORTING-CONTROL/calibration,MISSING,4
+P,evm-petersburg,Y_app,SUPPORTING-CONTROL/held-out-k,MISSING,2
+P,evm-petersburg,Y_dir,SUPPORTING-CONTROL/calibration,MISSING,4
+P,evm-petersburg,Y_dir,SUPPORTING-CONTROL/held-out-k,MISSING,2
+P,zkos-v32,N_dir,CALIBRATION,TRANSFER-CHECK PASS,2
+P,zkos-v32,N_dir,HELD-OUT-BACKEND,MISSING,4
+P,zkos-v32,N_dir,HELD-OUT-k/seen-in-P0-trace,FAIL,2
+P,zkos-v32,N_dir,HELD-OUT-k/seen-in-P0-trace,PASS,6
+P,zkos-v32,N_dir,HELD-OUT-k/strictly-unseen,FAIL,1
+P,zkos-v32,N_dir,HELD-OUT-k/strictly-unseen,PASS,7
+P,zkos-v32,N_dir,LIMIT-CHECK,DESCRIPTIVE FAIL,2
+P,zkos-v32,N_dir,SEMANTIC,PASS,6
+P,zkos-v32@npg100,G_dir,CALIBRATION/binding=NATIVE,TRANSFER-CHECK PASS,2
+P,zkos-v32@npg100,G_dir,HELD-OUT-k/binding=NATIVE,FAIL,5
+P,zkos-v32@npg100,G_dir,HELD-OUT-k/binding=NATIVE,PASS,13
+R,eravm-27,Y_app,held-out-regime,PASS,8
+R,eravm-27,Y_dir,held-out-regime,PASS,8
+R,eravm-29,Y_app,limit,DESCRIPTIVE FAIL,2
+R,eravm-29,Y_app,seen-in-P0,FAIL,1
+R,eravm-29,Y_app,seen-in-P0,PASS,5
+R,eravm-29,Y_app,strictly-unseen,PASS,8
+R,eravm-29,Y_dir,limit,DESCRIPTIVE FAIL,2
+R,eravm-29,Y_dir,seen-in-P0,FAIL,1
+R,eravm-29,Y_dir,seen-in-P0,PASS,5
+R,eravm-29,Y_dir,strictly-unseen,PASS,8
+R,evm-osaka,Ync_app,limit,DESCRIPTIVE FAIL,2
+R,evm-osaka,Ync_app,seen-in-P0,PASS,6
+R,evm-osaka,Ync_app,strictly-unseen,PASS,8
+R,evm-osaka,Ync_dir,limit,DESCRIPTIVE FAIL,2
+R,evm-osaka,Ync_dir,seen-in-P0,PASS,6
+R,evm-osaka,Ync_dir,strictly-unseen,PASS,8

@@ -1,0 +1,31 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  204.3kB
+Step 1/9 : ARG BASE_IMAGE=node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e
+Step 2/9 : FROM ${BASE_IMAGE}
+ ---> 101e0128c8ea
+Step 3/9 : WORKDIR /opt/zcorp
+ ---> Using cache
+ ---> f621cc97536c
+Step 4/9 : COPY package.json package-lock.json ./
+ ---> Using cache
+ ---> 9da54617092c
+Step 5/9 : RUN npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
+ ---> Using cache
+ ---> 8fece7a345a6
+Step 6/9 : COPY lib ./lib
+ ---> Using cache
+ ---> 2cb45f82d308
+Step 7/9 : COPY harness.js preflight.js provenance.js make_schedule.js summarize_prover.js record_controls.js campaign_state.js validate_round.js check_resume_test.js setup_plonk_zkeys.js ./
+ ---> Using cache
+ ---> 578b4a6ae90f
+Step 8/9 : ENV ZCORP_HARNESS_DIR=/opt/zcorp     ZCORP_REPO=/work     ZCORP_RESULTS=/results     NODE_OPTIONS="--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+ ---> Using cache
+ ---> d3ee59d7ab08
+Step 9/9 : LABEL org.opencontainers.image.title="zcorp-bench"       org.opencontainers.image.description="Z-CORP rerun protocol v3 prover harness"       org.opencontainers.image.version="3.0.0-x86"
+ ---> Using cache
+ ---> 9024dbc83b81
+Successfully built 9024dbc83b81
+Successfully tagged zcorp-bench:v3-x86

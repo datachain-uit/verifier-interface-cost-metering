@@ -1,0 +1,26 @@
+2026-10-05T05:24:02.904860Z start campaign=FULL-IF-FFLONK-GATE-PASSES run_id=V2-MPI-FULL-01-FFLONK-run1 cells=12 pins_sha256=e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699
+2026-10-05T05:24:02.905053Z cell 00-eravm-29__fflonk__c1_ff_k32 attempt 1 begin
+2026-10-05T05:24:07.340537Z cell 00-eravm-29__fflonk__c1_ff_k32 attempt 1 done in 4s
+2026-10-05T05:24:07.340782Z cell 01-eravm-29__fflonk__c1_ff_k01 attempt 1 begin
+2026-10-05T05:24:10.467819Z cell 01-eravm-29__fflonk__c1_ff_k01 attempt 1 done in 3s
+2026-10-05T05:24:10.468085Z cell 02-zkos-v32_at_npg100__fflonk__c1_ff_k04 attempt 1 begin
+2026-10-05T05:26:22.434385Z cell 02-zkos-v32_at_npg100__fflonk__c1_ff_k04 attempt 1 done in 132s
+2026-10-05T05:26:22.434631Z cell 03-eravm-29__fflonk__c1_ff_k16 attempt 1 begin
+2026-10-05T05:26:25.759827Z cell 03-eravm-29__fflonk__c1_ff_k16 attempt 1 done in 3s
+2026-10-05T05:26:25.760096Z cell 04-evm-osaka__fflonk__c1_ff_k01 attempt 1 begin
+2026-10-05T05:26:28.913011Z cell 04-evm-osaka__fflonk__c1_ff_k01 attempt 1 done in 3s
+2026-10-05T05:26:28.913304Z cell 05-zkos-v32_at_npg100__fflonk__c1_ff_k01 attempt 1 begin
+2026-10-05T05:28:40.802266Z cell 05-zkos-v32_at_npg100__fflonk__c1_ff_k01 attempt 1 done in 132s
+2026-10-05T05:28:40.803031Z cell 06-evm-osaka__fflonk__c1_ff_k04 attempt 1 begin
+2026-10-05T05:28:44.001083Z cell 06-evm-osaka__fflonk__c1_ff_k04 attempt 1 done in 3s
+2026-10-05T05:28:44.001384Z cell 07-evm-osaka__fflonk__c1_ff_k32 attempt 1 begin
+2026-10-05T05:28:48.153624Z cell 07-evm-osaka__fflonk__c1_ff_k32 attempt 1 done in 4s
+2026-10-05T05:28:48.153895Z cell 08-evm-osaka__fflonk__c1_ff_k16 attempt 1 begin
+2026-10-05T05:28:51.702210Z cell 08-evm-osaka__fflonk__c1_ff_k16 attempt 1 done in 4s
+2026-10-05T05:28:51.702506Z cell 09-zkos-v32_at_npg100__fflonk__c1_ff_k16 attempt 1 begin
+2026-10-05T05:31:03.827784Z cell 09-zkos-v32_at_npg100__fflonk__c1_ff_k16 attempt 1 done in 132s
+2026-10-05T05:31:03.828041Z cell 10-eravm-29__fflonk__c1_ff_k04 attempt 1 begin
+2026-10-05T05:31:07.012878Z cell 10-eravm-29__fflonk__c1_ff_k04 attempt 1 done in 3s
+2026-10-05T05:31:07.013119Z cell 11-zkos-v32_at_npg100__fflonk__c1_ff_k32 attempt 1 begin
+2026-10-05T05:33:19.214689Z cell 11-zkos-v32_at_npg100__fflonk__c1_ff_k32 attempt 1 done in 132s
+2026-10-05T05:33:19.214718Z campaign complete

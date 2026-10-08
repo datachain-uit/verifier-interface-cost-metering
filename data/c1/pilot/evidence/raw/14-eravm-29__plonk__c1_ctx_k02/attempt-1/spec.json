@@ -1,0 +1,21 @@
+{
+ "campaign": "PILOT",
+ "run_id": "V2-MPI-PILOT-01-run1",
+ "order_index": 14,
+ "cell_id": "eravm-29|plonk|c1_ctx_k02",
+ "env": "eravm-29",
+ "regime": {
+  "protocol": 29
+ },
+ "backend": "plonk",
+ "circuit": "c1_ctx_k02",
+ "k": 2,
+ "relation": "ctx",
+ "compiled": "/root/pilot/V2-MPI-PILOT-01/compiled/c1_ctx_k02-plonk.json",
+ "proofs_dir": "/root/c1/pkg/corpus/proofs",
+ "outdir": "/root/pilot/V2-MPI-PILOT-01/raw/14-eravm-29__plonk__c1_ctx_k02/attempt-1",
+ "pins_sha256": "e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699",
+ "port": 18011,
+ "server_log": "/root/pilot/V2-MPI-PILOT-01/raw/14-eravm-29__plonk__c1_ctx_k02/attempt-1/node/server.log",
+ "attempt": 1
+}

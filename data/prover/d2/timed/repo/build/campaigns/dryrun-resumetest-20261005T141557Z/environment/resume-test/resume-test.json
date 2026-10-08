@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "sessions": [
+    "S20261005T141557Z",
+    "S20261005T142620Z",
+    "S20261005T143431Z"
+  ],
+  "ledger": [
+    {
+      "campaign_id": "dryrun-resumetest-20261005T141557Z",
+      "kind": "primary",
+      "round": "0",
+      "round_attempt": "1",
+      "session_id": "S20261005T141557Z",
+      "status": "complete",
+      "accepted": "1",
+      "recorded_utc": "2026-10-05T14:26:17.322Z",
+      "recorded_by_session": "S20261005T141557Z",
+      "profiles": "cpu8;cpu2;cpu4",
+      "rows_runs": "12",
+      "rows_diag": "0",
+      "detail": ""
+    },
+    {
+      "campaign_id": "dryrun-resumetest-20261005T141557Z",
+      "kind": "primary",
+      "round": "1",
+      "round_attempt": "1",
+      "session_id": "S20261005T142620Z",
+      "status": "incomplete",
+      "accepted": "0",
+      "recorded_utc": "2026-10-05T14:41:40.242Z",
+      "recorded_by_session": "S20261005T143431Z",
+      "profiles": "cpu4",
+      "rows_runs": "4",
+      "rows_diag": "0",
+      "detail": "interrupted before round validation; rows preserved; the whole round is rerun as a new attempt"
+    },
+    {
+      "campaign_id": "dryrun-resumetest-20261005T141557Z",
+      "kind": "primary",
+      "round": "1",
+      "round_attempt": "2",
+      "session_id": "S20261005T143431Z",
+      "status": "complete",
+      "accepted": "1",
+      "recorded_utc": "2026-10-05T14:44:14.112Z",
+      "recorded_by_session": "S20261005T143431Z",
+      "profiles": "cpu4;cpu8;cpu2",
+      "rows_runs": "12",
+      "rows_diag": "0",
+      "detail": ""
+    },
+    {
+      "campaign_id": "dryrun-resumetest-20261005T141557Z",
+      "kind": "primary",
+      "round": "2",
+      "round_attempt": "1",
+      "session_id": "S20261005T143431Z",
+      "status": "complete",
+      "accepted": "1",
+      "recorded_utc": "2026-10-05T14:46:47.255Z",
+      "recorded_by_session": "S20261005T143431Z",
+      "profiles": "cpu2;cpu4;cpu8",
+      "rows_runs": "12",
+      "rows_diag": "0",
+      "detail": ""
+    },
+    {
+      "campaign_id": "dryrun-resumetest-20261005T141557Z",
+      "kind": "diag",
+      "round": "1",
+      "round_attempt": "1",
+      "session_id": "S20261005T143431Z",
+      "status": "complete",
+      "accepted": "1",
+      "recorded_utc": "2026-10-05T14:50:33.535Z",
+      "recorded_by_session": "S20261005T143431Z",
+      "profiles": "cpu2;cpu4;cpu8",
+      "rows_runs": "6",
+      "rows_diag": "12",
+      "detail": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "three_sessions_with_new_ids",
+      "passed": true,
+      "detail": [
+        "S20261005T141557Z window none; new 2026-10-05T14:16:00Z",
+        "S20261005T142620Z window none; resume 2026-10-05T14:26:22Z",
+        "S20261005T143431Z window none; resume 2026-10-05T14:34:33Z"
+      ]
+    },
+    {
+      "name": "round_completed_in_session1",
+      "passed": true,
+      "detail": {
+        "campaign_id": "dryrun-resumetest-20261005T141557Z",
+        "kind": "primary",
+        "round": "0",
+        "round_attempt": "1",
+        "session_id": "S20261005T141557Z",
+        "status": "complete",
+        "accepted": "1",
+        "recorded_utc": "2026-10-05T14:26:17.322Z",
+        "recorded_by_session": "S20261005T141557Z",
+        "profiles": "cpu8;cpu2;cpu4",
+        "rows_runs": "12",
+        "rows_diag": "0",
+        "detail": ""
+      }
+    },
+    {
+      "name": "session1_clean_planned_stop",
+      "passed": true,
+      "detail": "window none; STOPPED (1 accepted, 3 remaining)"
+    },
+    {
+      "name": "completed_round_not_rerun",
+      "passed": true,
+      "detail": {
+        "rows": 15,
+        "sessions": [
+          "S20261005T141557Z"
+        ]
+      }
+    },
+    {
+      "name": "interrupted_round_preserved_as_incomplete",
+      "passed": true,
+      "detail": {
+        "campaign_id": "dryrun-resumetest-20261005T141557Z",
+        "kind": "primary",
+        "round": "1",
+        "round_attempt": "1",
+        "session_id": "S20261005T142620Z",
+        "status": "incomplete",
+        "accepted": "0",
+        "recorded_utc": "2026-10-05T14:41:40.242Z",
+        "recorded_by_session": "S20261005T143431Z",
+        "profiles": "cpu4",
+        "rows_runs": "4",
+        "rows_diag": "0",
+        "detail": "interrupted before round validation; rows preserved; the whole round is rerun as a new attempt"
+      }
+    },
+    {
+      "name": "interrupted_round_rerun_whole",
+      "passed": true,
+      "detail": {
+        "attempt2_profiles": [
+          "cpu2",
+          "cpu4",
+          "cpu8"
+        ]
+      }
+    },
+    {
+      "name": "remaining_rounds_accepted_in_session3",
+      "passed": true,
+      "detail": [
+        "primary|2",
+        "diag|1"
+      ]
+    },
+    {
+      "name": "final_validation_pass",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "complete": true,
+        "accepted": 4
+      }
+    },
+    {
+      "name": "summary_uses_accepted_attempt_only",
+      "passed": true,
+      "detail": [
+        "1a2",
+        "2a1"
+      ]
+    },
+    {
+      "name": "accepted_round_rerun_refused",
+      "passed": true,
+      "detail": {
+        "harness_exit": "7",
+        "rows_before": "65",
+        "rows_after": "65",
+        "tamper_exit": "1",
+        "tamper_refused": "yes",
+        "tamper_reason": "REFUSE schedule.csv differs from the campaign record",
+        "commit_tamper_exit": "1",
+        "commit_tamper_reason": "REFUSE resume: campaign identity differs; tree (kit  generator  manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000'  now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f')"
+      }
+    },
+    {
+      "name": "altered_schedule_resume_refused",
+      "passed": true,
+      "detail": {
+        "exit": "1",
+        "reason": "REFUSE schedule.csv differs from the campaign record"
+      }
+    },
+    {
+      "name": "other_commit_resume_refused",
+      "passed": true,
+      "detail": {
+        "exit": "1",
+        "reason": "REFUSE resume: campaign identity differs; tree (kit  generator  manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000'  now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f')"
+      }
+    }
+  ]
+}

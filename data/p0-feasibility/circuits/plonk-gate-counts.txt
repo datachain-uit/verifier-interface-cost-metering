@@ -1,0 +1,15 @@
+a4_d11-plonk.log:[INFO]  snarkJS: Plonk constraints: 37010
+a8_d11-plonk.log:[INFO]  snarkJS: Plonk constraints: 39096
+ctx_d11_k16-plonk.log:[INFO]  snarkJS: Plonk constraints: 34107
+ctx_d11_k2-plonk.log:[INFO]  snarkJS: Plonk constraints: 34079
+ctx_d11_k32-plonk.log:[INFO]  snarkJS: Plonk constraints: 34139
+ctx_d11_k4-plonk.log:[INFO]  snarkJS: Plonk constraints: 34083
+ctx_d11_k64-plonk.log:[INFO]  snarkJS: Plonk constraints: 34203
+disc_p16x2_d11_k4-plonk.log:[INFO]  snarkJS: Plonk constraints: 63567
+mini_d0_k1-plonk.log:[INFO]  snarkJS: Plonk constraints: 6852
+mini_d0_k16-plonk.log:[INFO]  snarkJS: Plonk constraints: 6882
+mini_d0_k2-plonk.log:[INFO]  snarkJS: Plonk constraints: 6854
+mini_d0_k4-plonk.log:[INFO]  snarkJS: Plonk constraints: 6858
+pad_d10_p1150-plonk.log:[INFO]  snarkJS: Plonk constraints: 32752
+pad_d10_p1180-plonk.log:[INFO]  snarkJS: Plonk constraints: 32782
+v1_d11-plonk.log:[INFO]  snarkJS: Plonk constraints: 34077

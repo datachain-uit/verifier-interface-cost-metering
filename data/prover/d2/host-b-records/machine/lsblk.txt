@@ -1,0 +1,35 @@
+$ lsblk -o NAME,SIZE,TYPE,ROTA,MODEL,FSTYPE,MOUNTPOINT
+NAME          SIZE TYPE ROTA MODEL                          FSTYPE   MOUNTPOINT
+loop0           4K loop    0                                squashfs /snap/bare/5
+loop1        63.8M loop    0                                squashfs /snap/core20/2686
+loop2        63.8M loop    0                                squashfs /snap/core20/2922
+loop3          74M loop    0                                squashfs /snap/core22/2292
+loop4          74M loop    0                                squashfs /snap/core22/2955
+loop5        66.8M loop    0                                squashfs /snap/core24/2124
+loop6        66.9M loop    0                                squashfs /snap/core24/1349
+loop7         4.9M loop    0                                squashfs /snap/curl/2384
+loop8         5.2M loop    0                                squashfs /snap/curl/2421
+loop9       251.7M loop    0                                squashfs /snap/firefox/7720
+loop10      261.4M loop    0                                squashfs /snap/firefox/8969
+loop11      505.1M loop    0                                squashfs /snap/gnome-42-2204/176
+loop12       18.5M loop    0                                squashfs /snap/firmware-updater/210
+loop13       12.7M loop    0                                squashfs /snap/firmware-updater/258
+loop14        402M loop    0                                squashfs /snap/mesa-2404/1839
+loop15        516M loop    0                                squashfs /snap/gnome-42-2204/202
+loop16      615.3M loop    0                                squashfs /snap/gnome-46-2404/168
+loop17       91.7M loop    0                                squashfs /snap/gtk-common-themes/1535
+loop18       10.8M loop    0                                squashfs /snap/snap-store/1270
+loop19       48.1M loop    0                                squashfs /snap/snapd/25935
+loop20       17.5M loop    0                                squashfs /snap/snap-store/1300
+loop21        828K loop    0                                squashfs /snap/snapd-desktop-integration/391
+loop22       50.3M loop    0                                squashfs /snap/snapd/27738
+loop23        576K loop    0                                squashfs /snap/snapd-desktop-integration/343
+sda             0B disk    0 SD/MMC CRW                              
+sr0          1024M rom     0 PLDS DVD-ROM DU-8D5LH                   
+nvme0n1     953.9G disk    0 WDC CL SN720 SDAQNTW-1T00-2000          
+|-nvme0n1p1   100M part    0                                vfat     /boot/efi
+|-nvme0n1p2    16M part    0                                         
+|-nvme0n1p3 214.1G part    0                                ntfs     
+|-nvme0n1p4 263.7G part    0                                ntfs     
+`-nvme0n1p5   476G part    0                                ext4     /
+[exit 0]

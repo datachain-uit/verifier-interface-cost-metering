@@ -1,0 +1,22 @@
+$ head -20 /proc/meminfo
+MemTotal:       65544972 kB
+MemFree:          867128 kB
+MemAvailable:   23829512 kB
+Buffers:         1126020 kB
+Cached:         21312060 kB
+SwapCached:          320 kB
+Active:         25968712 kB
+Inactive:       34305048 kB
+Active(anon):   25048076 kB
+Inactive(anon): 13019580 kB
+Active(file):     920636 kB
+Inactive(file): 21285468 kB
+Unevictable:        3088 kB
+Mlocked:              16 kB
+SwapTotal:       8388604 kB
+SwapFree:        8388092 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:             36852 kB
+Writeback:             0 kB
+[exit 0]

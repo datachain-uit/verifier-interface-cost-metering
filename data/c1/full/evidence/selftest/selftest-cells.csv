@@ -1,0 +1,8 @@
+cell_id,design_class,campaign,env,regime,backend,circuit,k,relation,proofs,role
+eravm-27|groth16|fx_ctx_k04,SELFTEST,SELFTEST,eravm-27,protocol=27,groth16,fx_ctx_k04,4,ctx,j0..j7,TOOLING
+eravm-27|plonk|fx_ctx_k04,SELFTEST,SELFTEST,eravm-27,protocol=27,plonk,fx_ctx_k04,4,ctx,j0..j7,TOOLING
+zkos-v32@npg100+priority_fee=1e8wei|plonk|fx_k01,SELFTEST,SELFTEST,zkos-v32,npg100+priority_fee=1e8wei,plonk,fx_k01,1,ctx,j0..j7,TOOLING
+evm-osaka|fflonk|fx_ff_k04,SELFTEST,SELFTEST,evm-osaka,hardfork=osaka,fflonk,fx_ff_k04,4,ctx,j0..j7,TOOLING
+eravm-29|fflonk|fx_ff_k04,SELFTEST,SELFTEST,eravm-29,protocol=29,fflonk,fx_ff_k04,4,ctx,j0..j7,TOOLING
+zkos-v32@npg100|fflonk|fx_ff_k04,SELFTEST,SELFTEST,zkos-v32,npg100,fflonk,fx_ff_k04,4,ctx,j0..j7,TOOLING
+evm-osaka|groth16|fx_ctx_k04,SELFTEST,SELFTEST,evm-osaka,hardfork=osaka,groth16,fx_ctx_k04,4,ctx,j0..j7,TOOLING

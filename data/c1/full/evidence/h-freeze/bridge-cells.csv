@@ -1,0 +1,13 @@
+cell_id,design_class,campaign,env,regime,backend,circuit,k,relation,proofs,role
+evm-osaka|groth16|c1_k01,CORE,BRIDGE,evm-osaka,hardfork=osaka,groth16,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+evm-osaka|groth16|c1_ctx_k04,CORE,BRIDGE,evm-osaka,hardfork=osaka,groth16,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+evm-osaka|plonk|c1_k01,CORE,BRIDGE,evm-osaka,hardfork=osaka,plonk,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+evm-osaka|plonk|c1_ctx_k04,CORE,BRIDGE,evm-osaka,hardfork=osaka,plonk,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+eravm-29|groth16|c1_k01,CORE,BRIDGE,eravm-29,protocol=29,groth16,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+eravm-29|groth16|c1_ctx_k04,CORE,BRIDGE,eravm-29,protocol=29,groth16,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+eravm-29|plonk|c1_k01,CORE,BRIDGE,eravm-29,protocol=29,plonk,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+eravm-29|plonk|c1_ctx_k04,CORE,BRIDGE,eravm-29,protocol=29,plonk,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+zkos-v32@npg100|groth16|c1_k01,CORE,BRIDGE,zkos-v32,npg100,groth16,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+zkos-v32@npg100|groth16|c1_ctx_k04,CORE,BRIDGE,zkos-v32,npg100,groth16,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+zkos-v32@npg100|plonk|c1_k01,CORE,BRIDGE,zkos-v32,npg100,plonk,c1_k01,1,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"
+zkos-v32@npg100|plonk|c1_ctx_k04,CORE,BRIDGE,zkos-v32,npg100,plonk,c1_ctx_k04,4,ctx,j0..j7,"BRIDGE (pilot reproduction control, 16-full-protocol.md §1.1, 17)"

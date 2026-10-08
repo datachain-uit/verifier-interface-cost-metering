@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below and cite the accompanying article."
+type: software
+title: "Reproducibility package for on-chain zero-knowledge verifier cost comparisons across public-input counts and metering specifications"
+authors:
+  - given-names: "Khoa Tan"
+    family-names: "VO"
+  - given-names: "Hong-Tri"
+    family-names: "Nguyen"
+  - given-names: "Tu-Anh"
+    family-names: "Nguyen-Hoang"
+license:
+  - MIT
+  - GPL-3.0-only
+  - GPL-3.0-or-later
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - zero-knowledge proofs
+  - Groth16
+  - PLONK
+  - FFLONK
+  - verifier cost
+  - gas metering
+  - EVM
+  - EraVM
+  - ZKsync OS
+  - reproducibility

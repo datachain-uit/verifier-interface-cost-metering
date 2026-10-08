@@ -1,0 +1,50 @@
+2026-10-05T23:57:19Z session S20261005T235719Z mode campaign V2=/Users/votankhoa/Desktop/Workspace/Z-CORP-V2
+2026-10-05T23:57:20Z protocol SHA256SUMS 12acbadfe805b6fd714f3f6536ca14d95738444f17a7bb08e1d67a1d5f824083
+2026-10-05T23:57:22Z image zcorp-d1:12acbadfe805 sha256:d9babb176d39a04172db98646bc4cd55ec85295424b68380028835700e3b342b
+2026-10-05T23:57:24Z adapter controls refused as required
+preflight ok
+2026-10-05T23:57:34Z PREFLIGHT PASS
+dryrun-r00-a1: 8 rows, invalid 0, oom 0, throttled 0
+primary-r00-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-05T23:59:50Z round 0 attempt 1 complete
+primary-r01-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:00:59Z round 1 attempt 1 complete
+primary-r02-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:02:07Z round 2 attempt 1 complete
+primary-r03-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:03:15Z round 3 attempt 1 complete
+primary-r04-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:04:26Z round 4 attempt 1 complete
+primary-r05-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:05:34Z round 5 attempt 1 complete
+primary-r06-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:06:47Z round 6 attempt 1 complete
+primary-r07-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:07:54Z round 7 attempt 1 complete
+primary-r08-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:09:02Z round 8 attempt 1 complete
+primary-r09-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:10:13Z round 9 attempt 1 complete
+primary-r10-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:11:21Z round 10 attempt 1 complete
+primary-r11-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:12:29Z round 11 attempt 1 complete
+primary-r12-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:13:37Z round 12 attempt 1 complete
+primary-r13-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:14:45Z round 13 attempt 1 complete
+primary-r14-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:15:58Z round 14 attempt 1 complete
+primary-r15-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:17:06Z round 15 attempt 1 complete
+primary-r16-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:18:14Z round 16 attempt 1 complete
+primary-r17-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:19:22Z round 17 attempt 1 complete
+primary-r18-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:20:29Z round 18 attempt 1 complete
+primary-r19-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:21:37Z round 19 attempt 1 complete
+primary-r20-a1: 8 rows, invalid 0, oom 0, throttled 0
+2026-10-06T00:22:49Z round 20 attempt 1 complete
+2026-10-06T00:22:49Z CAMPAIGN COMPLETE (21 rounds; round 0 is the discarded warm-up)

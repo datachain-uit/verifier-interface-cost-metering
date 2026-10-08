@@ -1,0 +1,5 @@
+{"artifact":"powersOfTau19_v2_local_research.ptau","label":"LOCALLY GENERATED RESEARCH PTAU (C1 doc 21 fallback; not the Hermez ceremony file; not a trusted setup)",
+ "decision":"V2-D-38 (owner approval of the doc-21 fallback)","procedure":"powersoftau new bn128 19; contribute (urandom 64 B entropy, discarded; sha256 commitment kept); beacon (deterministic, recorded, 2^10); prepare phase2; verify",
+ "beacon_hash":"a5dabf111ad93e69c270a021ae947f68fb868726651304f4d677eb3a2518f02c","entropy_sha256_commitment":"c95c00b1e3848fe44ed7bd66f7e64c4f9753beb25f17a06119ac2c5704deac46",
+ "bytes":603982838,"blake2b512":"dd34a643a5234521dfe96798c1988e0e0143641c643da8a4e08bcf234d40e726ef9098d68f5073c2d65003a6b69dcd7f0b4ce996aa01a2996812f00db6967dde","sha256":"8fc8e14afd97f0a580c904a54ab2cf4f9cd8df97ed54218f83861d91b62457a8",
+ "powersoftau_verify":"PASS","host":"ad-Precision-7920-Tower","started_utc":"2026-10-05T04:28:27Z","ended_utc":"2026-10-05T04:43:43Z","path":"/home/ad/Workspace/Z-CORP-V2-workstation/ptau/local/powersOfTau19_v2_local_research.ptau"}

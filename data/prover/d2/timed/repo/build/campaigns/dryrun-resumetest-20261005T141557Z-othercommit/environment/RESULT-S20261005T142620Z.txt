@@ -1,0 +1,1 @@
+result: INTERRUPTED (simulated, session S20261005T142620Z)

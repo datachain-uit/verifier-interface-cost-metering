@@ -1,0 +1,93 @@
+{
+  "utc_start": "2026-10-05T14:16:06.504Z",
+  "campaign_id": "dryrun-resumetest-20261005T141557Z",
+  "image_id": "sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7",
+  "tools": {
+    "circom": "2.1.6",
+    "circom2_npm": "0.2.16",
+    "circomlib": "2.0.5",
+    "snarkjs": "0.7.5"
+  },
+  "depths": [
+    {
+      "depth": 5,
+      "compile_ok": true,
+      "r1cs_byte_identical": true,
+      "wasm_byte_identical_to_circom2_build": false,
+      "input_matches_committed": true,
+      "witness_identical": true,
+      "witness_satisfies_committed_r1cs": true,
+      "r1cs_constraints": 1512,
+      "constraint_count_ok": true,
+      "booleanity": {
+        "layout_ok": true,
+        "found": 5,
+        "expected": 5
+      },
+      "groth16_zkey_verify": true,
+      "plonk_zkey_regenerated_identical": true,
+      "groth16_vkey_export_equal": true,
+      "plonk_vkey_export_equal": true,
+      "plonk_power": 15,
+      "sol_embeds_groth16_vkey": true,
+      "groth16_committed_proof_verifies": true,
+      "plonk_committed_proof_verifies": true,
+      "synthetic_input_root_equals_corpus_root": true,
+      "passed": true
+    },
+    {
+      "depth": 10,
+      "compile_ok": true,
+      "r1cs_byte_identical": true,
+      "wasm_byte_identical_to_circom2_build": false,
+      "input_matches_committed": true,
+      "witness_identical": true,
+      "witness_satisfies_committed_r1cs": true,
+      "r1cs_constraints": 2727,
+      "constraint_count_ok": true,
+      "booleanity": {
+        "layout_ok": true,
+        "found": 10,
+        "expected": 10
+      },
+      "groth16_zkey_verify": true,
+      "plonk_zkey_regenerated_identical": true,
+      "groth16_vkey_export_equal": true,
+      "plonk_vkey_export_equal": true,
+      "plonk_power": 15,
+      "sol_embeds_groth16_vkey": true,
+      "groth16_committed_proof_verifies": true,
+      "plonk_committed_proof_verifies": true,
+      "synthetic_input_root_equals_corpus_root": true,
+      "passed": true
+    }
+  ],
+  "checks": {
+    "manifest": {
+      "entries": 161,
+      "ok": 161,
+      "failed": [],
+      "manifest_sha256": "9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be",
+      "passed": true
+    },
+    "synthetic_corpus": {
+      "entries": 33,
+      "ok": 33,
+      "failed": [],
+      "manifest_sha256": "c7203a12c0e9619576a223356af42082f7db4304f05bb678f158860e1ccadc23",
+      "passed": true
+    },
+    "ptau": {
+      "passed": true,
+      "note": "sha256 only; ceremony origin not verified"
+    }
+  },
+  "utc_end": "2026-10-05T14:16:41.685Z",
+  "passed": true,
+  "notes": [
+    "R1CS byte identity is checked with circom 2.1.6 compiled to WebAssembly (circom2 npm 0.2.16), architecture-independent.",
+    "The circom2 build of the witness-calculator wasm is not byte-identical to the committed wasm (native circom 2.1.6 build); equivalence is checked by identical witnesses for the committed input and by wtns check against the committed R1CS.",
+    "Byte identity of the committed wasm with the native circom 2.1.6 binary was established separately on 2026-09-24 (protocol §1.2).",
+    "v3-x86: inputs come from the frozen synthetic corpus (V2-D-18); committed V1 proofs are checked against their committed public files, the synthetic input root against the synthetic corpus root."
+  ]
+}

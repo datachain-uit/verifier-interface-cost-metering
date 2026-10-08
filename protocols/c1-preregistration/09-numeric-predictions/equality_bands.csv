@@ -1,0 +1,6 @@
+env,h_groth16,h_plonk,epsilon,basis
+evm-osaka,8.1e-05,0.004142,0.004224,"max P0 raw within-cell half-range per backend (ctx/V1 cells, k<=32), summed"
+eravm-29,0.0,0.003693,0.003693,"max P0 raw within-cell half-range per backend (ctx/V1 cells, k<=32), summed"
+eravm-27,0.002635,0.002416,0.005052,"max P0 raw within-cell half-range per backend (ctx/V1 cells, k<=32), summed"
+evm-petersburg,0.0001,0.000645,0.000745,"max P0 raw within-cell half-range per backend (ctx/V1 cells, k<=32), summed"
+zkos-v32,0.0,0.000977,0.000977,"max of v32 smoke half-range (k=1) and P0 v31 native half-ranges (ctx/V1, k<=32), per backend, summed; native-bound gas inherits it; EVM-bound ZKsync OS cells use the evm-osaka band"

@@ -1,0 +1,182 @@
+2026-10-04T12:32:07.437041Z start campaign=FULL run_id=V2-MPI-FULL-01-run1 cells=90 pins_sha256=e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699
+2026-10-04T12:32:07.437277Z cell 00-eravm-29__groth16__c1_a8 attempt 1 begin
+2026-10-04T12:32:10.563924Z cell 00-eravm-29__groth16__c1_a8 attempt 1 done in 3s
+2026-10-04T12:32:10.564255Z cell 01-zkos-v32_at_npg167__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T12:34:22.678159Z cell 01-zkos-v32_at_npg167__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T12:34:22.678620Z cell 02-zkos-v32_at_npg100__groth16__c1_ctx_k06 attempt 1 begin
+2026-10-04T12:36:37.525768Z cell 02-zkos-v32_at_npg100__groth16__c1_ctx_k06 attempt 1 done in 135s
+2026-10-04T12:36:37.626070Z cell 03-zkos-v32_at_npg156__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T12:38:50.108881Z cell 03-zkos-v32_at_npg156__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T12:38:50.109779Z cell 04-eravm-27__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T12:39:01.272971Z cell 04-eravm-27__groth16__c1_ctx_k04 attempt 1 done in 11s
+2026-10-04T12:39:01.273253Z cell 05-zkos-v32_at_npg100__plonk__c1_ctx_k08 attempt 1 begin
+2026-10-04T12:41:13.445254Z cell 05-zkos-v32_at_npg100__plonk__c1_ctx_k08 attempt 1 done in 132s
+2026-10-04T12:41:13.445500Z cell 06-eravm-27__groth16__c1_ctx_k06 attempt 1 begin
+2026-10-04T12:41:25.945037Z cell 06-eravm-27__groth16__c1_ctx_k06 attempt 1 done in 12s
+2026-10-04T12:41:25.945296Z cell 07-eravm-29__plonk__c1_ctx_k12 attempt 1 begin
+2026-10-04T12:41:29.324841Z cell 07-eravm-29__plonk__c1_ctx_k12 attempt 1 done in 3s
+2026-10-04T12:41:29.325089Z cell 08-eravm-27__groth16__c1_k01 attempt 1 begin
+2026-10-04T12:41:39.138828Z cell 08-eravm-27__groth16__c1_k01 attempt 1 done in 10s
+2026-10-04T12:41:39.139106Z cell 09-zkos-v32_at_npg300__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T12:43:51.402151Z cell 09-zkos-v32_at_npg300__plonk__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T12:43:51.402515Z cell 10-evm-osaka__groth16__c1_disc_k04 attempt 1 begin
+2026-10-04T12:43:53.029955Z cell 10-evm-osaka__groth16__c1_disc_k04 attempt 1 done in 2s
+2026-10-04T12:43:53.030225Z cell 11-zkos-v32_at_npg132__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T12:46:05.308303Z cell 11-zkos-v32_at_npg132__plonk__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T12:46:05.308572Z cell 12-zkos-v32_at_npg100__plonk__c1_a4 attempt 1 begin
+2026-10-04T12:48:17.443126Z cell 12-zkos-v32_at_npg100__plonk__c1_a4 attempt 1 done in 132s
+2026-10-04T12:48:17.443385Z cell 13-zkos-v32_at_npg300__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T12:50:29.321242Z cell 13-zkos-v32_at_npg300__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T12:50:29.321504Z cell 14-zkos-v32_at_npg100__plonk__c1_ctx_k12 attempt 1 begin
+2026-10-04T12:52:41.508176Z cell 14-zkos-v32_at_npg100__plonk__c1_ctx_k12 attempt 1 done in 132s
+2026-10-04T12:52:41.508463Z cell 15-zkos-v32_at_npg100__plonk__c1_ctx_k32 attempt 1 begin
+2026-10-04T12:54:54.311654Z cell 15-zkos-v32_at_npg100__plonk__c1_ctx_k32 attempt 1 done in 133s
+2026-10-04T12:54:54.312046Z cell 16-zkos-v32_at_npg100__groth16__c1_ctx_k08 attempt 1 begin
+2026-10-04T12:57:06.354891Z cell 16-zkos-v32_at_npg100__groth16__c1_ctx_k08 attempt 1 done in 132s
+2026-10-04T12:57:06.355368Z cell 17-evm-osaka__plonk__c1_disc_k04 attempt 1 begin
+2026-10-04T12:57:11.492478Z cell 17-evm-osaka__plonk__c1_disc_k04 attempt 1 done in 5s
+2026-10-04T12:57:11.492959Z cell 18-eravm-29__groth16__c1_a4 attempt 1 begin
+2026-10-04T12:57:14.729899Z cell 18-eravm-29__groth16__c1_a4 attempt 1 done in 3s
+2026-10-04T12:57:14.730196Z cell 19-eravm-27__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T12:57:36.529324Z cell 19-eravm-27__groth16__c1_ctx_k16 attempt 1 done in 22s
+2026-10-04T12:57:36.529697Z cell 20-zkos-v32_at_npg100__groth16__c1_ctx_k24 attempt 1 begin
+2026-10-04T12:59:49.128782Z cell 20-zkos-v32_at_npg100__groth16__c1_ctx_k24 attempt 1 done in 133s
+2026-10-04T12:59:49.129106Z cell 21-evm-osaka__plonk__c1_ctx_k12 attempt 1 begin
+2026-10-04T12:59:55.351948Z cell 21-evm-osaka__plonk__c1_ctx_k12 attempt 1 done in 6s
+2026-10-04T12:59:55.352292Z cell 22-zkos-v32_at_npg141__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:02:07.675638Z cell 22-zkos-v32_at_npg141__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:02:07.675963Z cell 23-zkos-v32_at_npg138__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:04:19.626534Z cell 23-zkos-v32_at_npg138__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:04:19.626811Z cell 24-evm-osaka__groth16__c1_a8 attempt 1 begin
+2026-10-04T13:04:21.402233Z cell 24-evm-osaka__groth16__c1_a8 attempt 1 done in 2s
+2026-10-04T13:04:21.402596Z cell 25-eravm-27__groth16__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:04:35.380437Z cell 25-eravm-27__groth16__c1_ctx_k08 attempt 1 done in 14s
+2026-10-04T13:04:35.380831Z cell 26-zkos-v32_at_npg154__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:06:47.747833Z cell 26-zkos-v32_at_npg154__plonk__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:06:47.748221Z cell 27-eravm-29__plonk__c1_ctx_k32 attempt 1 begin
+2026-10-04T13:06:51.581834Z cell 27-eravm-29__plonk__c1_ctx_k32 attempt 1 done in 4s
+2026-10-04T13:06:51.582110Z cell 28-eravm-29__groth16__c1_ctx_k12 attempt 1 begin
+2026-10-04T13:06:54.716960Z cell 28-eravm-29__groth16__c1_ctx_k12 attempt 1 done in 3s
+2026-10-04T13:06:54.717309Z cell 29-zkos-v32_at_npg165__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:09:06.921373Z cell 29-zkos-v32_at_npg165__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:09:06.921724Z cell 30-evm-osaka__groth16__c1_ctx_k06 attempt 1 begin
+2026-10-04T13:09:08.556736Z cell 30-evm-osaka__groth16__c1_ctx_k06 attempt 1 done in 2s
+2026-10-04T13:09:08.557001Z cell 31-eravm-29__plonk__c1_a8 attempt 1 begin
+2026-10-04T13:09:11.989165Z cell 31-eravm-29__plonk__c1_a8 attempt 1 done in 3s
+2026-10-04T13:09:11.989478Z cell 32-evm-osaka__groth16__c1_a4 attempt 1 begin
+2026-10-04T13:09:13.573588Z cell 32-evm-osaka__groth16__c1_a4 attempt 1 done in 2s
+2026-10-04T13:09:13.573888Z cell 33-evm-osaka__plonk__c1_a4 attempt 1 begin
+2026-10-04T13:09:17.315730Z cell 33-evm-osaka__plonk__c1_a4 attempt 1 done in 4s
+2026-10-04T13:09:17.316005Z cell 34-eravm-27__plonk__c1_ctx_k06 attempt 1 begin
+2026-10-04T13:09:30.294522Z cell 34-eravm-27__plonk__c1_ctx_k06 attempt 1 done in 13s
+2026-10-04T13:09:30.294860Z cell 35-eravm-27__plonk__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:09:44.333712Z cell 35-eravm-27__plonk__c1_ctx_k08 attempt 1 done in 14s
+2026-10-04T13:09:44.334001Z cell 36-eravm-27__plonk__c1_k01 attempt 1 begin
+2026-10-04T13:09:55.491722Z cell 36-eravm-27__plonk__c1_k01 attempt 1 done in 11s
+2026-10-04T13:09:55.491995Z cell 37-zkos-v32_at_npg100__groth16__c1_ctx_k32 attempt 1 begin
+2026-10-04T13:12:08.028839Z cell 37-zkos-v32_at_npg100__groth16__c1_ctx_k32 attempt 1 done in 133s
+2026-10-04T13:12:08.029185Z cell 38-eravm-29__plonk__c1_a4 attempt 1 begin
+2026-10-04T13:12:11.359821Z cell 38-eravm-29__plonk__c1_a4 attempt 1 done in 3s
+2026-10-04T13:12:11.360138Z cell 39-zkos-v32_at_npg100__plonk__c1_ctx_k24 attempt 1 begin
+2026-10-04T13:14:23.799984Z cell 39-zkos-v32_at_npg100__plonk__c1_ctx_k24 attempt 1 done in 132s
+2026-10-04T13:14:23.800265Z cell 40-evm-osaka__plonk__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:14:27.845465Z cell 40-evm-osaka__plonk__c1_ctx_k08 attempt 1 done in 4s
+2026-10-04T13:14:27.845826Z cell 41-zkos-v32_at_npg167__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:16:40.127354Z cell 41-zkos-v32_at_npg167__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:16:40.127891Z cell 42-evm-osaka__groth16__c1_ctx_k64 attempt 1 begin
+2026-10-04T13:16:44.274547Z cell 42-evm-osaka__groth16__c1_ctx_k64 attempt 1 done in 4s
+2026-10-04T13:16:44.274916Z cell 43-zkos-v32_at_npg156__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:18:56.562768Z cell 43-zkos-v32_at_npg156__plonk__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:18:56.563106Z cell 44-eravm-29__groth16__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:18:59.550420Z cell 44-eravm-29__groth16__c1_ctx_k08 attempt 1 done in 3s
+2026-10-04T13:18:59.550688Z cell 45-eravm-29__groth16__c1_ctx_k24 attempt 1 begin
+2026-10-04T13:19:03.189073Z cell 45-eravm-29__groth16__c1_ctx_k24 attempt 1 done in 4s
+2026-10-04T13:19:03.189371Z cell 46-zkos-v32_at_npg100__plonk__c1_disc_k04 attempt 1 begin
+2026-10-04T13:21:15.337729Z cell 46-zkos-v32_at_npg100__plonk__c1_disc_k04 attempt 1 done in 132s
+2026-10-04T13:21:15.338042Z cell 47-zkos-v32_at_npg300__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:23:27.346413Z cell 47-zkos-v32_at_npg300__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:23:27.346688Z cell 48-zkos-v32_at_npg125__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:25:39.480896Z cell 48-zkos-v32_at_npg125__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:25:39.481233Z cell 49-zkos-v32_at_npg125__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:27:51.605296Z cell 49-zkos-v32_at_npg125__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:27:51.605560Z cell 50-eravm-27__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:28:03.663156Z cell 50-eravm-27__plonk__c1_ctx_k04 attempt 1 done in 12s
+2026-10-04T13:28:03.663435Z cell 51-evm-osaka__groth16__c1_ctx_k24 attempt 1 begin
+2026-10-04T13:28:05.640799Z cell 51-evm-osaka__groth16__c1_ctx_k24 attempt 1 done in 2s
+2026-10-04T13:28:05.641059Z cell 52-evm-osaka__plonk__c1_ctx_k64 attempt 1 begin
+2026-10-04T13:28:12.010062Z cell 52-evm-osaka__plonk__c1_ctx_k64 attempt 1 done in 6s
+2026-10-04T13:28:12.010381Z cell 53-zkos-v32_at_npg100__groth16__c1_a4 attempt 1 begin
+2026-10-04T13:30:23.734670Z cell 53-zkos-v32_at_npg100__groth16__c1_a4 attempt 1 done in 132s
+2026-10-04T13:30:23.735030Z cell 54-zkos-v32_at_npg100+priority_fee=1e8wei__groth16__c1_k01 attempt 1 begin
+2026-10-04T13:32:35.452689Z cell 54-zkos-v32_at_npg100+priority_fee=1e8wei__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T13:32:35.452961Z cell 55-zkos-v32_at_npg100__plonk__c1_a8 attempt 1 begin
+2026-10-04T13:34:47.597721Z cell 55-zkos-v32_at_npg100__plonk__c1_a8 attempt 1 done in 132s
+2026-10-04T13:34:47.597980Z cell 56-evm-osaka__groth16__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:34:49.172380Z cell 56-evm-osaka__groth16__c1_ctx_k08 attempt 1 done in 2s
+2026-10-04T13:34:49.172748Z cell 57-zkos-v32_at_npg100+priority_fee=1e8wei__plonk__c1_k01 attempt 1 begin
+2026-10-04T13:37:01.264152Z cell 57-zkos-v32_at_npg100+priority_fee=1e8wei__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T13:37:01.264978Z cell 58-zkos-v32_at_npg120__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:39:13.793071Z cell 58-zkos-v32_at_npg120__plonk__c1_ctx_k16 attempt 1 done in 133s
+2026-10-04T13:39:13.793350Z cell 59-eravm-29__plonk__c1_ctx_k64 attempt 1 begin
+2026-10-04T13:39:18.431058Z cell 59-eravm-29__plonk__c1_ctx_k64 attempt 1 done in 5s
+2026-10-04T13:39:18.431356Z cell 60-zkos-v32_at_npg141__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:41:30.845446Z cell 60-zkos-v32_at_npg141__plonk__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:41:30.845787Z cell 61-evm-osaka__plonk__c1_ctx_k24 attempt 1 begin
+2026-10-04T13:41:35.504201Z cell 61-evm-osaka__plonk__c1_ctx_k24 attempt 1 done in 5s
+2026-10-04T13:41:35.504447Z cell 62-eravm-29__plonk__c1_ctx_k24 attempt 1 begin
+2026-10-04T13:41:39.036130Z cell 62-eravm-29__plonk__c1_ctx_k24 attempt 1 done in 4s
+2026-10-04T13:41:39.036535Z cell 63-zkos-v32_at_npg100__groth16__c1_ctx_k12 attempt 1 begin
+2026-10-04T13:43:50.938079Z cell 63-zkos-v32_at_npg100__groth16__c1_ctx_k12 attempt 1 done in 132s
+2026-10-04T13:43:50.938349Z cell 64-evm-osaka__groth16__c1_ctx_k12 attempt 1 begin
+2026-10-04T13:43:52.665058Z cell 64-evm-osaka__groth16__c1_ctx_k12 attempt 1 done in 2s
+2026-10-04T13:43:52.665427Z cell 65-zkos-v32_at_npg149__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:46:04.566982Z cell 65-zkos-v32_at_npg149__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:46:04.567247Z cell 66-eravm-29__groth16__c1_ctx_k06 attempt 1 begin
+2026-10-04T13:46:07.449041Z cell 66-eravm-29__groth16__c1_ctx_k06 attempt 1 done in 3s
+2026-10-04T13:46:07.449301Z cell 67-zkos-v32_at_npg300__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:48:19.588548Z cell 67-zkos-v32_at_npg300__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:48:19.588923Z cell 68-eravm-29__groth16__c1_disc_k04 attempt 1 begin
+2026-10-04T13:48:22.517073Z cell 68-eravm-29__groth16__c1_disc_k04 attempt 1 done in 3s
+2026-10-04T13:48:22.517353Z cell 69-zkos-v32_at_npg149__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:50:34.679155Z cell 69-zkos-v32_at_npg149__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:50:34.679482Z cell 70-eravm-29__groth16__c1_ctx_k32 attempt 1 begin
+2026-10-04T13:50:38.458315Z cell 70-eravm-29__groth16__c1_ctx_k32 attempt 1 done in 4s
+2026-10-04T13:50:38.458568Z cell 71-evm-osaka__plonk__c1_ctx_k32 attempt 1 begin
+2026-10-04T13:50:43.278531Z cell 71-evm-osaka__plonk__c1_ctx_k32 attempt 1 done in 5s
+2026-10-04T13:50:43.278787Z cell 72-eravm-29__plonk__c1_disc_k04 attempt 1 begin
+2026-10-04T13:50:46.559769Z cell 72-eravm-29__plonk__c1_disc_k04 attempt 1 done in 3s
+2026-10-04T13:50:46.560072Z cell 73-evm-osaka__groth16__c1_ctx_k32 attempt 1 begin
+2026-10-04T13:50:48.935441Z cell 73-evm-osaka__groth16__c1_ctx_k32 attempt 1 done in 2s
+2026-10-04T13:50:48.935775Z cell 74-eravm-27__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:51:05.402323Z cell 74-eravm-27__plonk__c1_ctx_k16 attempt 1 done in 16s
+2026-10-04T13:51:05.402707Z cell 75-eravm-29__plonk__c1_ctx_k08 attempt 1 begin
+2026-10-04T13:51:08.789289Z cell 75-eravm-29__plonk__c1_ctx_k08 attempt 1 done in 3s
+2026-10-04T13:51:08.789536Z cell 76-eravm-29__plonk__c1_ctx_k06 attempt 1 begin
+2026-10-04T13:51:12.216854Z cell 76-eravm-29__plonk__c1_ctx_k06 attempt 1 done in 3s
+2026-10-04T13:51:12.217189Z cell 77-zkos-v32_at_npg138__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T13:53:24.414550Z cell 77-zkos-v32_at_npg138__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T13:53:24.414829Z cell 78-zkos-v32_at_npg132__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T13:55:36.386139Z cell 78-zkos-v32_at_npg132__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T13:55:36.386524Z cell 79-zkos-v32_at_npg100__groth16__c1_a8 attempt 1 begin
+2026-10-04T13:57:48.217702Z cell 79-zkos-v32_at_npg100__groth16__c1_a8 attempt 1 done in 132s
+2026-10-04T13:57:48.218001Z cell 80-zkos-v32_at_npg100__groth16__c1_ctx_k64 attempt 1 begin
+2026-10-04T14:00:01.247588Z cell 80-zkos-v32_at_npg100__groth16__c1_ctx_k64 attempt 1 done in 133s
+2026-10-04T14:00:01.247860Z cell 81-zkos-v32_at_npg100__plonk__c1_ctx_k06 attempt 1 begin
+2026-10-04T14:02:13.500140Z cell 81-zkos-v32_at_npg100__plonk__c1_ctx_k06 attempt 1 done in 132s
+2026-10-04T14:02:13.500437Z cell 82-zkos-v32_at_npg100__plonk__c1_ctx_k64 attempt 1 begin
+2026-10-04T14:04:26.466618Z cell 82-zkos-v32_at_npg100__plonk__c1_ctx_k64 attempt 1 done in 133s
+2026-10-04T14:04:26.466985Z cell 83-zkos-v32_at_npg154__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T14:06:38.487840Z cell 83-zkos-v32_at_npg154__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T14:06:38.488100Z cell 84-evm-osaka__plonk__c1_a8 attempt 1 begin
+2026-10-04T14:06:42.555954Z cell 84-evm-osaka__plonk__c1_a8 attempt 1 done in 4s
+2026-10-04T14:06:42.556305Z cell 85-zkos-v32_at_npg165__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:08:54.447994Z cell 85-zkos-v32_at_npg165__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T14:08:54.448313Z cell 86-zkos-v32_at_npg100__groth16__c1_disc_k04 attempt 1 begin
+2026-10-04T14:11:06.325076Z cell 86-zkos-v32_at_npg100__groth16__c1_disc_k04 attempt 1 done in 132s
+2026-10-04T14:11:06.325469Z cell 87-zkos-v32_at_npg120__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T14:13:18.332133Z cell 87-zkos-v32_at_npg120__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T14:13:18.332403Z cell 88-eravm-29__groth16__c1_ctx_k64 attempt 1 begin
+2026-10-04T14:13:23.821876Z cell 88-eravm-29__groth16__c1_ctx_k64 attempt 1 done in 5s
+2026-10-04T14:13:23.822180Z cell 89-evm-osaka__plonk__c1_ctx_k06 attempt 1 begin
+2026-10-04T14:13:27.876902Z cell 89-evm-osaka__plonk__c1_ctx_k06 attempt 1 done in 4s
+2026-10-04T14:13:27.876935Z campaign complete

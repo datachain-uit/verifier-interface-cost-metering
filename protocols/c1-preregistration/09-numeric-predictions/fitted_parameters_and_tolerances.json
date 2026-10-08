@@ -1,0 +1,226 @@
+{
+ "parameters": {
+  "evm-osaka|groth16|dir": {
+   "A": 209937.0,
+   "B": 6675.0,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-osaka|groth16|app": {
+   "A": 219298.0,
+   "B": 6685.666666666667,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-osaka|plonk|dir": {
+   "A": 278664.0,
+   "B": 757.6666666666666,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-osaka|plonk|app": {
+   "A": 287663.0,
+   "B": 754.0,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-petersburg|groth16|dir": {
+   "A": 485087.0,
+   "B": 42225.0,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-petersburg|groth16|app": {
+   "A": 488748.0,
+   "B": 42235.666666666664,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-petersburg|plonk|dir": {
+   "A": 1066164.0,
+   "B": 757.6666666666666,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "evm-petersburg|plonk|app": {
+   "A": 1069463.0,
+   "B": 754.0,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "eravm-29|groth16|dir": {
+   "A": 444263.0,
+   "B": 6942.666666666667,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "eravm-29|groth16|app": {
+   "A": 451276.0,
+   "B": 6980.666666666667,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "eravm-29|plonk|dir": {
+   "A": 446058.0,
+   "B": 2424.6666666666665,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "eravm-29|plonk|app": {
+   "A": 453507.0,
+   "B": 2470.6666666666665,
+   "source": "P0 cell means at k=1 (V1 relation) and k=4 (context tags)"
+  },
+  "eravm-27|groth16|dir": {
+   "A": 8679088.0,
+   "B": 306932.6666666667,
+   "source": "A: P0 v27 k=1; B: B_v29 + per-input precompile frame swap (v27 minus v29 frames per call, measured at k=1)"
+  },
+  "eravm-27|groth16|app": {
+   "A": 8686101.0,
+   "B": 306970.6666666667,
+   "source": "A: P0 v27 k=1; B: B_v29 + per-input precompile frame swap (v27 minus v29 frames per call, measured at k=1)"
+  },
+  "eravm-27|plonk|dir": {
+   "A": 10488012.0,
+   "B": 2424.6666666666665,
+   "source": "A: P0 v27 k=1; B: B_v29 + per-input precompile frame swap (v27 minus v29 frames per call, measured at k=1)"
+  },
+  "eravm-27|plonk|app": {
+   "A": 10495461.0,
+   "B": 2470.6666666666665,
+   "source": "A: P0 v27 k=1; B: B_v29 + per-input precompile frame swap (v27 minus v29 frames per call, measured at k=1)"
+  },
+  "zkos-v32|shared|native": {
+   "base": 1692688.705882353,
+   "per_call": 5866.764705882353,
+   "source": "v32.0 smoke cells k=1, proof j0, G16 and PLONK; same proofs traced in EDR (P0)"
+  },
+  "zkos-v32|groth16|native": {
+   "A": 36506865.0,
+   "B": 893643.5294117654,
+   "source": "k-model fitted on trace-model natives at k=1,4"
+  },
+  "zkos-v32|plonk|native": {
+   "A": 38683079.0,
+   "B": 31538.0,
+   "source": "k-model fitted on trace-model natives at k=1,4"
+  },
+  "zkos-v32|fflonk|native": {
+   "A": 27983060.647058822,
+   "B": 35200.666666666664,
+   "source": "k-model fitted on trace-model natives at k=1,4 (FFLONK: depth-0 family traces)"
+  }
+ },
+ "tolerances": {
+  "evm-osaka|groth16|dir": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.002007858715834017,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "evm-osaka|groth16|app": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.002399854336421957,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "evm-osaka|plonk|dir": {
+   "tau_noise": 0.0044279234283655655,
+   "tau_struct": 0.010535547820906654,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "evm-osaka|plonk|app": {
+   "tau_noise": 0.004298654762699632,
+   "tau_struct": 0.01118837951754936,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "evm-petersburg|groth16|dir": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.00036210438977810603,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "residual at P0 k=16"
+  },
+  "evm-petersburg|groth16|app": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.000530169306672203,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "residual at P0 k=16"
+  },
+  "evm-petersburg|plonk|dir": {
+   "tau_noise": 0.000726308026955953,
+   "tau_struct": 0.0004881539151150456,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "residual at P0 k=16"
+  },
+  "evm-petersburg|plonk|app": {
+   "tau_noise": 0.0007240219000442921,
+   "tau_struct": 0.0006347308824332215,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "residual at P0 k=16"
+  },
+  "eravm-29|groth16|dir": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.0006222020493747234,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "eravm-29|groth16|app": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.0003270045880489893,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "eravm-29|plonk|dir": {
+   "tau_noise": 0.003692575755883437,
+   "tau_struct": 0.01643072454726974,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "eravm-29|plonk|app": {
+   "tau_noise": 0.0036317378293940074,
+   "tau_struct": 0.016940130083405905,
+   "basis_noise": "max P0 within-cell half-range (ctx/V1 cells, k<=32)",
+   "basis_struct": "max |residual| at P0 k in {2,16,32}"
+  },
+  "eravm-27|groth16|dir": {
+   "tau_noise": 0.002635025166965933,
+   "tau_struct": 0.005578225167389666,
+   "basis_noise": "max P0 v27 within-cell half-range",
+   "basis_struct": "max |residual| at P0 v27 k in {4,16}"
+  },
+  "eravm-27|groth16|app": {
+   "tau_noise": 0.002633533646634504,
+   "tau_struct": 0.005582717067270018,
+   "basis_noise": "max P0 v27 within-cell half-range",
+   "basis_struct": "max |residual| at P0 v27 k in {4,16}"
+  },
+  "eravm-27|plonk|dir": {
+   "tau_noise": 0.0024164964937727898,
+   "tau_struct": 0.0027174001074383018,
+   "basis_noise": "max P0 v27 within-cell half-range",
+   "basis_struct": "max |residual| at P0 v27 k in {4,16}"
+  },
+  "eravm-27|plonk|app": {
+   "tau_noise": 0.0024147461337377736,
+   "tau_struct": 0.002715437136344936,
+   "basis_noise": "max P0 v27 within-cell half-range",
+   "basis_struct": "max |residual| at P0 v27 k in {4,16}"
+  },
+  "zkos-v32|groth16|native": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.0003964189825294077,
+   "basis_noise": "max of v32 smoke half-range (k=1) and P0 v31 native half-ranges (ctx/V1, k<=32), transferred",
+   "basis_struct": "k-model interpolation residual on v0.4.0 trace-model natives + transferred v31 held-out residual",
+   "tau_cond": 0.00013804726549520883,
+   "basis_cond": "max |held-out error| of the conditional model on P0 v31 (base, c from v31 k=1 G16+PLONK; FFLONK = depth-0 family, all k)"
+  },
+  "zkos-v32|plonk|native": {
+   "tau_noise": 0.0009771929333195564,
+   "tau_struct": 0.007221643690037397,
+   "basis_noise": "max of v32 smoke half-range (k=1) and P0 v31 native half-ranges (ctx/V1, k<=32), transferred",
+   "basis_struct": "k-model interpolation residual on v0.4.0 trace-model natives + transferred v31 held-out residual",
+   "tau_cond": 0.004521107838595946,
+   "basis_cond": "max |held-out error| of the conditional model on P0 v31 (base, c from v31 k=1 G16+PLONK; FFLONK = depth-0 family, all k)"
+  },
+  "zkos-v32|fflonk|native": {
+   "tau_noise": 0.0,
+   "tau_struct": 0.006400024089581761,
+   "basis_noise": "max of v32 smoke half-range (k=1) and P0 v31 native half-ranges (ctx/V1, k<=32), transferred",
+   "basis_struct": "k-model interpolation residual on v0.4.0 trace-model natives + transferred v31 held-out residual",
+   "tau_cond": 0.005690131097304986,
+   "basis_cond": "max |held-out error| of the conditional model on P0 v31 (base, c from v31 k=1 G16+PLONK; FFLONK = depth-0 family, all k)"
+  }
+ }
+}

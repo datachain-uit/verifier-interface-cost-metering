@@ -1,0 +1,11 @@
+Frozen scorer run once on all registered evidence (pilot + FULL); bridge records excluded (reproduction control).
+UTC: 2026-10-04T14:26:17Z (after: evidence frozen and hashed, campaign record created, registry row set to validated)
+Working directory: C1 package root (cloud copy; SHA256SUMS 7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f, all files re-verified)
+Command: python3 scoring/score_c1.py 09-numeric-predictions <out> V2-MPI-PILOT-01-records.jsonl V2-MPI-FULL-01-records.jsonl
+scoring/score_c1.py                d9805758578e9c9255c04c84e7ec2e518d3cd8ee1798fc3e89cdd6e30744d1a7
+model/c1_model.py                  d025954ca15b9a9707967daaca6902192003df3bc27b9f61c4a6890ac515b7dd
+model/zkos_native_trace_model.py   47fbc3c3cd349973cc70fd66192e29412c19645ed30daf8ae29d7c727c823c5d
+predictions listing                66c1f91ccbb4b9f87f2051bdf86afb2220b18164b8e1c84daa7c950b1b9a5e35
+V2-MPI-PILOT-01-records.jsonl      1bb698a2cb236dcbf2ea96efed1cfee4085d462679ca34430086e8a624498792 (pilot evidence SHA256SUMS 08cc9f3a… verified)
+V2-MPI-FULL-01-records.jsonl       a8eb9ce686677fd9209a3a0e21809bf09e0c13891e324799488312ad1105cc1e (evidence SHA256SUMS c267ebe2… verified)
+Exit code 0; stderr empty. Outputs: this directory (SHA256SUMS).

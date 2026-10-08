@@ -1,0 +1,216 @@
+== Z-CORP v3 (v3-x86) campaign: campaign V2-PRV-D2-01-run1, session S20261005T152152Z -> /home/ad/Workspace/Z-CORP-V2-workstation/prover/d2-r5/repo/results/V2-PRV-D2-01
+session_id=S20261005T152152Z
+kit=v3-x86
+window=D2-20261005-night1
+hostname=ad-Precision-7920-Tower
+kernel=6.14.0-29-generic
+os=Ubuntu 24.04.3 LTS
+cpu_model=Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz
+nproc=112
+mem_total_kb=65544952
+intel_pstate=active
+no_turbo=0
+hwp_dynamic_boost=0
+governors= 112 powersave;
+epp_cpu1_8=performance performance performance performance performance performance performance performance 
+numa_balancing=1
+thp=always [madvise] never
+smt=on
+siblings_cpu1_8=1,57 2,58 3,59 4,60 5,61 6,62 7,63 8,64 
+node0_cpus=0-27,56-83
+cmdline=BOOT_IMAGE=/boot/vmlinuz-6.14.0-29-generic root=UUID=a0a80852-0629-4440-9bfd-2ec18c82d4ed ro quiet splash vt.handoff=7
+loadavg=0.66 0.40 0.52 1/1632 114013
+sleep_inhibitor_pid=113959
+sleep_inhibitor_ok=1
+docker: engine=27.5.1 ncpu=112 mem_bytes=67118030848 arch=x86_64 cgroup=v2 kernel=6.14.0-29-generic
+host conditions at session start: {"mode": "pre", "accepted": true, "violations": [], "utc_a": "2026-10-05T15:21:55Z", "utc_b": "2026-10-05T15:21:57Z", "seconds": 2.095, "loadavg": "0.60 0.39 0.51 1/1633 114223", "running_containers": 0, "busy_alloc_max": 0.0048, "busy_siblings_max": 0.0, "busy_other_cpu_equiv": 0.091, "siblings": "57,58,59,60,61,62,63,64", "mhz_alloc": "1000 1000 1000 1000 1000 1000 1000 1000", "pkg_temp_c": 37.0, "core_throttle_alloc": "0 0 0 0 0 0 0 0", "pkg_throttle": "0", "governor": "powersave", "no_turbo": "0", "numa_balancing": "1", "thp": "madvise", "intel_pstate": "active", "inhibit": 1}
+manifest before: 161 OK, exit 0; corpus: 33 OK, exit 0; tree de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f
+image zcorp-bench:V2-PRV-D2-01-run1 id=sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7 platform=linux/amd64
+campaign V2-PRV-D2-01-run1 (campaign, plan campaign): 48 containers scheduled
+  1. primary round 0 position 1: cpu8
+  2. primary round 0 position 2: cpu2
+  3. primary round 0 position 3: cpu4
+  4. primary round 1 position 1: cpu4
+  5. primary round 1 position 2: cpu8
+  6. primary round 1 position 3: cpu2
+  7. primary round 2 position 1: cpu2
+  8. primary round 2 position 2: cpu4
+  9. primary round 2 position 3: cpu8
+  10. primary round 3 position 1: cpu8
+  11. primary round 3 position 2: cpu2
+  12. primary round 3 position 3: cpu4
+  13. primary round 4 position 1: cpu2
+  14. primary round 4 position 2: cpu4
+  15. primary round 4 position 3: cpu8
+  16. primary round 5 position 1: cpu8
+  17. primary round 5 position 2: cpu2
+  18. primary round 5 position 3: cpu4
+  19. primary round 6 position 1: cpu4
+  20. primary round 6 position 2: cpu8
+  21. primary round 6 position 3: cpu2
+  22. primary round 7 position 1: cpu8
+  23. primary round 7 position 2: cpu2
+  24. primary round 7 position 3: cpu4
+  25. primary round 8 position 1: cpu2
+  26. primary round 8 position 2: cpu4
+  27. primary round 8 position 3: cpu8
+  28. primary round 9 position 1: cpu4
+  29. primary round 9 position 2: cpu8
+  30. primary round 9 position 3: cpu2
+  31. primary round 10 position 1: cpu8
+  32. primary round 10 position 2: cpu2
+  33. primary round 10 position 3: cpu4
+  34. diag round 1 position 1: cpu2
+  35. diag round 1 position 2: cpu4
+  36. diag round 1 position 3: cpu8
+  37. diag round 2 position 1: cpu4
+  38. diag round 2 position 2: cpu8
+  39. diag round 2 position 3: cpu2
+  40. diag round 3 position 1: cpu8
+  41. diag round 3 position 2: cpu2
+  42. diag round 3 position 3: cpu4
+  43. diag round 4 position 1: cpu4
+  44. diag round 4 position 2: cpu8
+  45. diag round 4 position 3: cpu2
+  46. diag round 5 position 1: cpu8
+  47. diag round 5 position 2: cpu2
+  48. diag round 5 position 3: cpu4
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+P7 d=5: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=6: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=7: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=8: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=9: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=10: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=11: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=12: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=13: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=14: PASS
+(node:7) Warning: Closing file descriptor 51 on garbage collection
+P7 d=15: PASS
+P7 overall: PASS
+preflight cpu2: PASS
+preflight cpu4: PASS
+preflight cpu8: PASS
+controls: PASS (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)
+campaign_state: V2-PRV-D2-01-run1 session S20261005T152152Z: 0/16 rounds accepted; 16 to run
+campaign_state: next primary round 0 attempt 1 (cpu8;cpu2;cpu4)
+campaign_state: next primary round 1 attempt 1 (cpu4;cpu8;cpu2)
+campaign_state: next primary round 2 attempt 1 (cpu2;cpu4;cpu8)
+== round unit: primary round 0 attempt 1 (cpu8;cpu2;cpu4)
+== [1] primary round 0 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [2] primary round 0 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [3] primary round 0 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round primary 0 attempt 1: ACCEPTED
+== round unit: primary round 1 attempt 1 (cpu4;cpu8;cpu2)
+== [4] primary round 1 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [5] primary round 1 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [6] primary round 1 attempt 1: cpu2 (CPUs 1-2, mems 0)
+round primary 1 attempt 1: ACCEPTED
+== round unit: primary round 2 attempt 1 (cpu2;cpu4;cpu8)
+== [7] primary round 2 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [8] primary round 2 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [9] primary round 2 attempt 1: cpu8 (CPUs 1-8, mems 0)
+round primary 2 attempt 1: ACCEPTED
+== round unit: primary round 3 attempt 1 (cpu8;cpu2;cpu4)
+== [10] primary round 3 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [11] primary round 3 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [12] primary round 3 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round primary 3 attempt 1: ACCEPTED
+== round unit: primary round 4 attempt 1 (cpu2;cpu4;cpu8)
+== [13] primary round 4 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [14] primary round 4 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [15] primary round 4 attempt 1: cpu8 (CPUs 1-8, mems 0)
+round primary 4 attempt 1: ACCEPTED
+== round unit: primary round 5 attempt 1 (cpu8;cpu2;cpu4)
+== [16] primary round 5 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [17] primary round 5 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [18] primary round 5 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round primary 5 attempt 1: ACCEPTED
+== round unit: primary round 6 attempt 1 (cpu4;cpu8;cpu2)
+== [19] primary round 6 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [20] primary round 6 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [21] primary round 6 attempt 1: cpu2 (CPUs 1-2, mems 0)
+round primary 6 attempt 1: ACCEPTED
+== round unit: primary round 7 attempt 1 (cpu8;cpu2;cpu4)
+== [22] primary round 7 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [23] primary round 7 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [24] primary round 7 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round primary 7 attempt 1: ACCEPTED
+== round unit: primary round 8 attempt 1 (cpu2;cpu4;cpu8)
+== [25] primary round 8 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [26] primary round 8 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [27] primary round 8 attempt 1: cpu8 (CPUs 1-8, mems 0)
+round primary 8 attempt 1: ACCEPTED
+== round unit: primary round 9 attempt 1 (cpu4;cpu8;cpu2)
+== [28] primary round 9 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [29] primary round 9 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [30] primary round 9 attempt 1: cpu2 (CPUs 1-2, mems 0)
+round primary 9 attempt 1: ACCEPTED
+== round unit: primary round 10 attempt 1 (cpu8;cpu2;cpu4)
+== [31] primary round 10 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [32] primary round 10 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [33] primary round 10 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round primary 10 attempt 1: ACCEPTED
+== round unit: diag round 1 attempt 1 (cpu2;cpu4;cpu8)
+== [34] diag round 1 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [35] diag round 1 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [36] diag round 1 attempt 1: cpu8 (CPUs 1-8, mems 0)
+round diag 1 attempt 1: ACCEPTED
+== round unit: diag round 2 attempt 1 (cpu4;cpu8;cpu2)
+== [37] diag round 2 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [38] diag round 2 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [39] diag round 2 attempt 1: cpu2 (CPUs 1-2, mems 0)
+round diag 2 attempt 1: ACCEPTED
+== round unit: diag round 3 attempt 1 (cpu8;cpu2;cpu4)
+== [40] diag round 3 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [41] diag round 3 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [42] diag round 3 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round diag 3 attempt 1: ACCEPTED
+== round unit: diag round 4 attempt 1 (cpu4;cpu8;cpu2)
+== [43] diag round 4 attempt 1: cpu4 (CPUs 1-4, mems 0)
+== [44] diag round 4 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [45] diag round 4 attempt 1: cpu2 (CPUs 1-2, mems 0)
+round diag 4 attempt 1: ACCEPTED
+== round unit: diag round 5 attempt 1 (cpu8;cpu2;cpu4)
+== [46] diag round 5 attempt 1: cpu8 (CPUs 1-8, mems 0)
+== [47] diag round 5 attempt 1: cpu2 (CPUs 1-2, mems 0)
+== [48] diag round 5 attempt 1: cpu4 (CPUs 1-4, mems 0)
+round diag 5 attempt 1: ACCEPTED
+{
+  "session_id": "S20261005T152152Z",
+  "manifest_before_ok": true,
+  "manifest_after_ok": true,
+  "corpus_after_ok": true,
+  "manifest_entries_ok_after": 161,
+  "tree_sha256_before": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+  "tree_sha256_after": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+  "tree_unchanged": true
+}
+PASS  schema_headers
+PASS  schema_required_fields
+PASS  ids_campaign
+PASS  ids_image
+PASS  ids_manifest
+PASS  ids_session_and_attempt
+PASS  ledger_consistency
+PASS  rounds_complete
+PASS  accepted_rounds_revalidated
+PASS  seeded_schedule_reproducible
+PASS  session_preflight_and_controls
+PASS  repository_unchanged
+PASS  provenance_p7
+PASS  summaries_use_accepted_attempts_only
+validation: PASS (14/14); rounds accepted 16/16
+result: PASS (campaign V2-PRV-D2-01-run1; session S20261005T152152Z; see derived/validation.json)

@@ -1,0 +1,189 @@
+{
+ "generator": "supplement/src/make_supplement_tables.py",
+ "generator_sha256": "85be5924ecf50187957f78b7402fd39104cf96e85ca39752b23c863f78a67068",
+ "inputs": {
+  "data/c1/fflonk/record/FFLONK-RESIDUALS-C1-H8-and-C2.csv": {
+   "package_manifest": "data/c1/fflonk/record/SHA256SUMS",
+   "sha256": "339f5a4e08dfe580c05e5e1e13a99d6e80a1448c1df96eb90b1b6364251f7c9b"
+  },
+  "data/c1/fflonk/record/scoring-c1/P_scoring.csv": {
+   "package_manifest": "data/c1/fflonk/record/SHA256SUMS",
+   "sha256": "819445c8f9460bdc6c7f88aaca9c43551dd4c21fc0c1d830d0b5c668ca44a70a"
+  },
+  "data/c1/fflonk/record/scoring-c2/C2-SCORES.json": {
+   "package_manifest": "data/c1/fflonk/record/SHA256SUMS",
+   "sha256": "419d9b3ac34f27f891617c3e13e0edd241fe1698d2fd686184a96c5aae7ecc5c"
+  },
+  "data/c1/full/record/post-registered/ZKOS-residual-vs-k.csv": {
+   "package_manifest": "data/c1/full/record/SHA256SUMS",
+   "sha256": "2a15f29562f7d35be1c71ac4408a5b0cfe834641e6e05ce28ef7650f192d5780"
+  },
+  "data/c1/full/record/scoring/AC_checks.csv": {
+   "package_manifest": "data/c1/full/record/scoring/SHA256SUMS",
+   "sha256": "7a8d798c0e8a26a21d7bc98db43009c63c5bd4cd82de219f57b154bf0621c5cd"
+  },
+  "data/c1/full/record/scoring/CELL_summary.csv": {
+   "package_manifest": "data/c1/full/record/scoring/SHA256SUMS",
+   "sha256": "e974cd6560ad2bea66deec9fe3aa44352c0d620a17a50bd92f305df028a238e6"
+  },
+  "data/c1/full/record/scoring/P_scoring.csv": {
+   "package_manifest": "data/c1/full/record/scoring/SHA256SUMS",
+   "sha256": "fabdb50b29b8fff8e9ec6bc895154822e1f326d7279af11bbf328889710cb22d"
+  },
+  "data/c1/full/record/scoring/R_scoring.csv": {
+   "package_manifest": "data/c1/full/record/scoring/SHA256SUMS",
+   "sha256": "a5454ba71a6d970cce40529540a064491eb0d9b040fe5414aa1c109de8c155e6"
+  },
+  "data/c1/full/record/scoring/ZC_scoring.csv": {
+   "package_manifest": "data/c1/full/record/scoring/SHA256SUMS",
+   "sha256": "8295147b732c2628ef26573441da30d32b9c3ac58f809c92b842debec429c7da"
+  },
+  "data/prover/d3/reanalysis/out/D3-input-verification.json": {
+   "package_manifest": "data/prover/d3/reanalysis/SHA256SUMS",
+   "sha256": "a5a7315799df867531340afeaef77e416da23619479db73ab2392fe704b114c5"
+  },
+  "data/prover/d3/source/CAMPAIGN.json": {
+   "package_manifest": null,
+   "sha256": "2f7aa7429902fc57565afeac34781df348e2c6729962fae3dd346ae1b5c39f30"
+  },
+  "data/prover/d3/source/derived/prover_diag.csv": {
+   "package_manifest": null,
+   "sha256": "87a0cb5a38000a3645d7e17d054c3f06057c5d398f7f533c248243556796def6"
+  },
+  "data/prover/d3/source/derived/prover_summary.csv": {
+   "package_manifest": null,
+   "sha256": "7d047760b4bc80529e9f920cbaa46c3eb6cb4b343e97d599c32137d6008dd686"
+  },
+  "data/prover/d3/source/prover/cpu2/diag.csv": {
+   "package_manifest": null,
+   "sha256": "d653aaecf6e37d9b8776ac878e37ac96c113db42cf5fa20e1a01d6d90507ac88"
+  },
+  "data/prover/d3/source/prover/cpu2/rounds.csv": {
+   "package_manifest": null,
+   "sha256": "70604fc784c6aa1aafdca6ed1703ea2bc00c7e720c53f128101e18e15a4207f1"
+  },
+  "data/prover/d3/source/prover/cpu2/runs.csv": {
+   "package_manifest": null,
+   "sha256": "e20f4def6d96a23615c85a5daa7145a95d58002a6801891ead2a69b03a937e8a"
+  },
+  "data/prover/d3/source/prover/cpu4/diag.csv": {
+   "package_manifest": null,
+   "sha256": "fd63b119f59c6414b33c0e9b71265dd93536a7d9bb2d3ab2e77d19b2d4e091a5"
+  },
+  "data/prover/d3/source/prover/cpu4/rounds.csv": {
+   "package_manifest": null,
+   "sha256": "331b7b5ed27c24a8208a5e11e844002a29d0b1a75f9d22b712c2a691986b3930"
+  },
+  "data/prover/d3/source/prover/cpu4/runs.csv": {
+   "package_manifest": null,
+   "sha256": "f0e5f134c08e440bfdd700f0917371c4976690d1200c5024a142919550f28b5c"
+  },
+  "data/prover/d3/source/prover/cpu8/diag.csv": {
+   "package_manifest": null,
+   "sha256": "55e80397e56b7917aac190052dcc398f96bce26ac8437bed59b9320c55631477"
+  },
+  "data/prover/d3/source/prover/cpu8/rounds.csv": {
+   "package_manifest": null,
+   "sha256": "690a58e01bf8d6867f68b7a38903d9c5cd8ad9964a69656009187ae4bf0f62f8"
+  },
+  "data/prover/d3/source/prover/cpu8/runs.csv": {
+   "package_manifest": null,
+   "sha256": "917f10214dac0dbf713d6bef9327c49ae671aae03830b591e96104498ba63f24"
+  },
+  "data/prover/d3/source/prover/round_ledger.csv": {
+   "package_manifest": null,
+   "sha256": "91f9d2ccb45bc1c572ead9a431d6da09c1f9cad9a0abdb56fbbd8229460d8162"
+  },
+  "data/prover/d3/source/reconciliation/prover_per_round.csv": {
+   "package_manifest": null,
+   "sha256": "2ccd81f097a267f683d6e3f0b1b21c20cea38a28c3bb9a8ab28f6fa193375957"
+  },
+  "generated/MANIFEST.json": {
+   "package_manifest": null,
+   "sha256": "9ef1d2faa41967fff5a4ab88a402c64c283621fe4642cde0b6113ccaafdf3175"
+  },
+  "generated/data/crossovers.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "f327dbf641d5a0e57c78aae2450248bd69ad635ff65956ea427a1a756a0ed237"
+  },
+  "generated/data/fig2_design_roles.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "a4a09bb7465a992896530512f0a07008c65966c4c770cfe045097ad1b27a3e68"
+  },
+  "generated/data/fig3b_npg_ranking.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "0587b6e935ec7949180d061034bb0ac7bae17ad4dc6e77f143d17b72bfa53ba7"
+  },
+  "generated/data/fig3b_switch_intervals.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "54a75544bfa7407ca0b819de37e7a94705c647585df6e27c4d9c1acba85cfa41"
+  },
+  "generated/data/fig4_heldout_summary.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "7fc790d9817cfbc2c77d0ba1e2eb2feefe293a1cfc4f1a71426e783ca6d4c5f8"
+  },
+  "generated/data/fig5_d1_cells.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "1270682681a729b0320288b15e32e2bbc51ceeb7399f2bcba98a2d1db5e71412"
+  },
+  "generated/data/fig5_d1_ratios.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "6f6b44b947124225e4d845439a6803b3d23645f13aa8db6abfb40ebd6c763fb6"
+  },
+  "generated/data/fig5_d2_d3_context.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "1a163c04a0abcb219fe54c77e088d4e5fb51e9d5183858a3ca844e0e29805cf4"
+  },
+  "generated/data/fig5_step_ratios.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "613765079b58c521e7df9c2615f1d2cd62c479b07d43b22a726e61c6ebf7f196"
+  },
+  "generated/data/t1_toolchain_rows.csv": {
+   "package_manifest": "generated/MANIFEST.json",
+   "sha256": "b9882c3e379e20ecb4f49cef1da504e187fddbeced335b3ca85e25c9e58c47b0"
+  },
+  "protocols/c1-preregistration/07-parameter-ledger.csv": {
+   "package_manifest": "protocols/c1-preregistration/SHA256SUMS",
+   "sha256": "ffe33b229087df9b2910a49feb6b636874190453b3764b1008dbe8aa12cfa999"
+  },
+  "protocols/c1-preregistration/09-numeric-predictions/equality_bands.csv": {
+   "package_manifest": "protocols/c1-preregistration/SHA256SUMS",
+   "sha256": "d7e8694e644c879467d79e51f6c3eb97480be6b68f5555c5cc17a63db982c732"
+  },
+  "protocols/c1-preregistration/09-numeric-predictions/zkos_npg_levels.csv": {
+   "package_manifest": "protocols/c1-preregistration/SHA256SUMS",
+   "sha256": "acbe3a5b669f4bdf4eb0749f37082d5cf2526db8d88f05f87b08bc1a0b43f170"
+  },
+  "protocols/c1-preregistration/13-tolerances.csv": {
+   "package_manifest": "protocols/c1-preregistration/SHA256SUMS",
+   "sha256": "b800c95e88e20d965a9b714fd5ccc9a17e757868c0aaae546a49078f9fa276af"
+  }
+ },
+ "outputs": {
+  "tables/supplement/S01-toolchain.tex": "5701af5141f261f9e0aa9af7e62fffbdee0311b92a81877dd0195a7a6233fb7f",
+  "tables/supplement/S02-ledger-prices.tex": "e5b63fa429ac89c3c4f00c43bbee2b1cb423d1844ee2d72511d0687e8765013e",
+  "tables/supplement/S03-role-matrix.tex": "da8418e8d302312bba2361c6808988467ec77604ba973903ad900173ccb90c63",
+  "tables/supplement/S04-npg-levels.tex": "46947f6cb956c6bb56347948d7da87105b6bd6b65085c6f42ea492dbb1d3d754",
+  "tables/supplement/S05-tolerances.tex": "0f71ecd9ca89522e7412a080d88d811e5d758325adb2affb66e1daa3f0a0127c",
+  "tables/supplement/S06-equality-bands.tex": "89747fff14d6df30c2831169e865608c1f08982106b8f70bad37404c5dc1cc77",
+  "tables/supplement/S07-controls.tex": "a1a7e01cac78c157ca1068c5192a62cb052161d26f2837530d3d8228b4ed0afd",
+  "tables/supplement/S08-packages.tex": "9658eefd0c0a6c2c2deee53421768077529bb42475ea6897bd4e61bbe9de6c7d",
+  "tables/supplement/S09-crossovers.tex": "5284743a12263491c03bd97565827c2b36c6132479705b1dffa4869e54863c94",
+  "tables/supplement/S10-heldout-summary.tex": "b641908c7fb23ebdcfc81da6c917b426d3203c2766d96c6255a201dd02540530",
+  "tables/supplement/S11-r-scoring.tex": "bc4970eaf0605f3506df6f38c374749eb5fe497212e9d0f7d280587add9a8356",
+  "tables/supplement/S12-p-scoring.tex": "86fa4f8cb8920aac7003f65f7f2c3f839b04af3654be60f574dfd0004375d21b",
+  "tables/supplement/S13-zc-scoring.tex": "e59e4582cc74194888a6a4643740712fdd5249e2496eee8c0e0ffe7d9698ee87",
+  "tables/supplement/S14-npg-ranking.tex": "3eb1564a545e1e542fadb2e09307e56264f994baec787a6399f9ec468d9846c7",
+  "tables/supplement/S15-switch-intervals.tex": "670098886a7166f226d3231be3d1f1366f1b6e4ddebed2826c6c35cdc61ec95e",
+  "tables/supplement/S16-cell-summary.tex": "5dc6bf48555d1c4c72af7698827c7d27449c350fbb61e43dad24f6af531032bb",
+  "tables/supplement/S17-fflonk-setp.tex": "829153fe3d8c6ff5662918bb621b5041e9792740785536ada6d1e403dd0e8547",
+  "tables/supplement/S18-fflonk-proofs.tex": "183b8cc3501f0bd58935bf968a2986fed80ae2349361481114765d35277c1d33",
+  "tables/supplement/S19-residual-posthoc.tex": "995f7b3f886aef0f0fd196e2f9f1df112cc69c97e439c34f3fb5fe6a68753143",
+  "tables/supplement/S20-c2-rank.tex": "423feb241e271a3862f110a51e799fe6b7b8514a6c11ba5ea2d10adc248bcf31",
+  "tables/supplement/S21-d1-cells.tex": "3240302e34f84ba67e9f5dead659787c70afaca304494b80b084fd7c62325aa3",
+  "tables/supplement/S22-d1-ratios.tex": "e1064acb11fffd9d2b0e661c7a1d24f60bf6a72dc5d2543e29d5e3b0bb32acb5",
+  "tables/supplement/S23-step-ratios.tex": "5e7fc7cf71403584c19fe7cf8014b08f42c50ddb55d627e6a4fb810e7c1d44cb",
+  "tables/supplement/S24-d2-d3-context.tex": "2cf33522397334e026c63ac8f523653ec1b149a58f7ea23920bad5ec941bfc09",
+  "tables/supplement/S25-d3-inputs.tex": "dc2d9bc4597c5d61c91b2c5f1705fa40b254f2a4f50cb56bc2c5d3c6f744681d"
+ }
+}

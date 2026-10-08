@@ -1,0 +1,425 @@
+{
+ "selftest": {
+  "r2 (load1 <= 2.0)": {
+   "exit": 0,
+   "output": [
+    "PASS: clean idle host accepted",
+    "PASS: busy SMT sibling rejected (pre)",
+    "PASS: busy SMT sibling rejected (during)",
+    "PASS: busy other CPUs rejected",
+    "PASS: running container rejected",
+    "PASS: changed governor rejected",
+    "PASS: missing inhibitor rejected",
+    "PASS: high load rejected",
+    "PASS: allocated CPUs busy during own container accepted"
+   ]
+  },
+  "r3 (AMD-D2-1)": {
+   "exit": 0,
+   "output": [
+    "PASS: clean idle host accepted",
+    "PASS: busy SMT sibling rejected (pre)",
+    "PASS: busy SMT sibling rejected (during)",
+    "PASS: busy other CPUs rejected",
+    "PASS: running container rejected",
+    "PASS: changed governor rejected",
+    "PASS: missing inhibitor rejected",
+    "PASS: high load1 alone recorded, not rejected (AMD-D2-1)",
+    "PASS: allocated CPUs busy during own container accepted"
+   ]
+  }
+ },
+ "cases": [
+  {
+   "case": "recorded session start (S20261005T084400Z)",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": true,
+    "r3 (AMD-D2-1)": true
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": true,
+    "exit": 0,
+    "violations": [],
+    "loadavg_recorded": "1.90 2.01 1.37 2/1948 55829",
+    "busy_alloc_max": 0.0097,
+    "busy_siblings_max": 0.0144,
+    "busy_other_cpu_equiv": 0.38
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": true,
+    "exit": 0,
+    "violations": [],
+    "loadavg_recorded": "1.90 2.01 1.37 2/1948 55829",
+    "busy_alloc_max": 0.0097,
+    "busy_siblings_max": 0.0144,
+    "busy_other_cpu_equiv": 0.38
+   }
+  },
+  {
+   "case": "recorded pre-container 1 (c0001)",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": true
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": true,
+    "exit": 0,
+    "violations": [],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + allocated CPU 3 busy 0.50",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "load1 2.04 > 2.0",
+     "allocated CPU busy 0.502 > 0.1"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.5024,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "allocated CPU busy 0.502 > 0.1"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.5024,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + SMT sibling 60 busy 0.50",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "load1 2.04 > 2.0",
+     "SMT sibling busy 0.502 > 0.1"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.5024,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "SMT sibling busy 0.502 > 0.1"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.5024,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + other CPUs 20-29 busy 0.15 each",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "load1 2.04 > 2.0",
+     "other CPUs 1.77 CPU-equiv > 1.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 1.771
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "other CPUs 1.77 CPU-equiv > 1.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 1.771
+   }
+  },
+  {
+   "case": "c0001 + 1 running container",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "running containers 0 / 1",
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "running containers 0 / 1"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + governor performance",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state governor=performance (frozen powersave)",
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state governor=performance (frozen powersave)"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + no_turbo 1",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state no_turbo=1 (frozen 0)",
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state no_turbo=1 (frozen 0)"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + THP always",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state thp=always (frozen madvise)",
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "state thp=always (frozen madvise)"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "c0001 + inhibitor not held",
+   "mode": "pre",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "sleep inhibitor not held (0)",
+     "load1 2.04 > 2.0"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "sleep inhibitor not held (0)"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "during: c0001 + SMT sibling 57 busy 0.10",
+   "mode": "during",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "SMT sibling busy 0.100 > 0.05"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.1005,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "SMT sibling busy 0.100 > 0.05"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.1005,
+    "busy_other_cpu_equiv": 0.335
+   }
+  },
+  {
+   "case": "during: c0001 + other CPUs 20-39 busy 0.10 each",
+   "mode": "during",
+   "expected": {
+    "r2 (load1 <= 2.0)": false,
+    "r3 (AMD-D2-1)": false
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "other CPUs 2.17 CPU-equiv > 1.5"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 2.173
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": false,
+    "exit": 1,
+    "violations": [
+     "other CPUs 2.17 CPU-equiv > 1.5"
+    ],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 0.0481,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 2.173
+   }
+  },
+  {
+   "case": "during: c0001 + allocated CPUs 1-8 busy 1.0 (own container)",
+   "mode": "during",
+   "expected": {
+    "r2 (load1 <= 2.0)": true,
+    "r3 (AMD-D2-1)": true
+   },
+   "r2 (load1 <= 2.0)": {
+    "accepted": true,
+    "exit": 0,
+    "violations": [],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 1.0,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   },
+   "r3 (AMD-D2-1)": {
+    "accepted": true,
+    "exit": 0,
+    "violations": [],
+    "loadavg_recorded": "2.04 1.82 1.57 2/1948 57639",
+    "busy_alloc_max": 1.0,
+    "busy_siblings_max": 0.019,
+    "busy_other_cpu_equiv": 0.335
+   }
+  }
+ ],
+ "c0001_old_rejected_only_for_load1": true,
+ "c0001_new_accepted_no_violations_load_recorded": true,
+ "all_as_expected": true
+}

@@ -1,0 +1,13 @@
+test,rq,class,registration,falsifier_or_criterion,result,status,reader_outcome
+H1,RQ1,PRIMARY,pre-registered (C1),F1a / F1b,"structure checks 704, 0 failed; ratio monotone in 5 / 5 series",SUPPORTED,Supported
+H2,RQ1,PRIMARY,pre-registered (C1),F2a / F2b,"signs 43 match, 0 falsified, 2 not scored (frozen-scorer aggregate over the EVM Osaka, EraVM v29, historical EraVM v27, ZKsync OS gas and ZKsync OS native series; incl. four k = 64 limit-check comparisons, descriptive); crossovers 5 / 5 inside frozen intervals (incl. the historical EraVM v27 validation crossover)",SUPPORTED,Supported
+H3,RQ2,PRIMARY,pre-registered (C1),F3,"accounting and control checks 5,342, 0 failed; component-model crossovers inside frozen intervals (ranking / crossover level)",SUPPORTED,Supported
+H4,RQ3,PRIMARY,pre-registered (C1),F4,Groth16: 48 held-out proofs outside tau_cond 0.0138 % (from k = 8); PLONK 88 / 88 inside 0.452 %,FALSIFIED,Falsified (F4)
+H5,RQ2,PRIMARY,pre-registered (C1; interventional),F5a / F5b / F5c,"binding meter 46 / 46; gas rule 1,024 checks, 0 failed; ranking 21 / 21; gas interval 41 / 46",SUPPORTED,Supported
+H6,RQ1,VALIDATION,pre-registered (C1),F6,semantic anchors 24 / 24,SUPPORTED,Supported
+H7,RQ2,VALIDATION,pre-registered (C1),F7,"EraVM v27: R 16 / 16; P 16 / 16; crossover 7.01 inside [6.48, 7.40]",SUPPORTED,Supported
+H8,RQ3,VALIDATION,"pre-registered (C1, conditional)",F8,FFLONK: 8 proofs outside tau_cond (FFLONK) 0.569 % at k = 32; 24 inside,FALSIFIED,Falsified (F8)
+FP,RQ3,PRIMARY,pre-registered (C1),FP,"strictly unseen 38 / 40; 11 registered misses over all frozen roles (incl. the two k = 64 ZKsync OS gas cells, which keep their held-out role); 10 descriptive out-of-interval limit checks (k = 64)",MISSES VISIBLE (2 / 40 strictly unseen),Misses visible
+R,RQ3,PRIMARY,pre-registered (C1),interpretation rules 1-2,"strictly unseen 32 / 32; seen in P0 22 / 24 (both registered misses: EraVM v29 PLONK k = 32, $Y_{\mathrm{dir}}$ and secondary $Y_{\mathrm{app}}$); 8 out-of-tolerance limit checks (k = 64), reported descriptively",MISSES VISIBLE (seen-in-P0),Misses visible (seen in P0)
+C2,RQ3,VALIDATION,"prospective, post-F4; outside C1",C2-PRIMARY / EXACT / RANK / XOVER,32 proof instances = 4 verifier structures x 8 (not independent structural tests); max |e| = 0; rank 8 / 8; not source-complete,"PASS, exact, within registered scope",Exact pass within registered scope (not source-complete)
+D1,supporting,SUPPORTING,pre-registered protocol (D1),reading guide (no threshold),"PLONK R_pad 1.963, R_anchor 1.956, share 1.008; Groth16 control R_pad 1.012","VALIDATED - DOMAIN MECHANISM SUPPORTED (tested snarkjs PLONK configuration, Host A)","Supported (tested configuration, Host A)"

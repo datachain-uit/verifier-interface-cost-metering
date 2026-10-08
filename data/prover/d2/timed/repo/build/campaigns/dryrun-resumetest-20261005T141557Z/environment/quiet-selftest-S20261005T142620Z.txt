@@ -1,0 +1,9 @@
+PASS: clean idle host accepted
+PASS: busy SMT sibling rejected (pre)
+PASS: busy SMT sibling rejected (during)
+PASS: busy other CPUs rejected
+PASS: running container rejected
+PASS: changed governor rejected
+PASS: missing inhibitor rejected
+PASS: high load1 alone recorded, not rejected (AMD-D2-1)
+PASS: allocated CPUs busy during own container accepted

@@ -1,0 +1,31 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		52fe09ae 19f564fc c779c0a3 7a239c3d
+		3386d9d5 ffa2446f df3dc3fa 9efac5a1
+		d3ceb2a1 265db1af ff311837 f4869f9c
+		07f925fe 36f24cd5 949bdc17 fe8bd838
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		52fe09ae 19f564fc c779c0a3 7a239c3d
+		3386d9d5 ffa2446f df3dc3fa 9efac5a1
+		d3ceb2a1 265db1af ff311837 f4869f9c
+		07f925fe 36f24cd5 949bdc17 fe8bd838
+[32;22m[INFO]  [39;1msnarkJS[0m: -------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: contribution #2 C1 beacon:
+		e8e61bf8 d21b5147 1f659681 e6e1a0ce
+		cecb3827 14fea712 047d03e6 d6099785
+		7cc31dc0 079d585f adff38c7 78ded589
+		ba71c1e4 a3d69de8 f08712eb c989c3d3
+[32;22m[INFO]  [39;1msnarkJS[0m: Beacon generator: 3b1582e4130936b839676ec6e6e4c856972c3530e50a4a0b04eae63663f0aad0
+[32;22m[INFO]  [39;1msnarkJS[0m: Beacon iterations Exp: 10
+[32;22m[INFO]  [39;1msnarkJS[0m: -------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: contribution #1 C1 contribution:
+		69ddb890 14b6d96b 25f5303b 5a1e3f52
+		d828e2ec 818494a9 47706c80 3a95e95e
+		96a0d146 ff1f4a3e a8290fac fa5ff24f
+		2e29662e fb17b484 cbdbe088 1e11b29f
+[32;22m[INFO]  [39;1msnarkJS[0m: -------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: ZKey Ok!

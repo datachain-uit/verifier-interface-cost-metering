@@ -1,0 +1,70 @@
+env,backend,metric,k,model,p0_mean,err_pct,enters_tau
+evm-osaka,groth16,Y_dir,2,216612,216625.0,0.006,True
+evm-osaka,groth16,Y_dir,16,310062,309657.0,-0.1306,True
+evm-osaka,groth16,Y_dir,32,416862,416025.0,-0.2008,True
+evm-osaka,groth16,Y_dir,64,630462,628761.0,-0.2698,False
+evm-osaka,groth16,Y_app,2,225984,225965.0,-0.0083,True
+evm-osaka,groth16,Y_app,16,319583,318988.0,-0.1862,True
+evm-osaka,groth16,Y_app,32,426554,425530.0,-0.24,True
+evm-osaka,groth16,Y_app,64,640495,638488.0,-0.3134,False
+evm-osaka,plonk,Y_dir,2,279422,279050.0,-0.133,True
+evm-osaka,plonk,Y_dir,16,290029,290555.0,0.1814,True
+evm-osaka,plonk,Y_dir,32,302152,305335.0,1.0536,True
+evm-osaka,plonk,Y_dir,64,326397,334233.0,2.4008,False
+evm-osaka,plonk,Y_app,2,288417,287980.0,-0.1515,True
+evm-osaka,plonk,Y_app,16,298973,299659.0,0.2295,True
+evm-osaka,plonk,Y_app,32,311037,314517.0,1.1188,True
+evm-osaka,plonk,Y_app,64,335165,343661.0,2.5349,False
+evm-petersburg,groth16,Y_dir,16,1118462,1118057.0,-0.0362,True
+evm-petersburg,groth16,Y_app,16,1122283,1121688.0,-0.053,True
+evm-petersburg,plonk,Y_dir,16,1077529,1078055.0,0.0488,True
+evm-petersburg,plonk,Y_app,16,1080773,1081459.0,0.0635,True
+eravm-29,groth16,Y_dir,2,451206,451223.0,0.0038,True
+eravm-29,groth16,Y_dir,16,548403,548592.0,0.0345,True
+eravm-29,groth16,Y_dir,32,659486,659896.0,0.0622,True
+eravm-29,groth16,Y_dir,64,881651,882416.0,0.0868,False
+eravm-29,groth16,Y_app,2,458257,458286.0,0.0064,True
+eravm-29,groth16,Y_app,16,555986,556073.0,0.0156,True
+eravm-29,groth16,Y_app,32,667677,667895.0,0.0327,True
+eravm-29,groth16,Y_app,64,891058,891451.0,0.0441,False
+eravm-29,plonk,Y_dir,2,448483,447655.0,-0.1845,True
+eravm-29,plonk,Y_dir,16,482548,477472.0,-1.0519,True
+eravm-29,plonk,Y_dir,32,521503,512934.0,-1.6431,True
+eravm-29,plonk,Y_dir,64,599412,584113.0,-2.5523,False
+eravm-29,plonk,Y_app,2,455978,455154.0,-0.1806,True
+eravm-29,plonk,Y_app,16,490687,485431.0,-1.0712,True
+eravm-29,plonk,Y_app,32,530378,521393.0,-1.694,True
+eravm-29,plonk,Y_app,64,609759,593620.0,-2.6468,False
+eravm-27,groth16,Y_dir,4,9599886,9578687.0,-0.2208,True
+eravm-27,groth16,Y_dir,16,13283078,13208982.0,-0.5578,True
+eravm-27,groth16,Y_app,4,9607013,9585814.0,-0.2207,True
+eravm-27,groth16,Y_app,16,13290661,13216463.0,-0.5583,True
+eravm-27,plonk,Y_dir,4,10495326,10466806.0,-0.2717,True
+eravm-27,plonk,Y_dir,16,10524502,10510274.0,-0.1352,True
+eravm-27,plonk,Y_app,4,10502913,10474393.0,-0.2715,True
+eravm-27,plonk,Y_app,16,10532641,10518233.0,-0.1368,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,4,64041123,64070233,0.0455,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,4,80329538,80328169,-0.0017,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,16,64918857,65063643,0.223,True
+zkos-v31 P0 (VM v0.3.2) conditional,fflonk,N_dir,16,55956232,56274630,0.569,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,4,64061123,64090233,0.0454,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,2,63816909,63826589,0.0152,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,4,80329538,80328169,-0.0017,True
+zkos-v31 P0 (VM v0.3.2) conditional,fflonk,N_dir,1,54843216,55008259,0.3009,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,8,83723442,83720021,-0.0041,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,16,90516729,90509885,-0.0076,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,32,104103304,104088933,-0.0138,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,4,80329538,80328169,-0.0017,True
+zkos-v31 P0 (VM v0.3.2) conditional,fflonk,N_dir,4,55059844,55255933,0.3561,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,8,64299485,64366975,0.105,True
+zkos-v31 P0 (VM v0.3.2) conditional,groth16,N_dir,2,78630276,78629593,-0.0009,True
+zkos-v31 P0 (VM v0.3.2) conditional,fflonk,N_dir,2,54919296,55094801,0.3196,True
+zkos-v31 P0 (VM v0.3.2) conditional,plonk,N_dir,32,66217841,66517219,0.4521,True
+zkos-v32 (trace-model natives),groth16,N_dir,16,49911518,49903408,-0.0162,True
+zkos-v32 (trace-model natives),groth16,N_dir,32,64209814,64193224,-0.0258,True
+zkos-v32 (trace-model natives),groth16,N_dir,2,37400509,37400759,0.0007,True
+zkos-v32 (trace-model natives),plonk,N_dir,16,39167687,39183859,0.0413,True
+zkos-v32 (trace-model natives),plonk,N_dir,2,38714617,38661291,-0.1377,True
+zkos-v32 (trace-model natives),plonk,N_dir,32,39687679,39794857,0.2701,True
+zkos-v32 (trace-model natives),fflonk,N_dir,16,28522609,28502361,-0.071,True
+zkos-v32 (trace-model natives),fflonk,N_dir,2,28018261,28021653,0.0121,True

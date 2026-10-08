@@ -1,0 +1,9 @@
+env,metric,kstar_point,kstar_lo,kstar_hi,sign_at_k1,evaluated_k_range
+evm-osaka,dir,13.99,13.17,14.83,PLONK_COSTLIER,1..64
+evm-osaka,app,13.9,13.01,14.81,PLONK_COSTLIER,1..64
+eravm-29,dir,1.4,<=1,3.48,PLONK_COSTLIER,1..64
+eravm-29,app,1.49,<=1,3.63,PLONK_COSTLIER,1..64
+eravm-27,dir,6.94,6.48,7.4,PLONK_COSTLIER,1..16
+evm-petersburg,dir,15.85,15.81,15.89,PLONK_COSTLIER,1..16
+zkos-v32,native,3.53,3.14,3.92,PLONK_COSTLIER,1..64
+zkos-v32@npg100,dir,3.53,3.14,3.92,PLONK_COSTLIER,1..64

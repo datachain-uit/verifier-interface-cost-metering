@@ -1,0 +1,54 @@
+$ docker info
+Client:
+ Version:    27.5.1
+ Context:    default
+ Debug Mode: false
+
+Server:
+ Containers: 76
+  Running: 37
+  Paused: 0
+  Stopped: 39
+ Images: 148
+ Server Version: 27.5.1
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ Swarm: inactive
+ Runtimes: runc io.containerd.runc.v2
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 
+ runc version: 
+ init version: 
+ Security Options:
+  apparmor
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.14.0-29-generic
+ Operating System: Ubuntu 24.04.3 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 112
+ Total Memory: 62.51GiB
+ Name: ad-Precision-7920-Tower
+ ID: 2eabf4b9-674f-4dc2-a8ec-f80796983d8a
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+[exit 0]

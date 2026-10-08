@@ -1,0 +1,3 @@
+$ cat /proc/cmdline
+BOOT_IMAGE=/boot/vmlinuz-6.14.0-29-generic root=UUID=a0a80852-0629-4440-9bfd-2ec18c82d4ed ro quiet splash vt.handoff=7
+[exit 0]

@@ -1,0 +1,6 @@
+local session done utc=2026-10-05T14:59:40Z
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z/environment/RESULT.txt: result: PASS (dryrun dryrun-resumetest-20261005T141557Z; session S20261005T143431Z; see derived/validation.json)
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z-othercommit/environment/RESULT.txt: result: FAIL (REFUSE resume: campaign identity differs; tree (kit, generator, manifests) (recorded '0000000000000000000000000000000000000000000000000000000000000000', now 'de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f'))
+repo/build/campaigns/dryrun-resumetest-20261005T141557Z-tampered/environment/RESULT.txt: result: FAIL (REFUSE: campaign state check failed)
+repo/build/campaigns/setup-20261005T140456Z/environment/RESULT.txt: result: SETUP PASS (image sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7; ARTIFACTS.sha256 161 OK)
+containers=0 d2_runners=0

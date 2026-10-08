@@ -1,0 +1,139 @@
+{
+ "d2_analysis_sha256": "3f80cc8f45ce381c9832be6bc809d05f244c79621e5071c86335de6f907d5fa4",
+ "tests": {
+  "T1_equivalence_with_D3_seed": {
+   "rows": 495,
+   "diag": 240,
+   "outputs": {
+    "cells": 693,
+    "ratios": 66,
+    "speedups": 462,
+    "zkey": 72
+   },
+   "files_byte_identical_to_D3": {
+    "cell-stats": true,
+    "backend-ratios": true,
+    "allocation-speedups": true,
+    "zkey-diagnostic": true
+   },
+   "reconciliation": {
+    "d2": {
+     "prover_summary": {
+      "match": 462
+     },
+     "prover_diag": {
+      "match": 48
+     }
+    },
+    "d3": {
+     "prover_summary": {
+      "match": 462
+     },
+     "prover_diag": {
+      "match": 48
+     }
+    },
+    "mismatches": 0
+   },
+   "ok": true
+  },
+  "T2_D2_seed_namespace": {
+   "files": {
+    "cell-stats": {
+     "rows": 693,
+     "deterministic_columns_identical": true,
+     "bootstrap_columns_differ": true
+    },
+    "backend-ratios": {
+     "rows": 66,
+     "deterministic_columns_identical": true,
+     "bootstrap_columns_differ": false
+    },
+    "allocation-speedups": {
+     "rows": 462,
+     "deterministic_columns_identical": true,
+     "bootstrap_columns_differ": false
+    },
+    "zkey-diagnostic": {
+     "rows": 72,
+     "deterministic_columns_identical": true,
+     "bootstrap_columns_differ": false
+    }
+   },
+   "first_seed_matches_prereg_formula": true,
+   "ok": true
+  },
+  "T3_cli_positive": {
+   "check_exit": 0,
+   "run_exit": 0,
+   "run_outputs": {
+    "cells": 693,
+    "ratios": 66,
+    "speedups": 462,
+    "zkey": 72
+   },
+   "script_sha256_in_record": "3f80cc8f45ce381c9832be6bc809d05f244c79621e5071c86335de6f907d5fa4",
+   "outputs_identical_to_T2": {
+    "cell-stats": true,
+    "backend-ratios": true,
+    "allocation-speedups": true,
+    "zkey-diagnostic": true
+   },
+   "ok": true
+  },
+  "T4_cli_negatives": {
+   "results": {
+    "tampered_input_after_manifest": {
+     "exit": 3,
+     "last_line": [
+      "{'path': 'prover/cpu4/runs.csv', 'expected': 'f0e5f134c08e440bfdd700f0917371c4976690d1200c5024a142919550f28b5c', 'actual': 'd502e35660706756afd5e4a1a6821c38b4cb924e063824d5ef2aa4ffcbcb08c0', 'ok': False}"
+     ],
+     "expected_exit": 3,
+     "statistics_written": false
+    },
+    "input_missing_from_manifest": {
+     "exit": 3,
+     "last_line": [
+      "{'path': 'prover/cpu8/diag.csv', 'expected': None, 'actual': '55e80397e56b7917aac190052dcc398f96bce26ac8437bed59b9320c55631477', 'ok': False}"
+     ],
+     "expected_exit": 3,
+     "statistics_written": false
+    },
+    "host_a_record_without_kit": {
+     "exit": 4,
+     "last_line": [
+      "CAMPAIGN IDENTITY MISMATCH \u2014 abort {'campaign_id': 'campaign-20260925T060607Z', 'mode': 'campaign', 'kit': None, 'schedule_sha256': 'f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95', 'execution_plan_sha256': '99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94', 'checks': {'mode_campaign': True, 'kit_v3_x86': False, 'schedule_equals_host_a': True, 'execution_plan_equals_host_a': True}, 'ok': False}"
+     ],
+     "expected_exit": 4,
+     "statistics_written": false
+    },
+    "mode_dryrun": {
+     "exit": 4,
+     "last_line": [
+      "CAMPAIGN IDENTITY MISMATCH \u2014 abort {'campaign_id': 'campaign-20260925T060607Z', 'mode': 'dryrun', 'kit': 'v3-x86', 'schedule_sha256': 'f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95', 'execution_plan_sha256': '99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94', 'checks': {'mode_campaign': False, 'kit_v3_x86': True, 'schedule_equals_host_a': True, 'execution_plan_equals_host_a': True}, 'ok': False}"
+     ],
+     "expected_exit": 4,
+     "statistics_written": false
+    },
+    "other_schedule": {
+     "exit": 4,
+     "last_line": [
+      "CAMPAIGN IDENTITY MISMATCH \u2014 abort {'campaign_id': 'campaign-20260925T060607Z', 'mode': 'campaign', 'kit': 'v3-x86', 'schedule_sha256': '0000000000000000000000000000000000000000000000000000000000000000', 'execution_plan_sha256': '99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94', 'checks': {'mode_campaign': True, 'kit_v3_x86': True, 'schedule_equals_host_a': False, 'execution_plan_equals_host_a': True}, 'ok': False}"
+     ],
+     "expected_exit": 4,
+     "statistics_written": false
+    },
+    "incomplete_campaign": {
+     "exit": 1,
+     "last_line": [
+      "unexpected row counts 473 / 240 (expected 495 / 240)"
+     ],
+     "expected_exit": 1,
+     "statistics_written": false
+    }
+   },
+   "ok": true
+  }
+ },
+ "all_ok": true
+}

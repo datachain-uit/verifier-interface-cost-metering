@@ -1,0 +1,4 @@
+d10/plonk.zkey: OK
+p1150/plonk.zkey: OK
+p1180/plonk.zkey: OK
+d11/plonk.zkey: OK

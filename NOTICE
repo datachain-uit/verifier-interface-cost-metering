@@ -1,0 +1,28 @@
+Reproducibility package for on-chain zero-knowledge verifier cost comparisons across public-input counts and
+metering specifications
+
+Copyright (c) 2026 Khoa Tan VO, Hong-Tri Nguyen and Tu-Anh Nguyen-Hoang
+
+Licensed per file as described in LICENSE.md (MIT for author code; CC BY 4.0 for author data and documentation;
+the per-file assignment is provenance/LICENSE-MAP.tsv). This artifact also contains the following third-party or
+third-party-derived material, with its notices retained unchanged:
+
+1. Solidity verifier contracts generated with snarkJS (https://github.com/iden3/snarkjs).
+   Copyright 2021 0KIMS association. GPL-3.0, version 3 of the License or (at your option) any later version, as
+   stated in each generated file. Compiled forms of these contracts are distributed under GPL-3.0-or-later.
+
+2. Witness-generator code (JavaScript and WebAssembly) emitted by the circom compiler (https://github.com/iden3/circom),
+   which generates it from its own GPL-3.0 code-generation templates. Distributed under GPL-3.0.
+
+3. Constraint and key files produced with circom, the circomlib templates (https://github.com/iden3/circomlib, GPL-3.0)
+   and snarkJS: R1CS files, proving keys and verification keys. Distributed under GPL-3.0.
+
+4. Constant files copied from ZKsync OS (https://github.com/matter-labs/zksync-os), tags v0.4.0 (commit
+   69bc430549e88f9264066d14f2001707572c5d33) and v0.3.2-interface-v0.1.3 (commit b76084f3), by Matter Labs.
+   Dual-licensed MIT OR Apache-2.0.
+
+5. Font subsets embedded in the figure PDFs: Liberation Sans 2.x (SIL Open Font License 1.1) in Figs. 2-5; Arial
+   subsets embedded by the draw.io export in Fig. 1.
+
+The circomlib templates, snarkJS itself (GPL-3.0) and every other tool listed in provenance/EXTERNAL-PINS.tsv are used
+but not redistributed.

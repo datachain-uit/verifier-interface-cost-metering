@@ -1,0 +1,9 @@
+# inputs verified before the run (sha256)
+1bb698a2cb236dcbf2ea96efed1cfee4085d462679ca34430086e8a624498792  pilot/V2-MPI-PILOT-01/V2-MPI-PILOT-01-records.jsonl
+a8eb9ce686677fd9209a3a0e21809bf09e0c13891e324799488312ad1105cc1e  full/V2-MPI-FULL-01/full/V2-MPI-FULL-01-records.jsonl
+8632e7444fc4f049ece027a5597e55fecfc70419697b913032200eb7b85c445d  full/analysis/scoring/summary.json
+47fbc3c3cd349973cc70fd66192e29412c19645ed30daf8ae29d7c727c823c5d  c1/pkg/model/zkos_native_trace_model.py
+pilot evidence SHA256SUMS 08cc9f3afb6cd3b1bfaa0cff802001acb3ce3ee7d89f1d8311ba140893948e98 (verified)
+FULL evidence SHA256SUMS c267ebe2386c700a9c4aac59af86d558ee9075b0e1ba961f36a9b046b1909307 (verified)
+compiled artifacts: listed in each campaign's SHA256SUMS
+ZKsync OS source: zksync-os git checkout at 69bc430549e88f9264066d14f2001707572c5d33, clean working tree; cited files in SOURCE-FILES-SHA256.txt; C1-pinned files match PINS-C1.txt

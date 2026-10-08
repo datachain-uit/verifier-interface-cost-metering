@@ -1,0 +1,2364 @@
+$ node --max-old-space-size=32000 /home/ad/Workspace/Z-CORP-V2-workstation/toolchain/js/node_modules/snarkjs/cli.js powersoftau verify powersOfTau19_v2_local_research.ptau -v
+[36;22m[DEBUG] [39;1msnarkJS[0m: power: 2**19
+[36;22m[DEBUG] [39;1msnarkJS[0m: Computing initial contribution hash
+[36;22m[DEBUG] [39;1msnarkJS[0m: Calculating First Challenge Hash
+[36;22m[DEBUG] [39;1msnarkJS[0m: Calculate Initial Hash: tauG1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 0
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 341000
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 682000
+[36;22m[DEBUG] [39;1msnarkJS[0m: Calculate Initial Hash: tauG2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 0
+[36;22m[DEBUG] [39;1msnarkJS[0m: Calculate Initial Hash: alphaTauG1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 0
+[36;22m[DEBUG] [39;1msnarkJS[0m: Calculate Initial Hash: betaTauG1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Initial hash: 0
+[36;22m[DEBUG] [39;1msnarkJS[0m: Validating contribution #2
+[32;22m[INFO]  [39;1msnarkJS[0m: Powers Of tau file OK!
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying powers in tau*G1 section
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 0/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 65536/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 131072/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 196608/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 262144/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 327680/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 393216/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 458752/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 524288/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 589824/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 655360/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 720896/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 786432/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 851968/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 917504/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG1: 983040/1048575 
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying powers in tau*G2 section
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 0/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 65536/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 131072/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 196608/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 262144/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 327680/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 393216/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: tauG2: 458752/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying powers in alpha*tau*G1 section
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 0/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 65536/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 131072/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 196608/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 262144/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 327680/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 393216/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: alphatauG1: 458752/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying powers in beta*tau*G1 section
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 0/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 65536/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 131072/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 196608/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 262144/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 327680/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 393216/524288 
+[36;22m[DEBUG] [39;1msnarkJS[0m: points relations: betatauG1: 458752/524288 
+[32;22m[INFO]  [39;1msnarkJS[0m: Next challenge hash: 
+		95fcad8b c920cb38 8ad2ad1d 2b70adf8
+		35e75359 c88ea74e e6cf5b16 121eeb38
+		f1f7d477 0eec2e37 ee1beefd 2ba57683
+		bb84b932 f1056e9c 815a78b4 8e10a991
+[32;22m[INFO]  [39;1msnarkJS[0m: -----------------------------------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution #2: AMD-FF-1 deterministic beacon
+[32;22m[INFO]  [39;1msnarkJS[0m: Next Challenge: 
+		95fcad8b c920cb38 8ad2ad1d 2b70adf8
+		35e75359 c88ea74e e6cf5b16 121eeb38
+		f1f7d477 0eec2e37 ee1beefd 2ba57683
+		bb84b932 f1056e9c 815a78b4 8e10a991
+[32;22m[INFO]  [39;1msnarkJS[0m: Response Hash:
+		dcad0094 d2db1405 ad10a806 23ce7a34
+		965350f9 b02c3a91 d35f7f5b 74b349af
+		3f281907 9173da38 b78bbbb9 0c675bd4
+		47fa0808 f8a5eb21 fe8da321 59c33af0
+[32;22m[INFO]  [39;1msnarkJS[0m: Response Hash:
+		af42d8f7 e5035a59 49217820 95d85d06
+		0e4bb5a8 f3c6a051 276d932e b1c66c46
+		89bf1dc1 ec1f75f8 cf13d10d 82657aab
+		8f1d4df4 5d3cceee 05c2485a 7d39f8c6
+[32;22m[INFO]  [39;1msnarkJS[0m: Beacon generator: a5dabf111ad93e69c270a021ae947f68fb868726651304f4d677eb3a2518f02c
+[32;22m[INFO]  [39;1msnarkJS[0m: Beacon iterations Exp: 10
+[32;22m[INFO]  [39;1msnarkJS[0m: Powers Of tau file OK!
+[32;22m[INFO]  [39;1msnarkJS[0m: -----------------------------------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution #1: Z-CORP-V2 research contribution (local, AMD-FF-1)
+[32;22m[INFO]  [39;1msnarkJS[0m: Next Challenge: 
+		af42d8f7 e5035a59 49217820 95d85d06
+		0e4bb5a8 f3c6a051 276d932e b1c66c46
+		89bf1dc1 ec1f75f8 cf13d10d 82657aab
+		8f1d4df4 5d3cceee 05c2485a 7d39f8c6
+[32;22m[INFO]  [39;1msnarkJS[0m: Response Hash:
+		5ad87315 58dc993c 8a58fdf8 43f6edf2
+		1c964a8a 9d273448 ad54b773 580bf99a
+		c48735a6 c470eb8a a98de736 d2e72c72
+		070dffea b9a19d2d 3e03bedc ad64a83a
+[32;22m[INFO]  [39;1msnarkJS[0m: Response Hash:
+		96006053 1a46ce79 80c117ba df032684
+		e3adc788 66b7bf7b 26b34cb1 165df31d
+		8ffdf7de 6dd3e902 839afe45 1da673ad
+		cea5259f d968b713 5b867bad 2760ceb2
+[32;22m[INFO]  [39;1msnarkJS[0m: -----------------------------------------------------
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying phase2 calculated values tauG1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 0/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 32768/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 65536/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 98304/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 131072/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 163840/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 196608/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 229376/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 262144/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 294912/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 327680/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 360448/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 393216/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 425984/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 458752/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 491520/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 524288/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 557056/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 589824/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 622592/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 655360/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 688128/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 720896/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 753664/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 786432/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 819200/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 851968/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 884736/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 917504/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 950272/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 983040/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20: 1015808/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 0/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 32768/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 65536/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 98304/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 131072/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 163840/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 196608/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 229376/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 294912/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 327680/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 360448/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 491520/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 262144/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 425984/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 393216/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 524288/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 557056/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 688128/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 655360/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 458752/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 786432/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 720896/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 589824/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 622592/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 884736/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 917504/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 1015808/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 851968/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 819200/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 753664/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 983040/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20: 950272/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange20...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20_transformed: 0/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20_transformed: 262144/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20_transformed: 524288/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG1_20_transformed: 786432/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20_transformed: 0/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20_transformed: 262144/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20_transformed: 524288/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG1_20_transformed: 786432/1048576
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying phase2 calculated values tauG2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: tauG2_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: tauG2_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying phase2 calculated values alphaTauG1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: alphaTauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: alphaTauG1_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Verifying phase2 calculated values betaTauG1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_0: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange0...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_0_transformed: 0/1
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_1: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange1...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_1_transformed: 0/2
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_2: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange2...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_2_transformed: 0/4
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_3: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange3...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_3_transformed: 0/8
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_4: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange4...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_4_transformed: 0/16
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_5: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange5...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_5_transformed: 0/32
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_6: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange6...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_6_transformed: 0/64
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_7: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange7...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_7_transformed: 0/128
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_8: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange8...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_8_transformed: 0/256
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_9: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange9...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_9_transformed: 0/512
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_10: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange10...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_10_transformed: 0/1024
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_11: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_11: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange11...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_11_transformed: 0/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_11_transformed: 1024/2048
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12: 1024/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12: 2048/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12: 3072/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange12...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12_transformed: 3712/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12_transformed: 0/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_12_transformed: 1856/4096
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 4096/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 2048/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 3072/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 6144/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 7168/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 1024/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13: 5120/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange13...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13_transformed: 0/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13_transformed: 6656/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_13_transformed: 3328/8192
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 2048/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 3072/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 1024/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 7168/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 8192/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 5120/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 9216/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 10240/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 13312/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 14336/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 15360/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 11264/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14: 4096/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange14...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14_transformed: 0/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14_transformed: 12288/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_14_transformed: 6144/16384
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 3072/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 4608/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 6144/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 13824/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 1536/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 19968/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 21504/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 9216/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 10752/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 23040/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 12288/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 24576/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 32256/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 18432/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 27648/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 15360/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 7680/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 26112/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 16896/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 30720/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15: 29184/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange15...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15_transformed: 0/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15_transformed: 11264/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_15_transformed: 22528/32768
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 3072/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 6144/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 9216/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 12288/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 15360/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 18432/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 21504/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 24576/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 27648/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 30720/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 33792/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 36864/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 52224/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 64512/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 58368/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 49152/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 55296/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 39936/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 43008/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16: 46080/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange16...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16_transformed: 61440/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16_transformed: 0/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16_transformed: 20480/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_16_transformed: 40960/65536
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 18432/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 49152/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 67584/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 73728/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 30720/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 24576/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 129024/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 55296/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 98304/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 104448/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 36864/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 110592/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 116736/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 6144/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 12288/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 79872/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 86016/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 43008/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 61440/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17: 92160/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange17...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17_transformed: 122880/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17_transformed: 0/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17_transformed: 40960/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_17_transformed: 81920/131072
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 36864/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 98304/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 147456/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 12288/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 24576/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 73728/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 49152/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 122880/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 86016/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 61440/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 258048/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 110592/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 172032/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 196608/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 208896/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 221184/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 159744/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 245760/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 135168/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18: 184320/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange18...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18_transformed: 233472/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18_transformed: 0/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18_transformed: 77824/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_18_transformed: 155648/262144
+[36;22m[DEBUG] [39;1msnarkJS[0m: Power 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 73728/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 122880/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 172032/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 98304/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 270336/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 319488/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 516096/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 417792/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 49152/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 393216/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 24576/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 196608/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 221184/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 245760/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 344064/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 368640/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 491520/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19: 466944/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Creating random numbers Powers19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchToMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: fft 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: batchFromMontgomery 19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: reading points Lagrange19...
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19_transformed: 294912/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp start: betaTauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19_transformed: 0/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19_transformed: 147456/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19_transformed: 442368/524288
+[36;22m[DEBUG] [39;1msnarkJS[0m: Multiexp end: betaTauG1_19_transformed: 294912/524288
+[32;22m[INFO]  [39;1msnarkJS[0m: Powers of Tau Ok!

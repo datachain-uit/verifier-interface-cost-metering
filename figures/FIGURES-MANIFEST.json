@@ -1,0 +1,259 @@
+{
+ "figures": {
+  "Fig1": {
+   "authoritative": true,
+   "export": {
+    "commands": "draw.io --export --format pdf --crop --output Fig1.pdf Fig1.drawio; draw.io --export --format svg --crop --output Fig1.svg Fig1.drawio",
+    "os": "macOS 26.6.2 (25G83)",
+    "time_utc": "2026-10-06T02:52:56Z",
+    "tool": "draw.io Desktop 31.7.0"
+   },
+   "outputs": {
+    "figures/Fig1.pdf": "5cd36ddd70edb9469ff548d4e5e940e02d8ca6d326915d555381dd5af5869c05",
+    "figures/Fig1.svg": "966ed85be418308c97d1bce1b613f1f2ae2365cba665866a4e0e168c49f5b7ec"
+   },
+   "pdf_gates": {
+    "fonts": [
+     {
+      "emb": "yes",
+      "name": "AAAAAA+Arial-BoldMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "BAAAAA+ArialMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "CAAAAA+Arial-ItalicMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "DAAAAA+Arial-BoldMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "EAAAAA+ArialMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FAAAAA+Arial-ItalicMT",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "GAAAAA+Arial-BoldMT",
+      "type": "CID TrueType Identity-H"
+     }
+    ],
+    "pass": true,
+    "raster_images": 0
+   },
+   "source": "figures/Fig1.drawio",
+   "source_sha256": "96d711bb73974ebfe69de129fb812bdb6f05cb1c0265d3ec8c412e95cec394a2",
+   "svg_gates": {
+    "adaptive_colours": true,
+    "data_uri": 0,
+    "foreignObject": 0,
+    "image": 0,
+    "pass": true,
+    "text": 56
+   }
+  },
+  "Fig2": {
+   "inputs": {
+    "generated/data/fig2_design_roles.csv": "a4a09bb7465a992896530512f0a07008c65966c4c770cfe045097ad1b27a3e68"
+   },
+   "outputs": {
+    "figures/Fig2.pdf": "5a6194c3204036d81f29d58dbfd66349df3ca54545f0b3ebb3bbdbbaf9230adb",
+    "figures/Fig2.svg": "d8bbb50b431ac414d9534a0c6bb6f137275a14c84661dc33feea30ba549c999d"
+   },
+   "pdf_gates": {
+    "fonts": [
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Bold",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Italic",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans",
+      "type": "CID TrueType Identity-H"
+     }
+    ],
+    "pass": true,
+    "raster_images": 0
+   },
+   "script": "figures/src/fig2_design_map.py",
+   "script_sha256": "96f71de71f1c0ed6064f551ef050457fd4e9c7176e825b5af13443902629f85e",
+   "svg_gates": {
+    "adaptive_colours": false,
+    "data_uri": 0,
+    "foreignObject": 0,
+    "image": 0,
+    "pass": true,
+    "text": 94
+   }
+  },
+  "Fig3": {
+   "inputs": {
+    "generated/data/crossovers.csv": "f327dbf641d5a0e57c78aae2450248bd69ad635ff65956ea427a1a756a0ed237",
+    "generated/data/fig3a_ratio_vs_k.csv": "8e1fd07bcc8a278d6a90bf27f1dd3e978cae029607201ac11a40349c0ea0db80",
+    "generated/data/fig3b_npg_meters.csv": "47f5f9d5e88b9f178cb669237d2d2ec30ac63f3ccb45cddb487a9b9c5e43a4d9",
+    "generated/data/fig3b_npg_ranking.csv": "0587b6e935ec7949180d061034bb0ac7bae17ad4dc6e77f143d17b72bfa53ba7",
+    "generated/data/fig3b_switch_intervals.csv": "54a75544bfa7407ca0b819de37e7a94705c647585df6e27c4d9c1acba85cfa41"
+   },
+   "outputs": {
+    "figures/Fig3.pdf": "37e8c6e8e4a5626b20c5599460398942254e43412bd800b5c23e28730c9271dc",
+    "figures/Fig3.svg": "bf72af5509621aba888a4e55b0b5fd0d26d8b519b120382d92130595d129ec96"
+   },
+   "pdf_gates": {
+    "fonts": [
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Bold",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Italic",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans",
+      "type": "CID TrueType Identity-H"
+     }
+    ],
+    "pass": true,
+    "raster_images": 0
+   },
+   "script": "figures/src/fig3_crossovers.py",
+   "script_sha256": "ea5e867013a1381a9c6eb7f792c99b99aa845674d89ff26be7720e1b5b5bba82",
+   "svg_gates": {
+    "adaptive_colours": false,
+    "data_uri": 0,
+    "foreignObject": 0,
+    "image": 0,
+    "pass": true,
+    "text": 82
+   }
+  },
+  "Fig4": {
+   "inputs": {
+    "generated/data/fig4_prediction_errors.csv": "dfd1b47fca951ba63369f18824d128ca5951d70302c0d4483db1958224da0ebd"
+   },
+   "outputs": {
+    "figures/Fig4.pdf": "d5d4a4094c4a4786b2bbf55a17a4adef47d6263f3a876ac4d386891ed450ab83",
+    "figures/Fig4.svg": "3b2f0aef3c1fdbb3978c87926c16e0e70036be813c655f4eeb27a7d7df347e05"
+   },
+   "pdf_gates": {
+    "fonts": [
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Bold",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Italic",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans",
+      "type": "CID TrueType Identity-H"
+     }
+    ],
+    "pass": true,
+    "raster_images": 0
+   },
+   "script": "figures/src/fig4_prediction.py",
+   "script_sha256": "e997ee20c34ce449902c1191371869335b544f0ec345c27012fdbe8be28f7406",
+   "svg_gates": {
+    "adaptive_colours": false,
+    "data_uri": 0,
+    "foreignObject": 0,
+    "image": 0,
+    "pass": true,
+    "text": 54
+   }
+  },
+  "Fig5": {
+   "inputs": {
+    "generated/data/fig5_d1_cells.csv": "1270682681a729b0320288b15e32e2bbc51ceeb7399f2bcba98a2d1db5e71412",
+    "generated/data/fig5_d1_ratios.csv": "6f6b44b947124225e4d845439a6803b3d23645f13aa8db6abfb40ebd6c763fb6",
+    "generated/data/fig5_step_ratios.csv": "613765079b58c521e7df9c2615f1d2cd62c479b07d43b22a726e61c6ebf7f196"
+   },
+   "outputs": {
+    "figures/Fig5.pdf": "fc253844528e43ed72456a71cc8b9b2eeabb7279d91af64c6c198df0bb12fabf",
+    "figures/Fig5.svg": "6ad6768c30c7d95c7efb920dd8c5a55961a9fa5f1a222428205858865f22426d"
+   },
+   "pdf_gates": {
+    "fonts": [
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Bold",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans-Italic",
+      "type": "CID TrueType Identity-H"
+     },
+     {
+      "emb": "yes",
+      "name": "FRZNSF+LiberationSans",
+      "type": "CID TrueType Identity-H"
+     }
+    ],
+    "pass": true,
+    "raster_images": 0
+   },
+   "script": "figures/src/fig5_prover.py",
+   "script_sha256": "24c805cebf9cfc3e6765bfd3ad8ed52448467062ece451faa7d787d13a1d9005",
+   "svg_gates": {
+    "adaptive_colours": false,
+    "data_uri": 0,
+    "foreignObject": 0,
+    "image": 0,
+    "pass": true,
+    "text": 60
+   }
+  }
+ },
+ "fonts": {
+  "Bold": {
+   "file": "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+   "sha256": "ba0e0dc3f7aca5b0afbc31e800531ee43be3aa79ae35b2ef1f6470a9547765c4"
+  },
+  "BoldItalic": {
+   "file": "/usr/share/fonts/truetype/liberation2/LiberationSans-BoldItalic.ttf",
+   "sha256": "15c1068175252e4adee6d3721bf74064ffe437f679d9dbaeacd03fa7711a041b"
+  },
+  "Italic": {
+   "file": "/usr/share/fonts/truetype/liberation2/LiberationSans-Italic.ttf",
+   "sha256": "01f559e5c501d3d5777647c6a92b3ff37a4523bcf4f3b6e97ae052af567618b1"
+  },
+  "Regular": {
+   "file": "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
+   "sha256": "8d91388f1d3604b3b8ae0e3ee2d140e50cd6122f9214514f4aca772540a4076d"
+  }
+ },
+ "generator": "figures/src/build_figures.py",
+ "matplotlib": "3.10.9",
+ "rule": "plotting code is not analysis code; inputs: generated/data only",
+ "style": {
+  "file": "figures/src/figstyle.py",
+  "sha256": "22e9e66861cfd9e91216de6b430002b6bc76d8b96322a040e4d6f0961e64101a"
+ }
+}

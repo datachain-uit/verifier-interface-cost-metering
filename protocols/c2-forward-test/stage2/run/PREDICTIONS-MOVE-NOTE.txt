@@ -1,0 +1,1 @@
+c2_predict.py wrote C2-STAGE2-PREDICTIONS.json/.csv into predictions/; both moved unchanged to the stage-2 root (sha256 before = after: json b64d2a9d…dbd8, csv 6d781006…5010) so that c2_score.py finds them next to SHA256SUMS.

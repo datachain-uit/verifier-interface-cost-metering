@@ -1,0 +1,6 @@
+harness_exit=7
+rows_before=65
+rows_after=65
+tamper_exit=1
+tamper_refused=yes
+tamper_reason=REFUSE schedule.csv differs from the campaign record

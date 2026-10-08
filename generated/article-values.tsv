@@ -1,0 +1,204 @@
+key	latex	raw	unit	source
+ac-failed	0	0	checks	full_record:scoring/summary.json:AC.failed
+ac-gasrule-failed	0	0	checks	full_record:scoring/AC_checks.csv:AC-ZK-gas-rule
+ac-gasrule-total	1,024	1024	checks	full_record:scoring/AC_checks.csv:AC-ZK-gas-rule
+ac-struct-failed	0	0	checks	full_record:scoring/AC_checks.csv:AC-STRUCT-*
+ac-struct-total	704	704	checks	full_record:scoring/AC_checks.csv:AC-STRUCT-*
+ac-total	5,342	5342	checks	full_record:scoring/summary.json:AC.total
+audit-calldata-byte	60	60	native per calldata byte	audit:out/M7A-summary.json:constants.calldata_byte
+audit-heap-byte	1	1	native per heap byte	audit:out/M7A-summary.json:constants.heap
+audit-heap-event	35	35	native per heap-expansion event	audit:out/M7A-summary.json:constants.heap
+audit-percall	4,208	4208	native per call	audit:out/M7A-summary.json:k1_contrast_decomposition.source_per_call
+audit-proofs-per-backend	104	104	proofs	audit:out/M7A-summary.json:remainder_structure.groth16.n_proofs
+bridge-cells	12	12	cells	full_record:campaign.json:cells.bridge_completed
+bridge-compared	192	192	per-proof values	full_record:campaign.json:bridge_reproduction.compared
+bridge-identical	192	192	per-proof values	full_record:campaign.json:bridge_reproduction.identical
+c1-files	482	482	files	c1:SHA256SUMS entry count
+c2-calibration-proofs	18	18	Groth16 / PLONK proofs	c2_stage1:calibration/C2-CALIBRATION.json:calibration_proofs
+c2-cenv	1,669,012	1669012	native	c2_stage1:calibration/C2-CALIBRATION.json:C_env
+c2-max-abs-err	0	0.0	relative error	ff_record:scoring-c2/C2-SCORES.json:max_abs_rel
+c2-proofs	32	32	proofs	ff_record:scoring-c2/C2-SCORES.json:proofs
+c2-rank-match	8	8	comparisons	ff_record:scoring-c2/C2-SCORES.json:C2_RANK
+c2-rank-total	8	8	comparisons	ff_record:scoring-c2/C2-SCORES.json:C2_RANK
+c2-structures	4	4	verifier structures (one per k)	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:k
+c2-tau	0.0138	0.000138	%	ff_record:scoring-c2/C2-SCORES.json:tau
+d1-boundary	32,768	32768	gates (2^15)	definition: PLONK domain 2^15 (d1_protocol:D1-PROTOCOL.md section 2)
+d1-g16-d11-padabove	0.816	0.8163508991379648	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:groth16,prove_ms,d11/pad-above
+d1-g16-ms-d10	155.1	155.076	ms (median, n = 20)	d1_analysis:D1-cells.csv:groth16,d10,prove_ms
+d1-g16-ms-d11	163.1	163.1255	ms (median, n = 20)	d1_analysis:D1-cells.csv:groth16,d11,prove_ms
+d1-g16-ms-padabove	200.6	200.61849999999998	ms (median, n = 20)	d1_analysis:D1-cells.csv:groth16,p1180,prove_ms
+d1-g16-ms-padbelow	198.3	198.269	ms (median, n = 20)	d1_analysis:D1-cells.csv:groth16,p1150,prove_ms
+d1-g16-padbelow-d10	1.283	1.282653805804252	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:groth16,prove_ms,pad-below/d10
+d1-g16-ranchor	1.059	1.0592196790269917	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:groth16,prove_ms,d11/d10
+d1-g16-rpad	1.012	1.0115807030460617	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:groth16,prove_ms,pad-above/pad-below
+d1-g16-rpad-hi	1.018	1.0179640519599735	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:groth16,prove_ms,pad-above/pad-below
+d1-g16-rpad-lo	1.002	1.0018033020337471	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:groth16,prove_ms,pad-above/pad-below
+d1-g16dom-d10	4,096	4096	Groth16 domain size	d1_protocol:artifacts/d10/groth16.zkey
+d1-g16dom-d11	4,096	4096	Groth16 domain size	d1_protocol:artifacts/d11/groth16.zkey
+d1-g16dom-padabove	4,096	4096	Groth16 domain size	d1_protocol:artifacts/p1180/groth16.zkey
+d1-g16dom-padbelow	4,096	4096	Groth16 domain size	d1_protocol:artifacts/p1150/groth16.zkey
+d1-gates-d10	31,602	31602	PLONK gates	d1_protocol:build-records/d10/plonk-setup.log
+d1-gates-d11	34,077	34077	PLONK gates	d1_protocol:build-records/d11/plonk-setup.log
+d1-gates-padabove	32,782	32782	PLONK gates	d1_protocol:build-records/p1180/plonk-setup.log
+d1-gates-padbelow	32,752	32752	PLONK gates	d1_protocol:build-records/p1150/plonk-setup.log
+d1-n	20	20	accepted timed rounds	d1_analysis:D1-summary.json:primary_contrast.plonk.n
+d1-plonk-d11-padabove	0.999	0.9985482444530971	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/pad-above
+d1-plonk-d11-padabove-hi	1.005	1.0051185858216272	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/pad-above
+d1-plonk-d11-padabove-lo	0.995	0.99464372657209	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/pad-above
+d1-plonk-ms-d10	9,560	9560.3925	ms (median, n = 20)	d1_analysis:D1-cells.csv:plonk,d10,prove_ms
+d1-plonk-ms-d11	18,768	18767.713499999998	ms (median, n = 20)	d1_analysis:D1-cells.csv:plonk,d11,prove_ms
+d1-plonk-ms-padabove	18,706	18705.66	ms (median, n = 20)	d1_analysis:D1-cells.csv:plonk,p1180,prove_ms
+d1-plonk-ms-padbelow	9,549	9549.1895	ms (median, n = 20)	d1_analysis:D1-cells.csv:plonk,p1150,prove_ms
+d1-plonk-padbelow-d10	1.000	1.0004293090821312	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-below/d10
+d1-plonk-padbelow-d10-hi	1.006	1.0063542491926403	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-below/d10
+d1-plonk-padbelow-d10-lo	0.993	0.9926710325423744	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-below/d10
+d1-plonk-ranchor	1.956	1.9558268138484305	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/d10
+d1-plonk-ranchor-hi	1.974	1.9739900432399684	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/d10
+d1-plonk-ranchor-lo	1.948	1.9477074802942815	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,d11/d10
+d1-plonk-rpad	1.963	1.9632312424597886	median of 20 per-round ratios	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-above/pad-below
+d1-plonk-rpad-hi	1.972	1.9716653890775453	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-above/pad-below
+d1-plonk-rpad-lo	1.952	1.9523767821652145	95% bootstrap interval of the median	d1_analysis:D1-ratios.csv:plonk,prove_ms,pad-above/pad-below
+d1-plonk-share	1.008	1.0077466215679238	share of the anchor step	d1_analysis:D1-summary.json:share_of_anchor_step_reproduced.plonk
+d1-power-d10	15	15	log2 PLONK domain size	d1_protocol:artifacts/d10/plonk.vkey.json:power
+d1-power-d11	16	16	log2 PLONK domain size	d1_protocol:artifacts/d11/plonk.vkey.json:power
+d1-power-padabove	16	16	log2 PLONK domain size	d1_protocol:artifacts/p1180/plonk.vkey.json:power
+d1-power-padbelow	15	15	log2 PLONK domain size	d1_protocol:artifacts/p1150/plonk.vkey.json:power
+d1-r1cs-d10	2,727	2727	R1CS constraints	d1_protocol:artifacts/d10/circuit.r1cs
+d1-r1cs-d11	2,970	2970	R1CS constraints	d1_protocol:artifacts/d11/circuit.r1cs
+d1-r1cs-padabove	3,907	3907	R1CS constraints	d1_protocol:artifacts/p1180/circuit.r1cs
+d1-r1cs-padbelow	3,877	3877	R1CS constraints	d1_protocol:artifacts/p1150/circuit.r1cs
+d3-plonk-cpu8-d10-s	9.67	9668.27	s (median)	d3:out/D3-cell-stats.csv:cpu8,plonk,10
+d3-plonk-cpu8-d11-s	19.02	19021.382	s (median)	d3:out/D3-cell-stats.csv:cpu8,plonk,11
+deviations-pilot-full	0	0	deviations	pilot_record + full_record:campaign.json:deviations
+ff-cells	12	12	cells	ff_record:campaign.json:cells.completed
+ff-err-k1	\ensuremath{+}0.334	0.003339	%	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:k=1
+ff-err-k16	\ensuremath{+}0.531	0.005307	%	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:k=16
+ff-err-k32	\ensuremath{+}0.731	0.007312	%	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:k=32
+ff-err-k4	\ensuremath{+}0.375	0.003752	%	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:k=4
+ff-fail-k	32	[32]	k	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:H8_status
+ff-h8-fail	8	8	proofs	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:H8_status
+ff-h8-pass	24	24	proofs	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:H8_status
+ff-measurements	192	192	measurements	ff_record:campaign.json:measurement_records
+ff-setp-pass	4	4	cells	ff_record:scoring-c1/P_scoring.csv:HELD-OUT-BACKEND
+ff-setp-total	4	4	cells	ff_record:scoring-c1/P_scoring.csv:HELD-OUT-BACKEND
+ff-tau	0.569	0.005690131097304986	%	ff_record:FFLONK-RESIDUALS-C1-H8-and-C2.csv:C1_tau_cond_F
+full-cells	90	90	cells	full_record:campaign.json:cells.full_completed
+mono-pass	5	5	series	full_record:scoring/SG_monotonicity.csv
+mono-total	5	5	series	full_record:scoring/SG_monotonicity.csv
+npg-gas-in	41	41	cells	full_record:scoring/NPG_scoring.csv:gas_in_interval
+npg-gas-miss	5	5	cells (all Groth16, k = 16)	full_record:scoring/NPG_scoring.csv:gas_in_interval
+npg-k4-flip-hi	138	138	npg	full_record:scoring/NPG_ranking.csv:k=4
+npg-k4-flip-lo	125	125	npg	full_record:scoring/NPG_ranking.csv:k=4
+npg-meter-pass	46	46	cells	full_record:scoring/NPG_scoring.csv:meter_verdict
+npg-meter-total	46	46	cells	full_record:scoring/NPG_scoring.csv
+npg-rank-match	21	21	comparisons	full_record:scoring/NPG_ranking.csv:verdict
+npg-rank-total	21	21	comparisons	full_record:scoring/NPG_ranking.csv
+npg-switch-g16-k4	165.98	165.98	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+npg-switch-g16-k4-hi	166.37	166.37	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+npg-switch-g16-k4-lo	165.59	165.59	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+npg-switch-plonk-k4	131.35	131.35	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+npg-switch-plonk-k4-hi	134.34	134.34	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+npg-switch-plonk-k4-lo	128.45	128.45	npg	c1:09-numeric-predictions/zkos_switch_intervals.csv:k=4
+p-descfail	10	10	cells	full_record:scoring/P_scoring.csv:DESCRIPTIVE FAIL
+p-fail	11	11	cells	full_record:scoring/P_scoring.csv:FAIL
+p-miss-eravm29-g16-k24-app-err	\ensuremath{+}0.034	0.00034	%	full_record:scoring/P_scoring.csv:eravm-29|groth16|c1_ctx_k24|Y_app
+p-miss-zkos-g16-k24-native-err	\ensuremath{-}0.055	-0.000553	%	full_record:scoring/P_scoring.csv:zkos-v32|groth16|c1_ctx_k24|N_dir
+p-strict-pass	38	38	cells	full_record:scoring/P_scoring.csv:strictly-unseen
+p-strict-total	40	40	cells	full_record:scoring/P_scoring.csv:strictly-unseen
+p-v27-pass	16	16	cells	full_record:scoring/P_scoring.csv:eravm-27 HELD-OUT-REGIME
+p-v27-total	16	16	cells	full_record:scoring/P_scoring.csv:eravm-27 HELD-OUT-REGIME
+pg-a-cpu2-max	61.5	61.46652244456463	PLONK / Groth16 prove ratio, max over d	d3:out/D3-backend-ratios.csv
+pg-a-cpu2-min	32.7	32.72946660372906	PLONK / Groth16 prove ratio, min over d	d3:out/D3-backend-ratios.csv
+pg-a-cpu4-max	85.5	85.49774932308048	PLONK / Groth16 prove ratio, max over d	d3:out/D3-backend-ratios.csv
+pg-a-cpu4-min	47.0	47.049942409583046	PLONK / Groth16 prove ratio, min over d	d3:out/D3-backend-ratios.csv
+pg-a-cpu8-max	116.2	116.23138263744187	PLONK / Groth16 prove ratio, max over d	d3:out/D3-backend-ratios.csv
+pg-a-cpu8-min	62.2	62.23491596263873	PLONK / Groth16 prove ratio, min over d	d3:out/D3-backend-ratios.csv
+pg-b-cpu2-max	84.1	84.1145728470564	PLONK / Groth16 prove ratio, max over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-cpu2-min	44.9	44.86493063918997	PLONK / Groth16 prove ratio, min over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-cpu4-max	129.0	128.97580095235892	PLONK / Groth16 prove ratio, max over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-cpu4-min	68.7	68.69778210991066	PLONK / Groth16 prove ratio, min over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-cpu8-max	194.6	194.5802947456601	PLONK / Groth16 prove ratio, max over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-cpu8-min	102.9	102.91471424702058	PLONK / Groth16 prove ratio, min over d	d2_analysis:run/D2-backend-ratios.csv
+pg-b-over-a-max	1.71	1.7115685572711001	Host B / Host A ratio of PLONK / Groth16 medians	d2_analysis:side-by-side/side-by-side-backend-ratios.csv
+pg-b-over-a-min	1.32	1.3241872503178131	Host B / Host A ratio of PLONK / Groth16 medians	d2_analysis:side-by-side/side-by-side-backend-ratios.csv
+pilot-cells	36	36	cells	pilot_record:campaign.json:cells
+proofs-per-cell	8	8	proofs	full_record:campaign.json:proofs_per_cell
+r-fail	2	2	cells	full_record:scoring/R_scoring.csv:FAIL
+r-limit-descfail	8	8	cells	full_record:scoring/R_scoring.csv:DESCRIPTIVE FAIL
+r-miss-eravm29-plonk-k32-yapp-err	\ensuremath{-}2.13	-0.021284	%	full_record:scoring/R_scoring.csv:eravm-29,plonk,Y_app,32,seen-in-P0
+r-miss-eravm29-plonk-k32-yapp-tau	2.06	0.020572	% (frozen tolerance)	full_record:scoring/R_scoring.csv:eravm-29,plonk,Y_app,32,seen-in-P0
+r-miss-eravm29-plonk-k32-ydir-err	\ensuremath{-}2.08	-0.020849	%	full_record:scoring/R_scoring.csv:eravm-29,plonk,Y_dir,32,seen-in-P0
+r-miss-eravm29-plonk-k32-ydir-tau	2.01	0.020123	% (frozen tolerance)	full_record:scoring/R_scoring.csv:eravm-29,plonk,Y_dir,32,seen-in-P0
+r-seen-pass	22	22	cells	full_record:scoring/R_scoring.csv:seen-in-P0
+r-seen-total	24	24	cells	full_record:scoring/R_scoring.csv:seen-in-P0
+r-strict-pass	32	32	cells	full_record:scoring/R_scoring.csv:strictly-unseen
+r-strict-total	32	32	cells	full_record:scoring/R_scoring.csv:strictly-unseen
+r-v27-pass	16	16	cells	full_record:scoring/R_scoring.csv:eravm-27
+r-v27-total	16	16	cells	full_record:scoring/R_scoring.csv:eravm-27
+ratio-eravm27-k1	1.208	1.208267	PLONK / Groth16	full_record:scoring/SG_signs.csv:eravm-27,Y_dir,k=1
+ratio-eravm29-k1	1.004	1.003566	PLONK / Groth16	full_record:scoring/SG_signs.csv:eravm-29,Y_dir,k=1
+ratio-eravm29-k32	0.776	0.776165	PLONK / Groth16	full_record:scoring/SG_signs.csv:eravm-29,Y_dir,k=32
+ratio-evm-k1	1.358	1.358185	PLONK / Groth16	full_record:scoring/SG_signs.csv:evm-osaka,Y_dir,k=1
+ratio-evm-k32	0.764	0.763902	PLONK / Groth16	full_record:scoring/SG_signs.csv:evm-osaka,Y_dir,k=32
+ratio-zkos-k1	1.059	1.05917	PLONK / Groth16	full_record:scoring/SG_signs.csv:zkos-v32@npg100,Y_dir,k=1
+ratio-zkos-k32	0.622	0.62158	PLONK / Groth16	full_record:scoring/SG_signs.csv:zkos-v32@npg100,Y_dir,k=32
+resid-g16-r2	0.9999	0.9999	R^2	full_record:post-registered/ZKOS-residual-vs-k.json:line.groth16.r2
+resid-g16-slope	\ensuremath{-}832	-832.16	native per public input	full_record:post-registered/ZKOS-residual-vs-k.json:line.groth16
+resid-plonk-slope	3,286	3285.77	native per public input	full_record:post-registered/ZKOS-residual-vs-k.json:line.plonk
+retrace-constant	1,669,012	1669012	native	retrace:out/M7B-A-summary.json:P3_remainder_minus_35E_values
+retrace-diffs	22, 22, 24, 24, 28, 32, 40, 48, 80	[22, 22, 24, 24, 28, 32, 40, 48, 80]	PLONK - Groth16 heap events at k = 1, 2, 4, 8, 12, 16, 24, 32, 64	retrace:out/M7B-A-summary.json:per_k.observed_difference
+retrace-g16-events	7	7	events	retrace:out/M7B-A-summary.json:P2_groth16_event_counts
+retrace-matches	9	9	k values	retrace:out/M7B-A-summary.json:matches
+retrace-proofs	18	18	proofs	retrace:out/M7B-A-summary.json:proofs
+retrace-total	9	9	k values	retrace:out/M7B-A-summary.json:per_k
+sem-pass	24	24	comparisons	full_record:scoring/SEM_scoring.csv
+sem-total	24	24	comparisons	full_record:scoring/SEM_scoring.csv
+sg-falsified	0	0	sign predictions	full_record:scoring/SG_signs.csv:FALSIFIED
+sg-match	43	43	sign predictions	full_record:scoring/SG_signs.csv:MATCH
+sg-notscored	2	2	sign predictions	full_record:scoring/SG_signs.csv:NOT-SCORED
+speedup-a-g16-max	2.62	2.6186946972641243	cpu2 -> cpu8 prove speedup, max over d = 5..15	d3:out/D3-allocation-speedups.csv
+speedup-a-g16-min	2.35	2.34665035478346	cpu2 -> cpu8 prove speedup, min over d = 5..15	d3:out/D3-allocation-speedups.csv
+speedup-a-plonk-max	1.28	1.277811966060611	cpu2 -> cpu8 prove speedup, max over d = 5..15	d3:out/D3-allocation-speedups.csv
+speedup-a-plonk-min	1.24	1.2376265026618438	cpu2 -> cpu8 prove speedup, min over d = 5..15	d3:out/D3-allocation-speedups.csv
+speedup-b-g16-max	2.71	2.705894032503053	cpu2 -> cpu8 prove speedup, max over d = 5..15	d2_analysis:run/D2-allocation-speedups.csv
+speedup-b-g16-min	2.57	2.5719110836019037	cpu2 -> cpu8 prove speedup, min over d = 5..15	d2_analysis:run/D2-allocation-speedups.csv
+speedup-b-plonk-max	1.17	1.1683112364452852	cpu2 -> cpu8 prove speedup, max over d = 5..15	d2_analysis:run/D2-allocation-speedups.csv
+speedup-b-plonk-min	1.15	1.1493658802433313	cpu2 -> cpu8 prove speedup, min over d = 5..15	d2_analysis:run/D2-allocation-speedups.csv
+step-a-cpu2	1.927	1.927449514388557	ratio of frozen medians, PLONK prove d11 / d10	d3:out/D3-cell-stats.csv:plonk,cpu2,rounds 1-5
+step-a-cpu4	1.929	1.929094868239831	ratio of frozen medians, PLONK prove d11 / d10	d3:out/D3-cell-stats.csv:plonk,cpu4,rounds 1-5
+step-a-cpu8	1.967	1.9674028549057898	ratio of frozen medians, PLONK prove d11 / d10	d3:out/D3-cell-stats.csv:plonk,cpu8,rounds 1-5
+step-b-cpu2	1.957	1.9570738143892386	ratio of frozen medians, PLONK prove d11 / d10	d2_analysis:run/D2-cell-stats.csv:plonk,cpu2,rounds 1-5
+step-b-cpu4	1.934	1.9340107532540118	ratio of frozen medians, PLONK prove d11 / d10	d2_analysis:run/D2-cell-stats.csv:plonk,cpu4,rounds 1-5
+step-b-cpu8	1.985	1.984753140189326	ratio of frozen medians, PLONK prove d11 / d10	d2_analysis:run/D2-cell-stats.csv:plonk,cpu8,rounds 1-5
+xo-eravm27-hi	7.40	"7.4"	k	full_record:scoring/XO_crossovers.csv:eravm-27,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm27-kstar	7.01	7.01	k	full_record:scoring/XO_crossovers.csv:eravm-27,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm27-lo	6.48	"6.48"	k	full_record:scoring/XO_crossovers.csv:eravm-27,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm27-pred	6.94	"6.94"	k	full_record:scoring/XO_crossovers.csv:eravm-27,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm29-hi	3.48	"3.48"	k	full_record:scoring/XO_crossovers.csv:eravm-29,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm29-lo	\ensuremath{\le}1	"<=1"	k	full_record:scoring/XO_crossovers.csv:eravm-29,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm29-mhi	1.30	1.3039765913560704	k	full_record:scoring/XO_crossovers.csv:eravm-29,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm29-mlo	1.00	1.0	k	full_record:scoring/XO_crossovers.csv:eravm-29,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-eravm29-pred	1.4	"1.4"	k	full_record:scoring/XO_crossovers.csv:eravm-29,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-evm-hi	14.83	"14.83"	k	full_record:scoring/XO_crossovers.csv:evm-osaka,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-evm-kstar	14.28	14.279	k	full_record:scoring/XO_crossovers.csv:evm-osaka,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-evm-lo	13.17	"13.17"	k	full_record:scoring/XO_crossovers.csv:evm-osaka,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-evm-pred	13.99	"13.99"	k	full_record:scoring/XO_crossovers.csv:evm-osaka,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-pass	5	5	crossovers	full_record:scoring/XO_crossovers.csv
+xo-total	5	5	crossovers	full_record:scoring/XO_crossovers.csv
+xo-zkos-hi	3.92	"3.92"	k	full_record:scoring/XO_crossovers.csv:zkos-v32@npg100,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-zkos-kstar	3.52	3.521	k	full_record:scoring/XO_crossovers.csv:zkos-v32@npg100,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-zkos-lo	3.14	"3.14"	k	full_record:scoring/XO_crossovers.csv:zkos-v32@npg100,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+xo-zkos-native-kstar	3.52	3.521	k	full_record:scoring/XO_crossovers.csv:zkos-v32@npg100,N_dir
+xo-zkos-pred	3.53	"3.53"	k	full_record:scoring/XO_crossovers.csv:zkos-v32@npg100,Y_dir; c1:09-numeric-predictions/crossover_intervals.csv
+zc-descfail	16	16	proofs	full_record:scoring/ZC_scoring.csv:DESCRIPTIVE FAIL (k = 64)
+zc-g16-fail	48	48	proofs	full_record:scoring/ZC_scoring.csv:groth16,k<=32,FAIL
+zc-g16-first-fail-k	8	8	k	full_record:scoring/ZC_scoring.csv
+zc-g16-k32-err	\ensuremath{-}0.0405	-0.000405	%	full_record:scoring/ZC_scoring.csv:groth16,ctx,k=32
+zc-g16-k8-err	\ensuremath{-}0.0141	-0.000141	%	full_record:scoring/ZC_scoring.csv:groth16,ctx,k=8
+zc-g16-last-pass-k	6	6	k	full_record:scoring/ZC_scoring.csv
+zc-g16-pass	40	40	proofs	full_record:scoring/ZC_scoring.csv:groth16,k<=32,PASS
+zc-g16-tau	0.0138	0.00013804726549520883	%	full_record:scoring/ZC_scoring.csv:groth16 tau_cond
+zc-plonk-max-err	\ensuremath{+}0.2565	0.002565	% (per-proof maximum)	full_record:scoring/ZC_scoring.csv:plonk,k<=32,max over proofs
+zc-plonk-pass	88	88	proofs	full_record:scoring/ZC_scoring.csv:plonk,k<=32,PASS
+zc-plonk-tau	0.452	0.004521107838595946	%	full_record:scoring/ZC_scoring.csv:plonk tau_cond
+zc-plonk-total	88	88	proofs	full_record:scoring/ZC_scoring.csv:plonk,k<=32

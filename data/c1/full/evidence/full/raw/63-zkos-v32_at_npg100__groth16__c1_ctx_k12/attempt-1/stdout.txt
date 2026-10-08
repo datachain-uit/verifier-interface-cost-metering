@@ -1,0 +1,2 @@
+ZKOS-UP npg=100
+{"cell":"zkos-v32@npg100|groth16|c1_ctx_k12","n_records":52,"statuses":"1111111111111111"}

@@ -1,0 +1,14 @@
+Frozen C1 scorer run once on all registered evidence (pilot + FULL + FFLONK cells); bridge records excluded (reproduction control).
+UTC start: 2026-10-05T05:36:37Z (after: FFLONK evidence frozen 2026-10-05T05:36:29Z, validated 12 / 12, 0 issues)
+Working directory: C1 package root (cloud copy; SHA256SUMS 7dac8482aea1420a30b303c3d45b0c46627da67a976e578fa1d09d7c715bfc8f, all files re-verified before and after)
+Command: python3 scoring/score_c1.py 09-numeric-predictions <out> V2-MPI-PILOT-01-records.jsonl V2-MPI-FULL-01-records.jsonl V2-MPI-FULL-01-FFLONK-records.jsonl
+scoring/score_c1.py                d9805758578e9c9255c04c84e7ec2e518d3cd8ee1798fc3e89cdd6e30744d1a7
+model/c1_model.py                  d025954ca15b9a9707967daaca6902192003df3bc27b9f61c4a6890ac515b7dd
+model/zkos_native_trace_model.py   47fbc3c3cd349973cc70fd66192e29412c19645ed30daf8ae29d7c727c823c5d
+V2-MPI-PILOT-01-records.jsonl      1bb698a2cb236dcbf2ea96efed1cfee4085d462679ca34430086e8a624498792
+V2-MPI-FULL-01-records.jsonl       a8eb9ce686677fd9209a3a0e21809bf09e0c13891e324799488312ad1105cc1e
+V2-MPI-FULL-01-FFLONK-records.jsonl bd4d28d56a9004d0cd529ed4de8162f142c13b7ac81cea7f641b862e84bda5eb (evidence SHA256SUMS d0474fa14e72a7a56da1dc17a0dd6997eaa6608f4ec6fdb3b77817cb107aeddf)
+Exit code 0; stderr empty.
+Unchanged-output check against the original FULL scoring (campaign-record/V2-MPI-FULL-01/scoring, 2026-10-04T14:26:17Z): every non-FFLONK row of every
+CSV is identical (AC 5342, CELL 368, NPG 46 + 21, P 182, R 80, SEM 24, SG 45 + 5, XO 5, ZC 192); the only P rows that changed are the 4 FFLONK rows
+(MISSING -> scored); ZC constants base 1,692,688.706 and c 5,866.765 unchanged. No Groth16 / PLONK result changes.

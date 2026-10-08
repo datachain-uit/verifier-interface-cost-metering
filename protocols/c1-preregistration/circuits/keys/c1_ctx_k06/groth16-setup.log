@@ -1,0 +1,31 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		0b515130 27ff3985 1cfaf283 52626824
+		66c390ce 8fde93ca 214319e0 f1c69e4f
+		888826ce e4eb5cde b746ad83 245ce034
+		d219c92e 6b2246d3 3b72977a fc5a689a
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		0b515130 27ff3985 1cfaf283 52626824
+		66c390ce 8fde93ca 214319e0 f1c69e4f
+		888826ce e4eb5cde b746ad83 245ce034
+		d219c92e 6b2246d3 3b72977a fc5a689a
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		26c9e030 06cf1ba3 d8a4be50 46969ea5
+		676a3914 3fcfd236 cdcaeb88 b56a5d25
+		3c9696a1 355f5df6 43612569 14ac62ae
+		dfea16ae 9e0b57b5 fff61615 ca7c5b18
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		a3617576 5e0c0170 e5f62a5f b0c54b61
+		328b0ce5 ac151b79 bc1b2a44 4e70d077
+		bf78a247 5a2cc4b4 718de551 94a33456
+		1decaa1d 5dde89c9 380d97ce 06a199fb
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED

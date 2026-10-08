@@ -1,0 +1,23 @@
+session_id=S20261005T145746Z
+kit=v3-x86
+window=
+hostname=ad-Precision-7920-Tower
+kernel=6.14.0-29-generic
+os=Ubuntu 24.04.3 LTS
+cpu_model=Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz
+nproc=112
+mem_total_kb=65544952
+intel_pstate=active
+no_turbo=0
+hwp_dynamic_boost=0
+governors= 112 powersave;
+epp_cpu1_8=performance performance performance performance performance performance performance performance 
+numa_balancing=1
+thp=always [madvise] never
+smt=on
+siblings_cpu1_8=1,57 2,58 3,59 4,60 5,61 6,62 7,63 8,64 
+node0_cpus=0-27,56-83
+cmdline=BOOT_IMAGE=/boot/vmlinuz-6.14.0-29-generic root=UUID=a0a80852-0629-4440-9bfd-2ec18c82d4ed ro quiet splash vt.handoff=7
+loadavg=1.41 1.48 1.41 1/1631 108419
+sleep_inhibitor_pid=108366
+sleep_inhibitor_ok=1

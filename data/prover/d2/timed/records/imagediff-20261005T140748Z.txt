@@ -1,0 +1,45 @@
+utc=20261005T140748Z
+r5 setup result: repo/build/campaigns/setup-20261005T140456Z/environment/RESULT.txt: result: SETUP PASS (image sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7; ARTIFACTS.sha256 161 OK)
+image_r4=sha256:7d5e0ddf79a112b3ee05634f1ceba697fa7c374b6597b491c4637523daddbca1
+image_r5=sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7
+--- docker history sha256:7d5e0ddf79a112b3ee05634f1ceba697fa7c374b6597b491c4637523daddbca1
+sha256:7d5e0ddf79a112b3ee05634f1ceba697fa7c374b6597b491c4637523daddbca1  0B  /bin/sh -c #(nop)  LABEL org.opencontainers.image.title=zcorp-bench org.opencontainers.image.description=Z-CORP rerun protocol v3 prover harness org.opencontainers.image.version=3.0.0
+sha256:8a5541f1a2cf015d625fa89c0a5931dc1e2d6a3042f2a63db0f4bfd674dbe6ae  0B  /bin/sh -c #(nop)  ENV ZCORP_HARNESS_DIR=/opt/zcorp ZCORP_REPO=/work ZCORP_RESULTS=/results NODE_OPTIONS=--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096
+sha256:51cfa8b27274c164157ab82c78afc6662bf34677753a1b175fc4d357d9441774  64.7kB  /bin/sh -c #(nop) COPY multi:7efd45132243f73a7ab49b55d8cf56b2dd580024c25a31fa4339322ca00d78da in ./ 
+sha256:2cb45f82d308c4f029891dcad8c6e027e2f433d49639e976ab1e8dadc434b54f  37.6kB  /bin/sh -c #(nop) COPY dir:b3f58bced20682d1c4b1529e653ab7d58365d7aa43e2c2eaed20640c23b5f9b2 in ./lib 
+sha256:8fece7a345a6bc088e18ab473ab110dfc95a5ef4645707e95f871cd8e0c1c052  74.8MB  /bin/sh -c npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
+sha256:9da54617092c62f701607f5f4999f46e8de70f39bfac2460b7087ca2727d202d  30.3kB  /bin/sh -c #(nop) COPY multi:627caf262cc45823c5032e81e59ca46004661d7ed182686fbbfb243e48b0600a in ./ 
+sha256:f621cc97536c3e393656dca3f987b9528ea410b0cbfbf3eab302819cc683b9b6  0B  /bin/sh -c #(nop) WORKDIR /opt/zcorp
+sha256:101e0128c8ea90af6e5eba2abbae8486503c6383c35cb30e2c60842a5a288479  0B  CMD ["node"]
+<missing>  0B  ENTRYPOINT ["docker-entrypoint.sh"]
+<missing>  388B  COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+<missing>  7.18MB  RUN /bin/sh -c set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"
+<missing>  0B  ENV YARN_VERSION=1.22.22
+<missing>  110MB  RUN /bin/sh -c ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARC
+<missing>  0B  ENV NODE_VERSION=18.20.8
+<missing>  8.9kB  RUN /bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+<missing>  74.8MB  # debian.sh --arch 'amd64' out/ 'bookworm' '@1747699200'
+--- docker history sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7
+sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7  0B  /bin/sh -c #(nop)  LABEL org.opencontainers.image.title=zcorp-bench org.opencontainers.image.description=Z-CORP rerun protocol v3 prover harness org.opencontainers.image.version=3.0.0
+sha256:d3ee59d7ab08c4bbebe6ce63bbd445766997259719f818d0629a354d35637641  0B  /bin/sh -c #(nop)  ENV ZCORP_HARNESS_DIR=/opt/zcorp ZCORP_REPO=/work ZCORP_RESULTS=/results NODE_OPTIONS=--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096
+sha256:578b4a6ae90f7482b3bcef4b7ae7c520b2197794946e43124040ae6722bf0503  64.8kB  /bin/sh -c #(nop) COPY multi:01eb46a596b355c0195a5255dee60e9b431b5c470d7b2184e26ac8cefdd971a9 in ./ 
+sha256:2cb45f82d308c4f029891dcad8c6e027e2f433d49639e976ab1e8dadc434b54f  37.6kB  /bin/sh -c #(nop) COPY dir:b3f58bced20682d1c4b1529e653ab7d58365d7aa43e2c2eaed20640c23b5f9b2 in ./lib 
+sha256:8fece7a345a6bc088e18ab473ab110dfc95a5ef4645707e95f871cd8e0c1c052  74.8MB  /bin/sh -c npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
+sha256:9da54617092c62f701607f5f4999f46e8de70f39bfac2460b7087ca2727d202d  30.3kB  /bin/sh -c #(nop) COPY multi:627caf262cc45823c5032e81e59ca46004661d7ed182686fbbfb243e48b0600a in ./ 
+sha256:f621cc97536c3e393656dca3f987b9528ea410b0cbfbf3eab302819cc683b9b6  0B  /bin/sh -c #(nop) WORKDIR /opt/zcorp
+sha256:101e0128c8ea90af6e5eba2abbae8486503c6383c35cb30e2c60842a5a288479  0B  CMD ["node"]
+<missing>  0B  ENTRYPOINT ["docker-entrypoint.sh"]
+<missing>  388B  COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+<missing>  7.18MB  RUN /bin/sh -c set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"
+<missing>  0B  ENV YARN_VERSION=1.22.22
+<missing>  110MB  RUN /bin/sh -c ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARC
+<missing>  0B  ENV NODE_VERSION=18.20.8
+<missing>  8.9kB  RUN /bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+<missing>  74.8MB  # debian.sh --arch 'amd64' out/ 'bookworm' '@1747699200'
+layers r4/r5: 10 10 common prefix: 9 differing r4: ['sha256:fff19012c77684d2e2ee1628a8db0b58e5910a8e455561478a8e0446e05a6f98'] differing r5: ['sha256:9e6c7c1447c99052655804cf1f2f7c53979acd922c2f66a646f7d1022cc60788']
+config (Env, Labels, WorkingDir, Entrypoint, Cmd, User, Os, Architecture) identical: True
+files in differing layer(s) r4/r5: 12 12
+content differences: [('opt/zcorp/check_resume_test.js', '3a80711d9b6b6e2d7d961747312d4d26ec6e4c3aa6f547509417c7dbeca1c88d', 'b0f83a6431fbaa28b80dd293b42d403923ee08c8d5763da4fe3b59bcbc9ea849')]
+metadata-only differences: [{'path': 'opt/zcorp', 'fields': ['mtime']}]
+RESULT: IMAGE DIFFERENCE ATTRIBUTABLE TO DEV-D2-3 ONLY
+tmp removed: yes

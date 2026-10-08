@@ -1,0 +1,45 @@
+pub const MAX_SCRATCH_SPACE_USIZE_WORDS: usize = 128;
+pub const MAX_EVENT_TOPICS: usize = 4;
+
+pub const BLAKE_DELEGATION_COEFFICIENT: u64 = 16;
+pub const BIGINT_DELEGATION_COEFFICIENT: u64 = 4;
+pub const KECCAK_DELEGATION_COEFFICIENT: u64 = 4;
+
+///
+/// Compute native cost from
+/// (raw cycles, bigint delegations, blake delegations)
+///
+#[macro_export]
+macro_rules! native_with_delegations {
+    ($raw:expr, $bigint:expr, $blake:expr) => {
+        $raw + $bigint * zk_ee::system::constants::BIGINT_DELEGATION_COEFFICIENT
+            + $blake * zk_ee::system::constants::BLAKE_DELEGATION_COEFFICIENT
+    };
+}
+
+///
+/// Maximum amount of computational native resources a full program
+/// execution (be it block or batch) can spend.
+/// Actual limit is the largest multiple of 2^22 - 1 (segment limit)
+/// that is less than 2^36. To be safe, in case our native model
+/// is not upper-bounding for some corner cases, we set this limit
+/// conservatively to 2^35.
+///
+pub const MAX_NATIVE_COMPUTATIONAL: u64 = 1 << 35;
+
+pub const EIP7702_DELEGATION_MARKER: [u8; 3] = [0xef, 0x01, 0x00];
+
+pub const VERSIONED_HASH_VERSION_KZG: u8 = 0x01;
+// Blob count schedule. The default is base-Osaka (Prague counts); the
+// `fusaka-bpo-2` feature selects the BPO2 schedule. TODO: move to fork params.
+#[cfg(not(feature = "fusaka-bpo-2"))]
+pub const MAX_BLOBS_PER_BLOCK: usize = 9;
+#[cfg(feature = "fusaka-bpo-2")]
+pub const MAX_BLOBS_PER_BLOCK: usize = 21;
+pub const MAX_BLOBS_PER_TX: usize = 6;
+pub const GAS_PER_BLOB: u64 = 1 << 17;
+
+/// Maximum number of FRI statement hashes a single `FriProofTx` may
+/// carry. Bounds the stack size of `TxLevelMetadata` and caps the
+/// validator's per-tx verification work.
+pub const MAX_FRI_STATEMENTS_PER_TX: usize = 8;

@@ -1,0 +1,175 @@
+ INFO initializing system contracts protocol_version=27 use_evm_emulator=false zksync_os.zksync_os=false
+ INFO Starting executing L1 batch #1
+TRACE Fee benchmark for transaction with hash b5ef6d8a90ebf7939ef21fcc000fe7a184d21bf050b2fdb08c349ccafec76e8d
+TRACE Gas Limit: 400000000
+TRACE Gas spent on computation: 2921940
+TRACE Gas spent on pubdata: 2072028
+TRACE Pubdata published: 24667
+ INFO Starting executing L1 batch #2
+TRACE Fee benchmark for transaction with hash 91efeacd9473070db6e3aa4843f0913d5140645ed47594ece59edb10ecef2237
+TRACE Gas Limit: 200000000
+TRACE Gas spent on computation: 715007
+TRACE Gas spent on pubdata: 441924
+TRACE Pubdata published: 5261
+ INFO Starting executing L1 batch #3
+TRACE Fee benchmark for transaction with hash 161536358035cb033f5a07669678470d417f952749c9e6bebf1f3bfd7b947e10
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122069
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #4
+TRACE Fee benchmark for transaction with hash 4b262f4a23ee588c944c83a9e8b5e9615af5808ed2820a097651b2a9d618c783
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #5
+TRACE Fee benchmark for transaction with hash 64b737f728f81da9255443edb3bfe8ed365954f3dd4b3d74dc9188af7b08a2b9
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #6
+TRACE Fee benchmark for transaction with hash 9579239f5d2370e2e29074b8ddd10bd801d95c95ac52b1291f001544e6455129
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #7
+TRACE Fee benchmark for transaction with hash 57b7bb40ede9c655795bee9d3da2656fe4fbac18b65b799bfa139bc980881eda
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #8
+TRACE Fee benchmark for transaction with hash a8244a8da284c786069056bc2727c753ade54ff21dfc7e554d08c4573774696e
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #9
+TRACE Fee benchmark for transaction with hash 07a6a92247db8d4d7bd52a90c3149bdd74770235d2c83d951fdef209cedca40f
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #10
+TRACE Fee benchmark for transaction with hash 7d8c9aa558fa49fac28f265988e4576f7d4a2d08da603b7b58847b4ef8aa4676
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #11
+TRACE Fee benchmark for transaction with hash d0ade75bb8a2dfc9e1a516fe155886c804efe0b0bfcf123490a37e7c30ead4b7
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 122389
+TRACE Gas spent on pubdata: 4368
+TRACE Pubdata published: 52
+ INFO Starting executing L1 batch #12
+TRACE Fee benchmark for transaction with hash 6dd5cc4961e361c9a83cc07ce360806134a1669e804a4d7408f79ff7571bc8da
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10471875
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #13
+TRACE Fee benchmark for transaction with hash ca18986ae79e965733ca3e4f1253da0ba3ecc3cac59e0bae557e4f4a7cc4a2d5
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10535223
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #14
+TRACE Fee benchmark for transaction with hash 0b933873ea3a552b301faf404e955d4c422f8a4634ada2cbf668af3a9d4d1257
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10529931
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #15
+TRACE Fee benchmark for transaction with hash de744290906adf0b6cf9d99e9470ab87c433243b6caffa83996b742b09d7ec55
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10459011
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #16
+TRACE Fee benchmark for transaction with hash 92f42bcdae7ae0a1e97ff1f8a95bb52d7fa4cb2226ac291cc32e73efa2777b05
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10488801
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #17
+TRACE Fee benchmark for transaction with hash a08e20e1d89df75fc09eb39b2b6faca6e2be1d340925f48897f57f9cdcd93b43
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10538967
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #18
+TRACE Fee benchmark for transaction with hash c17bc909c331b5919c2c8122e1218aca110982364c53b0e08f72571504a05a85
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10449087
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #19
+TRACE Fee benchmark for transaction with hash 6482e922d54e9c5168531344c35275e11e7e4bcecd0e623f2e6575caf973d4e7
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10504671
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #20
+TRACE Fee benchmark for transaction with hash 42f0aa7d056ab8a4cd063200a9e3c485b324428668d94974fd1b1ba004f14b53
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10464426
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #21
+TRACE Fee benchmark for transaction with hash 669ad3eb7c217fd2a0697b14fccf0daa3880c1aea99c8d42c030bc22afd4e438
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10527774
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #22
+TRACE Fee benchmark for transaction with hash bf653d5fb102178c1dd8bf117e7361c5c701b43542ca29115322aba0270bf8af
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10522482
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #23
+TRACE Fee benchmark for transaction with hash d87cc32fe18259318dfc76bc6c0c278531a263481d213caf7a5533f3d8a7ab2e
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10451562
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #24
+TRACE Fee benchmark for transaction with hash 7e13e79aa8814bdf590ccfa662144bf47505d4a9b681a92b1ab68c52a70d737f
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10481352
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #25
+TRACE Fee benchmark for transaction with hash 89b581a3b58dbc4bce9df3661c4f6523fbf7b7411783416f4d0a13d2c7927f0e
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10531518
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #26
+TRACE Fee benchmark for transaction with hash afda2c6e413df22b5447860f33b5b38bf09b533ae492b599981a1a3c212acbd0
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10441638
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #27
+TRACE Fee benchmark for transaction with hash a6caeb87c16ebd61c2982391a7c44ac84cca75a4d498878b535f737610a2394c
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10497222
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #28
+TRACE Fee benchmark for transaction with hash 4300d7bcfafcb5c5fb1feda743627a7dec02c0f98b81423670143504ce47ab18
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 10464426
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18
+ INFO Starting executing L1 batch #29
+TRACE Fee benchmark for transaction with hash 9c895a84db19e89fdcda158cfd0c97f0b830136989eb052deb058a3e587a7b15
+TRACE Gas Limit: 30000000
+TRACE Gas spent on computation: 116488
+TRACE Gas spent on pubdata: 1512
+TRACE Pubdata published: 18

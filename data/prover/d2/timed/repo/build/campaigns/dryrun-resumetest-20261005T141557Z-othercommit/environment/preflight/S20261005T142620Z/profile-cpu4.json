@@ -1,0 +1,158 @@
+{
+  "utc": "2026-10-05T14:29:03.052Z",
+  "campaign_id": "dryrun-resumetest-20261005T141557Z",
+  "profile": "cpu4",
+  "image_id": "sha256:9024dbc83b8168363c07d710dcc5e55d6831294a3e7970c28108e31b0b0bfcd7",
+  "assertions_passed": true,
+  "failures": [],
+  "environment": {
+    "utc": "2026-10-05T14:29:03.034Z",
+    "container_id": "2a455470b99b",
+    "profile": "cpu4",
+    "zcorp_cpus_env": "4",
+    "node_options": "--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096",
+    "node": "v18.20.8",
+    "libuv": "1.44.2",
+    "v8": "10.2.154.26-node.39",
+    "process_arch": "x64",
+    "machine": "x86_64",
+    "kernel": "6.14.0-29-generic",
+    "os_release": "Debian GNU/Linux 12 (bookworm)",
+    "cpuinfo": {
+      "implementer": null,
+      "part": null,
+      "model_name": "Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz"
+    },
+    "os_cpus_length": 4,
+    "available_parallelism": 4,
+    "adapter": {
+      "zcorp_cpus": 4,
+      "cpuset": "1-4",
+      "cpuset_source": "/sys/fs/cgroup/cpuset.cpus.effective",
+      "cpuset_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "available_parallelism": 4,
+      "os_cpus_before_adapter": 112,
+      "os_cpus_after_adapter": 4
+    },
+    "heap_size_limit_mb": 4144,
+    "os_totalmem_gib": 62.51,
+    "packages": {
+      "snarkjs": "0.7.5",
+      "ffjavascript_used_by_snarkjs": "0.3.1",
+      "fastfile": "0.0.20",
+      "binfileutils": "0.0.12",
+      "r1csfile": "0.0.48",
+      "circom_runtime": "0.1.28",
+      "circom2": "0.2.16",
+      "circomlib": "2.0.5"
+    },
+    "cgroup": {
+      "version": 2,
+      "cpuset_effective": "1-4",
+      "cpuset_mems_effective": "0",
+      "cpu_max": "max 100000",
+      "quota_unlimited": true,
+      "memory_max_bytes": 8589934592,
+      "swap_max": "0",
+      "swap_disabled": true,
+      "memory_peak_bytes": 15155200,
+      "oom_kill": 0,
+      "oom": 0,
+      "nr_throttled": 0
+    }
+  },
+  "repo_readonly": {
+    "readonly": true,
+    "error": "EROFS"
+  },
+  "proofs": [
+    {
+      "backend": "groth16",
+      "depth": 5,
+      "zkey_mode": "path",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "plonk",
+      "depth": 10,
+      "zkey_mode": "path",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "plonk",
+      "depth": 11,
+      "zkey_mode": "path",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "groth16",
+      "depth": 5,
+      "zkey_mode": "mem",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "groth16",
+      "depth": 11,
+      "zkey_mode": "mem",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "plonk",
+      "depth": 5,
+      "zkey_mode": "mem",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    },
+    {
+      "backend": "plonk",
+      "depth": 11,
+      "zkey_mode": "mem",
+      "proof_verifies": true,
+      "public_root_equals_committed": true,
+      "input_matches_committed": true,
+      "shifted_root_rejected": true
+    }
+  ],
+  "ffjs_concurrency": 4,
+  "proofs_passed": true,
+  "concurrency_passed": true,
+  "cgroup_after": {
+    "version": 2,
+    "cpuset_effective": "1-4",
+    "cpuset_mems_effective": "0",
+    "cpu_max": "max 100000",
+    "quota_unlimited": true,
+    "memory_max_bytes": 8589934592,
+    "swap_max": "0",
+    "swap_disabled": true,
+    "memory_peak_bytes": 773128192,
+    "oom_kill": 0,
+    "oom": 0,
+    "nr_throttled": 0
+  },
+  "resource_flags_passed": true,
+  "passed": true,
+  "session_id": "S20261005T142620Z"
+}

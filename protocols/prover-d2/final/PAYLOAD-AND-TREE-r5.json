@@ -1,0 +1,15 @@
+{
+ "payload": "outputs/workstation-relay/prepared/d2-r5/payload/d2-hostb-payload-r5.tgz",
+ "payload_sha256": "537a6590a297ecb77499fdd101c5860d84e2defb3250042d16707982e2f212fa",
+ "payload_manifest_sha256": "8605d96c7d96b7cc5fab6f6bb7bf22c8fa780d0c6fba15bae40e191c3ca68b2b",
+ "artifacts_manifest_sha256": "9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be",
+ "synthetic_corpus_manifest_sha256": "c7203a12c0e9619576a223356af42082f7db4304f05bb678f158860e1ccadc23",
+ "kit_filelist_sha256": "5352f80142e364baec65082c39aa59e94f4625dff448989e2cbb8f729f8c1197",
+ "tree_sha256_C": "5bbe78a6f2ab6ba0a202aa3a39662bb482afa3c8075eb2feb121951387d7d4b2",
+ "tree_sha256_en_US_UTF8": "de21eff6a57e7272761a296f8943ece0ac75c8137eecfcb5a8564352bc967e9f",
+ "host_b_dir": "~/Workspace/Z-CORP-V2-workstation/prover/d2-r5/repo",
+ "host_b_state_at_freeze": "payload / artifacts / corpus manifests 0 bad; bench file list 5352f801\u2026; tree (C) 5bbe78a6\u2026 (relay status 1620, 15:02:13Z)",
+ "campaign_output": "repo/results/V2-PRV-D2-01 (runner default for mode campaign; campaign id V2-PRV-D2-01-run1)",
+ "host_a_schedule_sha256": "f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95",
+ "host_a_plan_sha256": "99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94"
+}

@@ -1,0 +1,358 @@
+{
+ "arm": "evm",
+ "circuit": "disc_p16x2_d11_k4",
+ "backend": "plonk",
+ "k": 4,
+ "regime": "osaka",
+ "nproofs": 2,
+ "rows": [
+  {
+   "op": "deploy_verifier",
+   "kind": "deploy",
+   "contract": "V",
+   "status": 1,
+   "gasUsed": 1366152,
+   "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+   "runtime_bytes": 6081,
+   "initcode_bytes": 6113
+  },
+  {
+   "op": "deploy_manager",
+   "kind": "deploy",
+   "contract": "M",
+   "status": 1,
+   "gasUsed": 541282,
+   "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+   "runtime_bytes": 2029,
+   "initcode_bytes": 2299
+  },
+  {
+   "op": "set_issuer",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47922,
+   "calldata_bytes": 68,
+   "calldata_zero": 43
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "add_root",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 47346,
+   "calldata_bytes": 36,
+   "calldata_zero": 0
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 303225,
+   "calldata_bytes": 900,
+   "calldata_zero": 5
+  },
+  {
+   "op": "verify_credential",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 303323,
+   "calldata_bytes": 900,
+   "calldata_zero": 6
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 294237,
+   "calldata_bytes": 900,
+   "calldata_zero": 5,
+   "trace": {
+    "gas": 294237,
+    "failed": false,
+    "steps": 9240,
+    "ops": {
+     "PUSH1": {
+      "n": 685,
+      "gas": 2055
+     },
+     "MSTORE": {
+      "n": 347,
+      "gas": 1237
+     },
+     "CALLVALUE": {
+      "n": 1,
+      "gas": 2
+     },
+     "DUP1": {
+      "n": 201,
+      "gas": 603
+     },
+     "ISZERO": {
+      "n": 158,
+      "gas": 474
+     },
+     "PUSH2": {
+      "n": 760,
+      "gas": 2280
+     },
+     "JUMPI": {
+      "n": 202,
+      "gas": 2020
+     },
+     "JUMPDEST": {
+      "n": 302,
+      "gas": 302
+     },
+     "POP": {
+      "n": 596,
+      "gas": 1192
+     },
+     "CALLDATASIZE": {
+      "n": 2,
+      "gas": 4
+     },
+     "LT": {
+      "n": 12,
+      "gas": 36
+     },
+     "CALLDATALOAD": {
+      "n": 82,
+      "gas": 246
+     },
+     "SHR": {
+      "n": 1,
+      "gas": 3
+     },
+     "PUSH4": {
+      "n": 1,
+      "gas": 3
+     },
+     "EQ": {
+      "n": 1,
+      "gas": 3
+     },
+     "JUMP": {
+      "n": 247,
+      "gas": 1976
+     },
+     "DUP5": {
+      "n": 114,
+      "gas": 342
+     },
+     "DUP7": {
+      "n": 47,
+      "gas": 141
+     },
+     "SUB": {
+      "n": 339,
+      "gas": 1017
+     },
+     "SLT": {
+      "n": 2,
+      "gas": 6
+     },
+     "ADD": {
+      "n": 316,
+      "gas": 948
+     },
+     "DUP6": {
+      "n": 207,
+      "gas": 621
+     },
+     "DUP2": {
+      "n": 808,
+      "gas": 2424
+     },
+     "GT": {
+      "n": 8,
+      "gas": 24
+     },
+     "SWAP4": {
+      "n": 294,
+      "gas": 882
+     },
+     "DUP3": {
+      "n": 334,
+      "gas": 1002
+     },
+     "SWAP3": {
+      "n": 178,
+      "gas": 534
+     },
+     "SWAP1": {
+      "n": 627,
+      "gas": 1881
+     },
+     "MLOAD": {
+      "n": 424,
+      "gas": 1272
+     },
+     "DUP4": {
+      "n": 585,
+      "gas": 1755
+     },
+     "CODECOPY": {
+      "n": 131,
+      "gas": 786
+     },
+     "SWAP2": {
+      "n": 468,
+      "gas": 1404
+     },
+     "PUSH32": {
+      "n": 40,
+      "gas": 120
+     },
+     "DUP9": {
+      "n": 22,
+      "gas": 66
+     },
+     "DUP10": {
+      "n": 7,
+      "gas": 21
+     },
+     "DUP8": {
+      "n": 17,
+      "gas": 51
+     },
+     "KECCAK256": {
+      "n": 6,
+      "gas": 474
+     },
+     "MOD": {
+      "n": 22,
+      "gas": 110
+     },
+     "SWAP6": {
+      "n": 10,
+      "gas": 30
+     },
+     "SWAP8": {
+      "n": 2,
+      "gas": 6
+     },
+     "SWAP7": {
+      "n": 1,
+      "gas": 3
+     },
+     "SWAP5": {
+      "n": 10,
+      "gas": 30
+     },
+     "MULMOD": {
+      "n": 84,
+      "gas": 672
+     },
+     "PUSH3": {
+      "n": 4,
+      "gas": 12
+     },
+     "MUL": {
+      "n": 283,
+      "gas": 1415
+     },
+     "SDIV": {
+      "n": 141,
+      "gas": 705
+     },
+     "NOT": {
+      "n": 4,
+      "gas": 12
+     },
+     "ADDMOD": {
+      "n": 25,
+      "gas": 200
+     },
+     "GAS": {
+      "n": 37,
+      "gas": 74
+     },
+     "STATICCALL": {
+      "n": 37,
+      "gas": 104784833
+     },
+     "DUP11": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP12": {
+      "n": 2,
+      "gas": 6
+     },
+     "DUP13": {
+      "n": 2,
+      "gas": 6
+     },
+     "AND": {
+      "n": 1,
+      "gas": 3
+     },
+     "RETURN": {
+      "n": 1,
+      "gas": 0
+     }
+    },
+    "precompiles": {
+     "0x7": {
+      "n": 18,
+      "gasCost": 51097251
+     },
+     "0x6": {
+      "n": 18,
+      "gasCost": 50912705
+     },
+     "0x8": {
+      "n": 1,
+      "gasCost": 2774877
+     }
+    },
+    "maxMem": 0,
+    "depthGas": {
+     "1": 104816330
+    }
+   }
+  },
+  {
+   "op": "verify_proof_direct",
+   "kind": "tx",
+   "status": 1,
+   "gasUsed": 294335,
+   "calldata_bytes": 900,
+   "calldata_zero": 6
+  },
+  {
+   "op": "neg_unknown_root_tx",
+   "kind": "tx",
+   "status": 0,
+   "gasUsed": 56850,
+   "calldata_bytes": 900,
+   "calldata_zero": 5
+  }
+ ],
+ "calls": {
+  "valid": "true",
+  "tampered_proof": "false",
+  "perturb_pub_0": "false",
+  "perturb_pub_1": "false",
+  "perturb_pub_2": "false",
+  "perturb_pub_3": "false",
+  "foreign_vk_proof": "false"
+ },
+ "sizes": {
+  "verifier_init": 6113,
+  "verifier_runtime": 6081,
+  "manager_init": 2267,
+  "manager_runtime": 2029,
+  "eip170_ok": true,
+  "eip3860_ok": true,
+  "verifier_sha256": "8c57ff5ef4e0a2c6ab762b6d4adb7d7c68266ba9841cd0a1af9d255cc3d750ae"
+ },
+ "hardfork": "osaka"
+}

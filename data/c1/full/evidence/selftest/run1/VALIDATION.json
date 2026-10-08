@@ -1,0 +1,73 @@
+{
+ "campaign": "SELFTEST",
+ "n_cells_scheduled": 7,
+ "n_cells_complete": 7,
+ "n_records": 308,
+ "issues": [],
+ "cells": [
+  {
+   "cell_id": "eravm-27|groth16|fx_ctx_k04",
+   "n_records": 45,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "7ab53f367a89d76dad94d8ba2ae08327255d5d032f4df040ad1fe0c6b27f23fd"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "eravm-27|plonk|fx_ctx_k04",
+   "n_records": 45,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "527d2c86cf1948b326b7ad43e9f9d63891e82d004ca69ef99309a791fea6a52a"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "zkos-v32@npg100+priority_fee=1e8wei|plonk|fx_k01",
+   "n_records": 41,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "71cc796a99760a7d35a5a49890879c8507fe0f4a0186fff6861192e6ec159ed1"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "evm-osaka|fflonk|fx_ff_k04",
+   "n_records": 44,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "bfc07bc288944d696e3c7012523c734c282263e545ba7b3fb0d13ecac9c7344e"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "eravm-29|fflonk|fx_ff_k04",
+   "n_records": 44,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "3bdcd218cab87b24fc4d5432470dae2f78b3eead270cdb13aa624fa1b943fced"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "zkos-v32@npg100|fflonk|fx_ff_k04",
+   "n_records": 44,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "bfc07bc288944d696e3c7012523c734c282263e545ba7b3fb0d13ecac9c7344e"
+   ],
+   "status": "COMPLETE"
+  },
+  {
+   "cell_id": "evm-osaka|groth16|fx_ctx_k04",
+   "n_records": 45,
+   "replay_same_cost": true,
+   "verifier_sha256": [
+    "ac4a24302ec7d4c63a5cefccd68faba59c0caffe74176d0a74aa6dee76e09f7c"
+   ],
+   "status": "COMPLETE"
+  }
+ ],
+ "valid": true
+}

@@ -1,0 +1,18 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		f213217b 28cdd46e 09a25054 40ec148a
+		055e8b92 817f9934 1185d194 888fd2a6
+		e7c3d915 ac3890d6 5d64f63d 4863ca6d
+		15d4be2c f932616b 1e13dfd9 0228c576
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		805efc17 b1a73c5d e7a50c3a 742af2eb
+		73961390 20ad9a60 385f4847 842ea9c9
+		5ab229db df728407 8e05ae24 f2a3358b
+		7b57817b fe4e793f 6c863cc6 797b3391
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED

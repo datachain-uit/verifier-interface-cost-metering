@@ -1,0 +1,126 @@
+{
+ "note": "Per-cell L1 start states were fresh decompressions of the pinned local-chains/v32.0/l1-state.json.gz (sha256 269b2fe3...). They are inputs, identical to the decompressed pin, and are removed from the evidence tree to save space; their hashes are kept here.",
+ "decompressed_pin_sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+ "files": [
+  {
+   "path": "raw/02-zkos-v32_at_npg100__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/03-zkos-v32_at_npg100__plonk__c1_ctx_k02/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/06-zkos-v32_at_npg139__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/07-zkos-v32_at_npg100__groth16__c1_ctx_k02/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/09-zkos-v32_at_npg100__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/11-zkos-v32_at_npg100__plonk__c1_ctx_k04/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/12-zkos-v32_at_npg171__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/15-zkos-v32_at_npg300__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/18-zkos-v32_at_npg100__groth16__c1_ctx_k16/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/19-zkos-v32_at_npg100__groth16__c1_ctx_k04/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/21-zkos-v32_at_npg169__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/22-zkos-v32_at_npg100__plonk__c1_ctx_k16/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/24-zkos-v32_at_npg300__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/25-zkos-v32_at_npg151__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/26-zkos-v32_at_npg139__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/27-zkos-v32_at_npg151__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/29-zkos-v32_at_npg126__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/30-zkos-v32_at_npg171__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/32-zkos-v32_at_npg169__groth16__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  },
+  {
+   "path": "raw/34-zkos-v32_at_npg126__plonk__c1_k01/attempt-1/node/l1-state.json",
+   "sha256": "bc2f550de5a8ae96215b326a64e9f747fda4fd5378c939b0bb926cb24de7c56a",
+   "bytes": 90176229,
+   "equals_decompressed_pin": true
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+2026-10-04T11:03:51.063658Z start campaign=PILOT run_id=V2-MPI-PILOT-01-run1 cells=36 pins_sha256=e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699
+2026-10-04T11:03:51.063879Z cell 00-eravm-29__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:03:53.890893Z cell 00-eravm-29__groth16__c1_k01 attempt 1 done in 3s
+2026-10-04T11:03:53.891158Z cell 01-eravm-29__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:03:57.171759Z cell 01-eravm-29__plonk__c1_ctx_k04 attempt 1 done in 3s
+2026-10-04T11:03:57.172083Z cell 02-zkos-v32_at_npg100__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:06:09.332670Z cell 02-zkos-v32_at_npg100__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:06:09.333787Z cell 03-zkos-v32_at_npg100__plonk__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:08:21.496027Z cell 03-zkos-v32_at_npg100__plonk__c1_ctx_k02 attempt 1 done in 132s
+2026-10-04T11:08:21.496797Z cell 04-eravm-29__groth16__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:08:24.328843Z cell 04-eravm-29__groth16__c1_ctx_k02 attempt 1 done in 3s
+2026-10-04T11:08:24.329251Z cell 05-evm-osaka__plonk__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:08:28.334879Z cell 05-evm-osaka__plonk__c1_ctx_k02 attempt 1 done in 4s
+2026-10-04T11:08:28.335195Z cell 06-zkos-v32_at_npg139__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:10:40.408214Z cell 06-zkos-v32_at_npg139__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:10:40.408568Z cell 07-zkos-v32_at_npg100__groth16__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:12:52.229126Z cell 07-zkos-v32_at_npg100__groth16__c1_ctx_k02 attempt 1 done in 132s
+2026-10-04T11:12:52.229967Z cell 08-evm-osaka__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:12:53.652611Z cell 08-evm-osaka__groth16__c1_k01 attempt 1 done in 1s
+2026-10-04T11:12:53.652864Z cell 09-zkos-v32_at_npg100__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:15:05.418993Z cell 09-zkos-v32_at_npg100__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:15:05.419650Z cell 10-eravm-29__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:15:08.654779Z cell 10-eravm-29__plonk__c1_k01 attempt 1 done in 3s
+2026-10-04T11:15:08.655045Z cell 11-zkos-v32_at_npg100__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:17:20.822294Z cell 11-zkos-v32_at_npg100__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T11:17:20.822897Z cell 12-zkos-v32_at_npg171__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:19:32.945899Z cell 12-zkos-v32_at_npg171__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:19:32.946162Z cell 13-eravm-29__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:19:36.582722Z cell 13-eravm-29__plonk__c1_ctx_k16 attempt 1 done in 4s
+2026-10-04T11:19:36.582996Z cell 14-eravm-29__plonk__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:19:39.812422Z cell 14-eravm-29__plonk__c1_ctx_k02 attempt 1 done in 3s
+2026-10-04T11:19:39.812719Z cell 15-zkos-v32_at_npg300__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:21:51.937148Z cell 15-zkos-v32_at_npg300__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:21:51.937438Z cell 16-evm-osaka__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:21:56.298538Z cell 16-evm-osaka__plonk__c1_ctx_k16 attempt 1 done in 4s
+2026-10-04T11:21:56.298800Z cell 17-evm-osaka__groth16__c1_ctx_k02 attempt 1 begin
+2026-10-04T11:21:57.769980Z cell 17-evm-osaka__groth16__c1_ctx_k02 attempt 1 done in 1s
+2026-10-04T11:21:57.770234Z cell 18-zkos-v32_at_npg100__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:24:09.706052Z cell 18-zkos-v32_at_npg100__groth16__c1_ctx_k16 attempt 1 done in 132s
+2026-10-04T11:24:09.706900Z cell 19-zkos-v32_at_npg100__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:26:21.502309Z cell 19-zkos-v32_at_npg100__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T11:26:21.503159Z cell 20-evm-osaka__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:26:25.357035Z cell 20-evm-osaka__plonk__c1_ctx_k04 attempt 1 done in 4s
+2026-10-04T11:26:25.357328Z cell 21-zkos-v32_at_npg169__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:28:37.457330Z cell 21-zkos-v32_at_npg169__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:28:37.457630Z cell 22-zkos-v32_at_npg100__plonk__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:30:50.018500Z cell 22-zkos-v32_at_npg100__plonk__c1_ctx_k16 attempt 1 done in 133s
+2026-10-04T11:30:50.019106Z cell 23-evm-osaka__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:30:51.894952Z cell 23-evm-osaka__groth16__c1_ctx_k16 attempt 1 done in 2s
+2026-10-04T11:30:51.895205Z cell 24-zkos-v32_at_npg300__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:33:03.655392Z cell 24-zkos-v32_at_npg300__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:33:03.656078Z cell 25-zkos-v32_at_npg151__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:35:15.766564Z cell 25-zkos-v32_at_npg151__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:35:15.766859Z cell 26-zkos-v32_at_npg139__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:37:27.759035Z cell 26-zkos-v32_at_npg139__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:37:27.759713Z cell 27-zkos-v32_at_npg151__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:39:39.510403Z cell 27-zkos-v32_at_npg151__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:39:39.511306Z cell 28-eravm-29__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:39:42.441882Z cell 28-eravm-29__groth16__c1_ctx_k04 attempt 1 done in 3s
+2026-10-04T11:39:42.442199Z cell 29-zkos-v32_at_npg126__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:41:54.163600Z cell 29-zkos-v32_at_npg126__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:41:54.164261Z cell 30-zkos-v32_at_npg171__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:44:05.966976Z cell 30-zkos-v32_at_npg171__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:44:05.967284Z cell 31-evm-osaka__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:44:09.621076Z cell 31-evm-osaka__plonk__c1_k01 attempt 1 done in 4s
+2026-10-04T11:44:09.621424Z cell 32-zkos-v32_at_npg169__groth16__c1_k01 attempt 1 begin
+2026-10-04T11:46:21.351633Z cell 32-zkos-v32_at_npg169__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T11:46:21.352443Z cell 33-eravm-29__groth16__c1_ctx_k16 attempt 1 begin
+2026-10-04T11:46:24.633035Z cell 33-eravm-29__groth16__c1_ctx_k16 attempt 1 done in 3s
+2026-10-04T11:46:24.633433Z cell 34-zkos-v32_at_npg126__plonk__c1_k01 attempt 1 begin
+2026-10-04T11:48:36.771426Z cell 34-zkos-v32_at_npg126__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T11:48:36.772384Z cell 35-evm-osaka__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T11:48:38.348016Z cell 35-evm-osaka__groth16__c1_ctx_k04 attempt 1 done in 2s
+2026-10-04T11:48:38.348063Z campaign complete

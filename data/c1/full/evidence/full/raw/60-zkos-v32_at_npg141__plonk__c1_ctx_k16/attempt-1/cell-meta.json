@@ -1,0 +1,17 @@
+{
+ "env": "zkos-v32",
+ "regime": {
+  "npg": 141,
+  "native_price": "0xf4240",
+  "pubdata_price": "0x0",
+  "priority_fee": 0
+ },
+ "versions": {
+  "protocol_0_32_0": true,
+  "execution_version_7": true,
+  "base_fee": "141000000"
+ },
+ "n_records": 56,
+ "verifier_runtime_sha256": "bd1a8c2f915310287a64139728607c3334a11d0e038d12c671433bafda97912d",
+ "manager_runtime_sha256": "a838645cb6979a98308ccb2a6af27c085dd19a6c0e8f30b9dd72a040c8d9bec3"
+}

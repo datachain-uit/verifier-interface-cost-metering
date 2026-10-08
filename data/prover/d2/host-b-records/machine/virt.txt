@@ -1,0 +1,3 @@
+$ systemd-detect-virt
+none
+[exit 1]

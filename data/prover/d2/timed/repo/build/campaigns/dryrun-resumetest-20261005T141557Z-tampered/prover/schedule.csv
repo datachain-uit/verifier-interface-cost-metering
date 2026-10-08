@@ -1,0 +1,13 @@
+kind,round,position,profile_id,config_seed,config_order,pair_orders
+primary,0,1,cpu8,0,plonk:10|groth16:5,
+primary,0,2,cpu2,0,plonk:10;groth16:5,
+primary,0,3,cpu4,0,plonk:10;groth16:5,
+primary,1,1,cpu4,1,groth16:5;plonk:10,
+primary,1,2,cpu8,1,groth16:5;plonk:10,
+primary,1,3,cpu2,1,groth16:5;plonk:10,
+primary,2,1,cpu2,2,groth16:5;plonk:10,
+primary,2,2,cpu4,2,groth16:5;plonk:10,
+primary,2,3,cpu8,2,groth16:5;plonk:10,
+diag,1,1,cpu2,101,groth16:5;plonk:10,groth16:5=path_first;plonk:10=path_first
+diag,1,2,cpu4,101,groth16:5;plonk:10,groth16:5=path_first;plonk:10=path_first
+diag,1,3,cpu8,101,groth16:5;plonk:10,groth16:5=path_first;plonk:10=path_first

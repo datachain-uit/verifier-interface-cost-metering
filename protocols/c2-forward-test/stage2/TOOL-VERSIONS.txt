@@ -1,0 +1,9 @@
+# V2-C2 stage 2 — tool versions
+Structural derivation (S2.2), cloud workspace:
+  node v22.22.0; hardhat 2.29.1; @nomicfoundation/edr 0.12.0-next.23; hardfork osaka; network config = stage-1 code/hardhat.config.js (byte-identical copy)
+  tool: stage-1 code/c2_structural.js (sha256 e986c6de4bc3bed736596840893b937b7d541d1d7e3252535eaa00576384fd72), run once, no rerun
+  run window: 2026-10-05T05:17:10Z -> 2026-10-05T05:17:21Z
+Prediction (S2.3/S2.4): python 3.13.16; stage-1 code/c2_predict.py + code/c2_model.py (unchanged); C2-CALIBRATION.json (C_env 1,669,012)
+Compile (C1 registered pipeline, FULL harness compile_all.js, harness HARNESS-SHA256SUMS 02cee61b26b1b0fb5a10396eae93ed2cb113128fd1fef87a047f1c5f3e113d36): solc 0.8.20, zksolc 1.5.15
+Artifact production (workstation, AMD-FF-1): node v22.22.0; snarkjs 0.7.5; ffjavascript 0.3.1 (pin check MATCH)
+ZKsync OS model source: zksync-os v0.4.0 (commit 69bc4305…, stage-1 SOURCE-FILES-SHA256-M7A.txt)

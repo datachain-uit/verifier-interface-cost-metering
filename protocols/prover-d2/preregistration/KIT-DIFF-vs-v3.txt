@@ -1,0 +1,989 @@
+diff -ru '--exclude=node_modules' kit-src/Dockerfile kit-v3-x86/Dockerfile
+--- kit-src/Dockerfile	2026-10-04 15:42:13.632046349 +0000
++++ kit-v3-x86/Dockerfile	2026-10-04 15:52:02.512576682 +0000
+@@ -1,4 +1,5 @@
+-# Z-CORP rerun protocol v3: prover benchmark image (linux/arm64 on the campaign host).
++# Z-CORP rerun protocol v3, kit v3-x86: prover benchmark image (linux/amd64 on Host B, V2-PRV-D2-01). Same pinned base index
++# digest and dependency lock as the v3 image; differences are the kit files listed in D2-PREREGISTRATION.md §4.2.
+ # Base image pinned by digest; dependencies pinned by package-lock.json; no network at run time.
+ ARG BASE_IMAGE=node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e
+ FROM ${BASE_IMAGE}
+@@ -6,11 +7,11 @@
+ COPY package.json package-lock.json ./
+ RUN npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
+ COPY lib ./lib
+-COPY harness.js preflight.js provenance.js make_schedule.js summarize_prover.js record_controls.js campaign_state.js validate_round.js check_resume_test.js ./
++COPY harness.js preflight.js provenance.js make_schedule.js summarize_prover.js record_controls.js campaign_state.js validate_round.js check_resume_test.js setup_plonk_zkeys.js ./
+ ENV ZCORP_HARNESS_DIR=/opt/zcorp \
+     ZCORP_REPO=/work \
+     ZCORP_RESULTS=/results \
+     NODE_OPTIONS="--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+ LABEL org.opencontainers.image.title="zcorp-bench" \
+       org.opencontainers.image.description="Z-CORP rerun protocol v3 prover harness" \
+-      org.opencontainers.image.version="3.0.0"
++      org.opencontainers.image.version="3.0.0-x86"
+diff -ru '--exclude=node_modules' kit-src/README.md kit-v3-x86/README.md
+--- kit-src/README.md	2026-10-04 15:42:13.632251986 +0000
++++ kit-v3-x86/README.md	2026-10-04 15:54:23.883076394 +0000
+@@ -1,3 +1,21 @@
++# kit v3-x86 — Host-B adaptation of the v3 prover harness (V2-PRV-D2-01)
++
++This directory is a copy of `research/bench` (rerun protocol v3) with the host adaptation listed in
++`../D2-PREREGISTRATION.md` §4.2 and in `../KIT-DIFF-vs-v3.txt`. On Host B it is installed as `bench/` inside the Host-B
++repository tree (`~/Workspace/Z-CORP-V2-workstation/prover/d2/repo/`), so every in-container path is the same as in v3.
++
++| Command (from the Host-B repository root) | What it does |
++|---|---|
++| `bash bench/run-campaign.sh setup` | untimed: image build (pulls the pinned base image), regenerates the 11 PLONK keys (`setup_plonk_zkeys.js`), checks `ARTIFACTS.sha256` |
++| `bash bench/run-campaign.sh preflight` | host conditions (Linux, `hostb_quiet.py`), P7, container pre-flight for cpu2 / cpu4 / cpu8, adapter controls |
++| `bash bench/run-campaign.sh dryrun` / `bash bench/test-resume.sh` | Host-B dry run and resume test (timings not interpreted) |
++| `ZCORP_ALLOW_FULL_CAMPAIGN=1 ZCORP_D2_WINDOW=<id> bash bench/run-campaign.sh campaign` | timed campaign, only in an owner-declared dedicated quiet window |
++
++Host-side only (not in the image): `run-campaign.sh`, `hostb_quiet.py`, `test-resume.sh`, `compose.yaml` (reference only).
++The text below is the unchanged v3 README.
++
++---
++
+ # Z-CORP prover benchmark (rerun protocol v3)
+ 
+ Container harness for the prover experiment of `submission/csi/RERUN-PROTOCOL.md` (v3):
+diff -ru '--exclude=node_modules' kit-src/check_resume_test.js kit-v3-x86/check_resume_test.js
+--- kit-src/check_resume_test.js	2026-10-04 15:42:13.632136451 +0000
++++ kit-v3-x86/check_resume_test.js	2026-10-04 15:52:02.511393142 +0000
+@@ -49,7 +49,7 @@
+ check('accepted_round_rerun_refused', R.harness_exit === '7' && R.rows_before === R.rows_after, R);
+ check('altered_schedule_resume_refused', R.tamper_exit !== '0' && R.tamper_refused === 'yes' && /schedule\.csv differs/.test(R.tamper_reason || ''),
+   { exit: R.tamper_exit, reason: R.tamper_reason });
+-check('other_commit_resume_refused', R.commit_tamper_exit !== undefined && R.commit_tamper_exit !== '0' && /identity differs.*git commit/.test(R.commit_tamper_reason || ''),
++check('other_commit_resume_refused', R.commit_tamper_exit !== undefined && R.commit_tamper_exit !== '0' && /identity differs.*tree \(kit/.test(R.commit_tamper_reason || ''), // v3-x86: tree identity replaces the git commit
+   { exit: R.commit_tamper_exit, reason: R.commit_tamper_reason });
+ const passed = checks.every((c) => c.passed);
+ writeJson(path.join(RESULTS, 'environment', 'resume-test', 'resume-test.json'), { passed, sessions: [s1, s2, s3], ledger: st.ledger, checks });
+diff -ru '--exclude=node_modules' kit-src/compose.yaml kit-v3-x86/compose.yaml
+--- kit-src/compose.yaml	2026-10-04 15:42:13.631985881 +0000
++++ kit-v3-x86/compose.yaml	2026-10-04 15:52:02.512923201 +0000
+@@ -1,3 +1,5 @@
++# kit v3-x86: REFERENCE ONLY. The Host-B runner starts every container with the equivalent `docker run` (drun in
++# run-campaign.sh) because compose has no cpuset-mems key; same limits, plus --cpuset-mems 0 and platform linux/amd64.
+ # Z-CORP rerun protocol v3: resource profiles (§4.1). Started only through run-campaign.sh,
+ # which sets ZCORP_IMAGE, ZCORP_IMAGE_ID, ZCORP_REPO and ZCORP_RESULTS.
+ # Every profile: exclusive cpuset, workers matched by the adapter, 8 GiB memory, swap disabled,
+@@ -6,7 +8,7 @@
+ 
+ x-common: &common
+   image: ${ZCORP_IMAGE:?run through bench/run-campaign.sh}
+-  platform: ${ZCORP_PLATFORM:-linux/arm64}
++  platform: ${ZCORP_PLATFORM:-linux/amd64}
+   mem_limit: 8g
+   memswap_limit: 8g
+   network_mode: none
+diff -ru '--exclude=node_modules' kit-src/harness.js kit-v3-x86/harness.js
+--- kit-src/harness.js	2026-10-04 15:42:13.632067224 +0000
++++ kit-v3-x86/harness.js	2026-10-04 15:45:37.996816423 +0000
+@@ -8,7 +8,7 @@
+ const fs = require('fs');
+ const path = require('path');
+ const { REPO, RESULTS, readJson, cgroupState, loadManifest, sha256File, parseConfig, parseCsv,
+-  seededOrder, CsvAppender, nowIso, artifacts } = require('./lib/common');
++  seededOrder, CsvAppender, nowIso, artifacts, loadCorpusManifest } = require('./lib/common');
+ const { checkContainer } = require('./lib/checks');
+ const schema = require('./lib/schema');
+ const { gc, makeContext, runPipeline, runDiagPair } = require('./lib/pipeline');
+@@ -77,6 +77,15 @@
+     }
+   }
+ 
++  // 2b. v3-x86: synthetic corpus files used by this container (SYNTHETIC-CORPUS.sha256)
++  const corpus = loadCorpusManifest();
++  if (corpus.sha256 !== campaign.synthetic_corpus_sha256) { failRow('manifest_changed', 'SYNTHETIC-CORPUS.sha256 differs from campaign'); process.exit(3); }
++  for (const c of configs) {
++    for (const rel of [`data/inputs/input_depth_${c.depth}_index_0.json`, `data/merkle-trees/merkle_tree_data_depth_${c.depth}.json`, `data/merkle-trees/processed_diplomas_${2 ** c.depth}.json`]) {
++      if (corpus.map.get(rel) !== sha256File(path.join(REPO, rel))) { failRow('artifact_mismatch', rel); process.exit(3); }
++    }
++  }
++
+   // 3. Warm the file cache: read every key, wasm and tree file used by this container once.
+   for (const c of configs) {
+     const a = artifacts(c.backend, c.depth);
+Only in kit-v3-x86: hostb_quiet.py
+diff -ru '--exclude=node_modules' kit-src/lib/checks.js kit-v3-x86/lib/checks.js
+--- kit-src/lib/checks.js	2026-10-04 15:42:13.631234641 +0000
++++ kit-v3-x86/lib/checks.js	2026-10-04 15:45:37.994635925 +0000
+@@ -28,6 +28,8 @@
+   need(env.process_arch === expect.arch, `arch ${env.process_arch} != ${expect.arch} (emulation or wrong image)`);
+   need(env.machine === expect.machine, `machine ${env.machine} != ${expect.machine}`);
+   if (expect.cpu_implementer) need(env.cpuinfo.implementer === expect.cpu_implementer, `CPU implementer ${env.cpuinfo.implementer} != ${expect.cpu_implementer}`);
++  if (expect.cpu_model_name) need(env.cpuinfo.model_name === expect.cpu_model_name, `CPU model ${env.cpuinfo.model_name} != ${expect.cpu_model_name}`); // v3-x86
++  if (expect.cpuset_mems != null) need(cg.cpuset_mems_effective === expect.cpuset_mems, `effective cpuset.mems ${cg.cpuset_mems_effective} != ${expect.cpuset_mems}`); // v3-x86
+   need(env.node === expect.node, `node ${env.node} != ${expect.node}`);
+   need(env.packages.snarkjs === expect.snarkjs, `snarkjs ${env.packages.snarkjs}`);
+   need(env.packages.ffjavascript_used_by_snarkjs === expect.ffjavascript, `ffjavascript ${env.packages.ffjavascript_used_by_snarkjs}`);
+diff -ru '--exclude=node_modules' kit-src/lib/common.js kit-v3-x86/lib/common.js
+--- kit-src/lib/common.js	2026-10-04 15:42:13.631255403 +0000
++++ kit-v3-x86/lib/common.js	2026-10-04 15:45:37.994536506 +0000
+@@ -51,6 +51,7 @@
+     return {
+       version: 2,
+       cpuset_effective: rd('/sys/fs/cgroup/cpuset.cpus.effective'),
++      cpuset_mems_effective: rd('/sys/fs/cgroup/cpuset.mems.effective'), // v3-x86: NUMA memory binding
+       cpu_max: rd('/sys/fs/cgroup/cpu.max'),
+       quota_unlimited: (rd('/sys/fs/cgroup/cpu.max') || '').startsWith('max'),
+       memory_max_bytes: Number(rd('/sys/fs/cgroup/memory.max')) || rd('/sys/fs/cgroup/memory.max'),
+@@ -184,13 +185,25 @@
+     vkey: backend === 'groth16' ? `data/groth16-vkeys/${b}_vkey.json` : `data/plonk-vkeys/${b}_plonk_vkey.json`,
+     proof: `data/${backend}-public-proof/proof_depth_${depth}_index_0.json`,
+     public: `data/${backend}-public-proof/public_depth_${depth}_index_0.json`,
+-    input: `data/inputs/input_depth_${depth}_index_0.json`, // not manifest-covered; compared by content
++    input: `data/inputs/input_depth_${depth}_index_0.json`, // v3-x86: synthetic committed input (SYNTHETIC-CORPUS.sha256); compared by content
+   };
+   const abs = {};
+   for (const [k, v] of Object.entries(rel)) abs[k] = path.join(REPO, v);
+   return { base: b, rel, abs };
+ }
+ 
++// v3-x86 (V2-D-18, synthetic records only): the expected public root is the root of the frozen synthetic corpus,
++// carried by the committed synthetic input; the manifest-covered V1 public files are kept for the P7 committed-proof check.
++function committedRoot(depth) { return String(JSON.parse(fs.readFileSync(path.join(REPO, `data/inputs/input_depth_${depth}_index_0.json`), 'utf8')).root); }
++
++// v3-x86: frozen synthetic-corpus manifest (relative paths under the repository root)
++function loadCorpusManifest() {
++  const text = fs.readFileSync(path.join(REPO, 'SYNTHETIC-CORPUS.sha256'), 'utf8');
++  const map = new Map();
++  for (const line of text.split('\n')) { const m = /^([0-9a-f]{64})\s+\*?(?:\.\/)?(.+)$/.exec(line.trim()); if (m) map.set(m[2], m[1]); }
++  return { map, sha256: sha256Hex(text) };
++}
++
+ const parseConfig = (s) => { const [backend, d] = s.split(':'); return { backend, depth: Number(d), key: s }; };
+ 
+ // ---------------------------------------------------------------- seeded order
+@@ -264,5 +277,5 @@
+ module.exports = {
+   REPO, RESULTS, HARNESS_DIR, rd, nowIso, round3, sha256Hex, sha256File, readJson, writeJson,
+   cgroupState, environmentRecord, packageVersions, repoReadOnlyProbe, loadManifest, artifacts,
+-  parseConfig, seededOrder, describe, CsvAppender, parseCsv, snarkjsDir,
++  parseConfig, seededOrder, describe, CsvAppender, parseCsv, snarkjsDir, committedRoot, loadCorpusManifest,
+ };
+diff -ru '--exclude=node_modules' kit-src/lib/pipeline.js kit-v3-x86/lib/pipeline.js
+--- kit-src/lib/pipeline.js	2026-10-04 15:42:13.631281492 +0000
++++ kit-v3-x86/lib/pipeline.js	2026-10-04 15:45:37.994895465 +0000
+@@ -4,7 +4,7 @@
+ const fs = require('fs');
+ const path = require('path');
+ const { performance } = require('perf_hooks');
+-const { artifacts, round3 } = require('./common');
++const { artifacts, round3, committedRoot } = require('./common');
+ 
+ const TMP = process.env.ZCORP_TMP || '/tmp/zcorp-work';
+ 
+@@ -27,7 +27,7 @@
+     perConfig[c.key] = {
+       a,
+       vkey: JSON.parse(fs.readFileSync(a.abs.vkey, 'utf8')),
+-      expectedRoot: String(JSON.parse(fs.readFileSync(a.abs.public, 'utf8'))[0]),
++      expectedRoot: committedRoot(c.depth), // v3-x86: synthetic corpus root (V2-D-18)
+       committedInput: JSON.stringify(JSON.parse(fs.readFileSync(a.abs.input, 'utf8'))),
+       zkeyBytes: fs.statSync(a.abs.zkey).size,
+       zkeySha256: zkeyHashes[a.rel.zkey],
+diff -ru '--exclude=node_modules' kit-src/lib/schema.js kit-v3-x86/lib/schema.js
+--- kit-src/lib/schema.js	2026-10-04 15:42:13.631302900 +0000
++++ kit-v3-x86/lib/schema.js	2026-10-04 15:46:15.755523009 +0000
+@@ -32,6 +32,12 @@
+   'campaign_id', 'session_id', 'seq', 'kind', 'round', 'round_attempt', 'profile_id', 'phase', 'utc',
+   'loadavg', 'power_source', 'low_power_mode', 'pmset_therm',
+ ];
++// v3-x86 (Host B, Linux): host_samples.csv is written by the runner with these columns instead.
++const HOST_SAMPLES_LINUX = [
++  'campaign_id', 'session_id', 'seq', 'kind', 'round', 'round_attempt', 'profile_id', 'phase', 'utc',
++  'loadavg', 'running_containers', 'busy_alloc_max', 'busy_siblings_max', 'busy_other_cpu_equiv', 'mhz_alloc', 'pkg_temp_c',
++  'core_throttle_alloc', 'pkg_throttle', 'governor', 'no_turbo', 'numa_balancing', 'thp', 'inhibit',
++];
+ 
+ // One row per (kind, round, round_attempt) outcome. Append-only.
+ //   complete   - every profile finished and the round validation passed (accepted = 1)
+@@ -51,4 +57,4 @@
+ // stage_sum_ms is a derived diagnostic (sum of the four stage metrics), not "total time".
+ const RUN_METRICS = ['input_ms', 'witness_ms', 'prove_ms', 'verify_first_ms', 'verify_steady_ms', 'stage_sum_ms', 'wall_ms'];
+ 
+-module.exports = { RUNS, DIAG, ROUNDS, HOST_SAMPLES, LEDGER, SESSIONS, RUN_METRICS };
++module.exports = { RUNS, DIAG, ROUNDS, HOST_SAMPLES, HOST_SAMPLES_LINUX, LEDGER, SESSIONS, RUN_METRICS };
+diff -ru '--exclude=node_modules' kit-src/make_schedule.js kit-v3-x86/make_schedule.js
+--- kit-src/make_schedule.js	2026-10-04 15:42:13.632113878 +0000
++++ kit-v3-x86/make_schedule.js	2026-10-04 15:46:15.754952241 +0000
+@@ -7,7 +7,7 @@
+ // Host facts (git commit, image IDs, ...) arrive as ZCORP_META_* environment variables.
+ const fs = require('fs');
+ const path = require('path');
+-const { RESULTS, HARNESS_DIR, sha256File, loadManifest, seededOrder, writeJson, CsvAppender, nowIso } = require('./lib/common');
++const { RESULTS, HARNESS_DIR, sha256File, loadManifest, loadCorpusManifest, seededOrder, writeJson, CsvAppender, nowIso } = require('./lib/common');
+ 
+ function arg(name, dflt) {
+   const i = process.argv.indexOf(`--${name}`);
+@@ -103,11 +103,13 @@
+   if (mode === 'dryrun' && planName === 'campaign') throw new Error('the campaign plan is not a dry run');
+   const plan = JSON.parse(JSON.stringify(PLANS[planName]));
+   if (process.env.ZCORP_P7_DEPTHS) plan.p7_depths = process.env.ZCORP_P7_DEPTHS.split(',').map(Number); // off-host test only; recorded
+-  let baseArm64 = null;
++  let baseArm64 = null; let basePlatform = null; const baseArch = process.env.ZCORP_BASE_ARCH || 'arm64'; // v3-x86: amd64
+   try {
+     const idx = JSON.parse(fs.readFileSync(path.join(RESULTS, 'environment', 'base-image-index.json'), 'utf8'));
+     const m = (idx.manifests || []).find((x) => x.platform && x.platform.os === 'linux' && x.platform.architecture === 'arm64');
+     baseArm64 = m ? m.digest : null;
++    const mp = (idx.manifests || []).find((x) => x.platform && x.platform.os === 'linux' && x.platform.architecture === baseArch);
++    basePlatform = mp ? mp.digest : null;
+   } catch (_) { baseArm64 = null; }
+   if (fs.existsSync(path.join(RESULTS, 'CAMPAIGN.json'))) throw new Error('CAMPAIGN.json already exists: refusing to overwrite a campaign');
+ 
+@@ -120,6 +122,7 @@
+   const generator = Object.fromEntries(['scripts/setup/generate_input_depth.js', 'scripts/setup/paths.js']
+     .map((f) => [f, sha256File(path.join(repo, f))]));
+   const M = (k) => process.env[`ZCORP_META_${k}`] || null;
++  const corpus = loadCorpusManifest(); // v3-x86: frozen synthetic corpus (V2-D-18)
+ 
+   const schedule = [];
+   const execution = [];
+@@ -143,6 +146,7 @@
+ 
+   const campaign = {
+     protocol_version: 'v3',
++    kit: 'v3-x86', // procedure v3; host adaptation for Host B (V2-PRV-D2-01)
+     campaign_id: campaignId,
+     mode,
+     plan_name: planName,
+@@ -155,6 +159,8 @@
+       machine: process.env.ZCORP_EXPECT_MACHINE || 'aarch64',
+       cpu_implementer: process.env.ZCORP_EXPECT_CPU_IMPLEMENTER === undefined ? '0x61' : (process.env.ZCORP_EXPECT_CPU_IMPLEMENTER || null),
+       cgroup_version: Number(process.env.ZCORP_EXPECT_CGROUP || 2),
++      cpu_model_name: process.env.ZCORP_EXPECT_CPU_MODEL || null, // v3-x86
++      cpuset_mems: process.env.ZCORP_EXPECT_CPUSET_MEMS || null, // v3-x86: NUMA node 0
+       memory_bytes: 8 * 2 ** 30,
+       node: 'v18.20.8', snarkjs: '0.7.5', ffjavascript: '0.3.1', fastfile: '0.0.20',
+       node_options: '--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096',
+@@ -166,18 +172,23 @@
+       tag: M('IMAGE_TAG'),
+       base_image_ref: M('BASE_IMAGE_REF'),
+       base_arm64_manifest_digest: baseArm64,
++      base_platform_architecture: baseArch,
++      base_platform_manifest_digest: basePlatform,
+       platform: M('PLATFORM'),
+     },
+     // Software environment frozen for the whole campaign; a resumed session must match it (run-campaign.sh).
+     environment: {
+       docker_desktop: M('DOCKER_DESKTOP'), engine: M('ENGINE'), kernel: M('KERNEL'),
+       vm_ncpu: M('VM_NCPU'), vm_mem_bytes: M('VM_MEM_BYTES'), configured_memory_mib: M('CONFIGURED_MEMORY_MIB'),
++      host_frozen_state: M('HOST_FROZEN_STATE'), // v3-x86: recorded frequency / NUMA / THP state (checked, never changed)
+     },
+     host_files_sha256: { 'bench/run-campaign.sh': M('RUNNER_SHA256'), 'bench/compose.yaml': M('COMPOSE_SHA256'), 'bench/Dockerfile': M('DOCKERFILE_SHA256') },
+     manifest_sha256: manifest.sha256,
+     adapter_sha256: harness['lib/cpu-visibility.js'],
+     harness_sha256: harness,
+     input_generator_sha256: generator,
++    synthetic_corpus_sha256: corpus.sha256, // v3-x86
++    synthetic_corpus_entries: corpus.map.size,
+   };
+   if (!campaign.image.built_image_id) throw new Error('ZCORP_META_IMAGE_ID missing');
+   if (process.env.ZCORP_IMAGE_ID && process.env.ZCORP_IMAGE_ID !== campaign.image.built_image_id) throw new Error('image id mismatch');
+@@ -191,6 +202,10 @@
+   execution.forEach((r) => ex.append(r));
+   campaign.schedule_sha256 = sha256File(schFile);
+   campaign.execution_plan_sha256 = sha256File(exFile);
++  // v3-x86: the campaign schedule must be byte-identical to Host A's (same seed, plan and profiles)
++  if (process.env.ZCORP_EXPECT_SCHEDULE_SHA256 && campaign.schedule_sha256 !== process.env.ZCORP_EXPECT_SCHEDULE_SHA256) throw new Error(`schedule ${campaign.schedule_sha256} differs from Host A ${process.env.ZCORP_EXPECT_SCHEDULE_SHA256}`);
++  if (process.env.ZCORP_EXPECT_PLAN_SHA256 && campaign.execution_plan_sha256 !== process.env.ZCORP_EXPECT_PLAN_SHA256) throw new Error(`execution plan ${campaign.execution_plan_sha256} differs from Host A ${process.env.ZCORP_EXPECT_PLAN_SHA256}`);
++  campaign.host_a_reference = { campaign_id: 'campaign-20260925T060607Z', schedule_sha256: process.env.ZCORP_EXPECT_SCHEDULE_SHA256 || null, execution_plan_sha256: process.env.ZCORP_EXPECT_PLAN_SHA256 || null };
+   writeJson(path.join(RESULTS, 'CAMPAIGN.json'), campaign); // written last: its presence marks a created campaign
+   console.log(`campaign ${campaignId} (${mode}, plan ${planName}): ${execution.length} containers scheduled`);
+   for (const e of execution) console.log(`  ${e.seq}. ${e.kind} round ${e.round} position ${e.position}: ${e.profile_id}`);
+diff -ru '--exclude=node_modules' kit-src/preflight.js kit-v3-x86/preflight.js
+--- kit-src/preflight.js	2026-10-04 15:42:13.632093026 +0000
++++ kit-v3-x86/preflight.js	2026-10-04 15:45:37.995123045 +0000
+@@ -6,7 +6,7 @@
+ //   node preflight.js --probe    environment + worker count only (used by the controls)
+ const fs = require('fs');
+ const path = require('path');
+-const { RESULTS, readJson, writeJson, environmentRecord, artifacts, snarkjsDir, nowIso } = require('./lib/common');
++const { RESULTS, readJson, writeJson, environmentRecord, artifacts, snarkjsDir, nowIso, committedRoot } = require('./lib/common');
+ const { checkContainer } = require('./lib/checks');
+ 
+ async function proofCheck(snarkjs, backend, depth, zkeyMode) {
+@@ -21,7 +21,7 @@
+   const zkeyArg = zkeyMode === 'mem' ? fs.readFileSync(a.abs.zkey) : a.abs.zkey;
+   const { proof, publicSignals } = await snarkjs[backend].prove(zkeyArg, wtns);
+   const vkey = JSON.parse(fs.readFileSync(a.abs.vkey, 'utf8'));
+-  const expected = String(JSON.parse(fs.readFileSync(a.abs.public, 'utf8'))[0]);
++  const expected = committedRoot(depth); // v3-x86: synthetic corpus root (V2-D-18)
+   const ok = await snarkjs[backend].verify(vkey, publicSignals, proof);
+   const shifted = await snarkjs[backend].verify(vkey, [(BigInt(publicSignals[0]) + 1n).toString()], proof);
+   return {
+diff -ru '--exclude=node_modules' kit-src/provenance.js kit-v3-x86/provenance.js
+--- kit-src/provenance.js	2026-10-04 15:42:13.632305231 +0000
++++ kit-v3-x86/provenance.js	2026-10-04 15:45:37.996425985 +0000
+@@ -67,6 +67,10 @@
+   }
+   result.checks.manifest = { entries: manifest.map.size, ok: manifestOk, failed: manifestBad, manifest_sha256: manifest.sha256,
+     passed: manifestBad.length === 0 && manifest.sha256 === campaign.manifest_sha256 };
++  const corpus = require('./lib/common').loadCorpusManifest(); let corpusOk = 0; const corpusBad = [];
++  for (const [rel, want] of corpus.map) { const p = path.join(REPO, rel); if (fs.existsSync(p) && sha256File(p) === want) corpusOk++; else corpusBad.push(rel); }
++  result.checks.synthetic_corpus = { entries: corpus.map.size, ok: corpusOk, failed: corpusBad, manifest_sha256: corpus.sha256,
++    passed: corpusBad.length === 0 && corpus.sha256 === campaign.synthetic_corpus_sha256 }; // v3-x86
+   result.checks.ptau = { passed: manifest.map.get(PTAU) === sha256File(path.join(REPO, PTAU)), note: 'sha256 only; ceremony origin not verified' };
+ 
+   const ver = spawnSync(process.execPath, [circom2Cli, '--version'], { encoding: 'utf8' });
+@@ -123,23 +127,25 @@
+     for (const [name, x, vk] of [['groth16', g, gvk], ['plonk', p, pvk]]) {
+       const pub = JSON.parse(fs.readFileSync(x.abs.public, 'utf8'));
+       const prf = JSON.parse(fs.readFileSync(x.abs.proof, 'utf8'));
+-      rec[`${name}_committed_proof_verifies`] = (await snarkjs[name].verify(vk, pub, prf)) === true && String(pub[0]) === String(input.root);
++      rec[`${name}_committed_proof_verifies`] = (await snarkjs[name].verify(vk, pub, prf)) === true; // v3-x86: committed (V1) proof with its committed public root
+     }
++    rec.synthetic_input_root_equals_corpus_root = String(input.root) === String(JSON.parse(fs.readFileSync(path.join(REPO, 'data', 'merkle-trees', `merkle_tree_data_depth_${d}.json`), 'utf8')).root); // v3-x86
+     rec.passed = rec.r1cs_byte_identical && rec.witness_identical && rec.witness_satisfies_committed_r1cs && rec.input_matches_committed
+       && rec.constraint_count_ok && rec.booleanity.layout_ok && rec.booleanity.found === d && rec.groth16_zkey_verify
+       && rec.plonk_zkey_regenerated_identical && rec.groth16_vkey_export_equal && rec.plonk_vkey_export_equal
+       && rec.plonk_power === (d <= 10 ? 15 : 16) && rec.sol_embeds_groth16_vkey && rec.groth16_committed_proof_verifies
+-      && rec.plonk_committed_proof_verifies;
++      && rec.plonk_committed_proof_verifies && rec.synthetic_input_root_equals_corpus_root;
+     result.depths.push(rec);
+     console.log(`P7 d=${d}: ${rec.passed ? 'PASS' : 'FAIL'}`);
+   }
+   result.utc_end = nowIso();
+-  result.passed = result.checks.manifest.passed && result.checks.ptau.passed && result.tools.circom === '2.1.6'
++  result.passed = result.checks.manifest.passed && result.checks.synthetic_corpus.passed && result.checks.ptau.passed && result.tools.circom === '2.1.6'
+     && result.depths.length === depths.length && result.depths.every((r) => r.passed);
+   result.notes = [
+     'R1CS byte identity is checked with circom 2.1.6 compiled to WebAssembly (circom2 npm 0.2.16), architecture-independent.',
+     'The circom2 build of the witness-calculator wasm is not byte-identical to the committed wasm (native circom 2.1.6 build); equivalence is checked by identical witnesses for the committed input and by wtns check against the committed R1CS.',
+     'Byte identity of the committed wasm with the native circom 2.1.6 binary was established separately on 2026-09-24 (protocol §1.2).',
++    'v3-x86: inputs come from the frozen synthetic corpus (V2-D-18); committed V1 proofs are checked against their committed public files, the synthetic input root against the synthetic corpus root.',
+   ];
+   writeJson(path.join(RESULTS, 'provenance', 'p7.json'), result);
+   console.log(`P7 overall: ${result.passed ? 'PASS' : 'FAIL'}`);
+diff -ru '--exclude=node_modules' kit-src/run-campaign.sh kit-v3-x86/run-campaign.sh
+--- kit-src/run-campaign.sh	2026-10-04 15:42:13.631896024 +0000
++++ kit-v3-x86/run-campaign.sh	2026-10-04 15:52:02.512139191 +0000
+@@ -1,34 +1,28 @@
+ #!/bin/bash
+-# Z-CORP rerun protocol v3: one-command prover campaign runner (run on the macOS host).
++# Z-CORP rerun protocol v3, kit v3-x86: Host-B runner for V2-PRV-D2-01 (Dell Precision 7920, Ubuntu 24.04, native
++# Docker Engine, linux/amd64). Procedure identical to research/bench/run-campaign.sh (v3) except the host adaptation
++# listed in ../D2-PREREGISTRATION.md §4.2. Started only by owner-authorized relay jobs.
+ #
++#   bash bench/run-campaign.sh setup                       untimed setup: image build, PLONK keys, manifests (setup window)
+ #   bash bench/run-campaign.sh preflight                   host + container pre-flight, P7; no rounds
+-#   bash bench/run-campaign.sh dryrun [--plan resumetest]  engineering dry run (protocol v3 §3.9)
+-#   bash bench/run-campaign.sh campaign                    full prover campaign (needs ZCORP_ALLOW_FULL_CAMPAIGN=1)
+-#   bash bench/run-campaign.sh resume <campaign-dir>       continue an existing dry run or campaign
++#   bash bench/run-campaign.sh dryrun [--plan resumetest]  engineering dry run (v3 §3.9); timings not interpreted
++#   bash bench/run-campaign.sh campaign                    timed campaign; needs ZCORP_ALLOW_FULL_CAMPAIGN=1 and
++#                                                          ZCORP_D2_WINDOW=<owner window id> (dedicated quiet window)
++#   bash bench/run-campaign.sh resume <campaign-dir>       continue at the next round unit without an accepted attempt
+ #
+-# Round-level resume (protocol v3 §3.2): a (kind, round) unit with all its profiles is atomic.
+-# A unit is accepted only after every profile finished and bench/validate_round.js passed; the
+-# outcome is appended to prover/round_ledger.csv. A restarted session re-runs the host and
+-# container pre-flight, refuses to continue if the campaign ID, git commit, uncommitted state of
+-# the campaign paths, image, artifact manifest, adapter, harness, schedule, protocol version or
+-# Docker environment differ,
+-# records a new session ID, preserves any interrupted attempt as "incomplete" evidence and
+-# continues with the first unit that has no accepted attempt, as a new attempt of the whole unit.
+-#
+-# Optional environment:
+-#   ZCORP_STOP_AFTER_ROUNDS=N              stop cleanly after N units accepted in this session
+-#   ZCORP_TEST_INTERRUPT_AFTER_CONTAINERS=N dry runs only: simulate a crash after N containers
+-#
+-# Outputs: dry runs and pre-flights -> build/campaigns/<campaign_id>/ (git-ignored);
+-#          full campaign            -> results/postcorr-<YYYYMMDD>/.
+-# Bash 3.2 compatible (macOS default).
++# Host conditions (replace the macOS P9 rules; D2-PREREGISTRATION.md §5): a sleep inhibitor (systemd-inhibit) held by
++# this runner; the frozen frequency / NUMA / THP state (recorded, never changed); no other container; quiet CPUs before
++# every container and during it (hostb_quiet.py). A violation before a container stops the session (the unit stays
++# without outcome and is rerun whole); a violation during a container records the attempt as failed and stops.
++# Allocation: cpu2 = CPUs 1-2, cpu4 = 1-4, cpu8 = 1-8 (one hardware thread per physical core, socket 0), memory NUMA
++# node 0 (--cpuset-mems 0); SMT siblings (57-64) and CPU 0 / 56 are not allocated. bash >= 4.4.
+ set -u
+ 
+-usage() { echo "usage: $0 preflight | dryrun [--plan dryrun|resumetest] | campaign | resume <campaign-dir>"; exit 2; }
++usage() { echo "usage: $0 setup | preflight | dryrun [--plan dryrun|resumetest] | campaign | resume <campaign-dir>"; exit 2; }
+ MODE="${1:-}"; [ $# -gt 0 ] && shift
+ PLAN=""; RESUME_DIR=""
+ case "$MODE" in
+-  preflight|campaign) ;;
++  setup|preflight|campaign) ;;
+   dryrun) if [ "${1:-}" = "--plan" ]; then PLAN="${2:-}"; [ -n "$PLAN" ] || usage; fi ;;
+   resume) RESUME_DIR="${1:-}"; [ -n "$RESUME_DIR" ] || usage ;;
+   *) usage ;;
+@@ -39,66 +33,83 @@
+ STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
+ SESSION_ID="S${STAMP}"
+ PROTOCOL_VERSION=v3
+-IMAGE_TAG="${ZCORP_IMAGE_TAG:-zcorp-bench:v3}"
+-PLATFORM="${ZCORP_PLATFORM:-linux/arm64}"
+-EXPECT_DOCKER_ARCH="${ZCORP_EXPECT_DOCKER_ARCH:-aarch64}"
+-PROFILES="${ZCORP_PROFILES:-cpu2:1-2,cpu4:1-4,cpu8:1-8}"
++KIT_VERSION=v3-x86
++IMAGE_TAG="${ZCORP_IMAGE_TAG:-zcorp-bench:v3-x86}"
++PLATFORM=linux/amd64
++EXPECT_DOCKER_ARCH=x86_64
++PROFILES="cpu2:1-2,cpu4:1-4,cpu8:1-8"
++CPUSET_MEMS=0
++EXPECT_CPU_MODEL="Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz"
++FROZEN_STATE="intel_pstate=active governor=powersave no_turbo=0 numa_balancing=1 thp=madvise"
++EXPECT_SIBLINGS="57 58 59 60 61 62 63 64 "    # SMT siblings of CPUs 1-8 (records workstation-20261004)
++HOST_A_SCHEDULE_SHA256=f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95
++HOST_A_PLAN_SHA256=99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94
+ BASE_REF="node:18.20.8-bookworm-slim@sha256:f9ab18e354e6855ae56ef2b290dd225c1e51a564f87584b9bd21dd651838830e"
+-MIN_NCPU="${ZCORP_MIN_NCPU:-9}"
+-MIN_MEM_GIB="${ZCORP_MIN_MEM_GIB:-11.0}"
+-CAMPAIGN_PATHS="bench scripts/setup circuits contracts test ARTIFACTS.sha256 PROVENANCE.md"
++MIN_NCPU=9
++MIN_MEM_GIB=11.0
++TREE_PATHS="bench scripts/setup ARTIFACTS.sha256 SYNTHETIC-CORPUS.sha256"
+ 
+ jget() { sed -n "s/.*\"$1\": \"\([^\"]*\)\".*/\1/p" "$OUT/CAMPAIGN.json" | head -1; }
+-sha() { shasum -a 256 "$1" 2>/dev/null | cut -d' ' -f1; }
++sha() { sha256sum "$1" 2>/dev/null | cut -d' ' -f1; }
++tree_sha() { ( cd "$REPO" && find $TREE_PATHS -type f -print0 | sort -z | xargs -0 sha256sum ) | sha256sum | cut -d' ' -f1; }
+ 
+ if [ "$MODE" = resume ]; then
+   OUT="$(cd "$RESUME_DIR" 2>/dev/null && pwd)" || { echo "ABORT: no such campaign directory: $RESUME_DIR"; exit 2; }
+   [ -f "$OUT/CAMPAIGN.json" ] || { echo "ABORT: $OUT has no CAMPAIGN.json"; exit 2; }
+-  CAMPAIGN_ID="$(jget campaign_id)"
+-  CMODE="$(jget mode)"
+-  if [ "$CMODE" = campaign ] && [ "${ZCORP_ALLOW_FULL_CAMPAIGN:-0}" != 1 ]; then
+-    echo "ABORT: resuming the full prover campaign needs ZCORP_ALLOW_FULL_CAMPAIGN=1"; exit 2
++  CAMPAIGN_ID="$(jget campaign_id)"; CMODE="$(jget mode)"
++  if [ "$CMODE" = campaign ] && { [ "${ZCORP_ALLOW_FULL_CAMPAIGN:-0}" != 1 ] || [ -z "${ZCORP_D2_WINDOW:-}" ]; }; then
++    echo "ABORT: resuming the timed campaign needs ZCORP_ALLOW_FULL_CAMPAIGN=1 and ZCORP_D2_WINDOW=<owner window id>"; exit 2
+   fi
+ else
+-  CAMPAIGN_ID="${ZCORP_CAMPAIGN_ID:-${MODE}-${STAMP}}"
+   if [ "$MODE" = campaign ]; then
+-    OUT="${ZCORP_OUT:-$REPO/results/postcorr-$(date -u +%Y%m%d)}"; CMODE=campaign; PLAN=campaign
++    if [ "${ZCORP_ALLOW_FULL_CAMPAIGN:-0}" != 1 ] || [ -z "${ZCORP_D2_WINDOW:-}" ]; then
++      echo "ABORT: the timed campaign needs ZCORP_ALLOW_FULL_CAMPAIGN=1 and ZCORP_D2_WINDOW=<owner window id> (dedicated quiet window)"; exit 2
++    fi
++    CAMPAIGN_ID="${ZCORP_CAMPAIGN_ID:-V2-PRV-D2-01-run1}"
++    OUT="${ZCORP_OUT:-$REPO/results/V2-PRV-D2-01}"; CMODE=campaign; PLAN=campaign
+   else
++    CAMPAIGN_ID="${ZCORP_CAMPAIGN_ID:-${MODE}-${STAMP}}"
+     OUT="${ZCORP_OUT:-$REPO/build/campaigns/$CAMPAIGN_ID}"; CMODE=dryrun; [ -n "$PLAN" ] || PLAN=dryrun
+   fi
+   if [ -e "$OUT/CAMPAIGN.json" ]; then echo "ABORT: $OUT already holds a campaign (use: resume $OUT)"; exit 2; fi
+-  if [ "$MODE" = campaign ] && [ "${ZCORP_ALLOW_FULL_CAMPAIGN:-0}" != 1 ]; then
+-    echo "ABORT: the full prover campaign is not enabled in this run (set ZCORP_ALLOW_FULL_CAMPAIGN=1 deliberately)."; exit 2
+-  fi
+ fi
+ if [ -n "${ZCORP_TEST_INTERRUPT_AFTER_CONTAINERS:-}" ] && [ "$CMODE" != dryrun ]; then
+   echo "ABORT: simulated interruptions are allowed in dry runs only"; exit 2
+ fi
+-case "$OUT" in "$REPO"/*) OUT_REL="${OUT#$REPO/}" ;; *) OUT_REL="" ;; esac
+ 
+-mkdir -p "$OUT/environment/preflight/$SESSION_ID" "$OUT/prover"
+-E="$OUT/environment"
++mkdir -p "$OUT/environment/preflight/$SESSION_ID" "$OUT/prover" "$OUT/environment/quiet/$SESSION_ID"
++E="$OUT/environment"; Q="$E/quiet/$SESSION_ID"
+ LOG="$E/run-campaign.log"
+ exec > >(tee -a "$LOG") 2>&1
+-echo "== Z-CORP $PROTOCOL_VERSION $MODE: campaign $CAMPAIGN_ID, session $SESSION_ID -> $OUT"
++echo "== Z-CORP $PROTOCOL_VERSION ($KIT_VERSION) $MODE: campaign $CAMPAIGN_ID, session $SESSION_ID -> $OUT"
+ 
+-# P9: keep the host awake while this runner lives. caffeinate is started here with -w $$, so it
+-# holds its assertions until this shell exits; its PID is known and is verified directly
+-# (process alive, process name, and a power assertion owned by that PID in `pmset -g assertions`).
+-CAFF_PID=""
+-if command -v caffeinate >/dev/null 2>&1; then caffeinate -dimsu -w $$ & CAFF_PID=$!; sleep 2; fi
+-caff_alive() { [ -n "$CAFF_PID" ] && kill -0 "$CAFF_PID" 2>/dev/null; }
++# Sleep inhibitor (replaces caffeinate): held while this runner lives; verified by name in systemd-inhibit --list.
++INH_PID=""
++if command -v systemd-inhibit >/dev/null 2>&1; then
++  systemd-inhibit --what=sleep:idle --who=zcorp-d2 --why="V2-PRV-D2-01 session $SESSION_ID" --mode=block tail --pid=$$ -f /dev/null &
++  INH_PID=$!; sleep 2
++fi
++inh_ok() { [ -n "$INH_PID" ] && kill -0 "$INH_PID" 2>/dev/null && systemd-inhibit --list --no-pager --no-legend 2>/dev/null | grep -q zcorp-d2; }
+ 
+-COMPOSE="docker compose -f $KIT/compose.yaml"
+-[ -n "${ZCORP_COMPOSE_OVERRIDE:-}" ] && COMPOSE="$COMPOSE -f $ZCORP_COMPOSE_OVERRIDE"
++# Profile -> docker run (same limits as v3 compose.yaml, plus --cpuset-mems; compose has no cpuset-mems key).
++svc_cpuset() { case "$1" in cpu1) echo 1 ;; cpu2) echo 1-2 ;; cpu4) echo 1-4 ;; cpu8|tools) echo 1-8 ;; *) return 1 ;; esac; }
++svc_cpus() { case "$1" in cpu1) echo 1 ;; cpu2) echo 2 ;; cpu4) echo 4 ;; cpu8|tools) echo 8 ;; *) return 1 ;; esac; }
++drun() { # drun <profile> [docker options ...] -- <command ...>
++  local svc="$1"; shift; local opts=()
++  while [ $# -gt 0 ] && [ "$1" != -- ]; do opts+=("$1"); shift; done; [ "${1:-}" = -- ] && shift
++  docker run --rm --init --network none --platform "$PLATFORM" \
++    --cpuset-cpus "$(svc_cpuset "$svc")" --cpuset-mems "$CPUSET_MEMS" --memory 8g --memory-swap 8g -w /work \
++    --mount "type=bind,source=$REPO,target=/work,readonly" --mount "type=bind,source=$OUT,target=/results" \
++    -e ZCORP_PROFILE="$svc" -e ZCORP_CPUS="$(svc_cpus "$svc")" -e ZCORP_IMAGE_ID="$ZCORP_IMAGE_ID" -e ZCORP_SESSION_ID="$SESSION_ID" \
++    "${opts[@]}" "$ZCORP_IMAGE" "$@" </dev/null
++}
+ 
+ # ------------------------------------------------------------------ session records
+-PSRC=""; LPM=""; CAFF_OK=0; NCPU=""; MEMB=""; DDV=""; ENGINE=""; KERNEL=""; IMAGE_ID="${IMAGE_ID:-}"
+-GIT_HEAD_BEFORE=$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo none)
++NCPU=""; MEMB=""; ENGINE=""; KERNEL=""; IMAGE_ID="${IMAGE_ID:-}"; INH=0
+ session_event() { # event detail
+   local f="$E/sessions.csv"
+   [ -f "$f" ] || echo "campaign_id,session_id,event,utc,mode,git_head,image_id,docker_desktop,engine,kernel,vm_ncpu,vm_mem_bytes,power_source,low_power_mode,caffeinated,detail" > "$f"
+-  echo "$CAMPAIGN_ID,$SESSION_ID,$1,$(date -u +%Y-%m-%dT%H:%M:%SZ),$MODE,$GIT_HEAD_BEFORE,$IMAGE_ID,$DDV,$ENGINE,$KERNEL,$NCPU,$MEMB,\"$PSRC\",$LPM,$CAFF_OK,\"$2\"" >> "$f"
++  echo "$CAMPAIGN_ID,$SESSION_ID,$1,$(date -u +%Y-%m-%dT%H:%M:%SZ),$MODE,none,$IMAGE_ID,n/a (native Engine),$ENGINE,$KERNEL,$NCPU,$MEMB,\"n/a (desktop)\",n/a,$INH,\"window ${ZCORP_D2_WINDOW:-none}; $2\"" >> "$f"
+ }
+ fail() {
+   echo "ABORT: $*"
+@@ -107,176 +118,141 @@
+   exit 1
+ }
+ 
+-# ------------------------------------------------------------------ 1. host, P9 and Docker VM
++# ------------------------------------------------------------------ 1. host facts, frozen state, Docker Engine
+ {
+-  echo "session_id=$SESSION_ID"
+-  echo "hw.model=$(sysctl -n hw.model 2>/dev/null)"
+-  echo "cpu.brand=$(sysctl -n machdep.cpu.brand_string 2>/dev/null)"
+-  echo "hw.physicalcpu=$(sysctl -n hw.physicalcpu 2>/dev/null)"
+-  echo "perflevel0=$(sysctl -n hw.perflevel0.name 2>/dev/null) physicalcpu=$(sysctl -n hw.perflevel0.physicalcpu 2>/dev/null)"
+-  echo "perflevel1=$(sysctl -n hw.perflevel1.name 2>/dev/null) physicalcpu=$(sysctl -n hw.perflevel1.physicalcpu 2>/dev/null)"
+-  echo "hw.memsize=$(sysctl -n hw.memsize 2>/dev/null)"
+-  echo "macos=$(sw_vers -productVersion 2>/dev/null) build=$(sw_vers -buildVersion 2>/dev/null)"
+-  echo "model_name=$(system_profiler SPHardwareDataType 2>/dev/null | awk -F': ' '/Model Name/{print $2}')"
+-  echo "chip=$(system_profiler SPHardwareDataType 2>/dev/null | awk -F': ' '/Chip/{print $2}')"
+-  echo "power_source=$(pmset -g batt 2>/dev/null | head -1 | sed "s/.*'\(.*\)'.*/\1/")"
+-  echo "low_power_mode=$(pmset -g 2>/dev/null | awk '/lowpowermode/{print $2}')"
+-  echo "docker_desktop_app_version=$(defaults read /Applications/Docker.app/Contents/Info.plist CFBundleShortVersionString 2>/dev/null)"
+-  echo "docker_context=$(docker context show 2>/dev/null)"
+-  echo "git=$(git --version 2>/dev/null)"
+-  echo "caffeinate_pid=$CAFF_PID"
+-  echo "caffeinate_alive=$(caff_alive && echo 1 || echo 0)"
+-  echo "caffeinate_comm=$( [ -n "$CAFF_PID" ] && ps -o comm= -p "$CAFF_PID" 2>/dev/null | sed 's#.*/##')"
+-  NA=0; [ -n "$CAFF_PID" ] && NA=$(pmset -g assertions 2>/dev/null | grep -c "pid $CAFF_PID(caffeinate)")
+-  echo "caffeinate_assertions=${NA:-0}"
++  echo "session_id=$SESSION_ID"; echo "kit=$KIT_VERSION"; echo "window=${ZCORP_D2_WINDOW:-}"
++  echo "hostname=$(hostname)"; echo "kernel=$(uname -r)"; echo "os=$(. /etc/os-release && echo "$PRETTY_NAME")"
++  echo "cpu_model=$(awk -F': ' '/^model name/{print $2; exit}' /proc/cpuinfo)"
++  echo "nproc=$(nproc --all)"; echo "mem_total_kb=$(awk '/MemTotal/{print $2}' /proc/meminfo)"
++  echo "intel_pstate=$(cat /sys/devices/system/cpu/intel_pstate/status 2>/dev/null)"
++  echo "no_turbo=$(cat /sys/devices/system/cpu/intel_pstate/no_turbo 2>/dev/null)"
++  echo "hwp_dynamic_boost=$(cat /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost 2>/dev/null)"
++  echo "governors=$(cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor 2>/dev/null | sort | uniq -c | tr -s ' ' | tr '\n' ';')"
++  echo "epp_cpu1_8=$(for c in 1 2 3 4 5 6 7 8; do cat /sys/devices/system/cpu/cpu$c/cpufreq/energy_performance_preference 2>/dev/null; done | tr '\n' ' ')"
++  echo "numa_balancing=$(cat /proc/sys/kernel/numa_balancing 2>/dev/null)"
++  echo "thp=$(cat /sys/kernel/mm/transparent_hugepage/enabled 2>/dev/null)"
++  echo "smt=$(cat /sys/devices/system/cpu/smt/control 2>/dev/null)"
++  echo "siblings_cpu1_8=$(for c in 1 2 3 4 5 6 7 8; do cat /sys/devices/system/cpu/cpu$c/topology/thread_siblings_list; done | tr '\n' ' ')"
++  echo "node0_cpus=$(cat /sys/devices/system/node/node0/cpulist 2>/dev/null)"
++  echo "cmdline=$(cat /proc/cmdline)"
++  echo "loadavg=$(cat /proc/loadavg)"
++  echo "sleep_inhibitor_pid=$INH_PID"; echo "sleep_inhibitor_ok=$(inh_ok && echo 1 || echo 0)"
+ } > "$E/host-$SESSION_ID.txt"
+-pmset -g assertions > "$E/pmset-assertions-$SESSION_ID.txt" 2>&1
+-cp "$E/host-$SESSION_ID.txt" "$E/host.txt"
+-cat "$E/host-$SESSION_ID.txt"
+-PSRC=$(sed -n 's/^power_source=//p' "$E/host-$SESSION_ID.txt")
+-LPM=$(sed -n 's/^low_power_mode=//p' "$E/host-$SESSION_ID.txt")
+-CAFF_ALIVE=$(sed -n 's/^caffeinate_alive=//p' "$E/host-$SESSION_ID.txt")
+-CAFF_COMM=$(sed -n 's/^caffeinate_comm=//p' "$E/host-$SESSION_ID.txt")
+-CAFF_ASSERT=$(sed -n 's/^caffeinate_assertions=//p' "$E/host-$SESSION_ID.txt")
+-CAFF_OK=0; [ "$CAFF_ALIVE" = 1 ] && [ "$CAFF_COMM" = caffeinate ] && [ "${CAFF_ASSERT:-0}" -ge 1 ] 2>/dev/null && CAFF_OK=1
+-DDV=$(sed -n 's/^docker_desktop_app_version=//p' "$E/host-$SESSION_ID.txt")
+-
+-# P9 host conditions. p9_ok <power_source> <low_power_mode> <caffeinate_ok 1|0>
+-p9_ok() { [ "$1" = "AC Power" ] && [ "$2" = 0 ] && [ "$3" = 1 ]; }
+-P9_ENFORCED=false
+-if [ "$MODE" = preflight ] || [ "$CMODE" = campaign ]; then P9_ENFORCED=true; fi
+-P9_ACTUAL=false; p9_ok "$PSRC" "$LPM" "$CAFF_OK" && P9_ACTUAL=true
+-NEG1=false; p9_ok "Battery Power" 0 1 || NEG1=true
+-NEG2=false; p9_ok "AC Power" 1 1 || NEG2=true
+-NEG3=false; p9_ok "AC Power" 0 0 || NEG3=true
+-printf '{\n  "session_id": "%s",\n  "enforced_in_this_mode": %s,\n  "power_source": "%s",\n  "low_power_mode": "%s",\n  "caffeinate_pid": "%s",\n  "caffeinate_alive": "%s",\n  "caffeinate_comm": "%s",\n  "caffeinate_assertions": "%s",\n  "caffeinate_ok": %s,\n  "conditions_met": %s,\n  "self_test_battery_rejected": %s,\n  "self_test_low_power_mode_rejected": %s,\n  "self_test_no_caffeinate_rejected": %s\n}\n' \
+-  "$SESSION_ID" "$P9_ENFORCED" "$PSRC" "$LPM" "$CAFF_PID" "$CAFF_ALIVE" "$CAFF_COMM" "$CAFF_ASSERT" "$([ $CAFF_OK = 1 ] && echo true || echo false)" "$P9_ACTUAL" "$NEG1" "$NEG2" "$NEG3" > "$E/p9-$SESSION_ID.json"
+-echo "P9: enforced=$P9_ENFORCED met=$P9_ACTUAL (power='$PSRC' lowpower=$LPM caffeinate pid=$CAFF_PID alive=$CAFF_ALIVE comm=$CAFF_COMM assertions=$CAFF_ASSERT); self-tests battery=$NEG1 lpm=$NEG2 nocaff=$NEG3"
+-if [ "$NEG1$NEG2$NEG3" != truetruetrue ]; then fail "P9 enforcement self-test failed"; fi
+-if [ "$P9_ENFORCED" = true ] && [ "$P9_ACTUAL" != true ]; then
+-  fail "P9 host conditions not met (power '$PSRC', Low Power Mode '$LPM', caffeinate ok=$CAFF_OK)"
+-fi
++{ lscpu; echo; numactl -H; echo; free -b; echo; df -B1 "$REPO"; } > "$E/host-detail-$SESSION_ID.txt" 2>&1
++cp "$E/host-$SESSION_ID.txt" "$E/host.txt"; cat "$E/host-$SESSION_ID.txt"
++INH=$(sed -n 's/^sleep_inhibitor_ok=//p' "$E/host-$SESSION_ID.txt")
++CPU_MODEL=$(sed -n 's/^cpu_model=//p' "$E/host-$SESSION_ID.txt")
++[ "$CPU_MODEL" = "$EXPECT_CPU_MODEL" ] || fail "CPU model '$CPU_MODEL' is not the registered Host B"
++SIBS=$(for c in 1 2 3 4 5 6 7 8; do cut -d, -f2 /sys/devices/system/cpu/cpu$c/topology/thread_siblings_list; done | tr '\n' ' ')
++[ "$SIBS" = "$EXPECT_SIBLINGS" ] || fail "SMT sibling map of CPUs 1-8 is '$SIBS', registered '$EXPECT_SIBLINGS'"
++python3 "$KIT/hostb_quiet.py" selftest > "$E/quiet-selftest-$SESSION_ID.txt" 2>&1 || fail "host-condition check self-test failed"
++if [ "$MODE" != setup ]; then [ "$INH" = 1 ] || fail "sleep inhibitor (systemd-inhibit) not held"; fi
+ 
+-: > "$E/docker-desktop-settings-$SESSION_ID.txt"
+-for DDS in "$HOME/Library/Group Containers/group.com.docker/settings-store.json" "$HOME/Library/Group Containers/group.com.docker/settings.json"; do
+-  if [ -f "$DDS" ]; then
+-    { echo "# file: $(basename "$DDS")"; echo "# key names:"
+-      plutil -p "$DDS" 2>/dev/null | sed -n 's/^  "\([^"]*\)" => .*/\1/p' | tr '\n' ' '; echo
+-      echo "# resource/VM/update values:"
+-      plutil -p "$DDS" 2>/dev/null | grep -Ei '^  "[^"]*(cpu|memory|swap|disk|virtuali|rosetta|virtiofs|saver|pause|vmm|qemu|krun|grpcfuse|kernel|snapshotter|update)[^"]*" => '
+-    } >> "$E/docker-desktop-settings-$SESSION_ID.txt"
+-  fi
+-done
+-CONF_MEM_MIB=$(sed -n 's/^  "MemoryMiB" => \([0-9]*\)$/\1/p' "$E/docker-desktop-settings-$SESSION_ID.txt" | head -1)
+-{ echo "== docker desktop version"; docker desktop version 2>&1; echo "== docker desktop status"; docker desktop status 2>&1
+-  echo "== docker desktop update --help"; docker desktop update --help 2>&1; } > "$E/docker-desktop-cli-$SESSION_ID.txt" 2>&1
+ docker version --format '{{json .}}' > "$E/docker-version-$SESSION_ID.json" 2>&1
+ docker info --format '{{json .}}' > "$E/docker-info-$SESSION_ID.json" 2>&1 || fail "docker daemon not reachable"
+-NCPU=$(docker info --format '{{.NCPU}}')
+-MEMB=$(docker info --format '{{.MemTotal}}')
+-DARCH=$(docker info --format '{{.Architecture}}')
+-KERNEL=$(docker info --format '{{.KernelVersion}}')
+-ENGINE=$(docker version --format '{{.Server.Version}}')
+-echo "docker: desktop=$DDV engine=$ENGINE ncpu=$NCPU mem_bytes=$MEMB configured_memory_mib=${CONF_MEM_MIB:-not-exposed} arch=$DARCH cgroup=v$(docker info --format '{{.CgroupVersion}}') kernel=$KERNEL"
++NCPU=$(docker info --format '{{.NCPU}}'); MEMB=$(docker info --format '{{.MemTotal}}')
++DARCH=$(docker info --format '{{.Architecture}}'); KERNEL=$(docker info --format '{{.KernelVersion}}')
++ENGINE=$(docker version --format '{{.Server.Version}}'); CGV=$(docker info --format '{{.CgroupVersion}}')
++echo "docker: engine=$ENGINE ncpu=$NCPU mem_bytes=$MEMB arch=$DARCH cgroup=v$CGV kernel=$KERNEL"
+ session_event start "$([ "$MODE" = resume ] && echo resume || echo new)"
+-awk -v n="$NCPU" -v m="$MEMB" -v mn="$MIN_NCPU" -v mm="$MIN_MEM_GIB" 'BEGIN{exit !(n>=mn && m/1073741824>=mm)}' \
+-  || fail "Docker VM has $NCPU vCPUs / $(awk -v m="$MEMB" 'BEGIN{printf "%.2f", m/1073741824}') GiB; need >= $MIN_NCPU vCPUs and >= $MIN_MEM_GIB GiB visible (12 GiB configured)"
+-[ "$DARCH" = "$EXPECT_DOCKER_ARCH" ] || fail "Docker VM architecture $DARCH, expected $EXPECT_DOCKER_ARCH"
+-if grep -Eiq '"UseResourceSaver" => (1|true)' "$E/docker-desktop-settings-$SESSION_ID.txt"; then fail "Docker Desktop Resource Saver is enabled"; fi
+-RUNNING=$(docker ps -q | wc -l | tr -d ' ')
+-[ "$RUNNING" = 0 ] || fail "$RUNNING other container(s) running; stop them first"
+-
+-# ------------------------------------------------------------------ 2. repository state (before)
+-git_status() { # writes the porcelain status of the repository, excluding this campaign's own directory
+-  if [ -n "$OUT_REL" ]; then git -C "$REPO" status --porcelain=v1 --untracked-files=all -- . ":(exclude)$OUT_REL"
+-  else git -C "$REPO" status --porcelain=v1 --untracked-files=all; fi
+-}
+-( cd "$REPO" && shasum -a 256 -c ARTIFACTS.sha256 > "$E/manifest-before-$SESSION_ID.txt" 2>&1 ); MAN_BEFORE=$?
+-GIT_HEAD_BEFORE=$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo none)
+-git_status > "$E/git-status-before-$SESSION_ID.txt" 2>/dev/null
+-GIT_STATUS_SHA=$(sha "$E/git-status-before-$SESSION_ID.txt")
+-GIT_DIRTY=$([ -s "$E/git-status-before-$SESSION_ID.txt" ] && echo true || echo false)
+-# Uncommitted state of the paths the measurements depend on (kit, input generator, circuits,
+-# contracts, tests, manifest). Compared across sessions; the whole-tree status is compared within a session.
+-( cd "$REPO" && git status --porcelain=v1 --untracked-files=all -- $CAMPAIGN_PATHS ) > "$E/git-status-campaign-paths-$SESSION_ID.txt" 2>/dev/null
+-CPATHS_STATUS_SHA=$(sha "$E/git-status-campaign-paths-$SESSION_ID.txt")
+-PATHS_DIRTY=$(wc -l < "$E/git-status-campaign-paths-$SESSION_ID.txt" | tr -d ' ')
+-echo "manifest before: $(grep -c ': OK$' "$E/manifest-before-$SESSION_ID.txt") OK, exit $MAN_BEFORE; git HEAD $GIT_HEAD_BEFORE dirty=$GIT_DIRTY; uncommitted campaign paths: $PATHS_DIRTY"
+-[ "$MAN_BEFORE" = 0 ] || fail "ARTIFACTS.sha256 check failed before the run"
+-if [ "$CMODE" = campaign ] && [ "$PATHS_DIRTY" != 0 ]; then fail "campaign paths ($CAMPAIGN_PATHS) have uncommitted changes"; fi
++awk -v n="$NCPU" -v m="$MEMB" -v mn="$MIN_NCPU" -v mm="$MIN_MEM_GIB" 'BEGIN{exit !(n>=mn && m/1073741824>=mm)}' || fail "Docker host has $NCPU CPUs / $MEMB bytes"
++[ "$DARCH" = "$EXPECT_DOCKER_ARCH" ] || fail "Docker architecture $DARCH, expected $EXPECT_DOCKER_ARCH"
++[ "$CGV" = 2 ] || fail "cgroup v$CGV, expected v2"
++
++# Frozen state: checked, never changed (record-as-is policy, D2-PREREGISTRATION.md §5.2).
++python3 "$KIT/hostb_quiet.py" snap "$Q/session-a.json"; sleep 2; python3 "$KIT/hostb_quiet.py" snap "$Q/session-b.json"
++python3 "$KIT/hostb_quiet.py" check "$Q/session-a.json" "$Q/session-b.json" --mode pre --alloc 1-8 --frozen "$FROZEN_STATE" > "$Q/session-check.json"; SRC=$?
++echo "host conditions at session start: $(cat "$Q/session-check.json")"
++if [ "$MODE" != setup ] && [ $SRC != 0 ]; then fail "host conditions not met at session start"; fi
++
++# ------------------------------------------------------------------ 2. repository state (frozen manifests; no git on Host B)
++( cd "$REPO" && sha256sum -c ARTIFACTS.sha256 > "$E/manifest-before-$SESSION_ID.txt" 2>&1 ); MAN_BEFORE=$?
++( cd "$REPO" && sha256sum -c SYNTHETIC-CORPUS.sha256 > "$E/corpus-before-$SESSION_ID.txt" 2>&1 ); CORPUS_BEFORE=$?
++TREE_SHA=$(tree_sha)
++echo "manifest before: $(grep -c ': OK$' "$E/manifest-before-$SESSION_ID.txt") OK, exit $MAN_BEFORE; corpus: $(grep -c ': OK$' "$E/corpus-before-$SESSION_ID.txt") OK, exit $CORPUS_BEFORE; tree $TREE_SHA"
++[ "$CORPUS_BEFORE" = 0 ] || fail "SYNTHETIC-CORPUS.sha256 check failed"
++if [ "$MODE" != setup ]; then [ "$MAN_BEFORE" = 0 ] || fail "ARTIFACTS.sha256 check failed before the run (PLONK keys: run 'setup' first)"; fi
+ 
+ integrity_after() {
+-  ( cd "$REPO" && shasum -a 256 -c ARTIFACTS.sha256 > "$E/manifest-after-$SESSION_ID.txt" 2>&1 ); local man_after=$?
+-  git_status > "$E/git-status-after-$SESSION_ID.txt" 2>/dev/null
+-  local head_after; head_after=$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo none)
+-  local same=false; cmp -s "$E/git-status-before-$SESSION_ID.txt" "$E/git-status-after-$SESSION_ID.txt" && same=true
+-  local hsame=false; [ "$GIT_HEAD_BEFORE" = "$head_after" ] && hsame=true
+-  printf '{\n  "session_id": "%s",\n  "manifest_before_ok": %s,\n  "manifest_after_ok": %s,\n  "manifest_entries_ok_after": %s,\n  "git_head_before": "%s",\n  "git_head_after": "%s",\n  "git_head_unchanged": %s,\n  "git_status_unchanged": %s,\n  "git_status_sha256_before": "%s"\n}\n' \
++  ( cd "$REPO" && sha256sum -c ARTIFACTS.sha256 > "$E/manifest-after-$SESSION_ID.txt" 2>&1 ); local man_after=$?
++  ( cd "$REPO" && sha256sum -c SYNTHETIC-CORPUS.sha256 > "$E/corpus-after-$SESSION_ID.txt" 2>&1 ); local cor_after=$?
++  local t_after; t_after=$(tree_sha)
++  printf '{\n  "session_id": "%s",\n  "manifest_before_ok": %s,\n  "manifest_after_ok": %s,\n  "corpus_after_ok": %s,\n  "manifest_entries_ok_after": %s,\n  "tree_sha256_before": "%s",\n  "tree_sha256_after": "%s",\n  "tree_unchanged": %s\n}\n' \
+     "$SESSION_ID" "$([ "$MAN_BEFORE" = 0 ] && echo true || echo false)" "$([ "$man_after" = 0 ] && echo true || echo false)" \
+-    "$(grep -c ': OK$' "$E/manifest-after-$SESSION_ID.txt")" "$GIT_HEAD_BEFORE" "$head_after" "$hsame" "$same" "$GIT_STATUS_SHA" > "$E/integrity-$SESSION_ID.json"
+-  cp "$E/integrity-$SESSION_ID.json" "$E/integrity.json"
+-  cat "$E/integrity-$SESSION_ID.json"
++    "$([ "$cor_after" = 0 ] && echo true || echo false)" "$(grep -c ': OK$' "$E/manifest-after-$SESSION_ID.txt")" "$TREE_SHA" "$t_after" \
++    "$([ "$TREE_SHA" = "$t_after" ] && echo true || echo false)" > "$E/integrity-$SESSION_ID.json"
++  cp "$E/integrity-$SESSION_ID.json" "$E/integrity.json"; cat "$E/integrity-$SESSION_ID.json"
+ }
+ 
+ # ------------------------------------------------------------------ 3. image and campaign identity
++RUNNING=$(docker ps -q | wc -l | tr -d ' ')
++if [ "$MODE" = setup ]; then echo "running containers at setup: $RUNNING (recorded; setup is untimed)";
++elif [ "$RUNNING" != 0 ]; then fail "$RUNNING other container(s) running on Host B (dedicated quiet window required)"; fi
+ if [ "$MODE" = resume ]; then
+-  IMAGE_ID="$(jget built_image_id)"
+-  RTAG="zcorp-bench:$CAMPAIGN_ID"
+-  MISMATCH=""
++  IMAGE_ID="$(jget built_image_id)"; RTAG="zcorp-bench:$CAMPAIGN_ID"; MISMATCH=""
+   chk() { [ "$2" = "$3" ] || MISMATCH="$MISMATCH; $1 (recorded '$2', now '$3')"; }
+   chk "protocol version" "$(jget protocol_version)" "$PROTOCOL_VERSION"
+-  chk "git commit" "$(jget commit)" "$GIT_HEAD_BEFORE"
+-  chk "uncommitted state of the campaign paths" "$(jget campaign_paths_status_sha256)" "$CPATHS_STATUS_SHA"
++  chk "kit" "$(jget kit)" "$KIT_VERSION"
++  chk "tree (kit, generator, manifests)" "$(jget campaign_paths_status_sha256)" "$TREE_SHA"
+   chk "artifact manifest" "$(jget manifest_sha256)" "$(sha "$REPO/ARTIFACTS.sha256")"
++  chk "synthetic corpus" "$(jget synthetic_corpus_sha256)" "$(sha "$REPO/SYNTHETIC-CORPUS.sha256")"
+   chk "adapter" "$(jget adapter_sha256)" "$(sha "$KIT/lib/cpu-visibility.js")"
+   chk "runner" "$(jget 'bench\/run-campaign.sh')" "$(sha "$KIT/run-campaign.sh")"
+   chk "compose file" "$(jget 'bench\/compose.yaml')" "$(sha "$KIT/compose.yaml")"
+   chk "Dockerfile" "$(jget 'bench\/Dockerfile')" "$(sha "$KIT/Dockerfile")"
+   chk "benchmark image" "$IMAGE_ID" "$(docker image inspect --format '{{.Id}}' "$RTAG" 2>/dev/null)"
+-  chk "Docker Desktop" "$(jget docker_desktop)" "$DDV"
+   chk "Docker Engine" "$(jget engine)" "$ENGINE"
+-  chk "LinuxKit kernel" "$(jget kernel)" "$KERNEL"
+-  chk "VM vCPUs" "$(jget vm_ncpu)" "$NCPU"
+-  chk "VM memory" "$(jget vm_mem_bytes)" "$MEMB"
++  chk "kernel" "$(jget kernel)" "$KERNEL"
++  chk "host CPUs" "$(jget vm_ncpu)" "$NCPU"
++  chk "host memory" "$(jget vm_mem_bytes)" "$MEMB"
++  chk "frozen host state" "$(jget host_frozen_state)" "$FROZEN_STATE"
+   if [ -n "$MISMATCH" ]; then fail "REFUSE resume: campaign identity differs${MISMATCH}"; fi
+-  echo "resume identity: campaign, commit, campaign-path state, manifest, adapter, runner, compose, Dockerfile, image, Docker environment all match the campaign record"
+-  IMAGE_REF="$RTAG"
+-  export ZCORP_IMAGE="$IMAGE_REF" ZCORP_IMAGE_ID="$IMAGE_ID" ZCORP_REPO="$REPO" ZCORP_RESULTS="$OUT" ZCORP_PLATFORM="$PLATFORM" ZCORP_SESSION_ID="$SESSION_ID"
++  echo "resume identity: all recorded identities match"
++  export ZCORP_IMAGE="$RTAG" ZCORP_IMAGE_ID="$IMAGE_ID"
+ else
+-  docker build --platform "$PLATFORM" -f "${ZCORP_DOCKERFILE:-$KIT/Dockerfile}" -t "$IMAGE_TAG" "$KIT" > "$E/docker-build-$SESSION_ID.log" 2>&1 || fail "image build failed"
++  docker build --platform "$PLATFORM" -f "$KIT/Dockerfile" -t "$IMAGE_TAG" "$KIT" > "$E/docker-build-$SESSION_ID.log" 2>&1 || fail "image build failed"
+   IMAGE_ID=$(docker image inspect --format '{{.Id}}' "$IMAGE_TAG")
+   IMAGE_REF="zcorp-bench:$CAMPAIGN_ID"
+   docker tag "$IMAGE_ID" "$IMAGE_REF" || fail "could not tag the campaign image"
+   IMAGE_PLATFORM=$(docker image inspect --format '{{.Os}}/{{.Architecture}}' "$IMAGE_ID")
+   docker buildx imagetools inspect --raw "$BASE_REF" > "$E/base-image-index.json" 2>/dev/null || echo '{}' > "$E/base-image-index.json"
+   echo "image $IMAGE_REF id=$IMAGE_ID platform=$IMAGE_PLATFORM"
+-  export ZCORP_IMAGE="$IMAGE_REF" ZCORP_IMAGE_ID="$IMAGE_ID" ZCORP_REPO="$REPO" ZCORP_RESULTS="$OUT" ZCORP_PLATFORM="$PLATFORM" ZCORP_SESSION_ID="$SESSION_ID"
+-  $COMPOSE run --rm -T \
+-    -e ZCORP_PROFILES="$PROFILES" \
+-    -e ZCORP_EXPECT_ARCH="${ZCORP_EXPECT_ARCH:-arm64}" -e ZCORP_EXPECT_MACHINE="${ZCORP_EXPECT_MACHINE:-aarch64}" \
+-    -e ZCORP_EXPECT_CPU_IMPLEMENTER="${ZCORP_EXPECT_CPU_IMPLEMENTER-0x61}" -e ZCORP_EXPECT_CGROUP="${ZCORP_EXPECT_CGROUP:-2}" \
+-    -e ZCORP_META_GIT_COMMIT="$GIT_HEAD_BEFORE" -e ZCORP_META_GIT_DIRTY="$GIT_DIRTY" -e ZCORP_META_GIT_STATUS_SHA256="$GIT_STATUS_SHA" \
+-    -e ZCORP_META_CAMPAIGN_PATHS="$CAMPAIGN_PATHS" -e ZCORP_META_CAMPAIGN_PATHS_STATUS_SHA256="$CPATHS_STATUS_SHA" \
++  export ZCORP_IMAGE="$IMAGE_REF" ZCORP_IMAGE_ID="$IMAGE_ID"
++  if [ "$MODE" = setup ]; then
++    # Untimed: regenerate the 11 PLONK proving keys (deterministic from the R1CS and pot16_final.ptau), then the full manifest.
++    mkdir -p "$REPO/data/plonk-zkeys"
++    docker run --rm --init --network none --platform "$PLATFORM" --cpuset-cpus 1-8 --cpuset-mems "$CPUSET_MEMS" --memory 12g --memory-swap 12g \
++      -e ZCORP_CPUS=8 -e NODE_OPTIONS="--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=7000" \
++      --mount "type=bind,source=$REPO,target=/work,readonly" --mount "type=bind,source=$REPO/data/plonk-zkeys,target=/out" -w /work "$IMAGE_ID" node /opt/zcorp/setup_plonk_zkeys.js </dev/null \
++      > "$E/setup-plonk-$SESSION_ID.log" 2>&1 || fail "PLONK key regeneration failed"
++    ( cd "$REPO" && sha256sum -c ARTIFACTS.sha256 > "$E/manifest-setup-$SESSION_ID.txt" 2>&1 ) || fail "ARTIFACTS.sha256 check failed after setup"
++    MAN_BEFORE=0; integrity_after
++    echo "result: SETUP PASS (image $IMAGE_ID; ARTIFACTS.sha256 $(grep -c ': OK$' "$E/manifest-setup-$SESSION_ID.txt") OK)" | tee "$E/RESULT-$SESSION_ID.txt"
++    cp "$E/RESULT-$SESSION_ID.txt" "$E/RESULT.txt"; session_event end "SETUP PASS"; exit 0
++  fi
++  SCHED_ENV=(); if [ "$CMODE" = campaign ]; then SCHED_ENV=(-e "ZCORP_EXPECT_SCHEDULE_SHA256=$HOST_A_SCHEDULE_SHA256" -e "ZCORP_EXPECT_PLAN_SHA256=$HOST_A_PLAN_SHA256"); fi
++  P7ENV=(); [ -n "${ZCORP_P7_DEPTHS:-}" ] && P7ENV=(-e "ZCORP_P7_DEPTHS=$ZCORP_P7_DEPTHS")
++  drun tools -e ZCORP_PROFILES="$PROFILES" -e ZCORP_BASE_ARCH=amd64 \
++    -e ZCORP_EXPECT_ARCH=x64 -e ZCORP_EXPECT_MACHINE=x86_64 -e ZCORP_EXPECT_CPU_IMPLEMENTER= -e ZCORP_EXPECT_CGROUP=2 \
++    -e "ZCORP_EXPECT_CPU_MODEL=$EXPECT_CPU_MODEL" -e ZCORP_EXPECT_CPUSET_MEMS="$CPUSET_MEMS" "${SCHED_ENV[@]}" "${P7ENV[@]}" \
++    -e ZCORP_META_GIT_COMMIT=none -e ZCORP_META_GIT_DIRTY=false -e ZCORP_META_GIT_STATUS_SHA256="$TREE_SHA" \
++    -e "ZCORP_META_CAMPAIGN_PATHS=$TREE_PATHS" -e ZCORP_META_CAMPAIGN_PATHS_STATUS_SHA256="$TREE_SHA" \
+     -e ZCORP_META_IMAGE_ID="$IMAGE_ID" -e ZCORP_META_IMAGE_TAG="$IMAGE_REF" -e ZCORP_META_BASE_IMAGE_REF="$BASE_REF" \
+-    -e ZCORP_META_PLATFORM="$IMAGE_PLATFORM" \
+-    -e ZCORP_META_DOCKER_DESKTOP="$DDV" -e ZCORP_META_ENGINE="$ENGINE" -e ZCORP_META_KERNEL="$KERNEL" \
+-    -e ZCORP_META_VM_NCPU="$NCPU" -e ZCORP_META_VM_MEM_BYTES="$MEMB" -e ZCORP_META_CONFIGURED_MEMORY_MIB="$CONF_MEM_MIB" \
++    -e ZCORP_META_PLATFORM="$IMAGE_PLATFORM" -e "ZCORP_META_DOCKER_DESKTOP=n/a (native Engine)" -e ZCORP_META_ENGINE="$ENGINE" \
++    -e ZCORP_META_KERNEL="$KERNEL" -e ZCORP_META_VM_NCPU="$NCPU" -e ZCORP_META_VM_MEM_BYTES="$MEMB" -e ZCORP_META_CONFIGURED_MEMORY_MIB= \
++    -e "ZCORP_META_HOST_FROZEN_STATE=$FROZEN_STATE" \
+     -e ZCORP_META_RUNNER_SHA256="$(sha "$KIT/run-campaign.sh")" -e ZCORP_META_COMPOSE_SHA256="$(sha "$KIT/compose.yaml")" \
+     -e ZCORP_META_DOCKERFILE_SHA256="$(sha "$KIT/Dockerfile")" \
+-    ${ZCORP_P7_DEPTHS:+-e ZCORP_P7_DEPTHS="$ZCORP_P7_DEPTHS"} \
+-    tools node /opt/zcorp/make_schedule.js --campaign-id "$CAMPAIGN_ID" --mode "$CMODE" --plan "$PLAN" </dev/null \
+-    || fail "campaign initialisation failed"
+-  $COMPOSE run --rm -T tools node /opt/zcorp/provenance.js </dev/null || fail "P7 provenance failed (see provenance/p7.json)"
++    -- node /opt/zcorp/make_schedule.js --campaign-id "$CAMPAIGN_ID" --mode "$CMODE" --plan "$PLAN" || fail "campaign initialisation failed"
++  drun tools -- node /opt/zcorp/provenance.js || fail "P7 provenance failed (see provenance/p7.json)"
+ fi
+ 
+ # ------------------------------------------------------------------ 4. container pre-flight and adapter controls (every session)
+ for spec in $(echo "$PROFILES" | tr ',' ' '); do
+   pid=${spec%%:*}
+-  $COMPOSE run --rm -T "$pid" node /opt/zcorp/preflight.js </dev/null || fail "container pre-flight failed for $pid"
++  drun "$pid" -- node /opt/zcorp/preflight.js || fail "container pre-flight failed for $pid"
+ done
+-P="$E/preflight/$SESSION_ID"
+-CTRL_CPUSET="${ZCORP_CONTROL_CPUSET:-1-2}"
+-CTRL_N="${ZCORP_CONTROL_SIZE:-2}"
++P="$E/preflight/$SESSION_ID"; CTRL_CPUSET=1-2; CTRL_N=2
+ echo "size $CTRL_N" > "$P/controls-exit.txt"
+ docker run --rm --platform "$PLATFORM" --network none --cpuset-cpus="$CTRL_CPUSET" --memory=8g --memory-swap=8g \
+   -e ZCORP_CPUS="$CTRL_N" -e ZCORP_PROFILE=control -e NODE_OPTIONS="--max-old-space-size=4096" \
+@@ -290,28 +266,36 @@
+   -e ZCORP_CPUS="$CTRL_N" -e ZCORP_PROFILE=control -v "$REPO":/work:ro "$IMAGE_ID" node /opt/zcorp/preflight.js --probe </dev/null \
+   > "$P/control-quota-only.out" 2> "$P/control-quota-only.err"
+ echo "quota-only $?" >> "$P/controls-exit.txt"
+-$COMPOSE run --rm -T tools node /opt/zcorp/record_controls.js </dev/null || fail "adapter controls did not behave as expected"
++drun tools -- node /opt/zcorp/record_controls.js || fail "adapter controls did not behave as expected"
+ 
+ if [ "$MODE" = preflight ]; then
+   integrity_after
+   echo "result: PREFLIGHT PASS (no rounds run; session $SESSION_ID)" | tee "$E/RESULT-$SESSION_ID.txt"; cp "$E/RESULT-$SESSION_ID.txt" "$E/RESULT.txt"
+-  session_event end "PREFLIGHT PASS"
+-  exit 0
++  session_event end "PREFLIGHT PASS"; exit 0
+ fi
+ 
+ # ------------------------------------------------------------------ 5. resume bookkeeping and round units
+-$COMPOSE run --rm -T tools node /opt/zcorp/campaign_state.js --session "$SESSION_ID" </dev/null || fail "REFUSE: campaign state check failed"
++drun tools -- node /opt/zcorp/campaign_state.js --session "$SESSION_ID" || fail "REFUSE: campaign state check failed"
+ UNITS="$OUT/prover/sessions/$SESSION_ID/units.csv"
+-
+-sample() { # seq kind round attempt profile phase
+-  local la ps lpm th f="$OUT/prover/host_samples.csv"
+-  la=$(sysctl -n vm.loadavg 2>/dev/null | tr -d '{}' | sed 's/^ *//;s/ *$//')
+-  ps=$(pmset -g batt 2>/dev/null | head -1 | sed "s/.*'\(.*\)'.*/\1/")
+-  lpm=$(pmset -g 2>/dev/null | awk '/lowpowermode/{print $2}')
+-  th=$(pmset -g therm 2>/dev/null | tr '\n' ' ' | sed 's/"//g;s/  */ /g')
+-  [ -f "$f" ] || echo "campaign_id,session_id,seq,kind,round,round_attempt,profile_id,phase,utc,loadavg,power_source,low_power_mode,pmset_therm" > "$f"
+-  echo "$CAMPAIGN_ID,$SESSION_ID,$1,$2,$3,$4,$5,$6,$(date -u +%Y-%m-%dT%H:%M:%SZ),\"$la\",\"$ps\",$lpm,\"$th\"" >> "$f"
++HS="$OUT/prover/host_samples.csv"
++[ -f "$HS" ] || echo "campaign_id,session_id,seq,kind,round,round_attempt,profile_id,phase,utc,loadavg,running_containers,busy_alloc_max,busy_siblings_max,busy_other_cpu_equiv,mhz_alloc,pkg_temp_c,core_throttle_alloc,pkg_throttle,governor,no_turbo,numa_balancing,thp,inhibit,accepted,violations" > "$HS"
++sample_row() { # seq kind round attempt profile phase check-json
++  python3 - "$7" "$CAMPAIGN_ID,$SESSION_ID,$1,$2,$3,$4,$5,$6" >> "$HS" <<'PY'
++import json, sys
++try:
++    r = json.loads(open(sys.argv[1]).read())
++except Exception:
++    r = {}
++q = lambda x: '"' + str('' if x is None else x).replace('"', "'") + '"'
++print(sys.argv[2] + ',' + ','.join(q(r.get(k)) for k in ('utc_b', 'loadavg', 'running_containers', 'busy_alloc_max', 'busy_siblings_max',
++      'busy_other_cpu_equiv', 'mhz_alloc', 'pkg_temp_c', 'core_throttle_alloc', 'pkg_throttle', 'governor', 'no_turbo', 'numa_balancing',
++      'thp', 'inhibit', 'accepted')) + ',' + q('; '.join(r.get('violations') or [])))
++PY
+ }
++violations() { python3 -c 'import json,sys
++try: v = json.load(open(sys.argv[1])).get("violations") or []
++except Exception: v = ["check output unreadable"]
++print("; ".join(v) or "sleep inhibitor lost")' "$1"; }
+ 
+ ACCEPTED=0; CONTAINERS=0; STOPPED=0
+ exec 3< <(tail -n +2 "$UNITS")
+@@ -319,28 +303,36 @@
+   if [ -n "${ZCORP_STOP_AFTER_ROUNDS:-}" ] && [ "$ACCEPTED" -ge "$ZCORP_STOP_AFTER_ROUNDS" ]; then STOPPED=1; break; fi
+   echo "== round unit: $kind round $round attempt $attempt ($profiles)"
+   for pid in $(echo "$profiles" | tr ';' ' '); do
+-    CONTAINERS=$((CONTAINERS + 1))
+-    echo "== [$CONTAINERS] $kind round $round attempt $attempt: $pid"
+-    if [ "$P9_ENFORCED" = true ]; then
+-      NOWPS=$(pmset -g batt 2>/dev/null | head -1 | sed "s/.*'\(.*\)'.*/\1/"); NOWLPM=$(pmset -g 2>/dev/null | awk '/lowpowermode/{print $2}')
+-      NOWC=0; caff_alive && NOWC=1
+-      p9_ok "$NOWPS" "$NOWLPM" "$NOWC" || fail "P9 host conditions lost before container $CONTAINERS (power '$NOWPS', Low Power Mode '$NOWLPM', caffeinate alive=$NOWC); $kind round $round attempt $attempt stays without outcome and is rerun whole on resume"
+-    fi
+-    sample "$CONTAINERS" "$kind" "$round" "$attempt" "$pid" before
+-    $COMPOSE run --rm -T "$pid" node --expose-gc /opt/zcorp/harness.js --kind "$kind" --round "$round" --attempt "$attempt" </dev/null
++    CONTAINERS=$((CONTAINERS + 1)); alloc=$(svc_cpuset "$pid"); tag="c$(printf %04d $CONTAINERS)"
++    echo "== [$CONTAINERS] $kind round $round attempt $attempt: $pid (CPUs $alloc, mems $CPUSET_MEMS)"
++    # pre: 2 s quiet window right before the container (violation -> unit stays without outcome, rerun whole on resume)
++    python3 "$KIT/hostb_quiet.py" snap "$Q/$tag-pre-a.json"; sleep 2; python3 "$KIT/hostb_quiet.py" snap "$Q/$tag-pre-b.json"
++    python3 "$KIT/hostb_quiet.py" check "$Q/$tag-pre-a.json" "$Q/$tag-pre-b.json" --mode pre --alloc "$alloc" --frozen "$FROZEN_STATE" > "$Q/$tag-pre.json"; prc=$?
++    sample_row "$CONTAINERS" "$kind" "$round" "$attempt" "$pid" before "$Q/$tag-pre.json"
++    inh_ok || prc=1
++    [ $prc = 0 ] || fail "host conditions not met before container $CONTAINERS ($(violations "$Q/$tag-pre.json")); $kind round $round attempt $attempt stays without outcome and is rerun whole on resume"
++    python3 "$KIT/hostb_quiet.py" snap "$Q/$tag-run-a.json"
++    drun "$pid" -- node --expose-gc /opt/zcorp/harness.js --kind "$kind" --round "$round" --attempt "$attempt"
+     rc=$?
+-    sample "$CONTAINERS" "$kind" "$round" "$attempt" "$pid" after
++    python3 "$KIT/hostb_quiet.py" snap "$Q/$tag-run-b.json"
++    python3 "$KIT/hostb_quiet.py" check "$Q/$tag-run-a.json" "$Q/$tag-run-b.json" --mode during --alloc "$alloc" --frozen "$FROZEN_STATE" > "$Q/$tag-during.json"; drc=$?
++    sample_row "$CONTAINERS" "$kind" "$round" "$attempt" "$pid" during "$Q/$tag-during.json"
++    inh_ok || drc=1
+     if [ $rc -ne 0 ]; then
+-      $COMPOSE run --rm -T tools node /opt/zcorp/validate_round.js --kind "$kind" --round "$round" --attempt "$attempt" </dev/null
++      drun tools -- node /opt/zcorp/validate_round.js --kind "$kind" --round "$round" --attempt "$attempt"
+       fail "container for $pid exited $rc; $kind round $round attempt $attempt recorded as failed (rerun as a new attempt on resume)"
+     fi
++    if [ $drc -ne 0 ]; then
++      drun tools -- node /opt/zcorp/validate_round.js --kind "$kind" --round "$round" --attempt "$attempt" --host-violation "container $CONTAINERS ($pid): $(violations "$Q/$tag-during.json")"
++      fail "host conditions violated during container $CONTAINERS; $kind round $round attempt $attempt recorded as failed (rerun as a new attempt on resume)"
++    fi
+     if [ -n "${ZCORP_TEST_INTERRUPT_AFTER_CONTAINERS:-}" ] && [ "$CONTAINERS" -ge "$ZCORP_TEST_INTERRUPT_AFTER_CONTAINERS" ]; then
+       echo "SIMULATED INTERRUPTION (dry-run test) after $CONTAINERS container(s), inside $kind round $round attempt $attempt"
+       echo "result: INTERRUPTED (simulated, session $SESSION_ID)" > "$E/RESULT-$SESSION_ID.txt"; cp "$E/RESULT-$SESSION_ID.txt" "$E/RESULT.txt"
+       exit 3
+     fi
+   done
+-  $COMPOSE run --rm -T tools node /opt/zcorp/validate_round.js --kind "$kind" --round "$round" --attempt "$attempt" </dev/null \
++  drun tools -- node /opt/zcorp/validate_round.js --kind "$kind" --round "$round" --attempt "$attempt" \
+     || fail "$kind round $round attempt $attempt failed round validation (rerun as a new attempt on resume)"
+   ACCEPTED=$((ACCEPTED + 1))
+ done
+@@ -350,14 +342,14 @@
+ integrity_after
+ REMAINING=$(( $(tail -n +2 "$UNITS" | wc -l) - ACCEPTED ))
+ if [ "$STOPPED" = 1 ] || [ "$REMAINING" -gt 0 ]; then
+-  $COMPOSE run --rm -T tools node /opt/zcorp/summarize_prover.js --allow-partial </dev/null; SUMRC=$?
++  drun tools -- node /opt/zcorp/summarize_prover.js --allow-partial; SUMRC=$?
+   if [ $SUMRC -eq 0 ]; then
+     echo "result: STOPPED after $ACCEPTED accepted round(s) this session; $REMAINING remaining; resume with: bash bench/run-campaign.sh resume $OUT" | tee "$E/RESULT-$SESSION_ID.txt"
+     cp "$E/RESULT-$SESSION_ID.txt" "$E/RESULT.txt"; session_event end "STOPPED ($ACCEPTED accepted, $REMAINING remaining)"; exit 0
+   fi
+   fail "partial validation failed (see derived/validation.json)"
+ fi
+-$COMPOSE run --rm -T tools node /opt/zcorp/summarize_prover.js </dev/null; SUMRC=$?
++drun tools -- node /opt/zcorp/summarize_prover.js; SUMRC=$?
+ if [ $SUMRC -eq 0 ]; then
+   echo "result: PASS ($CMODE $CAMPAIGN_ID; session $SESSION_ID; see derived/validation.json)" | tee "$E/RESULT-$SESSION_ID.txt"
+   cp "$E/RESULT-$SESSION_ID.txt" "$E/RESULT.txt"; session_event end "PASS"
+Only in kit-v3-x86: setup_plonk_zkeys.js
+diff -ru '--exclude=node_modules' kit-src/test-resume.sh kit-v3-x86/test-resume.sh
+--- kit-src/test-resume.sh	2026-10-04 15:42:13.632614348 +0000
++++ kit-v3-x86/test-resume.sh	2026-10-04 15:52:02.511182317 +0000
+@@ -18,8 +18,11 @@
+ ID="dryrun-resumetest-$(date -u +%Y%m%dT%H%M%SZ)"
+ OUT="$REPO/build/campaigns/$ID"
+ say() { echo; echo "######## $*"; }
+-COMPOSE="docker compose -f $KIT/compose.yaml"
+-[ -n "${ZCORP_COMPOSE_OVERRIDE:-}" ] && COMPOSE="$COMPOSE -f $ZCORP_COMPOSE_OVERRIDE"
++# v3-x86: direct container calls use docker run with the profile limits of run-campaign.sh (compose has no cpuset-mems).
++cset() { case "$1" in cpu2) echo 1-2 ;; cpu4) echo 1-4 ;; *) echo 1-8 ;; esac; }; cn() { case "$1" in cpu2) echo 2 ;; cpu4) echo 4 ;; *) echo 8 ;; esac; }
++xrun() { local p="$1"; shift; docker run --rm --init --network none --platform linux/amd64 --cpuset-cpus "$(cset "$p")" --cpuset-mems 0 \
++  --memory 8g --memory-swap 8g -w /work --mount "type=bind,source=$REPO,target=/work,readonly" --mount "type=bind,source=$OUT,target=/results" \
++  -e ZCORP_PROFILE="$p" -e ZCORP_CPUS="$(cn "$p")" -e ZCORP_IMAGE_ID="$IMG" -e ZCORP_SESSION_ID="$SID" "zcorp-bench:$ID" "$@" </dev/null; }
+ 
+ say "session 1: new reduced dry run, stop after one accepted round"
+ ZCORP_CAMPAIGN_ID="$ID" ZCORP_STOP_AFTER_ROUNDS=1 bash "$KIT/run-campaign.sh" dryrun --plan resumetest
+@@ -40,8 +43,7 @@
+ IMG=$(sed -n 's/.*"built_image_id": "\([^"]*\)".*/\1/p' "$OUT/CAMPAIGN.json" | head -1)
+ FIRST_PROFILE=$(sed -n '2p' "$OUT/prover/schedule.csv" | cut -d, -f4)
+ before=$(count_rows)
+-ZCORP_IMAGE="zcorp-bench:$ID" ZCORP_IMAGE_ID="$IMG" ZCORP_REPO="$REPO" ZCORP_RESULTS="$OUT" ZCORP_SESSION_ID=SREFUSALTEST \
+-  $COMPOSE run --rm -T "$FIRST_PROFILE" node --expose-gc /opt/zcorp/harness.js --kind primary --round 0 --attempt 2 </dev/null \
++SID=SREFUSALTEST xrun "$FIRST_PROFILE" node --expose-gc /opt/zcorp/harness.js --kind primary --round 0 --attempt 2 \
+   2> "$OUT/environment/resume-test/harness-refusal.err"
+ hx=$?
+ cat "$OUT/environment/resume-test/harness-refusal.err"
+@@ -56,10 +58,10 @@
+ grep -q "REFUSE" "$OUT/environment/resume-test/tamper.log" && tr=yes || tr=no
+ { echo "tamper_exit=$tx"; echo "tamper_refused=$tr"
+   echo "tamper_reason=$(grep -m1 -o 'REFUSE.*' "$OUT/environment/resume-test/tamper.log" | tr '=,' '  ')"; } >> "$F"
+-# a copy whose campaign record names another git commit must be refused by the runner's identity check
++# v3-x86 (no git on Host B): a copy whose campaign record names another tree (kit, generator, manifests) must be refused
+ T2="$REPO/build/campaigns/$ID-othercommit"
+ cp -R "$OUT" "$T2"
+-sed 's/"commit": "[0-9a-f]*"/"commit": "0000000000000000000000000000000000000000"/' "$OUT/CAMPAIGN.json" > "$T2/CAMPAIGN.json"
++sed 's/"campaign_paths_status_sha256": "[0-9a-f]*"/"campaign_paths_status_sha256": "0000000000000000000000000000000000000000000000000000000000000000"/' "$OUT/CAMPAIGN.json" > "$T2/CAMPAIGN.json"
+ bash "$KIT/run-campaign.sh" resume "$T2" > "$OUT/environment/resume-test/othercommit.log" 2>&1
+ cx=$?
+ { echo "commit_tamper_exit=$cx"
+@@ -67,8 +69,7 @@
+ cat "$F"
+ 
+ say "checking the resume history"
+-ZCORP_IMAGE="zcorp-bench:$ID" ZCORP_IMAGE_ID="$IMG" ZCORP_REPO="$REPO" ZCORP_RESULTS="$OUT" ZCORP_SESSION_ID= \
+-  $COMPOSE run --rm -T tools node /opt/zcorp/check_resume_test.js </dev/null
++SID= xrun tools node /opt/zcorp/check_resume_test.js
+ rc=$?
+ echo
+ [ $rc -eq 0 ] && echo "RESUME TEST: PASS ($OUT)" || echo "RESUME TEST: FAIL ($OUT)"
+diff -ru '--exclude=node_modules' kit-src/validate_round.js kit-v3-x86/validate_round.js
+--- kit-src/validate_round.js	2026-10-04 15:42:13.632667899 +0000
++++ kit-v3-x86/validate_round.js	2026-10-04 15:46:15.755247790 +0000
+@@ -4,7 +4,7 @@
+ // Accepted only if every scheduled profile completed, all expected rows exist, every proof is
+ // valid, no OOM/throttling/pre-flight failure occurred and this session's pre-flight passed.
+ //
+-//   node validate_round.js --kind primary|diag --round <n> --attempt <a>     (ZCORP_SESSION_ID set)
++//   node validate_round.js --kind primary|diag --round <n> --attempt <a> [--host-violation <text>]   (ZCORP_SESSION_ID set)
+ const fs = require('fs');
+ const path = require('path');
+ const { RESULTS, CsvAppender, nowIso, readJson } = require('./lib/common');
+@@ -21,6 +21,7 @@
+   if (V.ledgerFor(st, kind, round).some((l) => Number(l.round_attempt) === attempt)) throw new Error('this attempt already has a ledger outcome');
+   if (V.acceptedAttempt(st, kind, round) !== null) throw new Error('this round already has an accepted attempt');
+   const res = V.validateAttempt(st, kind, round, attempt);
++  const hv = arg('host-violation'); if (hv) res.failures.push(`host condition violated: ${hv}`); // v3-x86: quiet-window acceptance
+   if (res.session_id && res.session_id !== session) res.failures.push(`rows belong to session ${res.session_id}`);
+   for (const p of st.campaign.profiles) {
+     const f = path.join(RESULTS, 'environment', 'preflight', session, `profile-${p.id}.json`);

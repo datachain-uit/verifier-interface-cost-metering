@@ -1,0 +1,12 @@
+864fca465805d39a226753057f5ddb6be89f648dddcb0bfccf2680fd745a9fc4  ./DEVIATIONS.md
+7e2f0e8a8a4a800db9a37712e9683147ddd50840c5ed4e837bcc0cf171c7410c  ./README.md
+a5a7315799df867531340afeaef77e416da23619479db73ab2392fe704b114c5  ./out-attempt-1/D3-input-verification.json
+e5fd68431c039c0243a76856458ec063eaf8c4931b046b2c1e745237bc4cc8c5  ./out/D3-CHECK-RECORD.json
+e8d6db6efe87170d1f81cf3df75aa2e1030c9aafe39acf333d30f5e3ac05c9c8  ./out/D3-RUN-RECORD.json
+a21888b26b6c5591aae1f6b6a436cb128371290e404069f3a8d17b05aa21eb82  ./out/D3-allocation-speedups.csv
+17d0ac13cc2cc8831369fbe27754ea7c4dfe7c873c3cf557274e11f6c65edca7  ./out/D3-backend-ratios.csv
+a0c6dcfa3a4afc7aa26ab4a7a30de1af90a65d98631ea18929954a9ee44b4423  ./out/D3-cell-stats.csv
+a5a7315799df867531340afeaef77e416da23619479db73ab2392fe704b114c5  ./out/D3-input-verification.json
+460cae7ab8ed497cf83b0ea3739b2752ec9913739ab7f5fa58fdcc871fa4eefb  ./out/D3-reconciliation.json
+cb79d6f50e5aa6eb7dff97e7af787c573796a34bc2ac7965950b43e14fb6352e  ./out/D3-zkey-diagnostic.csv
+f59de3687e8dc5bbf889049b91abdf4e6e8bd7c60c18fbb55c2093c41150a5f6  ./run-stdout.txt

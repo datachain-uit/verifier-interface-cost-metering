@@ -1,0 +1,2 @@
+$ grep -m3 -i hypervisor /proc/cpuinfo
+[exit 1]

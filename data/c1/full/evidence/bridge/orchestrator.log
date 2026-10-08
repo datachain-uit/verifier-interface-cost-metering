@@ -1,0 +1,26 @@
+2026-10-04T14:13:27.916384Z start campaign=BRIDGE run_id=V2-MPI-FULL-01-bridge1 cells=12 pins_sha256=e12eeb1b4c2f20b4fe28e8e08dcf38d6625c0ea3177161603b0cb3ebe842b699
+2026-10-04T14:13:27.916569Z cell 00-evm-osaka__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:13:29.497341Z cell 00-evm-osaka__groth16__c1_ctx_k04 attempt 1 done in 2s
+2026-10-04T14:13:29.497609Z cell 01-zkos-v32_at_npg100__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:15:41.736892Z cell 01-zkos-v32_at_npg100__plonk__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T14:15:41.737179Z cell 02-eravm-29__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:15:44.666622Z cell 02-eravm-29__groth16__c1_ctx_k04 attempt 1 done in 3s
+2026-10-04T14:15:44.666919Z cell 03-eravm-29__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:15:48.097421Z cell 03-eravm-29__plonk__c1_ctx_k04 attempt 1 done in 3s
+2026-10-04T14:15:48.097686Z cell 04-zkos-v32_at_npg100__groth16__c1_k01 attempt 1 begin
+2026-10-04T14:17:59.895720Z cell 04-zkos-v32_at_npg100__groth16__c1_k01 attempt 1 done in 132s
+2026-10-04T14:17:59.896040Z cell 05-evm-osaka__groth16__c1_k01 attempt 1 begin
+2026-10-04T14:18:01.374883Z cell 05-evm-osaka__groth16__c1_k01 attempt 1 done in 1s
+2026-10-04T14:18:01.375200Z cell 06-eravm-29__groth16__c1_k01 attempt 1 begin
+2026-10-04T14:18:04.406189Z cell 06-eravm-29__groth16__c1_k01 attempt 1 done in 3s
+2026-10-04T14:18:04.406601Z cell 07-evm-osaka__plonk__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:18:08.310199Z cell 07-evm-osaka__plonk__c1_ctx_k04 attempt 1 done in 4s
+2026-10-04T14:18:08.310617Z cell 08-zkos-v32_at_npg100__groth16__c1_ctx_k04 attempt 1 begin
+2026-10-04T14:20:20.167743Z cell 08-zkos-v32_at_npg100__groth16__c1_ctx_k04 attempt 1 done in 132s
+2026-10-04T14:20:20.168065Z cell 09-zkos-v32_at_npg100__plonk__c1_k01 attempt 1 begin
+2026-10-04T14:22:32.376999Z cell 09-zkos-v32_at_npg100__plonk__c1_k01 attempt 1 done in 132s
+2026-10-04T14:22:32.377362Z cell 10-evm-osaka__plonk__c1_k01 attempt 1 begin
+2026-10-04T14:22:36.537793Z cell 10-evm-osaka__plonk__c1_k01 attempt 1 done in 4s
+2026-10-04T14:22:36.538054Z cell 11-eravm-29__plonk__c1_k01 attempt 1 begin
+2026-10-04T14:22:39.870929Z cell 11-eravm-29__plonk__c1_k01 attempt 1 done in 3s
+2026-10-04T14:22:39.870969Z campaign complete

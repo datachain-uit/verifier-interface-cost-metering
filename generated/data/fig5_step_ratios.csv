@@ -1,0 +1,7 @@
+host,source,allocation,plonk_d10_median_ms,plonk_d11_median_ms,ratio_d11_over_d10
+A,d3:out/D3-cell-stats.csv,cpu2,12203.378,23521.395,1.92745
+A,d3:out/D3-cell-stats.csv,cpu4,10236.819,19747.795,1.929095
+A,d3:out/D3-cell-stats.csv,cpu8,9668.27,19021.382,1.967403
+B,d2_analysis:run/D2-cell-stats.csv,cpu2,25033.764,48992.924,1.957074
+B,d2_analysis:run/D2-cell-stats.csv,cpu4,22822.673,44139.295,1.934011
+B,d2_analysis:run/D2-cell-stats.csv,cpu8,21343.936,42362.444,1.984753

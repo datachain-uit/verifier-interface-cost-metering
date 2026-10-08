@@ -1,0 +1,97 @@
+{
+ "test": "DEV-D2-1 oracle engineering test (off-host, no container, untimed)",
+ "node": "v22.23.2",
+ "all_match": true,
+ "rows": [
+  {
+   "case": "Host A recorded (S20260925T060607Z)",
+   "expected_old": "PASS",
+   "expected_new": "PASS",
+   "v3-x86": "PASS",
+   "v3-x86_stdout": "controls: PASS (no adapter -> 10 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "PASS",
+   "v3-x86-r2_stdout": "controls: PASS (no adapter -> 10 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "Host B recorded (S20261005T074450Z)",
+   "expected_old": "FAIL",
+   "expected_new": "PASS",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "PASS",
+   "v3-x86-r2_stdout": "controls: PASS (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "pool constrained to the allocation (os 112, pool 2)",
+   "expected_old": "FAIL",
+   "expected_new": "FAIL",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 2 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 2 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "uncapped pool (os 112, pool 112)",
+   "expected_old": "PASS",
+   "expected_new": "FAIL",
+   "v3-x86": "PASS",
+   "v3-x86_stdout": "controls: PASS (no adapter -> 112 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 112 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "arbitrary off-rule pool (os 112, pool 10)",
+   "expected_old": "FAIL",
+   "expected_new": "FAIL",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 10 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 10 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "mismatch not refused (exit 0)",
+   "expected_old": "FAIL",
+   "expected_new": "FAIL",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 0; quota-only exit 97)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 0; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "quota-only not refused (exit 0)",
+   "expected_old": "FAIL",
+   "expected_new": "FAIL",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 0)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 0)",
+   "match": true
+  },
+  {
+   "case": "no-adapter probe failed (exit 1)",
+   "expected_old": "FAIL",
+   "expected_new": "FAIL",
+   "v3-x86": "FAIL",
+   "v3-x86_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "FAIL",
+   "v3-x86-r2_stdout": "controls: FAIL (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  },
+  {
+   "case": "edge: exactly 64 CPUs (os 64, pool 64)",
+   "expected_old": "PASS",
+   "expected_new": "PASS",
+   "v3-x86": "PASS",
+   "v3-x86_stdout": "controls: PASS (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "v3-x86-r2": "PASS",
+   "v3-x86-r2_stdout": "controls: PASS (no adapter -> 64 workers on a 2-CPU cpuset; mismatch exit 97; quota-only exit 97)",
+   "match": true
+  }
+ ]
+}

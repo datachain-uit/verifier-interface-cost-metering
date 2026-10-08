@@ -1,0 +1,1 @@
+result: STOPPED after 1 accepted round(s) this session; 3 remaining; resume with: bash bench/run-campaign.sh resume /home/ad/Workspace/Z-CORP-V2-workstation/prover/d2-r5/repo/build/campaigns/dryrun-resumetest-20261005T141557Z

@@ -1,0 +1,183 @@
+{
+  "protocol_version": "v3",
+  "kit": "v3-x86",
+  "campaign_id": "ENGTEST",
+  "mode": "campaign",
+  "plan_name": "campaign",
+  "created_utc": "2026-10-04T15:52:56.591Z",
+  "schedule_seed": "zcorp-rerun-v3",
+  "profiles": [
+    {
+      "id": "cpu2",
+      "cpuset": "1-2",
+      "cpus": 2
+    },
+    {
+      "id": "cpu4",
+      "cpuset": "1-4",
+      "cpus": 4
+    },
+    {
+      "id": "cpu8",
+      "cpuset": "1-8",
+      "cpus": 8
+    }
+  ],
+  "plan": {
+    "primary_configs": [
+      "groth16:5",
+      "groth16:6",
+      "groth16:7",
+      "groth16:8",
+      "groth16:9",
+      "groth16:10",
+      "groth16:11",
+      "groth16:12",
+      "groth16:13",
+      "groth16:14",
+      "groth16:15",
+      "plonk:5",
+      "plonk:6",
+      "plonk:7",
+      "plonk:8",
+      "plonk:9",
+      "plonk:10",
+      "plonk:11",
+      "plonk:12",
+      "plonk:13",
+      "plonk:14",
+      "plonk:15"
+    ],
+    "primary_rounds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "groth16_only_rounds": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "diag_configs": [
+      "groth16:5",
+      "groth16:7",
+      "groth16:8",
+      "groth16:15",
+      "plonk:5",
+      "plonk:10",
+      "plonk:11",
+      "plonk:15"
+    ],
+    "diag_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "warmup_in_process": [
+      "groth16:5",
+      "plonk:5"
+    ],
+    "p7_depths": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "expect": {
+    "arch": "x64",
+    "machine": "x86_64",
+    "cpu_implementer": null,
+    "cgroup_version": 2,
+    "cpu_model_name": "Intel(R) Xeon(R) Platinum 8173M CPU @ 2.00GHz",
+    "cpuset_mems": "0",
+    "memory_bytes": 8589934592,
+    "node": "v18.20.8",
+    "snarkjs": "0.7.5",
+    "ffjavascript": "0.3.1",
+    "fastfile": "0.0.20",
+    "node_options": "--require /opt/zcorp/lib/cpu-visibility.js --max-old-space-size=4096"
+  },
+  "repo": {
+    "commit": null,
+    "dirty": null,
+    "status_sha256": null,
+    "campaign_paths": null,
+    "campaign_paths_status_sha256": null
+  },
+  "image": {
+    "built_image_id": "sha256:engtest",
+    "tag": null,
+    "base_image_ref": null,
+    "base_arm64_manifest_digest": null,
+    "base_platform_architecture": "amd64",
+    "base_platform_manifest_digest": null,
+    "platform": null
+  },
+  "environment": {
+    "docker_desktop": null,
+    "engine": null,
+    "kernel": null,
+    "vm_ncpu": null,
+    "vm_mem_bytes": null,
+    "configured_memory_mib": null,
+    "host_frozen_state": "intel_pstate=active governor=powersave no_turbo=0 numa_balancing=1 thp=madvise"
+  },
+  "host_files_sha256": {
+    "bench/run-campaign.sh": null,
+    "bench/compose.yaml": null,
+    "bench/Dockerfile": null
+  },
+  "manifest_sha256": "9a7829fe2584259f1dd0dc45cf73c5ce904fce7e61e964fb7958826f156b43be",
+  "adapter_sha256": "749eea66bb9bf3256f1afbabd0119dd67c1fca95c3174c8373b49f9470942867",
+  "harness_sha256": {
+    "lib/cpu-visibility.js": "749eea66bb9bf3256f1afbabd0119dd67c1fca95c3174c8373b49f9470942867",
+    "lib/common.js": "9777629f7f65fb4c3d21725a98b535113d2500381efc1ade4c75b7135a63ee7b",
+    "lib/checks.js": "33b07173a95df764fcb00bca93f295a77af500ede30eb4abbcb501f10e75afdd",
+    "lib/pipeline.js": "7b1799bf71c1d90dab966705ae9843920a44b9ba85fa258658ec7677f30504d9",
+    "lib/schema.js": "bf73cea92de0de1ecaf0540f81ee6cd05bbf2773392d9c553957e813fe0fe2b2",
+    "lib/validate.js": "40370dd7f8f8bf82239fb3cfb7fc0accbd6bff99f75e9e1f3f468288148316f8",
+    "harness.js": "9b66a7a5d860145d452afc073db43731601f4a5b8c77d0b9157cf2bf860dd3e7",
+    "preflight.js": "1005faf03e6d52b72258be25d83be60eabf8cd607d0de30a74fc26d4400d3fdd",
+    "provenance.js": "9081ab55c54337a5f51dbc72e1a6ad9e7ff059aab0e2a13ab3e087866d4f9a06",
+    "make_schedule.js": "2199c2ade870b63b04f6bb099aa5e12a18e708fa942c1f342c7a7582175dcbbd",
+    "summarize_prover.js": "3fde442f455f8fb2cef48c03cca53d1717f8efc71761df46a0f365a08cf42a19",
+    "record_controls.js": "acf81fe1cc308352e0c43ded8285ea15ee2101b4fbf2a52a9d9788f02797172e",
+    "campaign_state.js": "1387f2d7b5ba5bb96adbb1d6e266c3f71f8b5b84e5f7012e133b20757dde05ea",
+    "validate_round.js": "b1314f009a46a8288ad94c38118398f7c8a868ae07514aa9f215b687eef6bff0",
+    "check_resume_test.js": "3a80711d9b6b6e2d7d961747312d4d26ec6e4c3aa6f547509417c7dbeca1c88d",
+    "package-lock.json": "5774be4171d9433dbb49700fcb44053739f086ade74cd8cbec85889a01a104e2"
+  },
+  "input_generator_sha256": {
+    "scripts/setup/generate_input_depth.js": "4d3f34f781b087f432ccf74a0f0d3ec68018f396ab9efb77f5aa7efa028f7f44",
+    "scripts/setup/paths.js": "004b6e77f5b2298c08506930a4281134649e96575f42038718e34aad6493be3b"
+  },
+  "synthetic_corpus_sha256": "c7203a12c0e9619576a223356af42082f7db4304f05bb678f158860e1ccadc23",
+  "synthetic_corpus_entries": 33,
+  "schedule_sha256": "f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95",
+  "execution_plan_sha256": "99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94",
+  "host_a_reference": {
+    "campaign_id": "campaign-20260925T060607Z",
+    "schedule_sha256": "f7e6de3bbd1c9d24b0c41909414014c4e9cd1ee2ff2179c845aec8b9464fbb95",
+    "execution_plan_sha256": "99fb360ccb801606ee13a7aa03705522aceb5845a0d62affd647d9a2b0badc94"
+  }
+}

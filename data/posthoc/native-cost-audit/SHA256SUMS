@@ -1,0 +1,7 @@
+3942b96f1f4f4a1cf9702606e5d4a66420613810e487d1d080639f30786727d8  ./INPUT-HASHES.txt
+5bccbb558c1bc0f2bc6332d45e823bce98b01f01284e117e1c3e58919ba7eea4  ./README.md
+47eb53c9e25dbab86feaea016eaa69e297ac764cc26a86f2f3f4caf4ad3c2fb7  ./SOURCE-FILES-SHA256.txt
+59f84aa76510bec0223568800eceefa8235cd77cb0fbb0f7f11693ee9c8634ee  ./m7a_f4_audit.py
+cac42afe69cb24ce15b9e88600da5532df11aebed32533873bfd2d03776b029e  ./out/M7A-cells.csv
+fb447ecab5ccbb73473282ff0c35658c5d25c652f63f6ba4a0c026f6238b293a  ./out/M7A-per-proof.csv
+7c3fb436c2cfd0c86c37dc05bd86adfccd03e53b33ff90cefaf7d70fe33bef13  ./out/M7A-summary.json
